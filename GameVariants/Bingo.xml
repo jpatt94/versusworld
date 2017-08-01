@@ -1,0 +1,21 @@
+<GameVariant>
+  <MetaData>
+    <Name>Bingo</Name>
+    <Description>First to 25 kills wins.</Description>
+    <Type>2</Type>
+    <CreatorName>jpatt94</CreatorName>
+    <CompatibleVersion>1</CompatibleVersion>
+  </MetaData>
+  <Generic>
+    <ScoreToWin Value="25" />
+    <Time Value="600" />
+    <Teams Value="FALSE" />
+    <ScorePerKill Value="1" />
+    <ScorePerDeath Value="0" />
+    <ScorePerSuicide Value="-1" />
+    <ScorePerBetrayal Value="-1" />
+  </Generic>
+  <Bingo>
+    <TaskName Value="Testing" />
+  </Bingo>
+</GameVariant>

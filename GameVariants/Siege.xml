@@ -1,0 +1,29 @@
+<GameVariant>
+  <MetaData>
+    <Name>Siege</Name>
+    <Description>Capture the points to win.</Description>
+    <Type>1</Type>
+    <CreatorName>jpatt94</CreatorName>
+    <CompatibleVersion>1</CompatibleVersion>
+  </MetaData>
+  <Generic>
+    <ScoreToWin Value="100" />
+    <Time Value="600" />
+    <Teams Value="TRUE" />
+    <ScorePerKill Value="1" />
+    <ScorePerDeath Value="0" />
+    <ScorePerSuicide Value="-1" />
+    <ScorePerBetrayal Value="-1" />
+  </Generic>
+  <Siege>
+    <ScorePerCaptureSuccess Value="10" />
+    <ScorePerCaptureFailure Value="0" />
+    <CaptureDuration Value="45" />
+    <MultipleCapturersSpeed Value="1.50" />
+  </Siege>
+  <Grenades>
+    <Frag>
+      <StartingAmount Value="1" />
+    </Frag>
+  </Grenades>
+</GameVariant>

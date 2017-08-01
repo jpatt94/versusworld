@@ -1,0 +1,225 @@
+<DefaultSettings>
+  <Generic>
+    <ScoreToWin Value="100" />
+    <Time Value="600" />
+    <Teams Value="TRUE" />
+    <ScorePerKill Value="1" />
+    <ScorePerDeath Value="0" />
+    <ScorePerSuicide Value="-1" />
+    <ScorePerBetrayal Value="-1" />
+  </Generic>
+  <Siege>
+    <ScorePerCaptureSuccess Value="10" />
+    <ScorePerCaptureFailure Value="0" />
+    <CaptureDuration Value="20" />
+    <MultipleCapturersSpeed Value="1.50" />
+  </Siege>
+  <Bingo>
+    <TaskName Value="Testing" />
+  </Bingo>
+  <DefaultPlayerTraits>
+    <Health>
+      <Modifer Value="1.00" />
+      <RegenDelay Value="3.25" />
+      <RegenRate Value="30.00" />
+      <DamageResistance Value="1.00" />
+      <LifeSteal Value="0.00" />
+    </Health>
+    <Respawn>
+      <Time Value="3.00" />
+    </Respawn>
+    <Movement>
+      <Speed Value="5.46" />
+      <Acceleration Value="50.00" />
+      <JumpHeight Value="2.20" />
+      <AirControl Value="0.70" />
+      <SprintSpeedMultiplier Value="1.34" />
+      <CrouchSpeedMultiplier Value="0.50" />
+      <GravityMultiplier Value="1.00" />
+      <ThrustEnabled Value="TRUE" />
+      <ThrustHorizontalForce Value="4.50" />
+      <ThrustVerticalForce Value="5.00" />
+      <ThrustDelay Value="6.00" />
+    </Movement>
+    <Melee>
+      <Damage Value="50.00" />
+      <Rate Value="2.00" />
+    </Melee>
+    <Weapons>
+      <StartingPrimaryWeapon Value="0" />
+      <StartingSecondaryWeapon Value="1" />
+      <InfiniteAmmo Value="0" />
+      <DamageMultiplier Value="1.00" />
+    </Weapons>
+  </DefaultPlayerTraits>
+  <Weapons>
+    <SpawnOnMap Value="TRUE" />
+    <DropWhenKilled Value="TRUE" />
+    <AssaultRifle>
+      <Damage Value="13.50" />
+      <HeadShotDamageMultiplier Value="1.34" />
+      <StartingAmmo Value="108" />
+      <MaxAmmo Value="144" />
+      <ClipSize Value="36" />
+      <FireRate Value="3.00" />
+      <ReloadTime Value="2.00" />
+      <BurstAmount Value="3" />
+      <BurstRate Value="24.00" />
+    </AssaultRifle>
+    <SMG>
+      <Damage Value="8.00" />
+      <HeadShotDamageMultiplier Value="1.20" />
+      <StartingAmmo Value="180" />
+      <MaxAmmo Value="480" />
+      <ClipSize Value="42" />
+      <FireRate Value="24.00" />
+      <ReloadTime Value="1.00" />
+      <Spread Value="0.03" />
+      <ADSSpread Value="0.015" />
+    </SMG>
+    <Sniper>
+      <Damage Value="75.00" />
+      <HeadShotDamageMultiplier Value="1.34" />
+      <StartingAmmo Value="10" />
+      <MaxAmmo Value="25" />
+      <ClipSize Value="5" />
+      <FireRate Value="2.00" />
+      <ReloadTime Value="2.25" />
+    </Sniper>
+    <RocketLauncher>
+      <Damage Value="160.00" />
+      <Radius Value="7.50" />
+      <RocketInitialSpeed Value="30.00" />
+      <RocketAcceleration Value="8.00" />
+      <StartingAmmo Value="5" />
+      <MaxAmmo Value="8" />
+      <ClipSize Value="1" />
+      <FireRate Value="1.00" />
+      <ReloadTime Value="2.00" />
+    </RocketLauncher>
+    <Shotgun>
+      <Damage Value="25.00" />
+      <Range Value="13.00" />
+      <PelletsPerShot Value="8" />
+      <Spread Value="0.08" />
+      <StartingAmmo Value="12" />
+      <MaxAmmo Value="24" />
+      <ClipSize Value="6" />
+      <FireRate Value="1.50" />
+      <ReloadTime Value="0.50" />
+    </Shotgun>
+    <Pistol>
+      <Damage Value="18.00" />
+      <HeadShotDamageMultiplier Value="1.5" />
+      <StartingAmmo Value="48" />
+      <MaxAmmo Value="96" />
+      <ClipSize Value="12" />
+      <FireRate Value="10.00" />
+      <ReloadTime Value="1.40" />
+    </Pistol>
+    <MachineGun>
+      <Damage Value="14.00" />
+      <HeadShotDamageMultiplier Value="1.25" />
+      <StartingAmmo Value="180" />
+      <MaxAmmo Value="480" />
+      <ClipSize Value="24" />
+      <FireRate Value="13.00" />
+      <ReloadTime Value="2.50" />
+      <Spread Value="0.01" />
+      <ADSSpread Value="0.005" />
+    </MachineGun>
+  </Weapons>
+  <Grenades>
+    <ThrowRate Value="2.00" />
+    <MinThrowForce Value="10.00" />
+    <MaxThrowForce Value="23.00" />
+    <DropWhenKilled Value="TRUE" />
+    <Frag>
+      <StartingAmount Value="2" />
+      <MaxAmount Value="4" />
+      <Damage Value="120.00" />
+      <Range Value="7.50" />
+      <FuseTime Value="1.25" />
+      <NoContactFuseTime Value="3.00" />
+    </Frag>
+    <Tesla>
+      <StartingAmount Value="0" />
+      <MaxAmount Value="4" />
+      <DamagePerSecond Value="30.00" />
+      <Range Value="10.00" />
+      <FuseTime Value="9999.00" />
+      <SparkTime Value="6.00" />
+      <ExplosiveDamage Value="50.00" />
+      <ExplosiveRange Value="6.00" />
+      <IgnitedOnCollision Value="TRUE" />
+    </Tesla>
+    <Spike>
+      <StartingAmount Value="0" />
+      <MaxAmount Value="4" />
+      <Damage Value="150.00" />
+      <Range Value="10.00" />
+      <FuseTime Value="1.5" />
+      <StickDamage Value="5.00" />
+    </Spike>
+  </Grenades>
+  <Items>
+    <RespawnTime Value="45.00" />
+    <SpinnerDuration Value="2.10" />
+    <SpawnOnMap Value="TRUE" />
+    <AmmoRefill>
+      <Weight Value="0" />
+    </AmmoRefill>
+    <PowerPlay>
+      <Weight Value="0" />
+    </PowerPlay>
+    <TeslaGrenade>
+      <Weight Value="75" />
+    </TeslaGrenade>
+    <SpikeGrenade>
+      <Weight Value="85" />
+    </SpikeGrenade>
+    <GrenadeCloud>
+      <Weight Value="18" />
+      <Height Value="30.00" />
+      <Size Value="40.00" />
+      <MinTimeBetweenSpawns Value="0.10" />
+      <MaxTimeBetweenSpawns Value="0.40" />
+      <GrenadeType Value="0" />
+      <IntroDuration Value="3.00" />
+      <Duration Value="20.00" />
+      <GrenadeFuseTime Value="3.50" />
+    </GrenadeCloud>
+    <BigHeads>
+      <Weight Value="35" />
+      <Scale Value="2.00" />
+      <Duration Value="15" />
+    </BigHeads>
+    <DamageResist>
+      <Weight Value="0" />
+      <Duration Value="15" />
+      <Traits>
+        <Health>
+          <DamageResistance Value="2.00" />
+        </Health>
+      </Traits>
+    </DamageResist>
+    <SpeedBoost>
+      <Weight Value="0" />
+      <Duration Value="15" />
+      <Traits>
+        <Movement>
+          <Speed Value="8.00" />
+        </Movement>
+      </Traits>
+    </SpeedBoost>
+    <DamageBoost>
+      <Weight Value="0" />
+      <Duration Value="15" />
+      <Traits>
+        <Weapons>
+          <DamageMultiplier Value="1.50" />
+        </Weapons>
+      </Traits>
+    </DamageBoost>
+  </Items>
+</DefaultSettings>

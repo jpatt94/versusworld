@@ -1,0 +1,45 @@
+<GameVariant>
+  <MetaData>
+    <Name>Moon Base</Name>
+    <Description>First to 25 kills wins.</Description>
+    <Type>0</Type>
+    <CreatorName>jpatt94</CreatorName>
+    <CompatibleVersion>1</CompatibleVersion>
+  </MetaData>
+  <Generic>
+    <ScoreToWin Value="25" />
+    <Time Value="600" />
+    <Teams Value="FALSE" />
+    <ScorePerKill Value="1" />
+    <ScorePerDeath Value="0" />
+    <ScorePerSuicide Value="-1" />
+    <ScorePerBetrayal Value="-1" />
+  </Generic>
+  <DefaultPlayerTraits>
+    <Movement>
+      <JumpHeight Value="12.00" />
+      <GravityMultiplier Value="0.25" />
+      <ThrustEnabled Value="FALSE" />
+    </Movement>
+    <Weapons>
+      <StartingPrimaryWeapon Value="3" />
+      <StartingSecondaryWeapon Value="-1" />
+      <InfiniteAmmo Value="1" />
+    </Weapons>
+  </DefaultPlayerTraits>
+  <Weapons>
+    <SpawnOnMap Value="FALSE" />
+    <DropWhenKilled Value="FALSE" />
+  </Weapons>
+  <Grenades>
+    <Frag>
+      <StartingAmount Value="0" />
+    </Frag>
+    <Spike>
+      <StartingAmount Value="2" />
+    </Spike>
+  </Grenades>
+  <Items>
+    <SpawnOnMap Value="FALSE" />
+  </Items>
+</GameVariant>

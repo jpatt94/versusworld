@@ -1,0 +1,18 @@
+<GameVariant>
+  <MetaData>
+    <Name>Deathmatch (Net K/D)</Name>
+    <Description>First to 25 kills wins.</Description>
+    <Type>0</Type>
+    <CreatorName>jpatt94</CreatorName>
+    <CompatibleVersion>1</CompatibleVersion>
+  </MetaData>
+  <Generic>
+    <ScoreToWin Value="10" />
+    <Time Value="600" />
+    <Teams Value="FALSE" />
+    <ScorePerKill Value="1" />
+    <ScorePerDeath Value="-1" />
+    <ScorePerSuicide Value="-1" />
+    <ScorePerBetrayal Value="-1" />
+  </Generic>
+</GameVariant>

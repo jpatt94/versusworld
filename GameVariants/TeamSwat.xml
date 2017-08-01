@@ -1,0 +1,35 @@
+<GameVariant>
+  <MetaData>
+    <Name>Team Swat</Name>
+    <Description>First team to 50 kills wins.</Description>
+    <Type>0</Type>
+    <CreatorName>jpatt94</CreatorName>
+    <CompatibleVersion>1</CompatibleVersion>
+  </MetaData>
+  <Generic>
+    <ScoreToWin Value="50" />
+    <Time Value="600" />
+    <Teams Value="TRUE" />
+    <ScorePerKill Value="1" />
+    <ScorePerDeath Value="0" />
+    <ScorePerSuicide Value="-1" />
+    <ScorePerBetrayal Value="-1" />
+  </Generic>
+  <DefaultPlayerTraits>
+    <Weapons>
+      <StartingPrimaryWeapon Value="0" />
+      <StartingSecondaryWeapon Value="-1" />
+      <InfiniteAmmo Value="1" />
+    </Weapons>
+  </DefaultPlayerTraits>
+  <Weapons>
+    <SpawnOnMap Value="FALSE" />
+    <DropWhenKilled Value="FALSE" />
+    <AssaultRifle>
+      <HeadShotDamageMultiplier Value="4.00" />
+    </AssaultRifle>
+  </Weapons>
+  <Items>
+    <SpawnOnMap Value="FALSE" />
+  </Items>
+</GameVariant>
