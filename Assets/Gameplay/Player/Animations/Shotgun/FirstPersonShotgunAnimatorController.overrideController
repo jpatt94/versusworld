@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FirstPersonShotgunAnimatorController
+  m_Controller: {fileID: 9100000, guid: 65f640af307b1714abb2342be8140cb8, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: e0a01cb9ea9dbc041a4f495c3b24225d, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: e0a01cb9ea9dbc041a4f495c3b24225d, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 7824c6ee4f53db446bf0439b3e84b601, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 7824c6ee4f53db446bf0439b3e84b601, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 7978fac3cd8914d4c92d11e6ceb91681, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 7978fac3cd8914d4c92d11e6ceb91681, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 79f6274980a12ab41b31517ee1fb692c, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 79f6274980a12ab41b31517ee1fb692c, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 1e79f018349ceb84c8d4eb367a08b711, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 1e79f018349ceb84c8d4eb367a08b711, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 75085e76c2d5f1645b00c9d8c69e061c, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 44d29413ebcc5c747a8e0ee22d35d519, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: e7e92d9de00a7ff4e9898df8892682da, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: e7e92d9de00a7ff4e9898df8892682da, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 07d408d957bb72f4b90a1e5ab1038124, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 3393c9b3489d1e04db83d556547ed01d, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 71d3e94f47b0457419cdc5a5012be9ff, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: d961f1f50b2ebc84c99f7965c9419ed9, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 9c2efe88267ca6a47b2e37e644fa9662, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: eebcada80600349459bb919d9e36e0df, type: 3}

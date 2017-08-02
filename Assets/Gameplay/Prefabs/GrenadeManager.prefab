@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000012459107584}
+  m_IsPrefabParent: 1
+--- !u!1 &1000012459107584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000010016032360}
+  - component: {fileID: 114000011333610242}
+  - component: {fileID: 114000014251342816}
+  - component: {fileID: 114205438497397464}
+  - component: {fileID: 114029944744374794}
+  m_Layer: 0
+  m_Name: GrenadeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000010016032360
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012459107584}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114000011333610242
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012459107584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 217
+    i1: 230
+    i2: 99
+    i3: 75
+    i4: 185
+    i5: 118
+    i6: 96
+    i7: 228
+    i8: 42
+    i9: 141
+    i10: 196
+    i11: 23
+    i12: 133
+    i13: 21
+    i14: 226
+    i15: 190
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &114000014251342816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012459107584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbeffb8e8216d449976d90f72942d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumPickUpDistance: 5
+  grenadePrefabs:
+  - {fileID: 1000013555305956, guid: 9e70c23176e58b8489bf4b9f2048b5c5, type: 2}
+  - {fileID: 1000012985217012, guid: c39c51699441cb847962953115de7b90, type: 2}
+  - {fileID: 1818954224499248, guid: 9088a44d496e2d74093aaaf28d47e7c5, type: 2}
+  grenadeDropPrefabs:
+  - {fileID: 1000011497193606, guid: b26032d9758d85b42a153ea7bf690a59, type: 2}
+  - {fileID: 1000010156467624, guid: 1ec73e7982e8fba4b8dfe5eabfa52731, type: 2}
+  - {fileID: 1323454565457524, guid: 7fad19b71a09fbc4a9b8cf058c1580b2, type: 2}
+--- !u!114 &114029944744374794
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012459107584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 7780ab06-0617-406f-820b-090f70b6d99c
+--- !u!114 &114205438497397464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012459107584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isConnected: 1
+  _guid: 
+  _referenceCollection:
+    _collection:
+    - {fileID: 1000012459107584}
+  _assetGuid: d9e6634bb97660e42a8dc4178515e2be

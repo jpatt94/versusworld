@@ -1,0 +1,517 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.Networking;
+using UnityEngine.Networking.Types;
+using UnityEngine.Networking.Match;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
+public class MultiplayerManager : NATTraversal.NetworkManager
+{
+	[SerializeField]
+	private GameObject partyManagerPrefab;
+	[SerializeField]
+	private GameObject inGamePlayerPrefab;
+
+	private AccountData localUser;
+	private string localPlayerUserName;
+	private PlayerCustomizationOptions localPlayerCustomizationOptions;
+	private List<PlayerData> players;
+	private int localPlayerIndex;
+	private Dictionary<int, int> networkIDIndexMap;
+
+	private MultiplayerStatus status;
+	private MultiplayerStatus statusOnDisconnect;
+	private bool needsDisconnectNotification;
+	private int clientError;
+	private PartyRejectionReason partyRejectionReason;
+	private bool initializedServer;
+	private bool joinFirstMatch;
+
+	private PartyManager party;
+	private MainMenu menu;
+
+	/**********************************************************/
+	// MonoBehaviour Interface
+
+	public override void Awake()
+	{
+		base.Awake();
+
+		if (useSimulator)
+		{
+			connectionConfig.NetworkDropThreshold = 90;
+		}
+
+		status = MultiplayerStatus.NotConnected;
+		clientError = -1;
+
+		SceneManager.sceneLoaded += OnSceneLoaded;
+
+		PlayerPrefs.SetString("CloudNetworkingId", "1674651");
+		StartMatchMaker();
+	}
+
+	public override void Start()
+	{
+		base.Start();
+
+		Reset();
+	}
+
+	public override void Update()
+	{
+		base.Update();
+
+		for (int i = 0; i < players.Count; i++)
+		{
+			VisualDebugger.TrackVariable("players[" + i + "]", players[i]);
+		}
+
+		if (!initializedServer && NetworkServer.active)
+		{
+			InitializeServer();
+			initializedServer = true;
+		}
+	}
+
+	/**********************************************************/
+	// NetworkManager Interface
+
+	public override void OnClientConnect(NetworkConnection conn)
+	{
+		base.OnClientConnect(conn);
+
+		status = MultiplayerStatus.Connected;
+		partyRejectionReason = PartyRejectionReason.None;
+
+		conn.RegisterHandler(CustomMessageType.PartyRejection, OnClientPartyRejection);
+		conn.RegisterHandler(CustomMessageType.GameSettings, OnClientGameSettings);
+		conn.RegisterHandler(CustomMessageType.StartGame, OnClientStartGame);
+	}
+
+	public override void OnClientDisconnect(NetworkConnection conn)
+	{
+		base.OnClientDisconnect(conn);
+
+		SetDisconnect();
+
+		if (statusOnDisconnect == MultiplayerStatus.Connected)
+		{
+			Party.ReturnToMainMenu();
+		}
+	}
+
+	public override void OnClientError(NetworkConnection conn, int errorCode)
+	{
+		base.OnClientError(conn, errorCode);
+
+		clientError = errorCode;
+	}
+
+	public override void OnServerDisconnect(NetworkConnection conn)
+	{
+		base.OnServerDisconnect(conn);
+
+		SetDisconnect();
+	}
+
+	public override void OnServerError(NetworkConnection conn, int errorCode)
+	{
+		base.OnServerError(conn, errorCode);
+
+		print("Server error: " + errorCode);
+	}
+
+	/**********************************************************/
+	// Interface
+
+	public void Reset()
+	{
+		players = new List<PlayerData>();
+
+		localPlayerIndex = -1;
+		networkIDIndexMap = new Dictionary<int, int>();
+
+		initializedServer = false;
+	}
+
+	public void OnLogIn(string userName, int id)
+	{
+		//localUser = new AccountData();
+		//localUser.userName = userName;
+		//localUser.id = id;
+
+		localPlayerUserName = userName;
+	}
+
+	public void OnLogOut()
+	{
+		localUser = null;
+	}
+
+	public void StartLocalHost(string username, PlayerCustomizationOptions options)
+	{
+		localPlayerUserName = username;
+		localPlayerCustomizationOptions = options;
+		CreateMatch();
+	}
+
+	public void StartLocalClient(string username, PlayerCustomizationOptions options)
+	{
+		localPlayerUserName = username;
+		localPlayerCustomizationOptions = options;
+		JoinFirstMatch();
+	}
+
+	public void CreateMatch()
+	{
+		localPlayerCustomizationOptions = Menu.CustomizationOptions;
+
+		if (matchMaker == null)
+		{
+			matchMaker = gameObject.AddComponent<NetworkMatch>();
+		}
+		StartHostAll(localPlayerUserName + "'s Game", customConfig ? (uint)(maxConnections + 1) : matchSize);
+	}
+
+	public void ListMatches()
+	{
+		joinFirstMatch = false;
+
+		if (matchMaker == null)
+		{
+			matchMaker = gameObject.AddComponent<NetworkMatch>();
+		}
+		matchMaker.ListMatches(0, 8, "", true, 0, 0, OnMatchList);
+	}
+
+	public void JoinMatch(MatchInfoSnapshot match)
+	{
+		localPlayerCustomizationOptions = Menu.CustomizationOptions;
+		Status = MultiplayerStatus.JoiningGame;
+
+		if (matchMaker == null)
+		{
+			matchMaker = gameObject.AddComponent<NetworkMatch>();
+		}
+		StartClientAll(match);
+	}
+
+	public void JoinFirstMatch()
+	{
+		ListMatches();
+		joinFirstMatch = true;
+	}
+
+	public void AddPlayer(PlayerData player)
+	{
+		players.Add(player);
+		networkIDIndexMap.Clear();
+		localPlayerIndex = -1;
+	}
+
+	public void RemovePlayer(PlayerData player)
+	{
+		players.Remove(player);
+		networkIDIndexMap.Clear();
+		localPlayerIndex = -1;
+	}
+
+	public override void OnServerSceneChanged(string sceneName)
+	{
+		if (sceneName == Party.MapName)
+		{
+			Party.ServerSceneIsLoaded = true;
+		}
+
+		print("Server Scene Loaded: " + sceneName);
+		base.OnServerSceneChanged(sceneName);
+	}
+
+	public override void OnClientSceneChanged(NetworkConnection conn)
+	{
+		print("Client Scene Loaded" + SceneManager.GetActiveScene().name);
+		base.OnClientSceneChanged(conn);
+	}
+
+	public void OnGameListResponse()
+	{
+		//if (MatchMaker.GameList.Count > 0)
+		//{
+		//	menu.NotificationPanel.Show("Found " + MatchMaker.GameList[0].title + ". Joining...", false);
+		//
+		//	Status = MultiplayerStatus.JoiningGame;
+		//	networkAddress = MatchMaker.GameList[0].ip;
+		//	StartClient(menu.Name, menu.CustomizationOptions);
+		//}
+		//else
+		//{
+		//	SetDisconnect();
+		//}
+	}
+
+	public void SetDisconnect()
+	{
+		statusOnDisconnect = status;
+		status = MultiplayerStatus.NotConnected;
+		needsDisconnectNotification = true;
+	}
+
+	/**********************************************************/
+	// Messages
+
+	public void OnClientPartyRejection(NetworkMessage msg)
+	{
+		partyRejectionReason = msg.ReadMessage<PartyRejectionMessage>().Reason;
+		StopClient();
+	}
+
+	public void OnClientGameSettings(NetworkMessage msg)
+	{
+		GameSettingsMessage m = msg.ReadMessage<GameSettingsMessage>();
+		Party.OnGameSettingsMessage(m);
+	}
+
+	public void OnClientStartGame(NetworkMessage msg)
+	{
+		StartGameMessage m = msg.ReadMessage<StartGameMessage>();
+		Party.OnStartGameMessage(m);
+	}
+
+	/**********************************************************/
+	// Callbacks
+
+	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+	{
+	}
+
+	public override void OnMatchList(bool success, string extendedInfo, List<MatchInfoSnapshot> matchList)
+	{
+		base.OnMatchList(success, extendedInfo, matchList);
+
+		if (success)
+		{
+			menu.GameListMenu.OnMatchList(matchList);
+
+			if (joinFirstMatch)
+			{
+				if (matchList.Count > 0)
+				{
+					JoinMatch(matchList[0]);
+				}
+			}
+		}
+	}
+
+	/**********************************************************/
+	// Helper Functions
+
+	private void InitializeServer()
+	{
+		GameObject obj = Instantiate(partyManagerPrefab);
+		NetworkServer.Spawn(obj);
+	}
+
+	/**********************************************************/
+	// Accessors
+
+	public GameObject InGamePlayerPrefab
+	{
+		get
+		{
+			return inGamePlayerPrefab;
+		}
+	}
+
+	public string LocalPlayerUserName
+	{
+		get
+		{
+			return localPlayerUserName;
+		}
+		set
+		{
+			localPlayerUserName = value;
+		}
+	}
+
+	public PlayerCustomizationOptions LocalPlayerCustomizationOptions
+	{
+		get
+		{
+			return localPlayerCustomizationOptions;
+		}
+		set
+		{
+			localPlayerCustomizationOptions = value;
+		}
+	}
+
+	public List<PlayerData> Players
+	{
+		get
+		{
+			return players;
+		}
+	}
+
+	public PlayerData GetLocalPlayerData()
+	{
+		if (localPlayerIndex < 0)
+		{
+			for (int i = 0; i < players.Count; i++)
+			{
+				if (players[i].isLocalPlayer)
+				{
+					localPlayerIndex = i;
+					break;
+				}
+			}
+		}
+
+		if (localPlayerIndex < 0)
+		{
+			return null;
+		}
+
+		return players[localPlayerIndex];
+	}
+
+	public int GetLocalPlayerNetworkID()
+	{
+		return GetLocalPlayerData().NetworkID;
+	}
+
+	public PlayerData GetPlayerData(int networkID)
+	{
+		if (networkIDIndexMap.ContainsKey(networkID))
+		{
+			return players[networkIDIndexMap[networkID]];
+		}
+
+		for (int i = 0; i < players.Count; i++)
+		{
+			if (players[i].NetworkID == networkID)
+			{
+				networkIDIndexMap[networkID] = i;
+				return players[i];
+			}
+		}
+
+		return null;
+	}
+
+	public StatsManager Stats
+	{
+		get
+		{
+			return party.Stats;
+		}
+	}
+
+	public PartyManager Party
+	{
+		get
+		{
+			return party;
+		}
+		set
+		{
+			party = value;
+		}
+	}
+
+	public bool NeedsDisconnectNotification
+	{
+		get
+		{
+			return needsDisconnectNotification;
+		}
+		set
+		{
+			needsDisconnectNotification = value;
+		}
+	}
+
+	public int ClientError
+	{
+		get
+		{
+			return clientError;
+		}
+		set
+		{
+			clientError = value;
+		}
+	}
+
+	public MultiplayerStatus Status
+	{
+		get
+		{
+			return status;
+		}
+		set
+		{
+			status = value;
+		}
+	}
+
+	public MultiplayerStatus StatusOnDisconnect
+	{
+		get
+		{
+			return statusOnDisconnect;
+		}
+		set
+		{
+			statusOnDisconnect = value;
+		}
+	}
+
+	public PartyRejectionReason PartyRejectionReason
+	{
+		get
+		{
+			return partyRejectionReason;
+		}
+	}
+
+	public MainMenu Menu
+	{
+		get
+		{
+			return menu;
+		}
+		set
+		{
+			menu = value;
+		}
+	}
+
+	public AccountData LocalUser
+	{
+		get
+		{
+			return localUser;
+		}
+	}
+}
+
+public enum MultiplayerStatus
+{
+	NotConnected,
+	CreatingGame,
+	FindingGame,
+	JoiningGame,
+	HostingLocalGame,
+	JoiningLocalGame,
+	Connected,
+}
+
+public class AccountData
+{
+	public string userName;
+	public int id;
+}

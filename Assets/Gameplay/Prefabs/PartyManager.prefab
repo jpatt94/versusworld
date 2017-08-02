@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000013181346544}
+  m_IsPrefabParent: 1
+--- !u!1 &1000013181346544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000011333370570}
+  - component: {fileID: 114941266764137394}
+  - component: {fileID: 114830093314480160}
+  - component: {fileID: 114564997091606426}
+  - component: {fileID: 114994212503236140}
+  - component: {fileID: 114377932270154792}
+  m_Layer: 0
+  m_Name: PartyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000011333370570
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013181346544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -137, y: 23, z: -1588.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114377932270154792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013181346544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 7511d3af-90fa-42d0-84b9-10a617f00714
+--- !u!114 &114564997091606426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013181346544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc1a18f47e339a646b1d5fd51cf01f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114830093314480160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013181346544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34a30bc4f85f5c4390fa7fb21b7e2e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gamePrefabs:
+  - {fileID: 1748005881162990, guid: e6028dcfc4d64c54da046016d75e877f, type: 2}
+  - {fileID: 1811468164303528, guid: 9efba7405f66a7646a548136144a5f75, type: 2}
+  - {fileID: 1811920847451816, guid: 992b93f32fd8b8a46a995b2947856b26, type: 2}
+  gameSettingsPrefabs:
+  - {fileID: 1844129581333490, guid: bfc453203b18e6c45bd1a5f20103a1aa, type: 2}
+  - {fileID: 1185943464332668, guid: aeb32bb3154ca274b9266ca4d1775b99, type: 2}
+  - {fileID: 1734892065148158, guid: 2366f747422b6254788b2d98cdf37953, type: 2}
+  teamColors:
+  - {r: 0, g: 0.6689658, b: 1, a: 1}
+  - {r: 1, g: 0.30882353, b: 0.30882353, a: 1}
+  loadingMapCanvas: {fileID: 1534822991945274, guid: 1ab98de8e04c17940a19548123afa210,
+    type: 2}
+  teamShirts: 0000000001000000
+  teamHats: 0000000000000000
+  internalMapNames:
+  - RogiPark
+  - WolfTown
+  - WebIsland
+  - SandVault
+  - SkylineJungle
+--- !u!114 &114941266764137394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013181346544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 170
+    i1: 14
+    i2: 35
+    i3: 28
+    i4: 204
+    i5: 66
+    i6: 4
+    i7: 196
+    i8: 201
+    i9: 109
+    i10: 44
+    i11: 190
+    i12: 215
+    i13: 18
+    i14: 116
+    i15: 6
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &114994212503236140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013181346544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isConnected: 1
+  _guid: 
+  _referenceCollection:
+    _collection:
+    - {fileID: 1000013181346544}
+  _assetGuid: aa0e231ccc4204c4c96d2cbed7127406

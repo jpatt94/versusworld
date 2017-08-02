@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: 0714005ae943378429084603d5743d49
+timeCreated: 1494392358
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bipod
+    100002: Bro_Head
+    100004: Bro_Hips
+    100006: Bro_LeftArm
+    100008: Bro_LeftFoot
+    100010: Bro_LeftForeArm
+    100012: Bro_LeftHand
+    100014: Bro_LeftHandIndex1
+    100016: Bro_LeftHandIndex2
+    100018: Bro_LeftHandIndex3
+    100020: Bro_LeftHandIndex4
+    100022: Bro_LeftHandMiddle1
+    100024: Bro_LeftHandMiddle2
+    100026: Bro_LeftHandMiddle3
+    100028: Bro_LeftHandMiddle4
+    100030: Bro_LeftHandPinky1
+    100032: Bro_LeftHandPinky2
+    100034: Bro_LeftHandPinky3
+    100036: Bro_LeftHandPinky4
+    100038: Bro_LeftHandRing1
+    100040: Bro_LeftHandRing2
+    100042: Bro_LeftHandRing3
+    100044: Bro_LeftHandRing4
+    100046: Bro_LeftHandThumb1
+    100048: Bro_LeftHandThumb2
+    100050: Bro_LeftHandThumb3
+    100052: Bro_LeftHandThumb4
+    100054: Bro_LeftLeg
+    100056: Bro_LeftShoulder
+    100058: Bro_LeftToeBase
+    100060: Bro_LeftUpLeg
+    100062: Bro_Neck
+    100064: Bro_Reference
+    100066: Bro_RightArm
+    100068: Bro_RightFoot
+    100070: Bro_RightForeArm
+    100072: Bro_RightHand
+    100074: Bro_RightHandIndex1
+    100076: Bro_RightHandIndex2
+    100078: Bro_RightHandIndex3
+    100080: Bro_RightHandIndex4
+    100082: Bro_RightHandMiddle1
+    100084: Bro_RightHandMiddle2
+    100086: Bro_RightHandMiddle3
+    100088: Bro_RightHandMiddle4
+    100090: Bro_RightHandPinky1
+    100092: Bro_RightHandPinky2
+    100094: Bro_RightHandPinky3
+    100096: Bro_RightHandPinky4
+    100098: Bro_RightHandRing1
+    100100: Bro_RightHandRing2
+    100102: Bro_RightHandRing3
+    100104: Bro_RightHandRing4
+    100106: Bro_RightHandThumb1
+    100108: Bro_RightHandThumb2
+    100110: Bro_RightHandThumb3
+    100112: Bro_RightHandThumb4
+    100114: Bro_RightLeg
+    100116: Bro_RightShoulder
+    100118: Bro_RightToeBase
+    100120: Bro_RightUpLeg
+    100122: Bro_Spine
+    100124: Bro_Spine1
+    100126: Bro_Spine2
+    100128: Flashlight
+    100130: group1
+    100132: Laser
+    100134: Mesh
+    100136: //RootNode
+    100138: Scope
+    100140: Silencer
+    100142: SniperMesh
+    100144: Sniper:Bipod
+    100146: Sniper:Flashlight
+    100148: Sniper:Laser
+    100150: Sniper:Scope
+    100152: Sniper:Silencer
+    100154: Sniper:SniperMesh
+    400000: Bipod
+    400002: Bro_Head
+    400004: Bro_Hips
+    400006: Bro_LeftArm
+    400008: Bro_LeftFoot
+    400010: Bro_LeftForeArm
+    400012: Bro_LeftHand
+    400014: Bro_LeftHandIndex1
+    400016: Bro_LeftHandIndex2
+    400018: Bro_LeftHandIndex3
+    400020: Bro_LeftHandIndex4
+    400022: Bro_LeftHandMiddle1
+    400024: Bro_LeftHandMiddle2
+    400026: Bro_LeftHandMiddle3
+    400028: Bro_LeftHandMiddle4
+    400030: Bro_LeftHandPinky1
+    400032: Bro_LeftHandPinky2
+    400034: Bro_LeftHandPinky3
+    400036: Bro_LeftHandPinky4
+    400038: Bro_LeftHandRing1
+    400040: Bro_LeftHandRing2
+    400042: Bro_LeftHandRing3
+    400044: Bro_LeftHandRing4
+    400046: Bro_LeftHandThumb1
+    400048: Bro_LeftHandThumb2
+    400050: Bro_LeftHandThumb3
+    400052: Bro_LeftHandThumb4
+    400054: Bro_LeftLeg
+    400056: Bro_LeftShoulder
+    400058: Bro_LeftToeBase
+    400060: Bro_LeftUpLeg
+    400062: Bro_Neck
+    400064: Bro_Reference
+    400066: Bro_RightArm
+    400068: Bro_RightFoot
+    400070: Bro_RightForeArm
+    400072: Bro_RightHand
+    400074: Bro_RightHandIndex1
+    400076: Bro_RightHandIndex2
+    400078: Bro_RightHandIndex3
+    400080: Bro_RightHandIndex4
+    400082: Bro_RightHandMiddle1
+    400084: Bro_RightHandMiddle2
+    400086: Bro_RightHandMiddle3
+    400088: Bro_RightHandMiddle4
+    400090: Bro_RightHandPinky1
+    400092: Bro_RightHandPinky2
+    400094: Bro_RightHandPinky3
+    400096: Bro_RightHandPinky4
+    400098: Bro_RightHandRing1
+    400100: Bro_RightHandRing2
+    400102: Bro_RightHandRing3
+    400104: Bro_RightHandRing4
+    400106: Bro_RightHandThumb1
+    400108: Bro_RightHandThumb2
+    400110: Bro_RightHandThumb3
+    400112: Bro_RightHandThumb4
+    400114: Bro_RightLeg
+    400116: Bro_RightShoulder
+    400118: Bro_RightToeBase
+    400120: Bro_RightUpLeg
+    400122: Bro_Spine
+    400124: Bro_Spine1
+    400126: Bro_Spine2
+    400128: Flashlight
+    400130: group1
+    400132: Laser
+    400134: Mesh
+    400136: //RootNode
+    400138: Scope
+    400140: Silencer
+    400142: SniperMesh
+    400144: Sniper:Bipod
+    400146: Sniper:Flashlight
+    400148: Sniper:Laser
+    400150: Sniper:Scope
+    400152: Sniper:Silencer
+    400154: Sniper:SniperMesh
+    2300000: Bipod
+    2300002: Flashlight
+    2300004: Laser
+    2300006: Scope
+    2300008: Silencer
+    2300010: SniperMesh
+    2300012: Sniper:Bipod
+    2300014: Sniper:Flashlight
+    2300016: Sniper:Laser
+    2300018: Sniper:Scope
+    2300020: Sniper:Silencer
+    2300022: Sniper:SniperMesh
+    3300000: Bipod
+    3300002: Flashlight
+    3300004: Laser
+    3300006: Scope
+    3300008: Silencer
+    3300010: SniperMesh
+    3300012: Sniper:Bipod
+    3300014: Sniper:Flashlight
+    3300016: Sniper:Laser
+    3300018: Sniper:Scope
+    3300020: Sniper:Silencer
+    3300022: Sniper:SniperMesh
+    4300000: Mesh
+    4300002: SniperMesh
+    4300004: Laser
+    4300006: Flashlight
+    4300008: Bipod
+    4300010: Silencer
+    4300012: Scope
+    4300014: Sniper:SniperMesh
+    4300016: Sniper:Laser
+    4300018: Sniper:Flashlight
+    4300020: Sniper:Bipod
+    4300022: Sniper:Silencer
+    4300024: Sniper:Scope
+    7400000: SniperRun
+    9500000: //RootNode
+    11400000: Bro_Head
+    11400002: Bro_Hips
+    11400004: Bro_LeftArm
+    11400006: Bro_LeftFoot
+    11400008: Bro_LeftForeArm
+    11400010: Bro_LeftHand
+    11400012: Bro_LeftHandIndex1
+    11400014: Bro_LeftHandIndex2
+    11400016: Bro_LeftHandIndex3
+    11400018: Bro_LeftHandIndex4
+    11400020: Bro_LeftHandMiddle1
+    11400022: Bro_LeftHandMiddle2
+    11400024: Bro_LeftHandMiddle3
+    11400026: Bro_LeftHandMiddle4
+    11400028: Bro_LeftHandPinky1
+    11400030: Bro_LeftHandPinky2
+    11400032: Bro_LeftHandPinky3
+    11400034: Bro_LeftHandPinky4
+    11400036: Bro_LeftHandRing1
+    11400038: Bro_LeftHandRing2
+    11400040: Bro_LeftHandRing3
+    11400042: Bro_LeftHandRing4
+    11400044: Bro_LeftHandThumb1
+    11400046: Bro_LeftHandThumb2
+    11400048: Bro_LeftHandThumb3
+    11400050: Bro_LeftHandThumb4
+    11400052: Bro_LeftLeg
+    11400054: Bro_LeftShoulder
+    11400056: Bro_LeftToeBase
+    11400058: Bro_LeftUpLeg
+    11400060: Bro_Neck
+    11400062: Bro_Reference
+    11400064: Bro_RightArm
+    11400066: Bro_RightFoot
+    11400068: Bro_RightForeArm
+    11400070: Bro_RightHand
+    11400072: Bro_RightHandIndex1
+    11400074: Bro_RightHandIndex2
+    11400076: Bro_RightHandIndex3
+    11400078: Bro_RightHandIndex4
+    11400080: Bro_RightHandMiddle1
+    11400082: Bro_RightHandMiddle2
+    11400084: Bro_RightHandMiddle3
+    11400086: Bro_RightHandMiddle4
+    11400088: Bro_RightHandPinky1
+    11400090: Bro_RightHandPinky2
+    11400092: Bro_RightHandPinky3
+    11400094: Bro_RightHandPinky4
+    11400096: Bro_RightHandRing1
+    11400098: Bro_RightHandRing2
+    11400100: Bro_RightHandRing3
+    11400102: Bro_RightHandRing4
+    11400104: Bro_RightHandThumb1
+    11400106: Bro_RightHandThumb2
+    11400108: Bro_RightHandThumb3
+    11400110: Bro_RightHandThumb4
+    11400112: Bro_RightLeg
+    11400114: Bro_RightShoulder
+    11400116: Bro_RightToeBase
+    11400118: Bro_RightUpLeg
+    11400120: Bro_Spine
+    11400122: Bro_Spine1
+    11400124: Bro_Spine2
+    11400126: Mesh
+    11400128: //RootNode
+    11400130: //RootNode
+    11400132: Sniper:Bipod
+    11400134: Sniper:Flashlight
+    11400136: Sniper:Laser
+    11400138: Sniper:Scope
+    11400140: Sniper:Silencer
+    11400142: Sniper:SniperMesh
+    13700000: Mesh
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SniperRun
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bro_Reference
+        weight: 1
+      - path: Bro_Reference/Bro_Hips
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_LeftUpLeg
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_LeftUpLeg/Bro_LeftLeg
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_LeftUpLeg/Bro_LeftLeg/Bro_LeftFoot
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_LeftUpLeg/Bro_LeftLeg/Bro_LeftFoot/Bro_LeftToeBase
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_RightUpLeg
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_RightUpLeg/Bro_RightLeg
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_RightUpLeg/Bro_RightLeg/Bro_RightFoot
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_RightUpLeg/Bro_RightLeg/Bro_RightFoot/Bro_RightToeBase
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandIndex1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandIndex1/Bro_LeftHandIndex2
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandIndex1/Bro_LeftHandIndex2/Bro_LeftHandIndex3
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandIndex1/Bro_LeftHandIndex2/Bro_LeftHandIndex3/Bro_LeftHandIndex4
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandMiddle1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandMiddle1/Bro_LeftHandMiddle2
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandMiddle1/Bro_LeftHandMiddle2/Bro_LeftHandMiddle3
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandMiddle1/Bro_LeftHandMiddle2/Bro_LeftHandMiddle3/Bro_LeftHandMiddle4
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandPinky1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandPinky1/Bro_LeftHandPinky2
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandPinky1/Bro_LeftHandPinky2/Bro_LeftHandPinky3
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandPinky1/Bro_LeftHandPinky2/Bro_LeftHandPinky3/Bro_LeftHandPinky4
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandRing1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandRing1/Bro_LeftHandRing2
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandRing1/Bro_LeftHandRing2/Bro_LeftHandRing3
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandRing1/Bro_LeftHandRing2/Bro_LeftHandRing3/Bro_LeftHandRing4
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandThumb1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandThumb1/Bro_LeftHandThumb2
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandThumb1/Bro_LeftHandThumb2/Bro_LeftHandThumb3
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm/Bro_LeftHand/Bro_LeftHandThumb1/Bro_LeftHandThumb2/Bro_LeftHandThumb3/Bro_LeftHandThumb4
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_Neck
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_Neck/Bro_Head
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandIndex1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandIndex1/Bro_RightHandIndex2
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandIndex1/Bro_RightHandIndex2/Bro_RightHandIndex3
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandIndex1/Bro_RightHandIndex2/Bro_RightHandIndex3/Bro_RightHandIndex4
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandMiddle1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandMiddle1/Bro_RightHandMiddle2
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandMiddle1/Bro_RightHandMiddle2/Bro_RightHandMiddle3
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandMiddle1/Bro_RightHandMiddle2/Bro_RightHandMiddle3/Bro_RightHandMiddle4
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandPinky1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandPinky1/Bro_RightHandPinky2
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandPinky1/Bro_RightHandPinky2/Bro_RightHandPinky3
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandPinky1/Bro_RightHandPinky2/Bro_RightHandPinky3/Bro_RightHandPinky4
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandRing1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandRing1/Bro_RightHandRing2
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandRing1/Bro_RightHandRing2/Bro_RightHandRing3
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandRing1/Bro_RightHandRing2/Bro_RightHandRing3/Bro_RightHandRing4
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandThumb1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandThumb1/Bro_RightHandThumb2
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandThumb1/Bro_RightHandThumb2/Bro_RightHandThumb3
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/Bro_RightHandThumb1/Bro_RightHandThumb2/Bro_RightHandThumb3/Bro_RightHandThumb4
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/group1
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/group1/SniperMesh
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/group1/SniperMesh/Bipod
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/group1/SniperMesh/Flashlight
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/group1/SniperMesh/Laser
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/group1/SniperMesh/Scope
+        weight: 1
+      - path: Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm/Bro_RightHand/group1/SniperMesh/Silencer
+        weight: 1
+      - path: Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Bro_Hips
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e05ec5867828bf542851b7eb926d8873,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
