@@ -1,0 +1,99 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7700M Series (ID=0x682d)
+    Vendor:   ATI
+    VRAM:     1003 MB
+    Driver:   15.200.1062.1005
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\NestedPrefabs.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\NestedPrefabs.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\ProBuilderCore-Unity5.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\ProBuilderCore-Unity5.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\ProBuilderMeshOps-Unity5.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\ProBuilderMeshOps-Unity5.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\KDTree.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\KDTree.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\pb_Stl.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\pb_Stl.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\Triangle.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\Triangle.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\NATTraversalForUNET.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\NATTraversalForUNET.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\Open.Nat.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\Open.Nat.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\RakNetSwig.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\RakNetSwig.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\System.Threading.dll (this message is harmless)
+Loading F:\versusworld\VersusWorld_Data\Managed\System.Threading.dll into Unity Child Domain
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\System.dll (this message is harmless)
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.515 seconds
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\System.Xml.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.165278 ms
+Fallback handler could not load library F:/versusworld/VersusWorld_Data/Mono/libc
+Fallback handler could not load library F:/versusworld/VersusWorld_Data/Mono/.\libc
+Fallback handler could not load library F:/versusworld/VersusWorld_Data/Mono/libc
+Platform assembly: F:\versusworld\VersusWorld_Data\Managed\Mono.Security.dll (this message is harmless)
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 1b98 -> priority: 1 
+  Thread -> id: 2c08 -> priority: 1 
+  Thread -> id: 2f84 -> priority: 1 
+  Thread -> id: 7f0 -> priority: 1 
+NATHelper: Connected to Facilitator: 598978967933262277
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
+ 
+(Filename:  Line: 579)
+
+StartServer listen failed.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+host id out of bound id {-1} max id should be greater 0 and less than {1}
+ 
+(Filename:  Line: 541)
+
+Host doesn't exist
+ 
+(Filename:  Line: 1078)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerData.OnNetworkDestroy () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkIdentity.OnNetworkDestroy () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.DestroyObject (UnityEngine.Networking.NetworkIdentity uv, Boolean destroyServerObject) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.DestroyObject (UnityEngine.GameObject obj) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.Destroy (UnityEngine.GameObject obj) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkIdentity.OnDestroy () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

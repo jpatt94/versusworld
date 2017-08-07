@@ -31,7 +31,7 @@ public class StatTracker : MonoBehaviour
 		UnityWebRequest www = UnityWebRequest.Post(url, form);
 		yield return www.Send();
 
-		if (www.isError)
+		if (www.isNetworkError)
 		{
 			Debug.Log(www.error);
 		}
@@ -60,7 +60,7 @@ public class StatTracker : MonoBehaviour
 		UnityWebRequest www = UnityWebRequest.Post(url, form);
 		yield return www.Send();
 
-		if (www.isError)
+		if (www.isNetworkError)
 		{
 			Debug.Log(www.error);
 		}

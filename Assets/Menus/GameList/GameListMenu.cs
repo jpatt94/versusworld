@@ -12,7 +12,7 @@ public class GameListMenu : MonoBehaviour
 	private float matchEntrySeparation;
 
 	private MultiplayerManager mgr;
-	private MainMenu menus;
+	private LegacyMainMenu menus;
 	private Button refreshButton;
 	private Text findingGamesText;
 
@@ -22,7 +22,7 @@ public class GameListMenu : MonoBehaviour
 	private void Awake()
 	{
 		mgr = GameObject.Find("MultiplayerManager").GetComponent<MultiplayerManager>();
-		menus = GetComponentInParent<MainMenu>();
+		menus = GetComponentInParent<LegacyMainMenu>();
 		refreshButton = transform.Find("UI/RefreshButton").GetComponent<Button>();
 		findingGamesText = transform.Find("UI/FindingGamesText").GetComponent<Text>();
 	}
@@ -37,7 +37,7 @@ public class GameListMenu : MonoBehaviour
 
 	public void OnGoBackClick()
 	{
-		menus.TransitionToState(MenuState.Main);
+		menus.TransitionToState(MenuType.Main);
 	}
 
 	public void OnMatchList(List<MatchInfoSnapshot> matchList)

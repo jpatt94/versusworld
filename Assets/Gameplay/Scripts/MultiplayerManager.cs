@@ -29,7 +29,7 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 	private bool joinFirstMatch;
 
 	private PartyManager party;
-	private MainMenu menu;
+	private LegacyMainMenu menu;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -478,7 +478,7 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 		}
 	}
 
-	public MainMenu Menu
+	public LegacyMainMenu Menu
 	{
 		get
 		{

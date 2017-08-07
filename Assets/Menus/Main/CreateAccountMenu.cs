@@ -12,7 +12,7 @@ public class CreateAccountMenu : MonoBehaviour
 	private InputField userNameInputField;
 	private InputField passwordInputField;
 	private Button createAccountButton;
-	private MainMenu multiplayerMenu;
+	private LegacyMainMenu multiplayerMenu;
 	private LogInMenu logInMenu;
 
 	/**********************************************************/
@@ -27,7 +27,7 @@ public class CreateAccountMenu : MonoBehaviour
 		userNameInputField = Utility.FindChild(gameObject, "UsernameInputField").GetComponent<InputField>();
 		passwordInputField = Utility.FindChild(gameObject, "PasswordInputField").GetComponent<InputField>();
 		createAccountButton = Utility.FindChild(gameObject, "CreateAccountButton").GetComponent<Button>();
-		multiplayerMenu = GameObject.Find("Menus").GetComponent<MainMenu>();
+		multiplayerMenu = GameObject.Find("Menus").GetComponent<LegacyMainMenu>();
 	}
 
 	public void Update()
@@ -46,7 +46,7 @@ public class CreateAccountMenu : MonoBehaviour
 
 	public void OnGoBackClick()
 	{
-		multiplayerMenu.TransitionToState(MenuState.LogIn);
+		//multiplayerMenu.TransitionToState(MenuType.LogIn);
 	}
 
 	public void OnCreateAccountResponse(string response)
@@ -61,7 +61,7 @@ public class CreateAccountMenu : MonoBehaviour
 			multiplayerMenu.OnLogIn(userNameInputField.text, System.Convert.ToInt32(response));
 			notificationPanel.Hide();
 
-			multiplayerMenu.TransitionToState(MenuState.Main);
+			multiplayerMenu.TransitionToState(MenuType.Main);
 		}
 	}
 

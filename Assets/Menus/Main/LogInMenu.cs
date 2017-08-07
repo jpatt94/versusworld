@@ -11,7 +11,7 @@ public class LogInMenu : MonoBehaviour
 	private InputField userNameInputField;
 	private InputField passwordInputField;
 	private Button logInButton;
-	private MainMenu multiplayerMenu;
+	private LegacyMainMenu multiplayerMenu;
 	private CreateAccountMenu createAccountMenu;
 	private Text messageText;
 
@@ -25,7 +25,7 @@ public class LogInMenu : MonoBehaviour
 		userNameInputField = Utility.FindChild(gameObject, "UsernameInputField").GetComponent<InputField>();
 		passwordInputField = Utility.FindChild(gameObject, "PasswordInputField").GetComponent<InputField>();
 		logInButton = Utility.FindChild(gameObject, "LogInButton").GetComponent<Button>();
-		multiplayerMenu = GameObject.Find("Menus").GetComponent<MainMenu>();
+		multiplayerMenu = GameObject.Find("Menus").GetComponent<LegacyMainMenu>();
 		createAccountMenu = GameObject.Find("CreateAccountPanel").GetComponent<CreateAccountMenu>();
 		messageText = transform.Find("MessageText").GetComponent<Text>();
 
@@ -46,7 +46,7 @@ public class LogInMenu : MonoBehaviour
 
 	public void Update()
 	{
-		logInButton.interactable = userNameInputField.text != "" && multiplayerMenu.State == MenuState.LogIn;
+		//logInButton.interactable = userNameInputField.text != "" && multiplayerMenu.State == MenuType.LogIn;
 
 		if (userNameInputField.isFocused)
 		{
@@ -82,7 +82,7 @@ public class LogInMenu : MonoBehaviour
 
 	public void OnCreateAccountClick()
 	{
-		multiplayerMenu.TransitionToState(MenuState.CreateAccount);
+		//multiplayerMenu.TransitionToState(MenuType.CreateAccount);
 	}
 
 	public void OnLogInResponse(string response)

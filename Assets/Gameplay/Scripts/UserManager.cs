@@ -22,7 +22,7 @@ public class UserManager : MonoBehaviour
 		UnityWebRequest www = UnityWebRequest.Post(url, form);
 		yield return www.Send();
 
-		if (www.isError)
+		if (www.isNetworkError)
 		{
 			GetComponent<CreateAccountMenu>().OnCreateAccountError(www.error);
 			Debug.Log(www.error);
@@ -52,7 +52,7 @@ public class UserManager : MonoBehaviour
 		UnityWebRequest www = UnityWebRequest.Post(url, form);
 		yield return www.Send();
 
-		if (www.isError)
+		if (www.isNetworkError)
 		{
 			GetComponent<LogInMenu>().OnLogInError(www.error);
 			Debug.Log(www.error);

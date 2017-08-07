@@ -384,7 +384,7 @@ public class Sniper : Weapon
 
 		ParticleSystem part = trail.GetComponent<ParticleSystem>();
 		ParticleSystem.ShapeModule shape = part.shape;
-		shape.box = new Vector3(0.1f, 0.1f, toTarget.magnitude);
+		shape.scale = new Vector3(0.1f, 0.1f, toTarget.magnitude);
 
 		part.Emit((int)(toTarget.magnitude * trailParticlesPerUnit));
 

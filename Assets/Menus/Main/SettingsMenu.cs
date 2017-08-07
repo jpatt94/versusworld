@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SettingsMenu : MonoBehaviour
 {
-	private MainMenu menus;
+	private LegacyMainMenu menus;
 	private VideoSettingsMenu videoMenu;
 	private AudioSettingsMenu audioMenu;
 	private ControlSettingsMenu controlsMenu;
@@ -14,7 +14,7 @@ public class SettingsMenu : MonoBehaviour
 	
 	public void Awake()
 	{
-		menus = GetComponentInParent<MainMenu>();
+		menus = GetComponentInParent<LegacyMainMenu>();
 		videoMenu = GetComponentInChildren<VideoSettingsMenu>();
 		audioMenu = GetComponentInChildren<AudioSettingsMenu>();
 		controlsMenu = GetComponentInChildren<ControlSettingsMenu>();
@@ -57,7 +57,7 @@ public class SettingsMenu : MonoBehaviour
 
 	public void OnGoBackClick()
 	{
-		menus.TransitionToState(MenuState.Main);
+		menus.TransitionToState(MenuType.Main);
 	}
 
 	/**********************************************************/

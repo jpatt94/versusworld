@@ -273,7 +273,7 @@ public class PartyManager : NetworkBehaviour
 			SceneManager.LoadScene("MainMenu");
 		}
 
-		FindObjectOfType<MainMenu>().TransitionToState(MenuState.Main);
+		FindObjectOfType<LegacyMainMenu>().TransitionToState(MenuType.Main);
 
 		Cursor.visible = true;
 		Cursor.lockState = CursorLockMode.None;
