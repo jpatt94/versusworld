@@ -7782,15 +7782,15 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   concreteFootstepSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: a742e3fe9b68e1c4ab7765431bed1108, type: 3}
+  - {fileID: 8300000, guid: 67285ef34291b9f4da3624112d340275, type: 3}
+  - {fileID: 8300000, guid: 6708abd008c0d304f9224f063ae9ef7e, type: 3}
+  - {fileID: 8300000, guid: 85a2f4010f9084d48907278cc4ae8284, type: 3}
   grassFootstepSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: a3eaed6d4d272f44fa6581ddfd0268e8, type: 3}
+  - {fileID: 8300000, guid: 141418af63370f54582aa95b8424911b, type: 3}
+  - {fileID: 8300000, guid: 010870aec9e9b80428c975e4d3b6014e, type: 3}
+  - {fileID: 8300000, guid: 78e335b6b2f9d63429d69d3d1ed3c554, type: 3}
 --- !u!114 &114087235296716010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7921,13 +7921,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrowSound: {fileID: 8300000, guid: fbabb96605de91842b9b58703a76998f, type: 3}
   JumpSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Swap1Sound: {fileID: 0}
-  Swap2Sound: {fileID: 0}
+  - {fileID: 8300000, guid: ed2b525c542f5eb40aa28cd94de2035c, type: 3}
+  - {fileID: 8300000, guid: 0570a5660b8d1054a84d37be16a71652, type: 3}
+  - {fileID: 8300000, guid: 2306a087807c7ac4ba768ce8bc6f0f9a, type: 3}
+  - {fileID: 8300000, guid: 780d80c301371564eb13a3b4dc19c02b, type: 3}
+  - {fileID: 8300000, guid: 901c6e0fa447ebb40ad8a3a4752cb41f, type: 3}
+  Swap1Sound: {fileID: 8300000, guid: a6f4cd1f175342e4495766e271e13c4e, type: 3}
+  Swap2Sound: {fileID: 8300000, guid: a6f4cd1f175342e4495766e271e13c4e, type: 3}
   PickUpSound: {fileID: 8300000, guid: 80dc9b5e4f319d842a64e8f690509530, type: 3}
   MeleeSound: {fileID: 0}
   HeadGrowSound: {fileID: 0}

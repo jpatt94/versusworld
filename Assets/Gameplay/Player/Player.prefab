@@ -8622,11 +8622,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrowSound: {fileID: 8300000, guid: ce6391a8e6316a34380890d557dfab03, type: 3}
   JumpSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: ed2b525c542f5eb40aa28cd94de2035c, type: 3}
+  - {fileID: 8300000, guid: 0570a5660b8d1054a84d37be16a71652, type: 3}
+  - {fileID: 8300000, guid: 2306a087807c7ac4ba768ce8bc6f0f9a, type: 3}
+  - {fileID: 8300000, guid: 780d80c301371564eb13a3b4dc19c02b, type: 3}
+  - {fileID: 8300000, guid: 901c6e0fa447ebb40ad8a3a4752cb41f, type: 3}
   Swap1Sound: {fileID: 8300000, guid: a6f4cd1f175342e4495766e271e13c4e, type: 3}
   Swap2Sound: {fileID: 8300000, guid: a6f4cd1f175342e4495766e271e13c4e, type: 3}
   PickUpSound: {fileID: 8300000, guid: 352e281a4b45fcd4faf125ee5d2bd9d6, type: 3}
@@ -8877,38 +8877,38 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   concreteFootstepSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: a742e3fe9b68e1c4ab7765431bed1108, type: 3}
+  - {fileID: 8300000, guid: 67285ef34291b9f4da3624112d340275, type: 3}
+  - {fileID: 8300000, guid: 6708abd008c0d304f9224f063ae9ef7e, type: 3}
+  - {fileID: 8300000, guid: 85a2f4010f9084d48907278cc4ae8284, type: 3}
+  - {fileID: 8300000, guid: 8149d062b4a8bc24e9970d5ec5f7a6b5, type: 3}
+  - {fileID: 8300000, guid: 87d0eb22bcf13da4e839aada551e37d8, type: 3}
+  - {fileID: 8300000, guid: 4c2002af060074449960b71d658948bc, type: 3}
+  - {fileID: 8300000, guid: 909c2c137e0487c46810c17ae0394cf1, type: 3}
+  - {fileID: 8300000, guid: 2268a9b5317c24f4abde3e60f09370b6, type: 3}
+  - {fileID: 8300000, guid: a49e2cffa68f5e142a7298412167684d, type: 3}
+  - {fileID: 8300000, guid: 4ffed2f3e3ffa774cbf5118411e5d199, type: 3}
+  - {fileID: 8300000, guid: f1eead5e27fb9534f89a03c4872ce012, type: 3}
+  - {fileID: 8300000, guid: f92e40573882cc64cb39ef2d556656de, type: 3}
+  - {fileID: 8300000, guid: 81aa58709e029f8408da686d67cf1049, type: 3}
+  - {fileID: 8300000, guid: 59456bbc7fc0f834980538914a8b847f, type: 3}
+  - {fileID: 8300000, guid: 11d82e3c0cbd8bb4d8dd478238e08867, type: 3}
+  - {fileID: 8300000, guid: c88f7eeaf757c414ea69fdd42060a78b, type: 3}
+  - {fileID: 8300000, guid: 897376dfb90bdbd4e90d0e6b288ddc51, type: 3}
+  - {fileID: 8300000, guid: 0036952ab135942478eb4cd506fcf7f1, type: 3}
+  - {fileID: 8300000, guid: 01e6a571ff8a7b44f90a1d115c39a2f8, type: 3}
+  - {fileID: 8300000, guid: 4062905c82f1e7c4ea91f0d38cef8a47, type: 3}
   grassFootstepSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: a3eaed6d4d272f44fa6581ddfd0268e8, type: 3}
+  - {fileID: 8300000, guid: 141418af63370f54582aa95b8424911b, type: 3}
+  - {fileID: 8300000, guid: 010870aec9e9b80428c975e4d3b6014e, type: 3}
+  - {fileID: 8300000, guid: 78e335b6b2f9d63429d69d3d1ed3c554, type: 3}
+  - {fileID: 8300000, guid: 577ccfc2332d2d445b4dba74ad011156, type: 3}
+  - {fileID: 8300000, guid: 868a740ded469a94ab8c2b6c9698ab51, type: 3}
+  - {fileID: 8300000, guid: b807d918b2de11749af6068012b9a474, type: 3}
+  - {fileID: 8300000, guid: 54d751cdcf02b004c8ae27b611f322e4, type: 3}
+  - {fileID: 8300000, guid: a2cd4acd4d459e64296d2ba79095dccd, type: 3}
+  - {fileID: 8300000, guid: ab58771a99501ea4d8af9a3c3a0deb71, type: 3}
 --- !u!114 &114234677414289036
 MonoBehaviour:
   m_ObjectHideFlags: 1
