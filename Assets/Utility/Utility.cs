@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System;
+using System.Xml;
 
 public class Utility : MonoBehaviour
 {
@@ -87,11 +88,6 @@ public class Utility : MonoBehaviour
 		button.GetComponentInChildren<Text>().enabled = enable;
 	}
 
-	public static string GetSettingsDirectory()
-	{
-		return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/VersusWorld";
-	}
-
 	public static string GetRandomName()
 	{
 		string[] cons =
@@ -126,5 +122,40 @@ public class Utility : MonoBehaviour
 		name = name.ToCharArray()[0].ToString().ToUpper() + name.Substring(1);
 
 		return name;
+	}
+
+	public static string GetSettingsDirectory()
+	{
+		return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/VersusWorld";
+	}
+
+	public static void XMLSaveInt(XmlDocument doc, XmlNode parent, string name, int value)
+	{
+		XmlNode node = doc.CreateElement(name);
+		XmlAttribute attr = doc.CreateAttribute("Value");
+		attr.Value = value.ToString();
+		node.Attributes.Append(attr);
+		parent.AppendChild(node);
+	}
+
+	public static void XMLSaveBool(XmlDocument doc, XmlNode parent, string name, bool value)
+	{
+		XmlNode node = doc.CreateElement(name);
+		XmlAttribute attr = doc.CreateAttribute("Value");
+		attr.Value = value ? "TRUE" : "FALSE";
+		node.Attributes.Append(attr);
+		parent.AppendChild(node);
+	}
+
+	public static void XMLLoadInt(XmlNode parent, string name, out int value)
+	{
+		XmlNode node = parent.SelectSingleNode(name);
+		value = System.Convert.ToInt32(node.Attributes["Value"].Value);
+	}
+
+	public static void XMLLoadBool(XmlNode parent, string name, out bool value)
+	{
+		XmlNode node = parent.SelectSingleNode(name);
+		value = node.Attributes["Value"].Value == "TRUE";
 	}
 }

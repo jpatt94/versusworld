@@ -84,11 +84,27 @@ public class ControlSettings : MonoBehaviour
 		XmlNode head = doc.CreateElement("ControlSettings");
 		doc.AppendChild(head);
 
-		XmlNode ms = doc.CreateElement("MouseSensitivity");
-		XmlAttribute attr = doc.CreateAttribute("Value");
-		attr.Value = mouseSensitivity.ToString();
-		ms.Attributes.Append(attr);
-		head.AppendChild(ms);
+		Utility.XMLSaveInt(doc, head, "MouseSensitivity", mouseSensitivity);
+		Utility.XMLSaveBool(doc, head, "InvertAim", invertAim);
+		Utility.XMLSaveBool(doc, head, "ToggleSprint", toggleSprint);
+		Utility.XMLSaveBool(doc, head, "ToggleCrouch", toggleCrouch);
+		XMLSaveKeybind(doc, head, "MoveForwardKeybind", moveForwardKeybind);
+		XMLSaveKeybind(doc, head, "MoveBackKeybind", moveBackKeybind);
+		XMLSaveKeybind(doc, head, "MoveLeftKeybind", moveLeftKeybind);
+		XMLSaveKeybind(doc, head, "MoveRightKeybind", moveRightKeybind);
+		XMLSaveKeybind(doc, head, "JumpKeybind", jumpKeybind);
+		XMLSaveKeybind(doc, head, "ShootKeybind", shootKeybind);
+		XMLSaveKeybind(doc, head, "ReloadKeybind", reloadKeybind);
+		XMLSaveKeybind(doc, head, "AimDownSightsKeybind", aimDownSightsKeybind);
+		XMLSaveKeybind(doc, head, "ThrowGrenadeKeybind", throwGrenadeKeybind);
+		XMLSaveKeybind(doc, head, "MeleeKeybind", meleeKeybind);
+		XMLSaveKeybind(doc, head, "SwapKeybind", swapKeybind);
+		XMLSaveKeybind(doc, head, "UseItemKeybind", useItemKeybind);
+		XMLSaveKeybind(doc, head, "SprintKeybind", sprintKeybind);
+		XMLSaveKeybind(doc, head, "CrouchKeybind", crouchKeybind);
+		XMLSaveKeybind(doc, head, "SelectGrenadeUpKeybind", selectGrenadeUpKeybind);
+		XMLSaveKeybind(doc, head, "SelectGrenadeDownKeybind", selectGrenadeDownKeybind);
+		XMLSaveKeybind(doc, head, "ShowScoreboardKeybind", showScoreboardKeybind);
 
 		doc.Save(fileName);
 	}
@@ -105,8 +121,31 @@ public class ControlSettings : MonoBehaviour
 
 			XmlNode head = doc.SelectSingleNode("ControlSettings");
 
-			XmlNode ms = head.SelectSingleNode("MouseSensitivity");
-			mouseSensitivity = System.Convert.ToInt32(ms.Attributes["Value"].Value);
+			Utility.XMLLoadInt(head, "MouseSensitivity", out mouseSensitivity);
+			Utility.XMLLoadBool(head, "InvertAim", out invertAim);
+			Utility.XMLLoadBool(head, "ToggleSprint", out toggleSprint);
+			Utility.XMLLoadBool(head, "ToggleCrouch", out toggleCrouch);
+			XMLLoadKeybind(head, "MoveForwardKeybind", ref moveForwardKeybind);
+			XMLLoadKeybind(head, "MoveBackKeybind", ref moveBackKeybind);
+			XMLLoadKeybind(head, "MoveLeftKeybind", ref moveLeftKeybind);
+			XMLLoadKeybind(head, "MoveRightKeybind", ref moveRightKeybind);
+			XMLLoadKeybind(head, "JumpKeybind", ref jumpKeybind);
+			XMLLoadKeybind(head, "ShootKeybind", ref shootKeybind);
+			XMLLoadKeybind(head, "ReloadKeybind", ref reloadKeybind);
+			XMLLoadKeybind(head, "AimDownSightsKeybind", ref aimDownSightsKeybind);
+			XMLLoadKeybind(head, "ThrowGrenadeKeybind", ref throwGrenadeKeybind);
+			XMLLoadKeybind(head, "MeleeKeybind", ref meleeKeybind);
+			XMLLoadKeybind(head, "SwapKeybind", ref swapKeybind);
+			XMLLoadKeybind(head, "UseItemKeybind", ref useItemKeybind);
+			XMLLoadKeybind(head, "SprintKeybind", ref sprintKeybind);
+			XMLLoadKeybind(head, "CrouchKeybind", ref crouchKeybind);
+			XMLLoadKeybind(head, "SelectGrenadeUpKeybind", ref selectGrenadeUpKeybind);
+			XMLLoadKeybind(head, "SelectGrenadeDownKeybind", ref selectGrenadeDownKeybind);
+			XMLLoadKeybind(head, "ShowScoreboardKeybind", ref showScoreboardKeybind);
+		}
+		else
+		{
+			Save();
 		}
 
 		JP.Event.Trigger("OnControlSettingsLoad");
@@ -120,6 +159,60 @@ public class ControlSettings : MonoBehaviour
 		if (keybind == null)
 		{
 			keybind = new Keybind();
+		}
+	}
+
+	private static void XMLSaveKeybind(XmlDocument doc, XmlNode parent, string name, Keybind keybind)
+	{
+		XmlNode node = doc.CreateElement(name);
+
+		XmlAttribute typeAttr = doc.CreateAttribute("Type");
+		XmlAttribute valueAttr = doc.CreateAttribute("Value");
+
+		if (keybind.Key != KeyCode.None)
+		{
+			typeAttr.Value = "KEY";
+			valueAttr.Value = ((int)keybind.Key).ToString();
+		}
+		else if (keybind.MouseButton > -1)
+		{
+			typeAttr.Value = "MOUSE_BUTTON";
+			valueAttr.Value = ((int)keybind.MouseButton).ToString();
+		}
+		else if (keybind.MouseWheel != 0)
+		{
+			typeAttr.Value = "MOUSE_WHEEL";
+			valueAttr.Value = ((int)keybind.MouseWheel).ToString();
+		}
+		else
+		{
+			typeAttr.Value = "N/A";
+			valueAttr.Value = "N/A";
+		}
+
+		node.Attributes.Append(typeAttr);
+		node.Attributes.Append(valueAttr);
+
+		parent.AppendChild(node);
+	}
+
+	private static void XMLLoadKeybind(XmlNode parent, string name, ref Keybind keybind)
+	{
+		XmlNode node = parent.SelectSingleNode(name);
+		string type = node.Attributes["Type"].Value;
+		int value = System.Convert.ToInt32(node.Attributes["Value"].Value);
+
+		if (type == "KEY")
+		{
+			keybind.Key = (KeyCode)value;
+		}
+		else if (type == "MOUSE_BUTTON")
+		{
+			keybind.MouseButton = value;
+		}
+		else if (type == "MOUSE_WHEEL")
+		{
+			keybind.MouseWheel = value;
 		}
 	}
 

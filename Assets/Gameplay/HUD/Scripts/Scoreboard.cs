@@ -75,7 +75,7 @@ public class Scoreboard : MonoBehaviour
 
 	public void Update()
 	{
-		if (Input.GetButton("Scoreboard"))
+		if (PlayerInput.ShowScoreboard(ButtonStatus.Down))
 		{
 			alpha = Mathf.Min(1.0f, alpha + Time.deltaTime * 5.0f);
 			canvas.enabled = true;

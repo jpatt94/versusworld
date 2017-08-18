@@ -37,6 +37,7 @@ public class SliderControl : MonoBehaviour
 		set
 		{
 			slider.value = value;
+			valueText.text = Mathf.FloorToInt(slider.value).ToString();
 		}
 	}
 }

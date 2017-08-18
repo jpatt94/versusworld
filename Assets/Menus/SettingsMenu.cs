@@ -52,6 +52,15 @@ public class SettingsMenu : MenuState
 		scrollRect.verticalNormalizedPosition = 1.0f;
 	}
 
+	public override void StateEnd()
+	{
+		base.StateEnd();
+
+		VideoSettings.Save();
+		AudioSettings.Save();
+		ControlSettings.Save();
+	}
+
 	/**********************************************************/
 	// Button Callbacks
 
