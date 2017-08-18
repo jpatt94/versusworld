@@ -46,8 +46,6 @@ GameObject:
   - component: {fileID: 451666}
   - component: {fileID: 3368246}
   - component: {fileID: 2360994}
-  - component: {fileID: 114362897146100116}
-  - component: {fileID: 114364175598907168}
   m_Layer: 0
   m_Name: SA_Wep_DoublebarrelShotgun
   m_TagString: Untagged
@@ -378,39 +376,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: acbe234c-1751-4059-8457-46ec4959fba1
---- !u!114 &114362897146100116
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 145700}
-    - {fileID: 112392}
-    - {fileID: 153460}
-    - {fileID: 127546}
-    - {fileID: 149306}
-  _assetGuid: 8b547fd9a346db64393c0c3da4c99249
---- !u!114 &114364175598907168
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: cc3c4cfb-cd93-4797-9096-4d64cccff98a
 --- !u!114 &114613185110962388
 MonoBehaviour:
   m_ObjectHideFlags: 1

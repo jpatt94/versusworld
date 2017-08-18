@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3353372}
   - component: {fileID: 2359714}
   - component: {fileID: 64219248880524444}
-  - component: {fileID: 114622213799542930}
-  - component: {fileID: 114808680952283782}
   m_Layer: 0
   m_Name: SA_Prop_BodyBag_01
   m_TagString: Untagged
@@ -180,33 +178,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 0ebd0afe-9c38-47ba-81ca-536736c40c9a
---- !u!114 &114622213799542930
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 115468}
-    - {fileID: 161244}
-  _assetGuid: 4933c5f904b97d74d9c62de2842ca9a3
---- !u!114 &114808680952283782
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 0d72d67c-8e10-4ad2-81b8-7d35dfeed6f6

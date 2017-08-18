@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 33131611324897834}
   - component: {fileID: 65013928537036296}
   - component: {fileID: 23535582669433926}
-  - component: {fileID: 114098632460730822}
-  - component: {fileID: 114009094792640428}
   m_Layer: 0
   m_Name: Flesh
   m_TagString: Untagged
@@ -167,36 +165,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114009094792640428
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1556622962352786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8acb6c48-a8c9-4ab1-a095-cb9316e711c7
---- !u!114 &114098632460730822
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1556622962352786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1556622962352786}
-    - {fileID: 1973858777363006}
-  _assetGuid: a7034287e2bd6a141ab896f71d0b1357
 --- !u!114 &114471937302475524
 MonoBehaviour:
   m_ObjectHideFlags: 1

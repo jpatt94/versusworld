@@ -83,8 +83,6 @@ GameObject:
   - component: {fileID: 3300008}
   - component: {fileID: 2300008}
   - component: {fileID: 64850154868460038}
-  - component: {fileID: 114430028614042884}
-  - component: {fileID: 114973506358644236}
   m_Layer: 0
   m_Name: airportTowCar02
   m_TagString: Untagged
@@ -393,27 +391,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 3670d69a-4131-4f4a-8234-53691d4a5aa8
---- !u!114 &114430028614042884
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: c575bd52295473d44add87292f2bfb1b
 --- !u!114 &114883517535294814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -450,15 +427,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: b3b7b5e3-77ef-40fc-abf1-753c927b9109
---- !u!114 &114973506358644236
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3dd400d7-5e9a-435f-978e-45fe0ae93ba6

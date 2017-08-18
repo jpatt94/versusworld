@@ -82,8 +82,6 @@ GameObject:
   - component: {fileID: 408430}
   - component: {fileID: 3359650}
   - component: {fileID: 2300754}
-  - component: {fileID: 114625013142777280}
-  - component: {fileID: 114011230351989138}
   m_Layer: 0
   m_Name: SA_Wep_TMPSMG
   m_TagString: Untagged
@@ -437,18 +435,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 150732}
   m_IsPrefabParent: 1
---- !u!114 &114011230351989138
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7eb18b3a-d870-4ebd-80e8-af2d46b0c44b
 --- !u!114 &114026837730575516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -509,25 +495,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 2a9613c8-ca1c-455a-8687-0ece36c84275
---- !u!114 &114625013142777280
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 150732}
-    - {fileID: 136358}
-    - {fileID: 129544}
-    - {fileID: 166756}
-    - {fileID: 124794}
-    - {fileID: 149460}
-  _assetGuid: bed475ad67b06e84d9eded9bc5701019

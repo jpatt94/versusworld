@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3307938}
   - component: {fileID: 2332974}
   - component: {fileID: 64528712877784686}
-  - component: {fileID: 114821473301830556}
-  - component: {fileID: 114207094839013810}
   m_Layer: 0
   m_Name: SA_Prop_BBQ_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3877bfe01c033494e8049322dcd26cd9, type: 3}
---- !u!114 &114207094839013810
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bb5faae2-c21b-4632-9b12-2a8e833f7c1d
---- !u!114 &114821473301830556
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 128180}
-  _assetGuid: 8443a341ec005d547b05e82fbaa24324

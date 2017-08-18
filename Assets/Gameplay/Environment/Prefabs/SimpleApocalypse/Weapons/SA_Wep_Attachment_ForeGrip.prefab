@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 493008}
   - component: {fileID: 3328156}
   - component: {fileID: 2329552}
-  - component: {fileID: 114136095863361958}
-  - component: {fileID: 114140428288225346}
   m_Layer: 0
   m_Name: SA_Wep_Attachment_ForeGrip
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 166572}
   m_IsPrefabParent: 1
---- !u!114 &114136095863361958
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 166572}
-  _assetGuid: 9d30857a5fffdde4eb9dc3906a4cd5e3
---- !u!114 &114140428288225346
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 07d05f8b-42ad-43f5-afd0-4f3fe6c58514

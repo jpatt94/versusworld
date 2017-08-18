@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 426132}
   - component: {fileID: 3383900}
   - component: {fileID: 2374032}
-  - component: {fileID: 114294733020784160}
-  - component: {fileID: 114813006429615908}
   m_Layer: 0
   m_Name: SA_Bld_OfficeWhite_01
   m_TagString: Untagged
@@ -165,33 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: d9c91f23-54e3-4f4d-bda1-44b2d90be800
---- !u!114 &114294733020784160
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 120974}
-    - {fileID: 181010}
-  _assetGuid: 19b9beeb96fee8841b49b06c12648bdc
---- !u!114 &114813006429615908
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: abbd3133-56d0-49e5-8e64-cb32e608a3d1

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3305284}
   - component: {fileID: 2350952}
   - component: {fileID: 64041407911827320}
-  - component: {fileID: 114213500609054860}
-  - component: {fileID: 114707356384692990}
   m_Layer: 0
   m_Name: SA_Prop_Pallet_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 28774154a87187e45a9a184938957f44, type: 3}
---- !u!114 &114213500609054860
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 116172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 116172}
-  _assetGuid: af008a8425e3bc342832db8dd5bfd4ff
---- !u!114 &114707356384692990
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 116172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 07cef482-9709-4b62-8b96-cd1326c33e26

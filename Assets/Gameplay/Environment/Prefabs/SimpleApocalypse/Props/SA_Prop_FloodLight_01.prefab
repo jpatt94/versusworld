@@ -47,8 +47,6 @@ GameObject:
   - component: {fileID: 3357558}
   - component: {fileID: 2379178}
   - component: {fileID: 64703425212711288}
-  - component: {fileID: 114063468888385696}
-  - component: {fileID: 114145721109616616}
   m_Layer: 0
   m_Name: SA_Prop_FloodLight_01
   m_TagString: Untagged
@@ -251,37 +249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 933cac91-9e19-46e2-916e-f7002be6390a
---- !u!114 &114063468888385696
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 164828}
-    - {fileID: 118940}
-    - {fileID: 154100}
-  _assetGuid: 1b3e1f8ff07d51345b04f7263cb25482
---- !u!114 &114145721109616616
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2f1bb81d-2c05-4ce0-9293-a275a1f7beb4
 --- !u!114 &114806251031831634
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3343624}
   - component: {fileID: 2391106}
   - component: {fileID: 64015554901306994}
-  - component: {fileID: 114275113369270096}
-  - component: {fileID: 114663423976060152}
   m_Layer: 0
   m_Name: SA_Prop_Fence_Brick_Damaged_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 5ae7baf89b8e6e947ae203c322c63d15, type: 3}
---- !u!114 &114275113369270096
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 191250}
-  _assetGuid: 738b9ba52a2a86941a6358083f68cb4d
---- !u!114 &114663423976060152
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 142afee6-d40d-43f6-bfbb-2d6fbdf1ca53

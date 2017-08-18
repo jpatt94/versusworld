@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3382548}
   - component: {fileID: 2333606}
   - component: {fileID: 64344486409111536}
-  - component: {fileID: 114912251150462480}
-  - component: {fileID: 114543598886705498}
   m_Layer: 0
   m_Name: SA_Env_Court
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ddd402de8d1820b4b8dcf877167a31ae, type: 3}
---- !u!114 &114543598886705498
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2396cb42-6cc6-450d-be44-43ce319abef6
---- !u!114 &114912251150462480
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 168236}
-  _assetGuid: 784d162685a6a0a4286bbf934d113a23

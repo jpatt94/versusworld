@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 420082}
   - component: {fileID: 3355148}
   - component: {fileID: 2329378}
-  - component: {fileID: 114725318251234406}
-  - component: {fileID: 114216888547312792}
   m_Layer: 0
   m_Name: SA_Veh_Clean_BigUte
   m_TagString: Untagged
@@ -378,18 +376,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: e03e844a-8511-4e4d-8d18-67fb5cd7b6ab
---- !u!114 &114216888547312792
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 4203550b-657b-4eec-bb40-3a9a4b9923a4
 --- !u!114 &114420727237375542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -426,24 +412,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: df33fef0-f07a-4f8a-9271-2670c900a2b1
---- !u!114 &114725318251234406
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100548}
-    - {fileID: 108634}
-    - {fileID: 159058}
-    - {fileID: 156502}
-    - {fileID: 168318}
-  _assetGuid: 88b63a86e8e7dc645940494fd97aed14

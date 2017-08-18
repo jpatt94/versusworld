@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 418514}
   - component: {fileID: 3342372}
   - component: {fileID: 2382922}
-  - component: {fileID: 114909059459618252}
-  - component: {fileID: 114878992564327470}
   m_Layer: 0
   m_Name: SA_Bld_CoolingTowerSmall_Damaged_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 136362}
   m_IsPrefabParent: 1
---- !u!114 &114878992564327470
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5940b2d5-3429-401d-8f04-30949c22d349
---- !u!114 &114909059459618252
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 136362}
-  _assetGuid: b1aec8a9785427c42a91f7343cfc4ae9

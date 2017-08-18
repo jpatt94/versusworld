@@ -29,8 +29,6 @@ GameObject:
   - component: {fileID: 3375824}
   - component: {fileID: 2348354}
   - component: {fileID: 64657385963702746}
-  - component: {fileID: 114634244996151672}
-  - component: {fileID: 114271560699763674}
   m_Layer: 0
   m_Name: SA_Prop_Bag_TravelbagEmpty_02
   m_TagString: Untagged
@@ -180,33 +178,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 65c1adc6-6321-4f38-b57e-0f6a617bc743
---- !u!114 &114271560699763674
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 19647eca-101e-421c-9f2b-bab0503b62c5
---- !u!114 &114634244996151672
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 193402}
-    - {fileID: 165700}
-  _assetGuid: 9114a27cb147ca74eba8fefbd8cf0da4

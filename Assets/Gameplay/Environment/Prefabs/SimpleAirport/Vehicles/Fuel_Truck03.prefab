@@ -83,8 +83,6 @@ GameObject:
   - component: {fileID: 3300008}
   - component: {fileID: 2300008}
   - component: {fileID: 64587501346295286}
-  - component: {fileID: 114723267356324682}
-  - component: {fileID: 114308265811726002}
   m_Layer: 0
   m_Name: Fuel_Truck03
   m_TagString: Untagged
@@ -393,18 +391,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 7ecc8598-48ce-4701-a039-c1b11fc8f004
---- !u!114 &114308265811726002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 267ae18c-3da2-466f-b60a-54f133432f52
 --- !u!114 &114316292386762868
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -441,24 +427,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: ac6fe987-878e-41c8-a9c2-aabff19323d8
---- !u!114 &114723267356324682
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: 36423d6c26247ae419ff30a7dbe0ca1a

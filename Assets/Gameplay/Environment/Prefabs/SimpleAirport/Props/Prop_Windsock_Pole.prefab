@@ -46,8 +46,6 @@ GameObject:
   - component: {fileID: 400004}
   - component: {fileID: 3300004}
   - component: {fileID: 2300004}
-  - component: {fileID: 114014974193395638}
-  - component: {fileID: 114352418986412298}
   m_Layer: 0
   m_Name: Prop_Windsock_Pole
   m_TagString: Untagged
@@ -224,25 +222,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100004}
   m_IsPrefabParent: 1
---- !u!114 &114014974193395638
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: f344e9db3bb2e8041be4b3c4f74d75cc
 --- !u!114 &114179637625680902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,18 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 10fa834f-350e-4089-802a-2c8d80ff43cd
---- !u!114 &114352418986412298
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2f311f10-69c8-4f6e-a82d-6c5a3f039de7
 --- !u!114 &114965527997076942
 MonoBehaviour:
   m_ObjectHideFlags: 1

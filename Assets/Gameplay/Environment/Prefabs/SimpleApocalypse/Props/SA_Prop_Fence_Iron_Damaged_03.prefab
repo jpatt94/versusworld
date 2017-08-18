@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3328626}
   - component: {fileID: 2361226}
   - component: {fileID: 64311088624373966}
-  - component: {fileID: 114130250227007454}
-  - component: {fileID: 114087287997810546}
   m_Layer: 0
   m_Name: SA_Prop_Fence_Iron_Damaged_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 42dbbcd000ee39847bb7a195ddec1068, type: 3}
---- !u!114 &114087287997810546
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bef172db-83d2-4e85-ad25-5585621759bd
---- !u!114 &114130250227007454
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 133600}
-  _assetGuid: 9b2d6d0ca29e9aa4e972d5409c3eb434

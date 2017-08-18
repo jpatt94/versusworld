@@ -29,8 +29,6 @@ GameObject:
   - component: {fileID: 3300002}
   - component: {fileID: 2300002}
   - component: {fileID: 64292548242124494}
-  - component: {fileID: 114588705123535588}
-  - component: {fileID: 114803905549067556}
   m_Layer: 0
   m_Name: Airport_Gangway02
   m_TagString: Untagged
@@ -180,33 +178,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 88dd9436-b4a3-4c98-a54c-5ec451cc1745
---- !u!114 &114588705123535588
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: 8c7a0a0c8326d6f4b9419314d42d70f1
---- !u!114 &114803905549067556
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2ffbd48b-2897-4812-bde1-824da86fdec0

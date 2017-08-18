@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 496226}
   - component: {fileID: 3306842}
   - component: {fileID: 2312078}
-  - component: {fileID: 114232606470884502}
-  - component: {fileID: 114675697342318824}
   m_Layer: 0
   m_Name: SA_Item_CannedFood_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 131798}
   m_IsPrefabParent: 1
---- !u!114 &114232606470884502
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 131798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 131798}
-  _assetGuid: 4337e5c6c04789145949a42687bcde59
---- !u!114 &114675697342318824
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 131798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: aee5be08-499b-4dd5-814e-49d9dbb4b16f

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3324916}
   - component: {fileID: 2322508}
   - component: {fileID: 64478338657481078}
-  - component: {fileID: 114662374671427162}
-  - component: {fileID: 114015159537461306}
   m_Layer: 0
   m_Name: SA_Prop_Mattress_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9a9dc31f27715694d955e4e9221b76d1, type: 3}
---- !u!114 &114015159537461306
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 36d772e1-9eba-4b7f-b423-6fe1af122f30
---- !u!114 &114662374671427162
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 182532}
-  _assetGuid: f11b60804238b564caa52e90f493b573

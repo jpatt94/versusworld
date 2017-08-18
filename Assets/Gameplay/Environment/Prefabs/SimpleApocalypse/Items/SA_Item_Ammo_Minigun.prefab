@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 493678}
   - component: {fileID: 3369878}
   - component: {fileID: 2333330}
-  - component: {fileID: 114616979189040536}
-  - component: {fileID: 114135615866331786}
   m_Layer: 0
   m_Name: SA_Item_Ammo_Minigun
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 103736}
   m_IsPrefabParent: 1
---- !u!114 &114135615866331786
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 0915f67b-8991-4a8b-992d-c4a779139655
---- !u!114 &114616979189040536
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 103736}
-  _assetGuid: 174ad4f5be1840148899721ee3503e79

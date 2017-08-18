@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3343846}
   - component: {fileID: 2313896}
   - component: {fileID: 64228482957154668}
-  - component: {fileID: 114854598209413044}
-  - component: {fileID: 114995587790131694}
   m_Layer: 0
   m_Name: SA_Prop_TablePlant_05
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ad87c08dc19d03a4c8c892404898d85c, type: 3}
---- !u!114 &114854598209413044
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100256}
-  _assetGuid: a9ab39d41de28d24c9e3c69ad1f9e51c
---- !u!114 &114995587790131694
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ff5c5380-a183-41d0-8968-017dff03eb2e

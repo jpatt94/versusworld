@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 489786}
   - component: {fileID: 3336478}
   - component: {fileID: 2398836}
-  - component: {fileID: 114629561807049692}
-  - component: {fileID: 114305923249785012}
   m_Layer: 0
   m_Name: SA_Item_Compass
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 121256}
   m_IsPrefabParent: 1
---- !u!114 &114305923249785012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9da87999-4e13-44dd-80e8-6711c70c390f
---- !u!114 &114629561807049692
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 121256}
-  _assetGuid: 79cc057d1a8b3374794addcf7fecf92d

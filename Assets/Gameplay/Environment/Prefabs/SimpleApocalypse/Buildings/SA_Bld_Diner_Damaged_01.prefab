@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 415756}
   - component: {fileID: 3334046}
   - component: {fileID: 2352400}
-  - component: {fileID: 114135008837850660}
-  - component: {fileID: 114981032289870554}
   m_Layer: 0
   m_Name: SA_Bld_Diner_Damaged_01
   m_TagString: Untagged
@@ -153,24 +151,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 184882}
   m_IsPrefabParent: 1
---- !u!114 &114135008837850660
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 184882}
-    - {fileID: 147064}
-  _assetGuid: c9b696e74ed996c4ea0947725a459f6f
 --- !u!114 &114647039876611140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,15 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: cc806701-33fd-400d-8f3d-61a22709d825
---- !u!114 &114981032289870554
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: fd681095-415c-4206-a79d-2f23d6bac6b5

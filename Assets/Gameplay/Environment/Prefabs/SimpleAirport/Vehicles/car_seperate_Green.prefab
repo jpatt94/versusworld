@@ -101,8 +101,6 @@ GameObject:
   - component: {fileID: 3300010}
   - component: {fileID: 2300010}
   - component: {fileID: 64474434605990828}
-  - component: {fileID: 114289415318907306}
-  - component: {fileID: 114256582864907570}
   m_Layer: 0
   m_Name: car_seperate_Green
   m_TagString: Untagged
@@ -500,40 +498,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 47666060-1b24-4576-9b38-68db166bbe63
---- !u!114 &114256582864907570
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 09d8583f-1efb-4708-88d7-1f47c6a04ce4
---- !u!114 &114289415318907306
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100010}
-    - {fileID: 100000}
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-  _assetGuid: 5b0f01994f1313c468f8e2131a65d3a8
 --- !u!114 &114714123445784538
 MonoBehaviour:
   m_ObjectHideFlags: 1

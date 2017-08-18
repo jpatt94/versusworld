@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3324960}
   - component: {fileID: 2386566}
   - component: {fileID: 64712244292592748}
-  - component: {fileID: 114159808629420704}
-  - component: {fileID: 114431970790283100}
   m_Layer: 0
   m_Name: SA_Prop_DeadBody_OnCarTop_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: cc5a07fa4e2d1de49b881e387c33daa6, type: 3}
---- !u!114 &114159808629420704
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 117470}
-  _assetGuid: 1f50592ce9678dc448a350833aa139d3
---- !u!114 &114431970790283100
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 83cd096a-da66-4fe6-b9d1-344aa14776fb

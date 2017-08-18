@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3365590}
   - component: {fileID: 2354150}
   - component: {fileID: 64076011944051822}
-  - component: {fileID: 114443213837282520}
-  - component: {fileID: 114688783361895454}
   m_Layer: 0
   m_Name: SA_Prop_Statue_Damaged_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c8133c55c94d7844284aa58d15fdb6ad, type: 3}
---- !u!114 &114443213837282520
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 193480}
-  _assetGuid: 784ec3592b750514ea5ee0c39d17f966
---- !u!114 &114688783361895454
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f75415c2-9505-4c63-b1ef-acfc6138fb51

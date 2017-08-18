@@ -100,8 +100,6 @@ GameObject:
   - component: {fileID: 415598}
   - component: {fileID: 3359590}
   - component: {fileID: 2389350}
-  - component: {fileID: 114938760151474444}
-  - component: {fileID: 114340201033719490}
   m_Layer: 0
   m_Name: SA_Veh_Schoolbus
   m_TagString: Untagged
@@ -473,18 +471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 98c3b5a2-081a-4f88-bc33-30a4cb24ddd7
---- !u!114 &114340201033719490
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7ed43c2d-2107-40ff-9dd5-0a0d9b0d129b
 --- !u!114 &114394880255092674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -509,25 +495,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 04419114-fd57-45cc-b427-793678ddd977
---- !u!114 &114938760151474444
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 187360}
-    - {fileID: 160184}
-    - {fileID: 134456}
-    - {fileID: 126258}
-    - {fileID: 117044}
-    - {fileID: 171908}
-  _assetGuid: b81fbdfc93e49214c9e8d880c7f2585e

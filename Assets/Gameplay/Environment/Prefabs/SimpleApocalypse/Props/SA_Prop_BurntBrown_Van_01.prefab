@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3305242}
   - component: {fileID: 2301180}
   - component: {fileID: 64115896560941142}
-  - component: {fileID: 114156205227255134}
-  - component: {fileID: 114515211712424906}
   m_Layer: 0
   m_Name: SA_Prop_BurntBrown_Van_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 5c785faa46073044dbe9bac82f9bafc3, type: 3}
---- !u!114 &114156205227255134
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 126116}
-  _assetGuid: e64c1940af5ca26458c0a405310bee5b
---- !u!114 &114515211712424906
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 67441e81-2f55-4e39-a7bc-7bdf34b0cddc

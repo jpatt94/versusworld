@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3326470}
   - component: {fileID: 2349714}
   - component: {fileID: 64668238363332016}
-  - component: {fileID: 114958589173583394}
-  - component: {fileID: 114592457780035282}
   m_Layer: 0
   m_Name: SA_Prop_Rubble_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: cd287f37f6545d044a1bf76c7ef7b6b6, type: 3}
---- !u!114 &114592457780035282
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 00fa2ff0-cb87-4f5d-860f-220fe7055513
---- !u!114 &114958589173583394
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 156474}
-  _assetGuid: 277f00540db953e4baccfd81fe5a6cae

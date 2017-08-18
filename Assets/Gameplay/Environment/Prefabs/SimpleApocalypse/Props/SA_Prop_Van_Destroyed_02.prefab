@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3319422}
   - component: {fileID: 2398382}
   - component: {fileID: 64893989008938762}
-  - component: {fileID: 114893321559951320}
-  - component: {fileID: 114430942479787478}
   m_Layer: 0
   m_Name: SA_Prop_Van_Destroyed_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 2d54b84628129bc489d589b673df05d3, type: 3}
---- !u!114 &114430942479787478
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 18785cc8-4c7a-477d-8aea-540d2e0f054c
---- !u!114 &114893321559951320
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 186930}
-  _assetGuid: df3f7a2c30e7eb745ac9884a401d966c

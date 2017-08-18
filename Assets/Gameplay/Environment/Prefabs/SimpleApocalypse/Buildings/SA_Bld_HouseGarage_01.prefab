@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 448426}
   - component: {fileID: 3393074}
   - component: {fileID: 2370286}
-  - component: {fileID: 114023051974044778}
-  - component: {fileID: 114037254486043952}
   m_Layer: 0
   m_Name: SA_Bld_HouseGarage_01
   m_TagString: Untagged
@@ -153,36 +151,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172558}
   m_IsPrefabParent: 1
---- !u!114 &114023051974044778
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 172558}
-    - {fileID: 185842}
-  _assetGuid: 3bb2915900a617546808e7abbff0b6c4
---- !u!114 &114037254486043952
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e42862a1-f280-4694-a000-51a72261a2b6
 --- !u!114 &114578187805727268
 MonoBehaviour:
   m_ObjectHideFlags: 1

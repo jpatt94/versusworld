@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 446708}
   - component: {fileID: 3339506}
   - component: {fileID: 2381652}
-  - component: {fileID: 114725032371418920}
-  - component: {fileID: 114494770888043070}
   m_Layer: 0
   m_Name: SA_Wep_FlashBang
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 188556}
   m_IsPrefabParent: 1
---- !u!114 &114494770888043070
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 60c5744c-acc7-4488-a279-a972239a90f9
---- !u!114 &114725032371418920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 188556}
-  _assetGuid: 90569dd7f55ae9d4e94823ded767f35e

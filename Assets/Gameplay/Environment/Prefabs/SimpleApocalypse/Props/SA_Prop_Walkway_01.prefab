@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3356354}
   - component: {fileID: 2312452}
   - component: {fileID: 64403473030832470}
-  - component: {fileID: 114331955619324594}
-  - component: {fileID: 114833628451163918}
   m_Layer: 0
   m_Name: SA_Prop_Walkway_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 5a8d9da4d9401104fbac340318c92d6f, type: 3}
---- !u!114 &114331955619324594
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 168944}
-  _assetGuid: 440ee0284703c2242a5c325fb4bd9162
---- !u!114 &114833628451163918
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: eb5341e4-30b8-4691-b806-1695d15e8003

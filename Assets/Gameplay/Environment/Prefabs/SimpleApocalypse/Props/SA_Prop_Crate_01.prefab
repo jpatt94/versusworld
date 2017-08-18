@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3327004}
   - component: {fileID: 2357552}
   - component: {fileID: 64663053612424532}
-  - component: {fileID: 114712315123906368}
-  - component: {fileID: 114091225930680808}
   m_Layer: 0
   m_Name: SA_Prop_Crate_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 63643dfdc81dc9f4ea7dd425c0133a38, type: 3}
---- !u!114 &114091225930680808
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 187d318d-3803-4359-83da-40d0ab87c933
---- !u!114 &114712315123906368
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 188210}
-  _assetGuid: a94087c8cdc63974d94afef1d4fd15ad

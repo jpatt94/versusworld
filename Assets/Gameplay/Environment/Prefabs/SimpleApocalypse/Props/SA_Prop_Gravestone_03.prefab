@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3378488}
   - component: {fileID: 2385366}
   - component: {fileID: 64060922759738662}
-  - component: {fileID: 114182457906600302}
-  - component: {fileID: 114275782429017250}
   m_Layer: 0
   m_Name: SA_Prop_Gravestone_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: fb5f33b92bc94f44d871968dc371883b, type: 3}
---- !u!114 &114182457906600302
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 153592}
-  _assetGuid: 9f6e933dd381120438b6ea8ed13b14b9
---- !u!114 &114275782429017250
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 05f0c779-d9c8-41af-ade2-f73a1ef2a447

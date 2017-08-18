@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3360142}
   - component: {fileID: 2346880}
   - component: {fileID: 64063860000349528}
-  - component: {fileID: 114387206500099562}
-  - component: {fileID: 114204739332642670}
   m_Layer: 0
   m_Name: SA_Prop_Sleepingbag_Open_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: e4023a2683a71e148966c25e20914abe, type: 3}
---- !u!114 &114204739332642670
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 98afcbf7-4d34-4a86-a40d-c823f505f8bf
---- !u!114 &114387206500099562
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 176360}
-  _assetGuid: c1540a79f31b40f4a9dc5ad392b02fa0

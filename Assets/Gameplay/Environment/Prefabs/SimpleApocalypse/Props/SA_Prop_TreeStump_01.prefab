@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3390490}
   - component: {fileID: 2356206}
   - component: {fileID: 64068979174018420}
-  - component: {fileID: 114144926468952070}
-  - component: {fileID: 114187035295942390}
   m_Layer: 0
   m_Name: SA_Prop_TreeStump_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 79a87172870be5843b1e7ba91f179d31, type: 3}
---- !u!114 &114144926468952070
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 106028}
-  _assetGuid: 7084511043713bc4280f1104818ee17b
---- !u!114 &114187035295942390
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2b690689-97fb-404e-85ac-74071b0faad4

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3359640}
   - component: {fileID: 2305956}
   - component: {fileID: 64450174414071652}
-  - component: {fileID: 114982959482165228}
-  - component: {fileID: 114647834147900274}
   m_Layer: 0
   m_Name: SA_Prop_TirePile_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 0031b30afa516d641a5bc624fe37f142, type: 3}
---- !u!114 &114647834147900274
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 463c7426-a0a2-4cf8-9ff8-e82e87e2dd70
---- !u!114 &114982959482165228
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 171926}
-  _assetGuid: eeebf7f25c582e048bb2a3069b9a54dc

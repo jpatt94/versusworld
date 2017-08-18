@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 454610}
   - component: {fileID: 3308230}
   - component: {fileID: 2324208}
-  - component: {fileID: 114461679975389716}
-  - component: {fileID: 114911903766160694}
   m_Layer: 0
   m_Name: SA_Item_Whisky
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 187142}
   m_IsPrefabParent: 1
---- !u!114 &114461679975389716
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 187142}
-  _assetGuid: 2007cffb629cd3e46bda243a0c757a95
---- !u!114 &114911903766160694
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7c229607-a69b-4bb1-9cba-7b31b1fa25a0

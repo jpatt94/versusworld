@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 427996}
   - component: {fileID: 3397614}
   - component: {fileID: 2311428}
-  - component: {fileID: 114270386174744306}
-  - component: {fileID: 114211344309526008}
   m_Layer: 0
   m_Name: SA_Wep_AT4Launcher
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 140276}
   m_IsPrefabParent: 1
---- !u!114 &114211344309526008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b084a885-f80b-4741-9160-e7f088b3f88a
---- !u!114 &114270386174744306
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 140276}
-  _assetGuid: 7d480e68df217e74bb068d637b606951

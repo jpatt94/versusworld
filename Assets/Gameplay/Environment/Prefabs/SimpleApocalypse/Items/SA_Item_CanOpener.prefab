@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 427920}
   - component: {fileID: 3379844}
   - component: {fileID: 2322870}
-  - component: {fileID: 114642477014736428}
-  - component: {fileID: 114823867956409568}
   m_Layer: 0
   m_Name: SA_Item_CanOpener
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 150304}
   m_IsPrefabParent: 1
---- !u!114 &114642477014736428
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 150304}
-  _assetGuid: df2a9914bc744004aa6b59b79940abe8
---- !u!114 &114823867956409568
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 87d70c1e-b4b3-4823-9dae-0ddc33a03170

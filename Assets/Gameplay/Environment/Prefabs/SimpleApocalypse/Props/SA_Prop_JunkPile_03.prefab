@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3370954}
   - component: {fileID: 2350156}
   - component: {fileID: 64195512376306902}
-  - component: {fileID: 114892558658425778}
-  - component: {fileID: 114501914274833266}
   m_Layer: 0
   m_Name: SA_Prop_JunkPile_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 864d0673765ef644891c2026d19a2af3, type: 3}
---- !u!114 &114501914274833266
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c1ae9805-be55-4ce8-9dd2-514198f8febf
---- !u!114 &114892558658425778
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 132234}
-  _assetGuid: 8c597dee877816142b7671fbd574e36b

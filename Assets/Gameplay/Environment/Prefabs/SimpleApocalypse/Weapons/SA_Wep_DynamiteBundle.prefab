@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 401226}
   - component: {fileID: 3326696}
   - component: {fileID: 2334302}
-  - component: {fileID: 114819503920127282}
-  - component: {fileID: 114287893407826378}
   m_Layer: 0
   m_Name: SA_Wep_DynamiteBundle
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 179796}
   m_IsPrefabParent: 1
---- !u!114 &114287893407826378
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c20491a7-354d-4032-8051-ab23cfbc71d0
---- !u!114 &114819503920127282
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 179796}
-  _assetGuid: d3b2000d1a42a1044a482bacce86aad4

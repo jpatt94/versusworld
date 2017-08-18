@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 498592}
   - component: {fileID: 3366920}
   - component: {fileID: 2330800}
-  - component: {fileID: 114807399931007748}
-  - component: {fileID: 114286408156155910}
   m_Layer: 0
   m_Name: SA_Wep_RPGLauncher
   m_TagString: Untagged
@@ -165,33 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: e9e7b190-6b99-45c9-924e-492d6bdad2bf
---- !u!114 &114286408156155910
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 43fc0bca-ae4d-4443-9413-1a02bcccc013
---- !u!114 &114807399931007748
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 124060}
-    - {fileID: 172438}
-  _assetGuid: 3be269ac54790c44192a556e3459f898

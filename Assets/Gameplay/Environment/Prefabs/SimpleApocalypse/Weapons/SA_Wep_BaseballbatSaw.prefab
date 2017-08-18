@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 411636}
   - component: {fileID: 3330312}
   - component: {fileID: 2373786}
-  - component: {fileID: 114118465730324060}
-  - component: {fileID: 114173847893704102}
   m_Layer: 0
   m_Name: SA_Wep_BaseballbatSaw
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 169658}
   m_IsPrefabParent: 1
---- !u!114 &114118465730324060
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 169658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 169658}
-  _assetGuid: dccd43f6c332d2a4aa06a30c997e859c
---- !u!114 &114173847893704102
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 169658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 73d8c5c1-3ba6-4bfd-962f-d2384833780a

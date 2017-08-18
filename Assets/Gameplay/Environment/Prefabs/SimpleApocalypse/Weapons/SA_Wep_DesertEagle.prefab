@@ -82,8 +82,6 @@ GameObject:
   - component: {fileID: 467428}
   - component: {fileID: 3319706}
   - component: {fileID: 2396882}
-  - component: {fileID: 114516553105556288}
-  - component: {fileID: 114293030205591666}
   m_Layer: 0
   m_Name: SA_Wep_DesertEagle
   m_TagString: Untagged
@@ -449,18 +447,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 411f99bd-723d-4927-bb12-d8a846688f2b
---- !u!114 &114293030205591666
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3995a916-4d35-49b1-ac4a-e6218e18b396
 --- !u!114 &114337977241782654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -485,28 +471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: a155ce92-ff21-4b03-9585-eb898389cd04
---- !u!114 &114516553105556288
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 162522}
-    - {fileID: 158798}
-    - {fileID: 148340}
-    - {fileID: 151120}
-    - {fileID: 102884}
-    - {fileID: 186520}
-  _assetGuid: 6a97c5e28ad9dab439460ddb0b1fb191
 --- !u!114 &114859761512519784
 MonoBehaviour:
   m_ObjectHideFlags: 1

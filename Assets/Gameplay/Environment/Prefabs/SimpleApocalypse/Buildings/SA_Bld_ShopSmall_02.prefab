@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 420256}
   - component: {fileID: 3370638}
   - component: {fileID: 2341574}
-  - component: {fileID: 114665048923277902}
-  - component: {fileID: 114632665431341838}
   m_Layer: 0
   m_Name: SA_Bld_ShopSmall_02
   m_TagString: Untagged
@@ -236,37 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: bfe91974-891b-41f3-ab59-d247b6b115e9
---- !u!114 &114632665431341838
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8cd7d35e-fd74-4a28-9ba9-c02264639cc9
---- !u!114 &114665048923277902
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 137198}
-    - {fileID: 171714}
-    - {fileID: 114890}
-  _assetGuid: 2f1ba03e489921e468e8787d369545f5
 --- !u!114 &114942465155369864
 MonoBehaviour:
   m_ObjectHideFlags: 1

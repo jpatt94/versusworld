@@ -26,8 +26,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 491956}
-  - component: {fileID: 114066525364717920}
-  - component: {fileID: 114127993855134764}
   m_Layer: 0
   m_Name: Prop_Manholecover
   m_TagString: Untagged
@@ -112,36 +110,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 191956}
   m_IsPrefabParent: 1
---- !u!114 &114066525364717920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 191956}
-    - {fileID: 191954}
-  _assetGuid: adcc7183aafd31c428118b908fc20b93
---- !u!114 &114127993855134764
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 888b54d1-388d-4f91-96ef-b6e1b8646781
 --- !u!114 &114371318000830294
 MonoBehaviour:
   m_ObjectHideFlags: 1

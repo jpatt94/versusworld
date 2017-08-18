@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 440056}
   - component: {fileID: 3385186}
   - component: {fileID: 2330440}
-  - component: {fileID: 114250422435126210}
-  - component: {fileID: 114580329899441294}
   m_Layer: 0
   m_Name: SA_Item_BearTrap
   m_TagString: Untagged
@@ -236,37 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: fe271be0-db47-4dcc-8569-b0f26740b576
---- !u!114 &114250422435126210
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 141740}
-    - {fileID: 139162}
-    - {fileID: 164052}
-  _assetGuid: 94bade2c2915a6a49913bcdfc21214ab
---- !u!114 &114580329899441294
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 305498ad-f88e-41e9-8f08-09a8eb2a9683
 --- !u!114 &114993366447679486
 MonoBehaviour:
   m_ObjectHideFlags: 1

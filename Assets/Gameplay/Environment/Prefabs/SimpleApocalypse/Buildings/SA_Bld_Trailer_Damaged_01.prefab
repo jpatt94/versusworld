@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 487412}
   - component: {fileID: 3395302}
   - component: {fileID: 2322706}
-  - component: {fileID: 114349554545200928}
-  - component: {fileID: 114799362470843480}
   m_Layer: 0
   m_Name: SA_Bld_Trailer_Damaged_01
   m_TagString: Untagged
@@ -153,24 +151,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 105106}
   m_IsPrefabParent: 1
---- !u!114 &114349554545200928
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 105106}
-    - {fileID: 161892}
-  _assetGuid: 96c579098a0d22e44a928e7c2ffa21fa
 --- !u!114 &114511997902468338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,15 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: f144e6b0-c5cc-4fe0-a34f-350051565800
---- !u!114 &114799362470843480
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ec0de0f4-1fcb-4df6-b176-2746b6b6f95a

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3342320}
   - component: {fileID: 2350464}
   - component: {fileID: 64436555834595860}
-  - component: {fileID: 114703333600927572}
-  - component: {fileID: 114442982905704094}
   m_Layer: 0
   m_Name: SA_Prop_CarRolled_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 604322d59ddd32048b4ad7ba2ac09c9b, type: 3}
---- !u!114 &114442982905704094
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a423f660-2e47-4dbb-9c21-9603e518ffa1
---- !u!114 &114703333600927572
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 112870}
-  _assetGuid: d6509659d77ec0b4d9132dcea98acc46

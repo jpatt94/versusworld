@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 463802}
   - component: {fileID: 3347612}
   - component: {fileID: 2334090}
-  - component: {fileID: 114468900284302534}
-  - component: {fileID: 114732993086015836}
   m_Layer: 0
   m_Name: SA_Bld_Motel_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 137076}
   m_IsPrefabParent: 1
---- !u!114 &114468900284302534
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 137076}
-  _assetGuid: c4e68ebf0217afa46b57f46799429af5
---- !u!114 &114732993086015836
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 6db2b804-7849-482f-9a3d-80e18d847753

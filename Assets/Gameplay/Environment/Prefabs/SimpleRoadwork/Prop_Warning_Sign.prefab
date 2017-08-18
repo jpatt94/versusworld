@@ -8,8 +8,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 450038}
-  - component: {fileID: 114808580682371046}
-  - component: {fileID: 114715415231853196}
   m_Layer: 0
   m_Name: Prop_Warning_Sign
   m_TagString: Untagged
@@ -124,33 +122,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 8742f2f8-335b-474d-968b-c27e4a5fc92c
---- !u!114 &114715415231853196
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: fbfff82c-7c59-46e0-aa18-9d5395c4c52b
---- !u!114 &114808580682371046
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 150038}
-    - {fileID: 150040}
-  _assetGuid: bfd2ab652f0ac4843946ce6b168b4815

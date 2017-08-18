@@ -58,8 +58,6 @@ GameObject:
   - component: {fileID: 223000012691528986}
   - component: {fileID: 114000010508320022}
   - component: {fileID: 114000012137857524}
-  - component: {fileID: 114503689573922950}
-  - component: {fileID: 114524859084669082}
   m_Layer: 5
   m_Name: LoadingCanvas
   m_TagString: Untagged
@@ -176,37 +174,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 0ccdd7f8-f95d-471c-995b-f3b1357914ec
---- !u!114 &114503689573922950
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012093306196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000012093306196}
-    - {fileID: 1000011189250788}
-    - {fileID: 1000011917392148}
-  _assetGuid: 4b48eb1c6f3fc914c9a106ae3229fc57
---- !u!114 &114524859084669082
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012093306196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 08c7cb61-d613-495c-8592-519b6cf40321
 --- !u!114 &114846306039193038
 MonoBehaviour:
   m_ObjectHideFlags: 1

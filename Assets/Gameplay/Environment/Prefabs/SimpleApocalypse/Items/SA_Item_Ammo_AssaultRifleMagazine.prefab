@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 401620}
   - component: {fileID: 3379296}
   - component: {fileID: 2378610}
-  - component: {fileID: 114478559160067884}
-  - component: {fileID: 114414632675209132}
   m_Layer: 0
   m_Name: SA_Item_Ammo_AssaultRifleMagazine
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138200}
   m_IsPrefabParent: 1
---- !u!114 &114414632675209132
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7c247272-451f-4402-bc0c-2006b3f29ede
---- !u!114 &114478559160067884
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 138200}
-  _assetGuid: 447a87c44591cc24c87a41b0cbf3de32

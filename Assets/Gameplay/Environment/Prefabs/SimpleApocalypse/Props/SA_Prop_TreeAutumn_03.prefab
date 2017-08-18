@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3367702}
   - component: {fileID: 2335708}
   - component: {fileID: 64132659152035970}
-  - component: {fileID: 114672575668698928}
-  - component: {fileID: 114087491151849276}
   m_Layer: 0
   m_Name: SA_Prop_TreeAutumn_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 558a070f65df48e4e8ebca18feca4eb6, type: 3}
---- !u!114 &114087491151849276
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c4c04d41-40e6-443b-b76c-fa30e53c6002
---- !u!114 &114672575668698928
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 173062}
-  _assetGuid: dc77cf6f8ec7d914d8d8f9c3c5179b53

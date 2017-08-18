@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 458970}
   - component: {fileID: 3360330}
   - component: {fileID: 2315212}
-  - component: {fileID: 114843626253885410}
-  - component: {fileID: 114374548380424102}
   m_Layer: 0
   m_Name: SA_Item_Ammo_Revolver
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 123454}
   m_IsPrefabParent: 1
---- !u!114 &114374548380424102
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: dd1c4f4e-90ce-4d98-800f-41963272d910
---- !u!114 &114843626253885410
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 123454}
-  _assetGuid: 5f34ab9d78d5a90489aeb8eac75ad20f

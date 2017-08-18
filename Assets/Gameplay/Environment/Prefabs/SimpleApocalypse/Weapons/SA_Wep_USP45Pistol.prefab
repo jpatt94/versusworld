@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 460844}
   - component: {fileID: 3380496}
   - component: {fileID: 2383872}
-  - component: {fileID: 114511352940685620}
-  - component: {fileID: 114788177018614564}
   m_Layer: 0
   m_Name: SA_Wep_USP45Pistol
   m_TagString: Untagged
@@ -449,28 +447,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: daa4854b-98bd-4a57-9d1f-68b167a22636
---- !u!114 &114511352940685620
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 103408}
-    - {fileID: 108384}
-    - {fileID: 136394}
-    - {fileID: 127482}
-    - {fileID: 127636}
-    - {fileID: 180504}
-  _assetGuid: 72c705a07a157ad40a9ec1966856e23e
 --- !u!114 &114552446065510634
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -483,18 +459,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 32bcdec4-f841-4419-8ee4-255e1e7eac42
---- !u!114 &114788177018614564
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bc0621c9-b7c4-4183-abab-c4106d1d8bf9
 --- !u!114 &114859048910947952
 MonoBehaviour:
   m_ObjectHideFlags: 1

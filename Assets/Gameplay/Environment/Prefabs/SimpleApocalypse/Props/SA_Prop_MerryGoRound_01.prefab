@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3338070}
   - component: {fileID: 2348306}
   - component: {fileID: 64742238052683268}
-  - component: {fileID: 114497695159034960}
-  - component: {fileID: 114922029870528756}
   m_Layer: 0
   m_Name: SA_Prop_MerryGoRound_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ec7f86a75cdea4343b158c4ad4182360, type: 3}
---- !u!114 &114497695159034960
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 181108}
-  _assetGuid: 6588c83dd99be48458d5aa2010412ba6
---- !u!114 &114922029870528756
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: de1aa6f4-0ae4-4df1-9b9c-2788ae0a0a85

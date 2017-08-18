@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3382540}
   - component: {fileID: 2350358}
   - component: {fileID: 64906600039334252}
-  - component: {fileID: 114508768026961890}
-  - component: {fileID: 114710043581239300}
   m_Layer: 0
   m_Name: SA_Prop_WashingLine_04
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 31676692a76340d4997bf98cd86b4e7b, type: 3}
---- !u!114 &114508768026961890
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 138296}
-  _assetGuid: 677435d6d63ffcc4d9aad0edcf64c11e
---- !u!114 &114710043581239300
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 943cf122-aba4-471e-9b8f-7ed2a68c3879

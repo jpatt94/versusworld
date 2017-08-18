@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3330770}
   - component: {fileID: 2341848}
   - component: {fileID: 64556906860853196}
-  - component: {fileID: 114910996915201080}
-  - component: {fileID: 114631670403702234}
   m_Layer: 0
   m_Name: SA_Env_BeachSection_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b57faa0e18fb7a64cadc879bafd4839b, type: 3}
---- !u!114 &114631670403702234
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3c9af075-92a2-4638-8cf9-67ca45b6021f
---- !u!114 &114910996915201080
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 158136}
-  _assetGuid: 9b29a03d5c316f74aad0acff9d1a4689

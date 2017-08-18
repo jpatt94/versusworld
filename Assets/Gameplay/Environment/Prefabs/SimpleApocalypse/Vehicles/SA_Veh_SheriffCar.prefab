@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 411216}
   - component: {fileID: 3389866}
   - component: {fileID: 2374294}
-  - component: {fileID: 114727814376263448}
-  - component: {fileID: 114451508007568964}
   m_Layer: 0
   m_Name: SA_Veh_SheriffCar
   m_TagString: Untagged
@@ -473,18 +471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: e800b36f-4c40-4773-9209-3a4f77ff80d6
---- !u!114 &114451508007568964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e3b6c96a-17c5-4265-9127-bbc2427a220c
 --- !u!114 &114518717224224396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -497,28 +483,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 8dbe4e72-6b4e-4e73-ab3d-9e3e59a77f44
---- !u!114 &114727814376263448
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 135980}
-    - {fileID: 198312}
-    - {fileID: 188728}
-    - {fileID: 149702}
-    - {fileID: 117030}
-    - {fileID: 143380}
-  _assetGuid: 839cd8c9db838c743bd6b78735f6ad4a
 --- !u!114 &114867440979381874
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3377682}
   - component: {fileID: 2379508}
   - component: {fileID: 64409134126718304}
-  - component: {fileID: 114460028249387392}
-  - component: {fileID: 114936103908401516}
   m_Layer: 0
   m_Name: SA_Prop_UteBrokenMore_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ea401e4361c01764fb46a06c873cb87a, type: 3}
---- !u!114 &114460028249387392
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 146618}
-  _assetGuid: 7c8169e7b70b37840870a2fbe9c2f033
---- !u!114 &114936103908401516
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7ff748b3-a806-4a8b-b66a-ea046d3c16f0

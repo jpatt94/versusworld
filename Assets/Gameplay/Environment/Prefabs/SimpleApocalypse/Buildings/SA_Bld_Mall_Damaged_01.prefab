@@ -46,8 +46,6 @@ GameObject:
   - component: {fileID: 464564}
   - component: {fileID: 3327128}
   - component: {fileID: 2328882}
-  - component: {fileID: 114809155436734466}
-  - component: {fileID: 114199754036113484}
   m_Layer: 0
   m_Name: SA_Bld_Mall_Damaged_01
   m_TagString: Untagged
@@ -236,18 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: eff8dfe1-84c5-442f-8dee-407e7ab8f304
---- !u!114 &114199754036113484
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9d5e88a1-5aa4-4b63-9ebd-135f19e54657
 --- !u!114 &114463774793675188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -260,22 +246,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 3629fbe5-5fb9-435b-aca0-e6033ecb3be9
---- !u!114 &114809155436734466
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 159456}
-    - {fileID: 109264}
-    - {fileID: 102008}
-  _assetGuid: d1da2fd6f6ce20b41b40577aa0d59d55

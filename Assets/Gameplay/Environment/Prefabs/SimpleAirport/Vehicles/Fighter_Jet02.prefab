@@ -137,8 +137,6 @@ GameObject:
   - component: {fileID: 3300014}
   - component: {fileID: 2300014}
   - component: {fileID: 64835272816092618}
-  - component: {fileID: 114657356757146426}
-  - component: {fileID: 114339529882123954}
   m_Layer: 0
   m_Name: Fighter_Jet02
   m_TagString: Untagged
@@ -642,18 +640,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 01aa0ca2-4391-42f2-8e2d-0ae5c9367e9e
---- !u!114 &114339529882123954
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 758a8c7d-3e12-4f76-8fc6-74f807e9d417
 --- !u!114 &114457852409678716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -678,30 +664,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: fdb7fd36-0660-4048-b28e-264e9cd52b53
---- !u!114 &114657356757146426
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100014}
-    - {fileID: 100012}
-    - {fileID: 100010}
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: 5ac3b53549faa0b4dbf7a0fb2a36e6b3
 --- !u!114 &114873943143137606
 MonoBehaviour:
   m_ObjectHideFlags: 1

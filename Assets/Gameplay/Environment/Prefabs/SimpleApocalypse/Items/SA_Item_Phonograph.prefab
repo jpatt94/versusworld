@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 406292}
   - component: {fileID: 3370188}
   - component: {fileID: 2325324}
-  - component: {fileID: 114948792772727442}
-  - component: {fileID: 114873882866987770}
   m_Layer: 0
   m_Name: SA_Item_Phonograph
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 110120}
   m_IsPrefabParent: 1
---- !u!114 &114873882866987770
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e3f63877-696e-43c9-a030-12a3cbcfdaf6
---- !u!114 &114948792772727442
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 110120}
-  _assetGuid: 5365e951bf344c64784eb47902e59473

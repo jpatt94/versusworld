@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3310662}
   - component: {fileID: 2347792}
   - component: {fileID: 64623772120441888}
-  - component: {fileID: 114088167618415420}
-  - component: {fileID: 114015668053125116}
   m_Layer: 0
   m_Name: SA_Prop_Fridge_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b9ee8adb6dbd2594d93f11838f14a9f2, type: 3}
---- !u!114 &114015668053125116
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e72b5c29-edc9-4dda-ad3a-abe200136970
---- !u!114 &114088167618415420
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 119910}
-  _assetGuid: 7b685a3d95f8fb847a6405f499658c45

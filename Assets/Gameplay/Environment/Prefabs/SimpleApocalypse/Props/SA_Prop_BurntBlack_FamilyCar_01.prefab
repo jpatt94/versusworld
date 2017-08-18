@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3380296}
   - component: {fileID: 2319094}
   - component: {fileID: 64106802062056550}
-  - component: {fileID: 114952104182661688}
-  - component: {fileID: 114496309360910078}
   m_Layer: 0
   m_Name: SA_Prop_BurntBlack_FamilyCar_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: da5bd91304870cf47adeada69c37d539, type: 3}
---- !u!114 &114496309360910078
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d7101bb6-ad92-4a02-bf12-6578903a6c1c
---- !u!114 &114952104182661688
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 125344}
-  _assetGuid: 276fd2c005e7b8c468992cf167137e24

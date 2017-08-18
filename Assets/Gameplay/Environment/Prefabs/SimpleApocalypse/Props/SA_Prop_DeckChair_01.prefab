@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3326764}
   - component: {fileID: 2332448}
   - component: {fileID: 64465272140457802}
-  - component: {fileID: 114455285958989954}
-  - component: {fileID: 114700042106511812}
   m_Layer: 0
   m_Name: SA_Prop_DeckChair_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 284f98a3d4741dc41ad18ce9ed1df8b1, type: 3}
---- !u!114 &114455285958989954
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 148348}
-  _assetGuid: e8f4f3be0b9495842b292bfdb305ae78
---- !u!114 &114700042106511812
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9f2697c4-56ee-4497-beed-c8c125e3d1cc

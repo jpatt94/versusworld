@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3386924}
   - component: {fileID: 2300034}
   - component: {fileID: 64467411649759348}
-  - component: {fileID: 114895590268061780}
-  - component: {fileID: 114961125775016988}
   m_Layer: 0
   m_Name: SA_Prop_SwingSet_Damaged_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: a14be9a82544882479b04442030ae2cf, type: 3}
---- !u!114 &114895590268061780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 137196}
-  _assetGuid: 27b76bf99b53e374a8673eb709771c52
---- !u!114 &114961125775016988
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 515d30ad-ba32-4296-b3a7-2c49afcc7a03

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 452192}
   - component: {fileID: 3343646}
   - component: {fileID: 2328034}
-  - component: {fileID: 114428411788268016}
-  - component: {fileID: 114048981399245544}
   m_Layer: 0
   m_Name: Floor_Carpet_Grey
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 187572}
   m_IsPrefabParent: 1
---- !u!114 &114048981399245544
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: acd40df1-3e10-4ab9-a3a6-597accf7ada6
---- !u!114 &114428411788268016
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 187572}
-  _assetGuid: 94f4620a533a8bc4cbd53f07b8a1e05e

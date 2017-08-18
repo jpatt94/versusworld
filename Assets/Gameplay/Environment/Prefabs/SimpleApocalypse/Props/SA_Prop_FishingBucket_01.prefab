@@ -65,8 +65,6 @@ GameObject:
   - component: {fileID: 3328998}
   - component: {fileID: 2380988}
   - component: {fileID: 64841571599561560}
-  - component: {fileID: 114709149108964172}
-  - component: {fileID: 114045446417501138}
   m_Layer: 0
   m_Name: SA_Prop_FishingBucket_01
   m_TagString: Untagged
@@ -452,18 +450,6 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 568dd76f88cbdff4e9c6bfe6d20478e0, type: 3}
---- !u!114 &114045446417501138
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 65c580ac-8592-43c5-af1e-c536a4dca8a1
 --- !u!114 &114078922642949700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -512,28 +498,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: eabcdd8c-535c-47f6-8d95-ec109254bf6d
---- !u!114 &114709149108964172
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 177524}
-    - {fileID: 172564}
-    - {fileID: 184540}
-    - {fileID: 112244}
-    - {fileID: 198044}
-    - {fileID: 112076}
-  _assetGuid: 9e7b30901a2dc674d9d75d50ef7db2ce
 --- !u!114 &114718570806065650
 MonoBehaviour:
   m_ObjectHideFlags: 1

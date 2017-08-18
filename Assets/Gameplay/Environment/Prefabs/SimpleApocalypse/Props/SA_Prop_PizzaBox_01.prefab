@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3361194}
   - component: {fileID: 2333038}
   - component: {fileID: 64002733695614786}
-  - component: {fileID: 114899248370125952}
-  - component: {fileID: 114689494672698382}
   m_Layer: 0
   m_Name: SA_Prop_PizzaBox_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 91ba7704a24543b4a93ed0ea90ec5298, type: 3}
---- !u!114 &114689494672698382
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 68c133f5-2a6e-4ab5-8119-688b38a67119
---- !u!114 &114899248370125952
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 110702}
-  _assetGuid: b37c4bee2b08ecf46b3a62afd34b2ebd

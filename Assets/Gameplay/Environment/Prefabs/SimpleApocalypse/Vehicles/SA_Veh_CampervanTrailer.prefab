@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 434492}
   - component: {fileID: 3358764}
   - component: {fileID: 2378434}
-  - component: {fileID: 114232172092686554}
-  - component: {fileID: 114951003730277488}
   m_Layer: 0
   m_Name: SA_Veh_CampervanTrailer
   m_TagString: Untagged
@@ -295,26 +293,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 124504}
   m_IsPrefabParent: 1
---- !u!114 &114232172092686554
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 124504}
-    - {fileID: 179612}
-    - {fileID: 165796}
-    - {fileID: 117202}
-  _assetGuid: 39b29a6cb9aef9a49966f5248fa80ab6
 --- !u!114 &114710807915941132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -351,15 +329,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 67a5f200-0b50-493c-b9a2-893887294185
---- !u!114 &114951003730277488
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 95a5e3be-b2a9-44b1-9c9c-f6f7b9e93fb4

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 476790}
   - component: {fileID: 3385406}
   - component: {fileID: 2376684}
-  - component: {fileID: 114746011494777106}
-  - component: {fileID: 114132774618050630}
   m_Layer: 0
   m_Name: SA_Bld_BioTentMedical_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 159446}
   m_IsPrefabParent: 1
---- !u!114 &114132774618050630
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 38c8f7bf-53e0-4113-b474-e9f5d27f253d
---- !u!114 &114746011494777106
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 159446}
-  _assetGuid: bec2e4e95d04d23498ac2e2afd0c4aa0

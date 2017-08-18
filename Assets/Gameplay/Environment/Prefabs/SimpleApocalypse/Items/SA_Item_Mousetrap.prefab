@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 405932}
   - component: {fileID: 3333954}
   - component: {fileID: 2384604}
-  - component: {fileID: 114748095846454998}
-  - component: {fileID: 114533387211483474}
   m_Layer: 0
   m_Name: SA_Item_Mousetrap
   m_TagString: Untagged
@@ -153,18 +151,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 158098}
   m_IsPrefabParent: 1
---- !u!114 &114533387211483474
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3101d2c7-c335-490f-bc8c-a06173ca56a8
 --- !u!114 &114728015574930626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,21 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 4e2b0e1e-9e0d-4583-a609-941d54233078
---- !u!114 &114748095846454998
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 158098}
-    - {fileID: 190430}
-  _assetGuid: 1ee6f9814ffae2948abf1579954f5e71

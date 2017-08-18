@@ -46,8 +46,6 @@ GameObject:
   - component: {fileID: 416386}
   - component: {fileID: 3384768}
   - component: {fileID: 2368312}
-  - component: {fileID: 114527517477073642}
-  - component: {fileID: 114271355071977430}
   m_Layer: 0
   m_Name: SA_Bld_AutoRepair_Damaged_01
   m_TagString: Untagged
@@ -224,37 +222,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168194}
   m_IsPrefabParent: 1
---- !u!114 &114271355071977430
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8aa99c50-4059-45b0-8419-166780dfe757
---- !u!114 &114527517477073642
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 168194}
-    - {fileID: 123568}
-    - {fileID: 152112}
-  _assetGuid: 14087fbadf540834dbb3cae4389a4408
 --- !u!114 &114737874346630812
 MonoBehaviour:
   m_ObjectHideFlags: 1

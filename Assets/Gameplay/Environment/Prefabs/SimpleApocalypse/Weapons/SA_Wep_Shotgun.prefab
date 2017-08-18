@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 427944}
   - component: {fileID: 3349660}
   - component: {fileID: 2371498}
-  - component: {fileID: 114802414788504932}
-  - component: {fileID: 114475023613140030}
   m_Layer: 0
   m_Name: SA_Wep_Shotgun
   m_TagString: Untagged
@@ -473,18 +471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 7515e34a-eebf-4ad0-a1aa-91f2b05b040f
---- !u!114 &114475023613140030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 02a8ae48-f58e-4b2e-987d-5173bc51c8f1
 --- !u!114 &114484629216798992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -509,25 +495,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 20c32b22-78e5-4b3a-a9c7-e4f0b352c935
---- !u!114 &114802414788504932
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 151830}
-    - {fileID: 168064}
-    - {fileID: 183322}
-    - {fileID: 199084}
-    - {fileID: 138642}
-    - {fileID: 165046}
-  _assetGuid: b734eaff27f6da6439f1adf47ca003f7

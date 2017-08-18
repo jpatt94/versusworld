@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 469640}
   - component: {fileID: 3305160}
   - component: {fileID: 2389554}
-  - component: {fileID: 114696662313437302}
-  - component: {fileID: 114418399980322704}
   m_Layer: 0
   m_Name: SA_Bld_TownHall_Damaged_01
   m_TagString: Untagged
@@ -236,37 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: edc7a260-5b3b-4c3d-825d-922303404a57
---- !u!114 &114418399980322704
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7ccce57a-f9cf-47f8-bf9b-f67f6e8c23fd
---- !u!114 &114696662313437302
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100802}
-    - {fileID: 116760}
-    - {fileID: 102908}
-  _assetGuid: bc84f15e1d2513b4fa5acb98d26a16f7
 --- !u!114 &114906622292221834
 MonoBehaviour:
   m_ObjectHideFlags: 1

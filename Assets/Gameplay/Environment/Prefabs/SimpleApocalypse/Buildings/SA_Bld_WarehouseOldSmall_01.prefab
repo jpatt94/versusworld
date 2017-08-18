@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 479000}
   - component: {fileID: 3395216}
   - component: {fileID: 2373594}
-  - component: {fileID: 114132658644705914}
-  - component: {fileID: 114982437662762730}
   m_Layer: 0
   m_Name: SA_Bld_WarehouseOldSmall_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 116354}
   m_IsPrefabParent: 1
---- !u!114 &114132658644705914
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 116354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 116354}
-  _assetGuid: 7d6aa4a1d9da02b4780c47f1623e96e4
---- !u!114 &114982437662762730
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 116354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ea7d1a41-6d7a-4f85-b1d7-1930096165c3

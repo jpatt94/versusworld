@@ -64,8 +64,6 @@ GameObject:
   - component: {fileID: 492530}
   - component: {fileID: 3328642}
   - component: {fileID: 2353946}
-  - component: {fileID: 114299839212175840}
-  - component: {fileID: 114694832268875230}
   m_Layer: 0
   m_Name: SA_Veh_Van
   m_TagString: Untagged
@@ -461,28 +459,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 07fabac8-56b6-46ad-8770-46667576cae8
---- !u!114 &114299839212175840
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 127560}
-    - {fileID: 163538}
-    - {fileID: 111662}
-    - {fileID: 101512}
-    - {fileID: 153638}
-    - {fileID: 117486}
-  _assetGuid: 5a4c537dfa7d6654cb816af5d0a8df04
 --- !u!114 &114317467065244836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -495,18 +471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: af904187-65d1-47c2-95c1-a5f621c1f2d3
---- !u!114 &114694832268875230
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 39e5149b-9484-45ec-8849-3995084c04a0
 --- !u!114 &114699475050497678
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 417466}
   - component: {fileID: 3384228}
   - component: {fileID: 2319864}
-  - component: {fileID: 114607868784715734}
-  - component: {fileID: 114741364026581278}
   m_Layer: 0
   m_Name: SA_Bld_ShopSmall_01
   m_TagString: Untagged
@@ -248,34 +246,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 865048d4-512d-4aa0-bc0b-bbd78d1c69dc
---- !u!114 &114607868784715734
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 112182}
-    - {fileID: 197016}
-    - {fileID: 160784}
-  _assetGuid: fbf66d97a6122dd44a4fb1dcad65da00
---- !u!114 &114741364026581278
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 00030ab7-b80e-4c5a-8596-9ff8a475770f

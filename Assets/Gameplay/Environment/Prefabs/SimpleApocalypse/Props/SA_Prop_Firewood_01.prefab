@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3343164}
   - component: {fileID: 2301336}
   - component: {fileID: 64013715110528830}
-  - component: {fileID: 114600105886175676}
-  - component: {fileID: 114151127701941056}
   m_Layer: 0
   m_Name: SA_Prop_Firewood_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 5352cfa997beba24bb91eede29100a6c, type: 3}
---- !u!114 &114151127701941056
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 963421be-d91c-4900-ad31-75288973300a
---- !u!114 &114600105886175676
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 126738}
-  _assetGuid: 47bd7dcc2b604e94ebcc6619e66204cc

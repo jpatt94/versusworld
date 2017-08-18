@@ -137,8 +137,6 @@ GameObject:
   - component: {fileID: 3300014}
   - component: {fileID: 2300014}
   - component: {fileID: 64414002646217118}
-  - component: {fileID: 114362036108112784}
-  - component: {fileID: 114491562176196598}
   m_Layer: 0
   m_Name: Fighter_Jet04
   m_TagString: Untagged
@@ -642,42 +640,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 97d9c9c2-68a8-4b87-8310-c6527f732415
---- !u!114 &114362036108112784
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100014}
-    - {fileID: 100012}
-    - {fileID: 100010}
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: 32afb3201b7ffc943ae35ecab533eb32
---- !u!114 &114491562176196598
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8869529f-a271-485c-8582-a95fdeb85f1f
 --- !u!114 &114506035052395158
 MonoBehaviour:
   m_ObjectHideFlags: 1

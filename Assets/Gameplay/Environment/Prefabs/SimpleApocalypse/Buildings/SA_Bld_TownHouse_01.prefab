@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 407930}
   - component: {fileID: 3321872}
   - component: {fileID: 2362040}
-  - component: {fileID: 114500038361077026}
-  - component: {fileID: 114827622748442054}
   m_Layer: 0
   m_Name: SA_Bld_TownHouse_01
   m_TagString: Untagged
@@ -224,25 +222,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 166710}
   m_IsPrefabParent: 1
---- !u!114 &114500038361077026
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 166710}
-    - {fileID: 155234}
-    - {fileID: 181938}
-  _assetGuid: 21db06cb57a74604eb05070e652e2c83
 --- !u!114 &114732539452246012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,18 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 769f0942-35a5-4b5b-badc-d9b09c244a05
---- !u!114 &114827622748442054
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 6319f707-3664-4af6-b7ff-d678ab1c3261
 --- !u!114 &114850314312636274
 MonoBehaviour:
   m_ObjectHideFlags: 1

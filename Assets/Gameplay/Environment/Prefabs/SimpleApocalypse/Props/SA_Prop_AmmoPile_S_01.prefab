@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3305548}
   - component: {fileID: 2307886}
   - component: {fileID: 64851284522306252}
-  - component: {fileID: 114051524273024728}
-  - component: {fileID: 114921638463324588}
   m_Layer: 0
   m_Name: SA_Prop_AmmoPile_S_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: a374fe4259f97004ba44447a35f5872b, type: 3}
---- !u!114 &114051524273024728
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 104710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 104710}
-  _assetGuid: 04b2883256a3f1247925f0ec5dd0a569
---- !u!114 &114921638463324588
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 104710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c367d825-32cb-4a52-b7c8-dac16a610923

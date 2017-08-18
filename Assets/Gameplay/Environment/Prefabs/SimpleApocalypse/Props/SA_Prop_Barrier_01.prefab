@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3381980}
   - component: {fileID: 2354908}
   - component: {fileID: 64559250163460138}
-  - component: {fileID: 114910897014707144}
-  - component: {fileID: 114287004466102842}
   m_Layer: 0
   m_Name: SA_Prop_Barrier_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 6bebb462738073b49b04fda2d21f73ad, type: 3}
---- !u!114 &114287004466102842
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b8daaa8c-0d46-42c0-b001-d93a82baa1aa
---- !u!114 &114910897014707144
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 140364}
-  _assetGuid: 360c38e9058b172489fc927a1115235e

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3398018}
   - component: {fileID: 2326426}
   - component: {fileID: 64280266108829512}
-  - component: {fileID: 114910452404961332}
-  - component: {fileID: 114764452300813582}
   m_Layer: 0
   m_Name: SA_Prop_FenceWoodL_Plain_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 533620c81c3ac274bae39a0ded35294e, type: 3}
---- !u!114 &114764452300813582
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bcebed1b-b0f5-4482-b45f-1fb269e61c21
---- !u!114 &114910452404961332
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 189478}
-  _assetGuid: c825872ae857e534284c60a7c0db90ff

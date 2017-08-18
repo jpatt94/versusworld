@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3312632}
   - component: {fileID: 2324894}
   - component: {fileID: 64970045263302032}
-  - component: {fileID: 114212253377269146}
-  - component: {fileID: 114783837751281120}
   m_Layer: 0
   m_Name: SA_Prop_WoodLadder_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 92bce4a409e5ba0428ac3868d86fb493, type: 3}
---- !u!114 &114212253377269146
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 147206}
-  _assetGuid: 11dee2bff3d15e94a883129e78cc2d81
---- !u!114 &114783837751281120
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f31ed1e6-bf7c-41a1-95f5-0d10c65bbeda

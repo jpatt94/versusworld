@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3300368}
   - component: {fileID: 2385502}
   - component: {fileID: 64206166114520870}
-  - component: {fileID: 114023319276832462}
-  - component: {fileID: 114303302867144626}
   m_Layer: 0
   m_Name: SA_Env_Highway_Broken_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: f35d94eeae9fd614882f88e110d96d36, type: 3}
---- !u!114 &114023319276832462
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 121160}
-  _assetGuid: d0cc0df3043aac840ac6e44b1b435f14
---- !u!114 &114303302867144626
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 6658170c-fb00-4987-88c1-2a66cd35fafd

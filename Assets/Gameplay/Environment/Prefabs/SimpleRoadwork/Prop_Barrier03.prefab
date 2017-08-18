@@ -26,8 +26,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 445980}
-  - component: {fileID: 114069506084380000}
-  - component: {fileID: 114408943286289370}
   m_Layer: 0
   m_Name: Prop_Barrier03
   m_TagString: Untagged
@@ -112,36 +110,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145980}
   m_IsPrefabParent: 1
---- !u!114 &114069506084380000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 145980}
-    - {fileID: 145978}
-  _assetGuid: 84a102c1bf03d0a43bd4b342185c2811
---- !u!114 &114408943286289370
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ab67a448-f7f5-4859-b952-86857aac4d89
 --- !u!114 &114975112662182470
 MonoBehaviour:
   m_ObjectHideFlags: 1

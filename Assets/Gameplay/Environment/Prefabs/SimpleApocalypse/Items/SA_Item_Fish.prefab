@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 401854}
   - component: {fileID: 3367198}
   - component: {fileID: 2335992}
-  - component: {fileID: 114702743102671790}
-  - component: {fileID: 114854428297931032}
   m_Layer: 0
   m_Name: SA_Item_Fish
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145182}
   m_IsPrefabParent: 1
---- !u!114 &114702743102671790
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 145182}
-  _assetGuid: 794bb94b1bde20543a16802bf8106457
---- !u!114 &114854428297931032
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 58f91eb1-f90c-4d8f-bfa2-745625ca0621

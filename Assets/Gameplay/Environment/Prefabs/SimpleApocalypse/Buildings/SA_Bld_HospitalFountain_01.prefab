@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 474260}
   - component: {fileID: 3354116}
   - component: {fileID: 2390114}
-  - component: {fileID: 114368008684135474}
-  - component: {fileID: 114751804372653910}
   m_Layer: 0
   m_Name: SA_Bld_HospitalFountain_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 189078}
   m_IsPrefabParent: 1
---- !u!114 &114368008684135474
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 189078}
-  _assetGuid: 79ca462c8174cc540b7bf40fe738186c
---- !u!114 &114751804372653910
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 66965e1c-6182-44ea-bce6-536360fd531a

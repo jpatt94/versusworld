@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3322972}
   - component: {fileID: 2346140}
   - component: {fileID: 64456490061128610}
-  - component: {fileID: 114267289985062920}
-  - component: {fileID: 114777531220720418}
   m_Layer: 0
   m_Name: SA_Prop_TentSmall_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: f1fa6ebe25e622647b6ddee457c85a5a, type: 3}
---- !u!114 &114267289985062920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 138288}
-  _assetGuid: d159be490db85e240abcb56be8535d5b
---- !u!114 &114777531220720418
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5e853978-8873-441e-bcea-ef3aa70aa4d9

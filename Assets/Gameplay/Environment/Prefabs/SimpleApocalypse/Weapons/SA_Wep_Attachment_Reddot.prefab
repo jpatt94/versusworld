@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 408212}
   - component: {fileID: 3387954}
   - component: {fileID: 2314398}
-  - component: {fileID: 114872697898527064}
-  - component: {fileID: 114581475127695516}
   m_Layer: 0
   m_Name: SA_Wep_Attachment_Reddot
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 187722}
   m_IsPrefabParent: 1
---- !u!114 &114581475127695516
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3da0b83a-045e-4c97-ae5b-77e2fce6b177
---- !u!114 &114872697898527064
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 187722}
-  _assetGuid: 8e62a77f928d45a4899c7456cc677b69

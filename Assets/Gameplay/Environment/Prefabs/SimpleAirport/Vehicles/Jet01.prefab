@@ -65,8 +65,6 @@ GameObject:
   - component: {fileID: 3300006}
   - component: {fileID: 2300006}
   - component: {fileID: 64733913965348030}
-  - component: {fileID: 114967953744608984}
-  - component: {fileID: 114176042258388462}
   m_Layer: 0
   m_Name: Jet01
   m_TagString: Untagged
@@ -334,18 +332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: ad78a7a6-bcfc-4183-b42f-d50acfb2fd47
---- !u!114 &114176042258388462
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a678ea81-e1ae-4874-927b-247477ca3967
 --- !u!114 &114291042671712922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -358,23 +344,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 68cd5c81-647d-460d-87aa-3523886654f9
---- !u!114 &114967953744608984
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: 6869fe408ab4bc440aeedde600d84ad9

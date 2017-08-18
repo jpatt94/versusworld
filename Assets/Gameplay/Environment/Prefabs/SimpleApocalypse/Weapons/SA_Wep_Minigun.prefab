@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 407272}
   - component: {fileID: 3344098}
   - component: {fileID: 2376910}
-  - component: {fileID: 114887007978553002}
-  - component: {fileID: 114158503253270398}
   m_Layer: 0
   m_Name: SA_Wep_Minigun
   m_TagString: Untagged
@@ -153,18 +151,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 176706}
   m_IsPrefabParent: 1
---- !u!114 &114158503253270398
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bf03a830-51f4-43db-a6cb-afa4525b78c6
 --- !u!114 &114213705094098638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,21 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: fac7e974-d6bb-4cc5-bcc7-297a509d9d38
---- !u!114 &114887007978553002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 176706}
-    - {fileID: 186198}
-  _assetGuid: 7c0922489226a8a44aa4a7b63311f0e9

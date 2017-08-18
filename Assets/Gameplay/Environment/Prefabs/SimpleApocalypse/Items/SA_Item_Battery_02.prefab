@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 448624}
   - component: {fileID: 3312928}
   - component: {fileID: 2393614}
-  - component: {fileID: 114027480841950446}
-  - component: {fileID: 114446002181220044}
   m_Layer: 0
   m_Name: SA_Item_Battery_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 173518}
   m_IsPrefabParent: 1
---- !u!114 &114027480841950446
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 173518}
-  _assetGuid: efd4afff344245f4992187e41dc9f948
---- !u!114 &114446002181220044
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f1fd8682-da45-481f-a247-bf7bef0b4787

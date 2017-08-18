@@ -65,8 +65,6 @@ GameObject:
   - component: {fileID: 3300006}
   - component: {fileID: 2300006}
   - component: {fileID: 64018695296540304}
-  - component: {fileID: 114912054679383518}
-  - component: {fileID: 114396038503102598}
   m_Layer: 0
   m_Name: Plane02
   m_TagString: Untagged
@@ -334,18 +332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 89d95798-afb9-4474-b783-e55716b4f942
---- !u!114 &114396038503102598
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7f315d06-75b2-4e14-9d90-28311c2a5490
 --- !u!114 &114528711934873670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -358,23 +344,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: bdc6cb21-7cb1-43e8-86ac-c65020df02ad
---- !u!114 &114912054679383518
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: 59703c18b518ab140842651782a23d5b

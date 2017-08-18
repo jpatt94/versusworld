@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 426564}
   - component: {fileID: 3340606}
   - component: {fileID: 2387120}
-  - component: {fileID: 114443180644552504}
-  - component: {fileID: 114366644031333066}
   m_Layer: 0
   m_Name: SA_Wep_SawnOffShotgun
   m_TagString: Untagged
@@ -153,36 +151,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 190900}
   m_IsPrefabParent: 1
---- !u!114 &114366644031333066
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d07b0e28-a10e-4d7f-87ae-7dc8a550e0a1
---- !u!114 &114443180644552504
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 190900}
-    - {fileID: 192634}
-  _assetGuid: d022395e007a7b44eb81a589ec7c23e6
 --- !u!114 &114777525449326862
 MonoBehaviour:
   m_ObjectHideFlags: 1

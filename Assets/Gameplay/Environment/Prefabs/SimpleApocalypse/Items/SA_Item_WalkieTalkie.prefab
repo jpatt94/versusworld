@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 499548}
   - component: {fileID: 3392888}
   - component: {fileID: 2365590}
-  - component: {fileID: 114009679099151284}
-  - component: {fileID: 114510569134674886}
   m_Layer: 0
   m_Name: SA_Item_WalkieTalkie
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 149176}
   m_IsPrefabParent: 1
---- !u!114 &114009679099151284
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 149176}
-  _assetGuid: d37bdca3cf4a37248934e1cdf44b591f
---- !u!114 &114510569134674886
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3c950b82-5157-4833-a39d-aef547f8e5c3

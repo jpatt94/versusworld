@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 494962}
   - component: {fileID: 3385328}
   - component: {fileID: 2327438}
-  - component: {fileID: 114936537288112654}
-  - component: {fileID: 114630821072496024}
   m_Layer: 0
   m_Name: SA_Wep_SmokeGrenade
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 192604}
   m_IsPrefabParent: 1
---- !u!114 &114630821072496024
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 19cf8fd6-26be-45f3-a2c0-a8ea3b779fee
---- !u!114 &114936537288112654
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 192604}
-  _assetGuid: 873d0c7c4b9065d4a94861e47ef0815d

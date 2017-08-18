@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 448804}
   - component: {fileID: 3308548}
   - component: {fileID: 2344750}
-  - component: {fileID: 114285726674334052}
-  - component: {fileID: 114350561689574356}
   m_Layer: 0
   m_Name: SA_Wep_Scythe
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197576}
   m_IsPrefabParent: 1
---- !u!114 &114285726674334052
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 197576}
-  _assetGuid: 88922311ceac39348928d531cade3f3c
---- !u!114 &114350561689574356
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 91a27966-07ef-4f7d-8966-e8ffb047a644

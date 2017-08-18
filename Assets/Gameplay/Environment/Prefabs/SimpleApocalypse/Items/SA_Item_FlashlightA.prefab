@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 426706}
   - component: {fileID: 3304168}
   - component: {fileID: 2325008}
-  - component: {fileID: 114477576349340092}
-  - component: {fileID: 114903435142411450}
   m_Layer: 0
   m_Name: SA_Item_FlashlightA
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 182870}
   m_IsPrefabParent: 1
---- !u!114 &114477576349340092
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 182870}
-  _assetGuid: 814aa5a6cbba89c4784142492bcbe297
---- !u!114 &114903435142411450
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7004f01f-aaf0-4f75-93c5-2e357d5b4a73

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 465588}
   - component: {fileID: 3396860}
   - component: {fileID: 2310752}
-  - component: {fileID: 114971882794453812}
-  - component: {fileID: 114197543938285180}
   m_Layer: 0
   m_Name: SA_Wep_Attachment_Silencer
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151612}
   m_IsPrefabParent: 1
---- !u!114 &114197543938285180
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: dd5fc49e-db8a-4b14-b650-35c232dddc43
---- !u!114 &114971882794453812
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 151612}
-  _assetGuid: 7c64856cb2b7204408c84cddc25c64b1

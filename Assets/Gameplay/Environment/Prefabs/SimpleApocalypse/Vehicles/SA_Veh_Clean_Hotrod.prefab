@@ -64,8 +64,6 @@ GameObject:
   - component: {fileID: 499128}
   - component: {fileID: 3309454}
   - component: {fileID: 2321540}
-  - component: {fileID: 114833674237380164}
-  - component: {fileID: 114284169180990872}
   m_Layer: 0
   m_Name: SA_Veh_Clean_Hotrod
   m_TagString: Untagged
@@ -378,18 +376,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 170ad77c-898a-4599-9b41-cc7b599a1256
---- !u!114 &114284169180990872
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 33205235-49ab-428c-b212-85cb854dc44b
 --- !u!114 &114466596203809440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -426,24 +412,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 3bfe2c5e-aeba-4e28-b34f-a56bf40f785f
---- !u!114 &114833674237380164
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 155908}
-    - {fileID: 195540}
-    - {fileID: 149542}
-    - {fileID: 103034}
-    - {fileID: 110902}
-  _assetGuid: 7e12881fa2fc2b54aa9fc8ca461cbda4

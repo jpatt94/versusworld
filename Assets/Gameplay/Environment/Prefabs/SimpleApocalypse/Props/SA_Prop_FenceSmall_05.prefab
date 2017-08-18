@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3354234}
   - component: {fileID: 2316572}
   - component: {fileID: 64477924739334110}
-  - component: {fileID: 114156310722927318}
-  - component: {fileID: 114156897454369644}
   m_Layer: 0
   m_Name: SA_Prop_FenceSmall_05
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 2b89ff5eacb6dcd4babfc879e45c413f, type: 3}
---- !u!114 &114156310722927318
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 105148}
-  _assetGuid: ceaf13dfc5a8a834ba009c60a92a70a0
---- !u!114 &114156897454369644
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b37c4c48-9b38-4071-b00f-5cb7cf691698

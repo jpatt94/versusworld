@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3330088}
   - component: {fileID: 2353098}
   - component: {fileID: 64457027740464448}
-  - component: {fileID: 114151239058728614}
-  - component: {fileID: 114835135055637722}
   m_Layer: 0
   m_Name: SA_Prop_Citywall_Corner_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c714bcf61696b404187a7722a9fbb033, type: 3}
---- !u!114 &114151239058728614
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 115976}
-  _assetGuid: 243d54a4f93729c49a600c8cfe8fadf3
---- !u!114 &114835135055637722
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d05d1c27-cabf-4391-b964-6b231d3f7e03

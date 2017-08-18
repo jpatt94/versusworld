@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3321138}
   - component: {fileID: 2381666}
   - component: {fileID: 64718350592179978}
-  - component: {fileID: 114904092898852864}
-  - component: {fileID: 114548856838374846}
   m_Layer: 0
   m_Name: SA_Prop_PlaneCrash_01
   m_TagString: Untagged
@@ -98,32 +96,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 37f2dc13777feaa4eae72de6f01c505b, type: 3}
---- !u!114 &114548856838374846
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 69402966-f45c-4450-8798-569d04047e9e
---- !u!114 &114904092898852864
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 115328}
-  _assetGuid: 846aad7521ace0842a18b651e0ce3d67

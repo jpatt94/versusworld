@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3396730}
   - component: {fileID: 2335946}
   - component: {fileID: 64538651391867570}
-  - component: {fileID: 114263809271959610}
-  - component: {fileID: 114820243155321548}
   m_Layer: 0
   m_Name: SA_Prop_BurntBrown_RV_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 04f3f424737420947bd22d1297682808, type: 3}
---- !u!114 &114263809271959610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 199620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 199620}
-  _assetGuid: 1b91136a51dd656468c775d1bb35e704
---- !u!114 &114820243155321548
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 199620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 12e42098-dd12-4c62-b4c0-1fb6131d1d3e

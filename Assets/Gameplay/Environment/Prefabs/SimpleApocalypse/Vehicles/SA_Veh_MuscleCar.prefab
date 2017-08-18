@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 465786}
   - component: {fileID: 3317504}
   - component: {fileID: 2368154}
-  - component: {fileID: 114441954319749636}
-  - component: {fileID: 114860490532553132}
   m_Layer: 0
   m_Name: SA_Veh_MuscleCar
   m_TagString: Untagged
@@ -485,40 +483,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 56ad06b3-e9b4-4783-bc99-0d992dd3221a
---- !u!114 &114441954319749636
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 111300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 111300}
-    - {fileID: 117950}
-    - {fileID: 133056}
-    - {fileID: 150158}
-    - {fileID: 124908}
-    - {fileID: 127588}
-  _assetGuid: f6391cdea82de5743a08fe4c430c414c
---- !u!114 &114860490532553132
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 111300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 15cc610e-dc43-4f92-a631-ed4c3fa93858
 --- !u!114 &114930752582652400
 MonoBehaviour:
   m_ObjectHideFlags: 1

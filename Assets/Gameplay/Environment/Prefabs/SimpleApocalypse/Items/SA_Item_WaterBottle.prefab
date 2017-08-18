@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 449594}
   - component: {fileID: 3369830}
   - component: {fileID: 2334466}
-  - component: {fileID: 114330391054944520}
-  - component: {fileID: 114817106900767088}
   m_Layer: 0
   m_Name: SA_Item_WaterBottle
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130158}
   m_IsPrefabParent: 1
---- !u!114 &114330391054944520
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 130158}
-  _assetGuid: fe6c2665b8f2e8b408e15ca5405e6729
---- !u!114 &114817106900767088
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c4e402d1-d3fa-4e93-b8d9-c5d2b5bbedc7

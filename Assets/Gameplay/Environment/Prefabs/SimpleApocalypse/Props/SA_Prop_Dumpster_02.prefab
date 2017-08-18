@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3381446}
   - component: {fileID: 2393102}
   - component: {fileID: 64597250964525180}
-  - component: {fileID: 114422699503539500}
-  - component: {fileID: 114383672644865486}
   m_Layer: 0
   m_Name: SA_Prop_Dumpster_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: a05f583ee46101344acdf8afe14fa6ce, type: 3}
---- !u!114 &114383672644865486
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 129618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9f6d4c97-955b-4928-9134-8d058305ba5b
---- !u!114 &114422699503539500
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 129618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 129618}
-  _assetGuid: 1e7443826faa23d4f803139a7d6b12a7

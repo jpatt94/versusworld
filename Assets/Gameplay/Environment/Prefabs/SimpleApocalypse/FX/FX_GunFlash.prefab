@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 450098}
   - component: {fileID: 3370088}
   - component: {fileID: 2385796}
-  - component: {fileID: 114810446614074434}
-  - component: {fileID: 114569910223677362}
   m_Layer: 0
   m_Name: FX_GunFlash
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 160510}
   m_IsPrefabParent: 1
---- !u!114 &114569910223677362
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 0e7c16a5-0187-4f69-ab2a-657116ef5461
---- !u!114 &114810446614074434
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 160510}
-  _assetGuid: 6e1113468f14f5d47908179a77a9654c

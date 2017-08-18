@@ -73,8 +73,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4056934051266170}
-  - component: {fileID: 114109264659233874}
-  - component: {fileID: 114317807715926694}
   m_Layer: 0
   m_Name: RuinedHouse
   m_TagString: Untagged
@@ -285,27 +283,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 38aa36bc-bacb-4254-bcdd-8bca0f7bba86
---- !u!114 &114109264659233874
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1705114474360712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1705114474360712}
-    - {fileID: 1608121752226180}
-    - {fileID: 1871251023522662}
-    - {fileID: 1062478633397250}
-    - {fileID: 1304360617922804}
-  _assetGuid: f26ecd5ca98720641b3334948ea821f6
 --- !u!114 &114247718838368382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -318,18 +295,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 8741b25d-e982-4cf9-9674-80f052cfa746
---- !u!114 &114317807715926694
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1705114474360712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 11511a46-a342-40d5-8b55-d40555a3960b
 --- !u!114 &114461900773410970
 MonoBehaviour:
   m_ObjectHideFlags: 1

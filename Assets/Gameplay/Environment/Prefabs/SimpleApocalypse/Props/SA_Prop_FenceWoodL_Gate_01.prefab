@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3385600}
   - component: {fileID: 2359226}
   - component: {fileID: 64694169825842508}
-  - component: {fileID: 114054372568652176}
-  - component: {fileID: 114952124314142246}
   m_Layer: 0
   m_Name: SA_Prop_FenceWoodL_Gate_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 067b8c710ef18854bb7082d29edfd844, type: 3}
---- !u!114 &114054372568652176
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 134266}
-  _assetGuid: a9191dd7dd63f03489b1cf720f20192d
---- !u!114 &114952124314142246
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 49785db2-5027-4f99-ae0e-7df31e9a1890

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3378338}
   - component: {fileID: 2315956}
   - component: {fileID: 64783493556275374}
-  - component: {fileID: 114115910071978118}
-  - component: {fileID: 114241559992152666}
   m_Layer: 0
   m_Name: SA_Env_Campsite_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9dcf83bc4e2c36a4fbf79e0d51c6a5e6, type: 3}
---- !u!114 &114115910071978118
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 119176}
-  _assetGuid: ea1f4e56904f8d647b04a46614d9a0f3
---- !u!114 &114241559992152666
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 26d73a5b-d3ec-4370-bfc3-79527145079f

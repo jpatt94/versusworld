@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 414050}
   - component: {fileID: 3370914}
   - component: {fileID: 2397400}
-  - component: {fileID: 114174337255578698}
-  - component: {fileID: 114907781169515240}
   m_Layer: 0
   m_Name: SA_Bld_HospitalBuilding_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 101312}
   m_IsPrefabParent: 1
---- !u!114 &114174337255578698
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 101312}
-  _assetGuid: 15fc5062161176147a02300c7ac0ab3d
---- !u!114 &114907781169515240
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 55a0072b-fe25-4c22-b391-4978e0463594

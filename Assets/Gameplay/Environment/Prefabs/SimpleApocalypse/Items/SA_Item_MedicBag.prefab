@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 470060}
   - component: {fileID: 3318732}
   - component: {fileID: 2324938}
-  - component: {fileID: 114408908037621960}
-  - component: {fileID: 114483887465714990}
   m_Layer: 0
   m_Name: SA_Item_MedicBag
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 120558}
   m_IsPrefabParent: 1
---- !u!114 &114408908037621960
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 120558}
-  _assetGuid: f344b7f2d0426604599821e9d21babff
---- !u!114 &114483887465714990
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2435e1e6-2c5a-42ff-83eb-d9b8bca30a0a

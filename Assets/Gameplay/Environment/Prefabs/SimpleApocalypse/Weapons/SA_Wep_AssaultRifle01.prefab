@@ -64,8 +64,6 @@ GameObject:
   - component: {fileID: 456384}
   - component: {fileID: 3384128}
   - component: {fileID: 2377312}
-  - component: {fileID: 114162969289673274}
-  - component: {fileID: 114068806785370112}
   m_Layer: 0
   m_Name: SA_Wep_AssaultRifle01
   m_TagString: Untagged
@@ -437,18 +435,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 179986}
   m_IsPrefabParent: 1
---- !u!114 &114068806785370112
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b12fe4fb-c633-4bb2-bf72-badf3fc7d63c
 --- !u!114 &114099628329293412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -461,28 +447,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 580acec3-b05e-4c85-9959-7891346c9bc6
---- !u!114 &114162969289673274
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 179986}
-    - {fileID: 138070}
-    - {fileID: 171328}
-    - {fileID: 180380}
-    - {fileID: 174560}
-    - {fileID: 189072}
-  _assetGuid: 65389442798920a489c4dd8f72671788
 --- !u!114 &114298525248338870
 MonoBehaviour:
   m_ObjectHideFlags: 1

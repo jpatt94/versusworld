@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3328272}
   - component: {fileID: 2339902}
   - component: {fileID: 64994523870374452}
-  - component: {fileID: 114531469754270720}
-  - component: {fileID: 114558029545752102}
   m_Layer: 0
   m_Name: SA_Prop_OverGrowth_05
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c39975e482b5c9c49b54926862a25520, type: 3}
---- !u!114 &114531469754270720
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 135296}
-  _assetGuid: 0da5fb0c9bc6a17419f6f9f1f0aa9f74
---- !u!114 &114558029545752102
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a979f55c-125b-492e-9855-fb6fc33aa177

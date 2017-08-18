@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 467678}
   - component: {fileID: 3310844}
   - component: {fileID: 2336204}
-  - component: {fileID: 114242510925878672}
-  - component: {fileID: 114780076639911978}
   m_Layer: 0
   m_Name: SA_Wep_Pistol
   m_TagString: Untagged
@@ -449,28 +447,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: f614577f-3d72-4ebe-a40f-ad17d96c5f15
---- !u!114 &114242510925878672
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 134984}
-    - {fileID: 164610}
-    - {fileID: 140046}
-    - {fileID: 183284}
-    - {fileID: 147108}
-    - {fileID: 167418}
-  _assetGuid: 9b039ab6cb3f58f44a1bddfadc4a00a3
 --- !u!114 &114365778926569308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -495,18 +471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 19803ea6-638c-4ab4-9b2d-c6d106315a22
---- !u!114 &114780076639911978
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 35cb6d51-eaae-4500-a7d9-b5eb86348165
 --- !u!114 &114888136241575842
 MonoBehaviour:
   m_ObjectHideFlags: 1

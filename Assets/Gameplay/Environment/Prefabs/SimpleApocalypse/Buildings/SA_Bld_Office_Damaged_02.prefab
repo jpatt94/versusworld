@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 450306}
   - component: {fileID: 3398416}
   - component: {fileID: 2315960}
-  - component: {fileID: 114067819279530152}
-  - component: {fileID: 114600012444931012}
   m_Layer: 0
   m_Name: SA_Bld_Office_Damaged_02
   m_TagString: Untagged
@@ -165,33 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 5b840ca4-a79b-4530-8e8b-2df6b6d60921
---- !u!114 &114067819279530152
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 139508}
-    - {fileID: 137170}
-  _assetGuid: 7e48f0e616016df44b4d95f6acdd30b2
---- !u!114 &114600012444931012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 91b28c17-bb8d-4200-9efe-d3e8db83cb61

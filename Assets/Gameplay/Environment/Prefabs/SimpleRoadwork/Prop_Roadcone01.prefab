@@ -8,8 +8,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 471514}
-  - component: {fileID: 114125055499649072}
-  - component: {fileID: 114344652354526564}
   m_Layer: 0
   m_Name: Prop_Roadcone01
   m_TagString: Untagged
@@ -124,33 +122,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 5ebb4939-4e3b-4a9e-88d7-a046472c614a
---- !u!114 &114125055499649072
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 171514}
-    - {fileID: 171516}
-  _assetGuid: b5d385f488ef5d04aa847d3b32eb24d1
---- !u!114 &114344652354526564
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: fcaa2a78-0ed0-4a9b-add8-6736c06d31d1

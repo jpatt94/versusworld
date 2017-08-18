@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3312342}
   - component: {fileID: 2391664}
   - component: {fileID: 64842528663947406}
-  - component: {fileID: 114181198456391120}
-  - component: {fileID: 114900124688175620}
   m_Layer: 0
   m_Name: SA_Prop_BioBarrel_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 677f9e4dbec8ce94a8f3142acbfc4899, type: 3}
---- !u!114 &114181198456391120
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 142800}
-  _assetGuid: 667f8d64d1420be4c89570f844aad2e5
---- !u!114 &114900124688175620
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 44528669-1a89-4b8e-a04f-328fef3d3fd6

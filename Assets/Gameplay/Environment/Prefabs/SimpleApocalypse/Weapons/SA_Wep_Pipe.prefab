@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 464208}
   - component: {fileID: 3343270}
   - component: {fileID: 2331212}
-  - component: {fileID: 114970236063821758}
-  - component: {fileID: 114619370939313168}
   m_Layer: 0
   m_Name: SA_Wep_Pipe
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 192480}
   m_IsPrefabParent: 1
---- !u!114 &114619370939313168
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d4c70e99-3529-4f76-b945-c538223639ba
---- !u!114 &114970236063821758
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 192480}
-  _assetGuid: 19371a276099ec144b22bd115a2e0828

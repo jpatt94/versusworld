@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 468698}
   - component: {fileID: 3334076}
   - component: {fileID: 2321642}
-  - component: {fileID: 114497462129510518}
-  - component: {fileID: 114127860825067704}
   m_Layer: 0
   m_Name: SA_Bld_ShopSmall_Clean_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 161554}
   m_IsPrefabParent: 1
---- !u!114 &114127860825067704
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f2e1b491-0610-4b77-984e-b556ba073575
---- !u!114 &114497462129510518
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 161554}
-  _assetGuid: 3869ac0e319d60c41aef5882b6399995

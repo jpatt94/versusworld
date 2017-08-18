@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 485186}
   - component: {fileID: 3368850}
   - component: {fileID: 2360988}
-  - component: {fileID: 114070454119625640}
-  - component: {fileID: 114588233119282714}
   m_Layer: 0
   m_Name: SA_Wep_RevolvingGrenadeLauncher
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 158978}
   m_IsPrefabParent: 1
---- !u!114 &114070454119625640
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 158978}
-  _assetGuid: ed3efcbb0a8de0d48ab71aeb3a4b7073
---- !u!114 &114588233119282714
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b867e164-4a79-4e97-b9c3-8a8d38c6bec2

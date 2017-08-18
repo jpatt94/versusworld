@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 443072}
   - component: {fileID: 3352512}
   - component: {fileID: 2333784}
-  - component: {fileID: 114794964648451364}
-  - component: {fileID: 114953877224847354}
   m_Layer: 0
   m_Name: SA_Bld_Building_Damaged_02
   m_TagString: Untagged
@@ -165,33 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: bcafe159-3dd1-4cf9-97e3-54fd9ff16003
---- !u!114 &114794964648451364
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 159454}
-    - {fileID: 195608}
-  _assetGuid: 21fa6ed1493697f469076ac853937f59
---- !u!114 &114953877224847354
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a68b69b6-1cca-4c0f-9f55-d36acd9f6d4d

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3388664}
   - component: {fileID: 2300344}
   - component: {fileID: 64095143409902444}
-  - component: {fileID: 114408600614369586}
-  - component: {fileID: 114298260719638944}
   m_Layer: 0
   m_Name: SA_Prop_PowerLine_05
   m_TagString: Untagged
@@ -180,33 +178,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 6b3a70ca-3c08-4ba9-b467-702c5178cb05
---- !u!114 &114298260719638944
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ba07b59e-7e64-4395-bd6f-ffc11c0e3ead
---- !u!114 &114408600614369586
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 101434}
-    - {fileID: 130174}
-  _assetGuid: 7c44c70a2ec66ec44b1fb74dfd1e79fb

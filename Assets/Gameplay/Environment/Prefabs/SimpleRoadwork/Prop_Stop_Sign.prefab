@@ -8,8 +8,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 421474}
-  - component: {fileID: 114600135500919428}
-  - component: {fileID: 114587588545747210}
   m_Layer: 0
   m_Name: Prop_Stop_Sign
   m_TagString: Untagged
@@ -124,33 +122,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 1cedd704-e7ae-4277-a367-1139a7481982
---- !u!114 &114587588545747210
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ff184942-4d99-498a-83cc-5847e79790cc
---- !u!114 &114600135500919428
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 121474}
-    - {fileID: 121476}
-  _assetGuid: 016ad10e09a986241ab945955d9efa06

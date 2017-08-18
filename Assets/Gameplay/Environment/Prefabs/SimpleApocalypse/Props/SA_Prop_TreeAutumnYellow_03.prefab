@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3307602}
   - component: {fileID: 2355276}
   - component: {fileID: 64773894879092058}
-  - component: {fileID: 114549931263680978}
-  - component: {fileID: 114789506949786494}
   m_Layer: 0
   m_Name: SA_Prop_TreeAutumnYellow_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ff65bfd72afb46745ac1f8be537de1b0, type: 3}
---- !u!114 &114549931263680978
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 176070}
-  _assetGuid: 49dafe6557e20f54db20d81daa6504d6
---- !u!114 &114789506949786494
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 1705e060-df1d-411d-bd0c-93bb86292a37

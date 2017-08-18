@@ -46,8 +46,6 @@ GameObject:
   - component: {fileID: 455770}
   - component: {fileID: 3360214}
   - component: {fileID: 2303630}
-  - component: {fileID: 114367021801078506}
-  - component: {fileID: 114808465089767292}
   m_Layer: 0
   m_Name: SA_Veh_Firetruck
   m_TagString: Untagged
@@ -437,28 +435,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151946}
   m_IsPrefabParent: 1
---- !u!114 &114367021801078506
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 151946}
-    - {fileID: 163744}
-    - {fileID: 193014}
-    - {fileID: 125030}
-    - {fileID: 126696}
-    - {fileID: 172322}
-  _assetGuid: 7f3b0320260bec34db6f29f31c5884f6
 --- !u!114 &114445404198064454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -495,18 +471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: b3a25961-7359-4c92-89ae-60da5ec17ecd
---- !u!114 &114808465089767292
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: fb4070a6-38b0-45cd-969d-5917ec48c06b
 --- !u!114 &114857503277110884
 MonoBehaviour:
   m_ObjectHideFlags: 1

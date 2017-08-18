@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3397578}
   - component: {fileID: 2351524}
   - component: {fileID: 64614735559377982}
-  - component: {fileID: 114560602198258190}
-  - component: {fileID: 114915173863529774}
   m_Layer: 0
   m_Name: SA_Prop_Litter_06
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: cbb0f8c3f588a614e999ad8bbc579f08, type: 3}
---- !u!114 &114560602198258190
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 137562}
-  _assetGuid: 92520f468c93f0249b82bdb1d9df34d4
---- !u!114 &114915173863529774
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: adf9882f-4fdf-433f-8406-2ca1042a32ec

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 484388}
   - component: {fileID: 3345090}
   - component: {fileID: 2354116}
-  - component: {fileID: 114225364607582348}
-  - component: {fileID: 114306766006337300}
   m_Layer: 0
   m_Name: SA_Bld_BurntHouse_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 188830}
   m_IsPrefabParent: 1
---- !u!114 &114225364607582348
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 188830}
-  _assetGuid: 09cf3839fcde2f64fa16fc1709da1299
---- !u!114 &114306766006337300
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: cbd19b50-f214-40dc-a4a1-22b9c0bf0826

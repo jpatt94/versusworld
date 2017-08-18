@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 436096}
   - component: {fileID: 3354390}
   - component: {fileID: 2366490}
-  - component: {fileID: 114889584665368504}
-  - component: {fileID: 114755031262699892}
   m_Layer: 0
   m_Name: SA_Wep_SMG
   m_TagString: Untagged
@@ -485,18 +483,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 4e162123-212e-41ff-8b51-6f63904d29de
---- !u!114 &114755031262699892
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 6355f9c2-d3ea-47c6-8cd9-40ae0b5f959c
 --- !u!114 &114815608268163296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -509,25 +495,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 12e8d7c2-e217-44d7-90fa-0f690da296c0
---- !u!114 &114889584665368504
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 123816}
-    - {fileID: 118230}
-    - {fileID: 169526}
-    - {fileID: 196898}
-    - {fileID: 155192}
-    - {fileID: 144434}
-  _assetGuid: 45d3b23ed254442429bb6f0ae22779ed

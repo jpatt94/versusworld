@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 434470}
   - component: {fileID: 3389852}
   - component: {fileID: 2374838}
-  - component: {fileID: 114647552796074596}
-  - component: {fileID: 114724737717269414}
   m_Layer: 0
   m_Name: SA_Veh_Armytruck
   m_TagString: Untagged
@@ -674,31 +672,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: e4f81620-1e6e-4922-a977-9e3425d803d6
---- !u!114 &114647552796074596
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 101494}
-    - {fileID: 101348}
-    - {fileID: 133372}
-    - {fileID: 109050}
-    - {fileID: 170776}
-    - {fileID: 113556}
-    - {fileID: 105446}
-    - {fileID: 186264}
-    - {fileID: 159032}
-  _assetGuid: c4cdcf23b504e9a40bb03f4d332429d9
 --- !u!114 &114663667489885132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -723,18 +696,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 52917113-c4f9-4c9d-b95c-21e52dc742a6
---- !u!114 &114724737717269414
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a9716329-8ac1-4a4e-aa38-02882634c45a
 --- !u!114 &114757928852996194
 MonoBehaviour:
   m_ObjectHideFlags: 1

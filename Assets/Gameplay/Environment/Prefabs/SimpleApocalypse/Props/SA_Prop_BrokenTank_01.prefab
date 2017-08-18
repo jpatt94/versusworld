@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3348204}
   - component: {fileID: 2376340}
   - component: {fileID: 64727288690836126}
-  - component: {fileID: 114430833993911258}
-  - component: {fileID: 114391777510696584}
   m_Layer: 0
   m_Name: SA_Prop_BrokenTank_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 17ccd7f8a0ef9a84ab5831bd796b259e, type: 3}
---- !u!114 &114391777510696584
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ebf2e39e-6eb5-44cb-a346-a29457be85e8
---- !u!114 &114430833993911258
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 173080}
-  _assetGuid: 2f8b6b9724b1ac4428bdeec2e58d28d1

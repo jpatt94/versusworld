@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3384324}
   - component: {fileID: 2388182}
   - component: {fileID: 64532315844174736}
-  - component: {fileID: 114858322205835234}
-  - component: {fileID: 114028529657790106}
   m_Layer: 0
   m_Name: SA_Prop_BeerCan_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 1c1a05f61e11f2e4abb28a8e50dc1b26, type: 3}
---- !u!114 &114028529657790106
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 6fc47fc4-864f-4843-9d1c-8c30a4f9ffb7
---- !u!114 &114858322205835234
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 141972}
-  _assetGuid: 2a6229ad1b71f0c419db716efbd437cd

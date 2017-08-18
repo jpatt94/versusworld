@@ -83,8 +83,6 @@ GameObject:
   - component: {fileID: 3300008}
   - component: {fileID: 2300008}
   - component: {fileID: 64932085506996666}
-  - component: {fileID: 114234370951103178}
-  - component: {fileID: 114573504546249188}
   m_Layer: 0
   m_Name: airportBus02
   m_TagString: Untagged
@@ -417,27 +415,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: b2af7a03-bb0e-49c7-92cf-30c51eb3381f
---- !u!114 &114234370951103178
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: 610cc8cd03e5ddc44b43f8da1cb91dd9
 --- !u!114 &114426221207137040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -450,15 +427,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: bca5a217-7f0f-4ee3-866a-cddf77d7fb89
---- !u!114 &114573504546249188
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 361936db-d549-4295-9940-dde84126a99b

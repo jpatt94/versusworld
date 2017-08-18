@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 412062}
   - component: {fileID: 3376972}
   - component: {fileID: 2343668}
-  - component: {fileID: 114146409253935908}
-  - component: {fileID: 114269510209837988}
   m_Layer: 0
   m_Name: SA_Veh_Caravan_Damaged_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145836}
   m_IsPrefabParent: 1
---- !u!114 &114146409253935908
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 145836}
-  _assetGuid: cc0e29f55afd76443abd60487bfa532d
---- !u!114 &114269510209837988
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 38ccdeae-90cc-4088-ae1c-66c59ac78ac9

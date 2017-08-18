@@ -52,8 +52,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4378408320370332}
-  - component: {fileID: 114038014232744572}
-  - component: {fileID: 114574745266801152}
   m_Layer: 0
   m_Name: AbandonedHouse
   m_TagString: Untagged
@@ -422,33 +420,24 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114038014232744572
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1571366225820166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1571366225820166}
-    - {fileID: 1036606647726456}
-    - {fileID: 1736597188838164}
-    - {fileID: 1660625336893780}
-    - {fileID: 1942319294912810}
-    - {fileID: 1941111768940046}
-    - {fileID: 1162498185234616}
-  _assetGuid: 2c65320253dc286498bff8028a1f7fd3
 --- !u!114 &114095903875895908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -497,18 +486,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: b6823740-35ba-49ef-bc25-993c4a699a74
---- !u!114 &114574745266801152
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1571366225820166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: da47b754-caf9-44a5-bab4-23067b5b7e7e
 --- !u!114 &114669309303576450
 MonoBehaviour:
   m_ObjectHideFlags: 1

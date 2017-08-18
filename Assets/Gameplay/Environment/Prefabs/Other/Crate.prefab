@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 33172726432254204}
   - component: {fileID: 23095811690656918}
   - component: {fileID: 64174267514100944}
-  - component: {fileID: 114346622490885290}
-  - component: {fileID: 114017429685033842}
   m_Layer: 0
   m_Name: Crate
   m_TagString: Untagged
@@ -98,32 +96,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 6f5ac22b894785345bc0de34be8399eb, type: 3}
---- !u!114 &114017429685033842
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569920563161750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 29acfe76-05ca-4770-aad6-8ccc3f82dc19
---- !u!114 &114346622490885290
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569920563161750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1569920563161750}
-  _assetGuid: e89be7cdaf3a3e645914cac7e9f5a3bd

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 487142}
   - component: {fileID: 3353030}
   - component: {fileID: 2372420}
-  - component: {fileID: 114833688343379208}
-  - component: {fileID: 114382881013655818}
   m_Layer: 0
   m_Name: SA_Item_Candles
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 109484}
   m_IsPrefabParent: 1
---- !u!114 &114382881013655818
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 090bc659-23a0-4a4b-a6ca-f69e2a212d18
---- !u!114 &114833688343379208
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 109484}
-  _assetGuid: 1b3dd47a850e07a40870714f9df8d5f8

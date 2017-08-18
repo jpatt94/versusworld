@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3370886}
   - component: {fileID: 2396722}
   - component: {fileID: 64873271942873744}
-  - component: {fileID: 114890938056051744}
-  - component: {fileID: 114862510090564594}
   m_Layer: 0
   m_Name: SA_Env_Road_CornerLines_Damaged_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 180d8ee4a97d73b4daa1152de836f7d6, type: 3}
---- !u!114 &114862510090564594
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9e170fdf-ec23-4c83-88ce-ddbc8a7f8aed
---- !u!114 &114890938056051744
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 159816}
-  _assetGuid: 8a31ee62ddb26b644a77b0e3d168c86d

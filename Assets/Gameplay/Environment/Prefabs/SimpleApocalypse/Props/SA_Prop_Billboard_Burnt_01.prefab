@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3363966}
   - component: {fileID: 2379208}
   - component: {fileID: 64728602077132092}
-  - component: {fileID: 114018750682504532}
-  - component: {fileID: 114476398775640030}
   m_Layer: 0
   m_Name: SA_Prop_Billboard_Burnt_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: e4e7acd95b7be834587eb7ae01f6d024, type: 3}
---- !u!114 &114018750682504532
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 158342}
-  _assetGuid: 29457175c2ce0f34d839eee2f95f03ff
---- !u!114 &114476398775640030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 86f72c58-1238-44ba-abd5-51ba36d273ab

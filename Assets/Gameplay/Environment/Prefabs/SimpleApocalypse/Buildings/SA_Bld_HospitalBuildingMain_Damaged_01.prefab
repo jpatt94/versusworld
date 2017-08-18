@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 405250}
   - component: {fileID: 3358782}
   - component: {fileID: 2353968}
-  - component: {fileID: 114271932464450654}
-  - component: {fileID: 114061523754748852}
   m_Layer: 0
   m_Name: SA_Bld_HospitalBuildingMain_Damaged_01
   m_TagString: Untagged
@@ -224,37 +222,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134498}
   m_IsPrefabParent: 1
---- !u!114 &114061523754748852
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 59318074-2bb4-4f93-9155-0cf6d6ace071
---- !u!114 &114271932464450654
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 134498}
-    - {fileID: 178244}
-    - {fileID: 106332}
-  _assetGuid: 872bdc123c2e4d843bfc070c0f5b2f1d
 --- !u!114 &114627825051241770
 MonoBehaviour:
   m_ObjectHideFlags: 1

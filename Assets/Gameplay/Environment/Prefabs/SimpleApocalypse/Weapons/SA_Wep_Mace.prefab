@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 463268}
   - component: {fileID: 3382056}
   - component: {fileID: 2326894}
-  - component: {fileID: 114425211285802396}
-  - component: {fileID: 114960433106840500}
   m_Layer: 0
   m_Name: SA_Wep_Mace
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165144}
   m_IsPrefabParent: 1
---- !u!114 &114425211285802396
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 165144}
-  _assetGuid: 8777962dc5a09dc48a505986e8f5a666
---- !u!114 &114960433106840500
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 0d4c2b42-e2ef-46d2-8aed-ed9eec5e6d53

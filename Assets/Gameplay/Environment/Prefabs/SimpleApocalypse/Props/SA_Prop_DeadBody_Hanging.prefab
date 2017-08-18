@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3338012}
   - component: {fileID: 2354164}
   - component: {fileID: 64716649545385482}
-  - component: {fileID: 114261320066618474}
-  - component: {fileID: 114476842860912868}
   m_Layer: 0
   m_Name: SA_Prop_DeadBody_Hanging
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 04e8329cc50e3114090d8d8b20d6a229, type: 3}
---- !u!114 &114261320066618474
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 160564}
-  _assetGuid: 3fe1432999609684887983086f607637
---- !u!114 &114476842860912868
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 076a1976-c056-4860-842a-e6bbd1422cf3

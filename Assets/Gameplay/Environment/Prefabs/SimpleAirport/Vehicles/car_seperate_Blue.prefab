@@ -101,8 +101,6 @@ GameObject:
   - component: {fileID: 3300010}
   - component: {fileID: 2300008}
   - component: {fileID: 64141838640992786}
-  - component: {fileID: 114630188553413026}
-  - component: {fileID: 114944143245055888}
   m_Layer: 0
   m_Name: car_seperate_Blue
   m_TagString: Untagged
@@ -488,40 +486,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 239e5bdd-4bc6-4e28-9b39-5e85a9b8dd2e
---- !u!114 &114630188553413026
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100010}
-    - {fileID: 100000}
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-  _assetGuid: f66dea99ae43c224590016ab2ad318d1
---- !u!114 &114944143245055888
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5eed9d87-73ea-4bd2-8633-f550d2f68dd9
 --- !u!114 &114958837675216634
 MonoBehaviour:
   m_ObjectHideFlags: 1

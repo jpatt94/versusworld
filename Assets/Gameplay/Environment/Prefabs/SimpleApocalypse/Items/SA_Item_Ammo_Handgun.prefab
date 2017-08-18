@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 464592}
   - component: {fileID: 3373876}
   - component: {fileID: 2378770}
-  - component: {fileID: 114614797877361430}
-  - component: {fileID: 114561242747571450}
   m_Layer: 0
   m_Name: SA_Item_Ammo_Handgun
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 144828}
   m_IsPrefabParent: 1
---- !u!114 &114561242747571450
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 45c189c4-7d74-4b8f-aa37-1722e04af9e4
---- !u!114 &114614797877361430
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 144828}
-  _assetGuid: b68885c1f6fbbf840bc5c53e9ec8c8b6

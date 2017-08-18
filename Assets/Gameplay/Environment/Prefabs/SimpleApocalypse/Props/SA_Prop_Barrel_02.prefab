@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3348134}
   - component: {fileID: 2312086}
   - component: {fileID: 64874955134000206}
-  - component: {fileID: 114556027531390974}
-  - component: {fileID: 114879503502826878}
   m_Layer: 0
   m_Name: SA_Prop_Barrel_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c42f61f3af44b0d45875f8fe24b2b194, type: 3}
---- !u!114 &114556027531390974
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 108690}
-  _assetGuid: 8a733cd9d9fca224cbf4260ab4c0e693
---- !u!114 &114879503502826878
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f538d5af-ce9b-4afd-8d0f-5361e98918b0

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3323094}
   - component: {fileID: 2392644}
   - component: {fileID: 64474174294107678}
-  - component: {fileID: 114554004159364854}
-  - component: {fileID: 114847059440480640}
   m_Layer: 0
   m_Name: SA_Prop_GravestoneHole_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 4444ffc414865304f96f14c12b02c938, type: 3}
---- !u!114 &114554004159364854
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 157920}
-  _assetGuid: fdc98f6a00d394b46bfc2112ef1769b6
---- !u!114 &114847059440480640
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b3fea4be-64c3-4ae8-b404-b4f385e808da

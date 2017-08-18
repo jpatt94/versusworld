@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3375598}
   - component: {fileID: 2353120}
   - component: {fileID: 64453681942300928}
-  - component: {fileID: 114816303273411014}
-  - component: {fileID: 114489066694065164}
   m_Layer: 0
   m_Name: SA_Prop_TreePine_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 2657016a78a393b41b5b40136f3b4e2c, type: 3}
---- !u!114 &114489066694065164
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: aa94d73c-bfdb-4e57-b34a-f9341659a5fa
---- !u!114 &114816303273411014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 141698}
-  _assetGuid: 94ed1a7f48ccd9a46acef9f083ae0928

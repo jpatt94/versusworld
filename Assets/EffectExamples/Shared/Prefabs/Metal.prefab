@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 33790704308002098}
   - component: {fileID: 65711646411739672}
   - component: {fileID: 23188001532868338}
-  - component: {fileID: 114542724674008112}
-  - component: {fileID: 114459250267740660}
   m_Layer: 0
   m_Name: Metal
   m_TagString: Untagged
@@ -179,36 +177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 5cb57551-bc59-4468-b640-cdf02a1072ef
---- !u!114 &114459250267740660
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1149210485932568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8b5ef23f-be61-4050-bfaa-7338a1525b3a
---- !u!114 &114542724674008112
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1149210485932568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1149210485932568}
-    - {fileID: 1332494064753704}
-  _assetGuid: 560a71b792ff85a4ba8f839081f9a379
 --- !u!135 &135868067196889198
 SphereCollider:
   m_ObjectHideFlags: 1

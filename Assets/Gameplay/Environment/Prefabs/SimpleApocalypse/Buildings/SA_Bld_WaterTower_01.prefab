@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 486750}
   - component: {fileID: 3332786}
   - component: {fileID: 2395586}
-  - component: {fileID: 114557377236094774}
-  - component: {fileID: 114141385188250128}
   m_Layer: 0
   m_Name: SA_Bld_WaterTower_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172036}
   m_IsPrefabParent: 1
---- !u!114 &114141385188250128
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c9a67fb9-1cb1-41d9-a38f-16412aaa43f9
---- !u!114 &114557377236094774
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 172036}
-  _assetGuid: d6ca49573884e2c4497026d501b78e1f

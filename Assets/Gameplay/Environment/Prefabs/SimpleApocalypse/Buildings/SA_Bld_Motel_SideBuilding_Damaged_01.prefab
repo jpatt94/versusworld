@@ -46,8 +46,6 @@ GameObject:
   - component: {fileID: 415616}
   - component: {fileID: 3390140}
   - component: {fileID: 2395724}
-  - component: {fileID: 114750294007493046}
-  - component: {fileID: 114617142372822000}
   m_Layer: 0
   m_Name: SA_Bld_Motel_SideBuilding_Damaged_01
   m_TagString: Untagged
@@ -224,18 +222,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 156482}
   m_IsPrefabParent: 1
---- !u!114 &114617142372822000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 16976be3-b8aa-4b59-8e19-f51b29305c01
 --- !u!114 &114638210908567320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -248,25 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 1a7cd09b-3c18-413a-a2ce-dc27d5643911
---- !u!114 &114750294007493046
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 156482}
-    - {fileID: 155234}
-    - {fileID: 121656}
-  _assetGuid: a79170cea48989147b0762657d4187ae
 --- !u!114 &114927482668794448
 MonoBehaviour:
   m_ObjectHideFlags: 1

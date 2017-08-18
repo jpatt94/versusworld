@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3311566}
   - component: {fileID: 2305922}
   - component: {fileID: 64456494678409868}
-  - component: {fileID: 114254384747133838}
-  - component: {fileID: 114043299414281820}
   m_Layer: 0
   m_Name: SA_Env_RoadStraight_Damaged_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ec94d35107865384b8c6fbbd7d872043, type: 3}
---- !u!114 &114043299414281820
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 78305c79-44d0-4026-9c92-4823f256687b
---- !u!114 &114254384747133838
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 151000}
-  _assetGuid: e601e4f3c20e52a42911a7a35eba0649

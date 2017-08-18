@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3304302}
   - component: {fileID: 2335828}
   - component: {fileID: 64262000945740346}
-  - component: {fileID: 114028488786183516}
-  - component: {fileID: 114362004506194682}
   m_Layer: 0
   m_Name: SA_Prop_Wheelbarrow_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ca6ed798563e3d44d81c5ff0821348ae, type: 3}
---- !u!114 &114028488786183516
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 132582}
-  _assetGuid: fb5a03cd44d8a38438323554d498f1ff
---- !u!114 &114362004506194682
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3171226c-8a41-4069-8a20-07f77ad3eaa0

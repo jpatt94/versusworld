@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3390632}
   - component: {fileID: 2305278}
   - component: {fileID: 64288915564690140}
-  - component: {fileID: 114656640839750610}
-  - component: {fileID: 114266979262927578}
   m_Layer: 0
   m_Name: SA_Prop_TreeDeadBurnt_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 99c94a1d23a0fb64fa36b1a27f52b862, type: 3}
---- !u!114 &114266979262927578
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 79ce94ba-996e-4082-ac5c-3e1fdfb4d5b9
---- !u!114 &114656640839750610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 108366}
-  _assetGuid: 565d4d43445271d4b864737881eb9a8b

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3303408}
   - component: {fileID: 2317600}
   - component: {fileID: 64616458701084248}
-  - component: {fileID: 114199415103762932}
-  - component: {fileID: 114013156935622128}
   m_Layer: 0
   m_Name: SA_Prop_TrafficLight_Damaged_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 916c61d106727384691e7cc1c02e5aed, type: 3}
---- !u!114 &114013156935622128
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 131698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f60dd1bc-94b9-4fba-9489-4c350e6f119c
---- !u!114 &114199415103762932
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 131698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 131698}
-  _assetGuid: 9753188e81463674c8af39d753c3691a

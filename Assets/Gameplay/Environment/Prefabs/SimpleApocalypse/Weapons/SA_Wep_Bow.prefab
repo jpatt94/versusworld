@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 433760}
   - component: {fileID: 3393866}
   - component: {fileID: 2347860}
-  - component: {fileID: 114500779231453672}
-  - component: {fileID: 114589092846282582}
   m_Layer: 0
   m_Name: SA_Wep_Bow
   m_TagString: Untagged
@@ -236,37 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 10964a2d-a2d5-4073-86f7-c5628fb0464d
---- !u!114 &114500779231453672
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 137240}
-    - {fileID: 178158}
-    - {fileID: 198522}
-  _assetGuid: 0780fd0586405584f9c72133e446af8b
---- !u!114 &114589092846282582
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e1a3855f-1db7-4406-b76c-63f7dfa581bb
 --- !u!114 &114637844133195602
 MonoBehaviour:
   m_ObjectHideFlags: 1

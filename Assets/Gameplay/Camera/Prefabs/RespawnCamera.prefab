@@ -24,8 +24,6 @@ GameObject:
   - component: {fileID: 92000012359465846}
   - component: {fileID: 81000010850109112}
   - component: {fileID: 114000010310581740}
-  - component: {fileID: 114483957706301200}
-  - component: {fileID: 114664015068937200}
   m_Layer: 0
   m_Name: RespawnCamera
   m_TagString: Untagged
@@ -130,35 +128,6 @@ MonoBehaviour:
   minXRotation: -50
   maxXRotation: 85
   minDistanceFromCollider: 0.3
---- !u!114 &114483957706301200
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013357440400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000013357440400}
-  _assetGuid: 98c2e294db144074abfe4da6ae6faf1a
---- !u!114 &114664015068937200
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013357440400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9f791837-f42c-4b98-9a4f-ecdc1de1ae36
 --- !u!124 &124000012655388220
 Behaviour:
   m_ObjectHideFlags: 1

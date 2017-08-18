@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3379176}
   - component: {fileID: 2323920}
   - component: {fileID: 64153896395749814}
-  - component: {fileID: 114510122095542986}
-  - component: {fileID: 114532388865382826}
   m_Layer: 0
   m_Name: SA_Prop_BuildingDressing_010
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 296a4862f7b2e084d8b438393953877e, type: 3}
---- !u!114 &114510122095542986
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 178646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 178646}
-  _assetGuid: f89a89b5a2670be43addcff1fd11648e
---- !u!114 &114532388865382826
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 178646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 90073800-0842-45af-a7f6-6c7377842c64

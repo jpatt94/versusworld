@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 419556}
   - component: {fileID: 3306548}
   - component: {fileID: 2369992}
-  - component: {fileID: 114155083564880738}
-  - component: {fileID: 114931526331643530}
   m_Layer: 0
   m_Name: SA_Wep_StrikerShotgun
   m_TagString: Untagged
@@ -437,28 +435,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 148772}
   m_IsPrefabParent: 1
---- !u!114 &114155083564880738
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 148772}
-    - {fileID: 148852}
-    - {fileID: 199724}
-    - {fileID: 183908}
-    - {fileID: 193264}
-    - {fileID: 124960}
-  _assetGuid: 8b41e2b836bef7948aeb787fdc5f5fcb
 --- !u!114 &114375464471254824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -519,15 +495,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: f2d19c31-227f-40a3-af80-9655d85a45eb
---- !u!114 &114931526331643530
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3ed3486b-a890-4c63-8bf6-9140b2f8f95f

@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 433306}
   - component: {fileID: 3312800}
   - component: {fileID: 2308906}
-  - component: {fileID: 114367429652591256}
-  - component: {fileID: 114387208605435362}
   m_Layer: 0
   m_Name: SA_Bld_StoreSmall_Damaged_01
   m_TagString: Untagged
@@ -224,25 +222,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 182220}
   m_IsPrefabParent: 1
---- !u!114 &114367429652591256
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 182220}
-    - {fileID: 185538}
-    - {fileID: 168142}
-  _assetGuid: a21bd967401e915469baa91578b738c9
 --- !u!114 &114381598248035866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,18 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 5b69ba61-c744-4cd9-9080-8dfdb258a202
---- !u!114 &114387208605435362
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 27043c2d-a632-4766-af4c-0441eba37f88
 --- !u!114 &114678965258976928
 MonoBehaviour:
   m_ObjectHideFlags: 1

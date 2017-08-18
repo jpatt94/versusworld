@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3354466}
   - component: {fileID: 2393556}
   - component: {fileID: 64545772345859648}
-  - component: {fileID: 114197252776296348}
-  - component: {fileID: 114958925254124506}
   m_Layer: 0
   m_Name: SA_Prop_Couch_Damaged_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: d8ae94d0b54c35840b99f15a444c87e1, type: 3}
---- !u!114 &114197252776296348
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 106692}
-  _assetGuid: 68a6a20c52308f946bae0234d1102f3f
---- !u!114 &114958925254124506
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 569f6d76-233c-4678-9580-5ccf6212d87f

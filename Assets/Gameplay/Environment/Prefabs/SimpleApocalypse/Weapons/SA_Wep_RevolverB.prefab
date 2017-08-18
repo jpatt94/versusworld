@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 496244}
   - component: {fileID: 3306890}
   - component: {fileID: 2359860}
-  - component: {fileID: 114913723688054934}
-  - component: {fileID: 114042273404393136}
   m_Layer: 0
   m_Name: SA_Wep_RevolverB
   m_TagString: Untagged
@@ -437,18 +435,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 108920}
   m_IsPrefabParent: 1
---- !u!114 &114042273404393136
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f248511c-4295-477d-9d03-a209fd414bec
 --- !u!114 &114436126195178038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -509,25 +495,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: c89dcf22-c468-4684-a502-3e1b4b19b7c5
---- !u!114 &114913723688054934
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 108920}
-    - {fileID: 114790}
-    - {fileID: 188224}
-    - {fileID: 186418}
-    - {fileID: 134536}
-    - {fileID: 180638}
-  _assetGuid: 57ae198be80db0142a758aa602e644ed

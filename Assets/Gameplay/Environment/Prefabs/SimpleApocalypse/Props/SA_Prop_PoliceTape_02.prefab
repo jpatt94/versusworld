@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3353018}
   - component: {fileID: 2315902}
   - component: {fileID: 64719736846898846}
-  - component: {fileID: 114332842071814322}
-  - component: {fileID: 114565699915821058}
   m_Layer: 0
   m_Name: SA_Prop_PoliceTape_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 408ac16f1771b2a4bb543d87bbf10e82, type: 3}
---- !u!114 &114332842071814322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 192932}
-  _assetGuid: 22fdd22b6b9c42e4198396acde48b7cb
---- !u!114 &114565699915821058
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f98afd3d-2bf8-430f-89b1-b278a1b2cb7b

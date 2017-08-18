@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3370990}
   - component: {fileID: 2344536}
   - component: {fileID: 64933612414077238}
-  - component: {fileID: 114074101971455036}
-  - component: {fileID: 114403353802122340}
   m_Layer: 0
   m_Name: SA_Prop_TentShelter_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: e37784232c1e3da48a5d2a37a24b037b, type: 3}
---- !u!114 &114074101971455036
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 132708}
-  _assetGuid: ba20180c332e53149a601f84a3949439
---- !u!114 &114403353802122340
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5c0a160e-791a-4f87-a53e-5fcd223f2f12

@@ -46,8 +46,6 @@ GameObject:
   - component: {fileID: 461078}
   - component: {fileID: 3361632}
   - component: {fileID: 2362698}
-  - component: {fileID: 114882464212339270}
-  - component: {fileID: 114806463111575408}
   m_Layer: 0
   m_Name: SA_Bld_HouseMedium_Damaged_04
   m_TagString: Untagged
@@ -248,34 +246,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: a68edc4c-4b69-429f-825f-513ade1447c8
---- !u!114 &114806463111575408
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7c29963c-0f5a-4291-a187-5cf5c8d2d1a1
---- !u!114 &114882464212339270
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 187906}
-    - {fileID: 167710}
-    - {fileID: 120836}
-  _assetGuid: 58b5f96e2a7cdc94faa6d6df59296bdc

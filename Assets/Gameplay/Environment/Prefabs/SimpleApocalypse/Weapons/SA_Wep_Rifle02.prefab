@@ -64,8 +64,6 @@ GameObject:
   - component: {fileID: 425194}
   - component: {fileID: 3391622}
   - component: {fileID: 2331378}
-  - component: {fileID: 114533575080040780}
-  - component: {fileID: 114613932354877610}
   m_Layer: 0
   m_Name: SA_Wep_Rifle02
   m_TagString: Untagged
@@ -461,40 +459,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: d1bfb6ae-5146-4b1a-bb1b-054a3dadf09c
---- !u!114 &114533575080040780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 185532}
-    - {fileID: 116382}
-    - {fileID: 159924}
-    - {fileID: 198478}
-    - {fileID: 103188}
-    - {fileID: 196234}
-  _assetGuid: a2f3102b86dc6e242afa85e9f4546804
---- !u!114 &114613932354877610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c4ff7664-6411-4af9-a07d-cc1ca340fad6
 --- !u!114 &114697527898117382
 MonoBehaviour:
   m_ObjectHideFlags: 1

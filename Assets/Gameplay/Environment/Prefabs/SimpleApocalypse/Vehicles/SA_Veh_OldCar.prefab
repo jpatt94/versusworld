@@ -82,8 +82,6 @@ GameObject:
   - component: {fileID: 488026}
   - component: {fileID: 3364850}
   - component: {fileID: 2315512}
-  - component: {fileID: 114935901759932544}
-  - component: {fileID: 114219351131787050}
   m_Layer: 0
   m_Name: SA_Veh_OldCar
   m_TagString: Untagged
@@ -461,18 +459,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 614b66d5-71ba-49e6-b120-e788e176df97
---- !u!114 &114219351131787050
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 04f112cb-3f14-421e-8b5a-ebd9ae41adb0
 --- !u!114 &114257335470644544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -509,25 +495,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: e566e711-047f-47b9-9702-eba7a6f6a83d
---- !u!114 &114935901759932544
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 182146}
-    - {fileID: 131580}
-    - {fileID: 179390}
-    - {fileID: 158454}
-    - {fileID: 106880}
-    - {fileID: 188000}
-  _assetGuid: a27c877f120f6904099e590f9088807c

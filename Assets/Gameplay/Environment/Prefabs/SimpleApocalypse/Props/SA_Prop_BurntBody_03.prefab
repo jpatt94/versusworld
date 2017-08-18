@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3372066}
   - component: {fileID: 2334408}
   - component: {fileID: 64557313236611988}
-  - component: {fileID: 114837923306756746}
-  - component: {fileID: 114130475629348146}
   m_Layer: 0
   m_Name: SA_Prop_BurntBody_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 66f21f9595739484cb754ad84b958e2a, type: 3}
---- !u!114 &114130475629348146
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 192a22cd-f1ed-403a-bae7-43e6b23bb1f8
---- !u!114 &114837923306756746
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 166220}
-  _assetGuid: 0c60dedd6acd33b42b36fb79a73b3d94

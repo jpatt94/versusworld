@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3379696}
   - component: {fileID: 2302552}
   - component: {fileID: 64098183458786722}
-  - component: {fileID: 114801336204027046}
-  - component: {fileID: 114963780277168256}
   m_Layer: 0
   m_Name: SA_Prop_StreetLamp_Damaged_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 4ae48b25a0c3a4748a99560a72cf70cc, type: 3}
---- !u!114 &114801336204027046
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 178702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 178702}
-  _assetGuid: 2d14527284ff397418b3210b54cde56a
---- !u!114 &114963780277168256
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 178702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8e5a603a-8d41-4916-8c2a-7a43132ccd10

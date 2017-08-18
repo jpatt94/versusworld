@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3354566}
   - component: {fileID: 2396526}
   - component: {fileID: 64340498136731060}
-  - component: {fileID: 114188559279284376}
-  - component: {fileID: 114969799032330380}
   m_Layer: 0
   m_Name: SA_Prop_ArrowQuiver_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 09974d4cbe6c94442aa93926ab160ca0, type: 3}
---- !u!114 &114188559279284376
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 143068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 143068}
-  _assetGuid: 9fe3aa51dc7d21442b0547098f2913d3
---- !u!114 &114969799032330380
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 143068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 03ac6d8d-393d-4fa9-bb62-91f5d7cd7a6e

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3394702}
   - component: {fileID: 2334244}
   - component: {fileID: 64755474272050364}
-  - component: {fileID: 114392780373275350}
-  - component: {fileID: 114871259703091674}
   m_Layer: 0
   m_Name: SA_Prop_HeliCrashed_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: d44e47a016fc9504689b72992098bb66, type: 3}
---- !u!114 &114392780373275350
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 192750}
-  _assetGuid: 1f58a46ba75f973478ff7f653b4f3516
---- !u!114 &114871259703091674
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8f00d57c-36be-4149-93a2-efb74ae1914a

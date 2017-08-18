@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3380252}
   - component: {fileID: 2376112}
   - component: {fileID: 64968134174064526}
-  - component: {fileID: 114018917573536658}
-  - component: {fileID: 114313580452832976}
   m_Layer: 0
   m_Name: SA_Prop_WaterContainerSpill_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 15a7336926f43f8419d9ecbb3638b449, type: 3}
---- !u!114 &114018917573536658
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 172078}
-  _assetGuid: 85c9e8374d323aa4287d6ce009d4ea15
---- !u!114 &114313580452832976
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2c1078c6-9476-41f8-b787-14d4676423c6

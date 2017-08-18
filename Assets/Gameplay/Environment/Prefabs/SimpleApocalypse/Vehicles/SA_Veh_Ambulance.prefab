@@ -46,8 +46,6 @@ GameObject:
   - component: {fileID: 466476}
   - component: {fileID: 3343202}
   - component: {fileID: 2376474}
-  - component: {fileID: 114745930793689244}
-  - component: {fileID: 114001822134523732}
   m_Layer: 0
   m_Name: SA_Veh_Ambulance
   m_TagString: Untagged
@@ -437,18 +435,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130508}
   m_IsPrefabParent: 1
---- !u!114 &114001822134523732
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9859a243-197a-4f67-94de-e880fc1f3ea9
 --- !u!114 &114287737847359106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -485,28 +471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: b62abcdf-13ff-41e2-8605-4c7abc9b123c
---- !u!114 &114745930793689244
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 130508}
-    - {fileID: 171206}
-    - {fileID: 136948}
-    - {fileID: 119448}
-    - {fileID: 110546}
-    - {fileID: 168918}
-  _assetGuid: cbbccb9fb56ef7949a614f1d16c6779d
 --- !u!114 &114828200000041780
 MonoBehaviour:
   m_ObjectHideFlags: 1

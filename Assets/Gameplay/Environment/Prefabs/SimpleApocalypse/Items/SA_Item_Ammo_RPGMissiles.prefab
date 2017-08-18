@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 419954}
   - component: {fileID: 3343784}
   - component: {fileID: 2330982}
-  - component: {fileID: 114993667880959814}
-  - component: {fileID: 114265220658142346}
   m_Layer: 0
   m_Name: SA_Item_Ammo_RPGMissiles
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 104092}
   m_IsPrefabParent: 1
---- !u!114 &114265220658142346
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 104092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 0de37099-535f-47a7-8479-f1367bce81da
---- !u!114 &114993667880959814
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 104092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 104092}
-  _assetGuid: 5f58efde17f00ff4cb7bf1e0941f4d93

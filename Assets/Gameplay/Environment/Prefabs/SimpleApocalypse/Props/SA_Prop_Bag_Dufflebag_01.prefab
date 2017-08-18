@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3373820}
   - component: {fileID: 2309558}
   - component: {fileID: 64966863054242436}
-  - component: {fileID: 114824671950428218}
-  - component: {fileID: 114329360711019948}
   m_Layer: 0
   m_Name: SA_Prop_Bag_Dufflebag_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3246e4215b3ec3a4ca0fbdfbffad6676, type: 3}
---- !u!114 &114329360711019948
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3e4925a6-503b-4d12-bc5c-3dc6cfbe9959
---- !u!114 &114824671950428218
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 135604}
-  _assetGuid: 4bd77a8de99201246ae29361032ce5b3

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 447424}
   - component: {fileID: 3331872}
   - component: {fileID: 2340880}
-  - component: {fileID: 114362377031677026}
-  - component: {fileID: 114620432378592604}
   m_Layer: 0
   m_Name: SA_Wep_Flaregun
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 157784}
   m_IsPrefabParent: 1
---- !u!114 &114362377031677026
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 157784}
-  _assetGuid: 7e7d1adc69c5c324eaa21c1833da91db
---- !u!114 &114620432378592604
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 1173d045-256f-45b4-8b69-29a80b1ef4d5

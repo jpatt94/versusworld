@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3384838}
   - component: {fileID: 2333186}
   - component: {fileID: 64180388948925792}
-  - component: {fileID: 114957261577270646}
-  - component: {fileID: 114122599830748128}
   m_Layer: 0
   m_Name: SA_Env_Dirt_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: f090aeb0d1e59ab49aaf7c56f9175d05, type: 3}
---- !u!114 &114122599830748128
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3bf0ff12-e8ee-493b-a863-8911a2abed74
---- !u!114 &114957261577270646
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 106024}
-  _assetGuid: 10fb44be36c39a147a8aab66cfe8d88b

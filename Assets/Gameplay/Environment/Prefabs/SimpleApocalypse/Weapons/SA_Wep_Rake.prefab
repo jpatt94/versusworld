@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 473914}
   - component: {fileID: 3307052}
   - component: {fileID: 2335894}
-  - component: {fileID: 114095143802164570}
-  - component: {fileID: 114748422977386746}
   m_Layer: 0
   m_Name: SA_Wep_Rake
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127038}
   m_IsPrefabParent: 1
---- !u!114 &114095143802164570
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 127038}
-  _assetGuid: 89584ac1583154340b9307685525749c
---- !u!114 &114748422977386746
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 90293760-9c4b-4185-a569-ee823ee27a96

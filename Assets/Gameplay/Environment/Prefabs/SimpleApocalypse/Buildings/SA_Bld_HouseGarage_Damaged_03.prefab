@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 412162}
   - component: {fileID: 3392086}
   - component: {fileID: 2301304}
-  - component: {fileID: 114980691145439264}
-  - component: {fileID: 114804054187826528}
   m_Layer: 0
   m_Name: SA_Bld_HouseGarage_Damaged_03
   m_TagString: Untagged
@@ -165,33 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: f6380627-b38c-482a-bb14-cdb94866351b
---- !u!114 &114804054187826528
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 199832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 08215835-ea3c-4b55-b336-20361424f1d4
---- !u!114 &114980691145439264
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 199832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 199832}
-    - {fileID: 167998}
-  _assetGuid: 2163e01e92cfcf04186d3ba057b735c3

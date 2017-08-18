@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 415498}
   - component: {fileID: 3388646}
   - component: {fileID: 2379590}
-  - component: {fileID: 114741351185008174}
-  - component: {fileID: 114298758880318262}
   m_Layer: 0
   m_Name: SA_Veh_MonsterTruck
   m_TagString: Untagged
@@ -473,18 +471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 71f3c540-377a-42a9-aec0-ae63b577daf8
---- !u!114 &114298758880318262
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: dc5fd949-40ac-426c-8dbf-08f003242a62
 --- !u!114 &114383059108858360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -509,25 +495,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 0f448283-9e7a-4ba9-aba3-ad968c67299d
---- !u!114 &114741351185008174
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 108358}
-    - {fileID: 187938}
-    - {fileID: 108086}
-    - {fileID: 153980}
-    - {fileID: 176582}
-    - {fileID: 182730}
-  _assetGuid: 7dd8e113fdb0f8b4fb6c416bccff2cfe

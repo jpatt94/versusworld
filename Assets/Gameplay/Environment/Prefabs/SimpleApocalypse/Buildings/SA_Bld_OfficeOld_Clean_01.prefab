@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 485586}
   - component: {fileID: 3354100}
   - component: {fileID: 2398866}
-  - component: {fileID: 114029376684392252}
-  - component: {fileID: 114418207148345282}
   m_Layer: 0
   m_Name: SA_Bld_OfficeOld_Clean_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 155608}
   m_IsPrefabParent: 1
---- !u!114 &114029376684392252
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 155608}
-  _assetGuid: 3ca4fe92f4164f845bf2e1771872b14a
---- !u!114 &114418207148345282
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: af293552-4b37-49a6-9bda-4ec7d4c5754f

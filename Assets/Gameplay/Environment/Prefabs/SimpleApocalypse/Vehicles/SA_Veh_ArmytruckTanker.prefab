@@ -118,8 +118,6 @@ GameObject:
   - component: {fileID: 460636}
   - component: {fileID: 3384376}
   - component: {fileID: 2339340}
-  - component: {fileID: 114061286676409340}
-  - component: {fileID: 114086457935919402}
   m_Layer: 0
   m_Name: SA_Veh_ArmytruckTanker
   m_TagString: Untagged
@@ -579,42 +577,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 185090}
   m_IsPrefabParent: 1
---- !u!114 &114061286676409340
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 185090}
-    - {fileID: 183172}
-    - {fileID: 135420}
-    - {fileID: 131656}
-    - {fileID: 104318}
-    - {fileID: 119546}
-    - {fileID: 188034}
-    - {fileID: 140626}
-  _assetGuid: 4d4db3865f3e276479c2dbe7d1547e08
---- !u!114 &114086457935919402
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 427459b4-3262-4287-af9b-9915c58f05e1
 --- !u!114 &114462870054391474
 MonoBehaviour:
   m_ObjectHideFlags: 1

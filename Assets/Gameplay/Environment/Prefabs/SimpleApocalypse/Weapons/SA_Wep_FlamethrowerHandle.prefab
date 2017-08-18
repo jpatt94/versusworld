@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 442530}
   - component: {fileID: 3369926}
   - component: {fileID: 2319142}
-  - component: {fileID: 114573277430400304}
-  - component: {fileID: 114253023041525524}
   m_Layer: 0
   m_Name: SA_Wep_FlamethrowerHandle
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168810}
   m_IsPrefabParent: 1
---- !u!114 &114253023041525524
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 6f353771-c344-47fa-9441-5dfef5f01198
---- !u!114 &114573277430400304
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 168810}
-  _assetGuid: 45d2bc2c9ccd4e440ab916f134b20ad1

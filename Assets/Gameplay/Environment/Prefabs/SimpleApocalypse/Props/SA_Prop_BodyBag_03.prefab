@@ -29,8 +29,6 @@ GameObject:
   - component: {fileID: 3357186}
   - component: {fileID: 2300334}
   - component: {fileID: 64449785800061742}
-  - component: {fileID: 114027643227775428}
-  - component: {fileID: 114940270042812530}
   m_Layer: 0
   m_Name: SA_Prop_BodyBag_03
   m_TagString: Untagged
@@ -168,24 +166,6 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7ac3a21cfadf9ac4ebfa28293b61c282, type: 3}
---- !u!114 &114027643227775428
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 109114}
-    - {fileID: 100736}
-  _assetGuid: 6d45a07e91f96694689384e792a6597b
 --- !u!114 &114764087616184846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,15 +178,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 7924c6a0-1d19-4fac-a5ed-1416c1cde1d4
---- !u!114 &114940270042812530
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8f6ee970-a1b4-40f5-a305-f5983efa9b61

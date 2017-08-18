@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 427938}
   - component: {fileID: 3333766}
   - component: {fileID: 2390056}
-  - component: {fileID: 114162868103549290}
-  - component: {fileID: 114470545695310692}
   m_Layer: 0
   m_Name: SA_Bld_TownHouse_Clean_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 192874}
   m_IsPrefabParent: 1
---- !u!114 &114162868103549290
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 192874}
-  _assetGuid: 375c06a129a3fc842bd7255b98ec0ff3
---- !u!114 &114470545695310692
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5c30b1d2-0c1d-417c-a52d-7743a2c1a8f5

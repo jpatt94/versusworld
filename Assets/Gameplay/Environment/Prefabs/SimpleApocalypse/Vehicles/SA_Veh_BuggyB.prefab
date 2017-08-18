@@ -46,8 +46,6 @@ GameObject:
   - component: {fileID: 481840}
   - component: {fileID: 3378524}
   - component: {fileID: 2395810}
-  - component: {fileID: 114742050857952784}
-  - component: {fileID: 114819516060947788}
   m_Layer: 0
   m_Name: SA_Veh_BuggyB
   m_TagString: Untagged
@@ -331,35 +329,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: ceaf3184-948d-4adb-a85e-9e65ca33e3c4
---- !u!114 &114742050857952784
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 153560}
-    - {fileID: 134586}
-    - {fileID: 101850}
-    - {fileID: 170230}
-  _assetGuid: d11fcb9458e2b6b44843a00d0b51abf4
---- !u!114 &114819516060947788
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9bc1fa86-d7d5-4439-95b3-032061f30ef8
