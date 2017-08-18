@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3336456}
   - component: {fileID: 2349122}
   - component: {fileID: 64633375497655542}
-  - component: {fileID: 114211072201604360}
-  - component: {fileID: 114617018268267218}
   m_Layer: 0
   m_Name: SM_Prop_FlowerHanging_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b1c8f831649b6844ca3843ef41c46f76, type: 3}
---- !u!114 &114211072201604360
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 118094}
-  _assetGuid: 366500f45afe5254fa03c07da019e6b8
---- !u!114 &114617018268267218
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 25e245bb-eb13-439b-a323-722403fe887d

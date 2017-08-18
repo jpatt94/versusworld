@@ -119,8 +119,6 @@ GameObject:
   - component: {fileID: 3347774}
   - component: {fileID: 2308894}
   - component: {fileID: 64655570335104144}
-  - component: {fileID: 114319042183599834}
-  - component: {fileID: 114784670299024586}
   m_Layer: 0
   m_Name: SC_Bld_FerrisWheel
   m_TagString: Untagged
@@ -1056,36 +1054,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: c1677664-db62-4433-9daf-5b578fc159a4
---- !u!114 &114319042183599834
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 119850}
-    - {fileID: 105102}
-    - {fileID: 169412}
-    - {fileID: 101856}
-    - {fileID: 131676}
-    - {fileID: 157062}
-    - {fileID: 121512}
-    - {fileID: 128446}
-    - {fileID: 176756}
-    - {fileID: 105608}
-    - {fileID: 163836}
-    - {fileID: 107744}
-    - {fileID: 105368}
-    - {fileID: 106712}
-  _assetGuid: 12f4fd5539dd3ed4cba438c8f8079a6a
 --- !u!114 &114456863485772898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1182,18 +1150,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: e1c7274a-ef72-4fa3-b45d-48f738055e16
---- !u!114 &114784670299024586
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: cc6170a7-1295-4801-8ca6-79385bd5a62d
 --- !u!114 &114857483638295048
 MonoBehaviour:
   m_ObjectHideFlags: 1

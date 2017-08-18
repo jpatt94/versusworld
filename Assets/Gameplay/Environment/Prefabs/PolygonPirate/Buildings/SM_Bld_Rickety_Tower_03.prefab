@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3371468}
   - component: {fileID: 2323050}
   - component: {fileID: 64908635066828208}
-  - component: {fileID: 114451486813376486}
-  - component: {fileID: 114685141138742666}
   m_Layer: 0
   m_Name: SM_Bld_Rickety_Tower_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: a0c47bdd9a5a5984fbe804c19be40407, type: 3}
---- !u!114 &114451486813376486
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 185566}
-  _assetGuid: be5b4381dc9e4814b9db55a58c8c9d30
---- !u!114 &114685141138742666
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5e30cf02-240a-4d1c-999d-b9ebfdb53b85

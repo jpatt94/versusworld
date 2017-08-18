@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 435450}
   - component: {fileID: 3361070}
   - component: {fileID: 2361580}
-  - component: {fileID: 114247126315914270}
-  - component: {fileID: 114154066494621204}
   m_Layer: 0
   m_Name: SO_Rug_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145788}
   m_IsPrefabParent: 1
---- !u!114 &114154066494621204
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: db03fb6c-ff3b-4e38-8660-c54f7905a15c
---- !u!114 &114247126315914270
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 145788}
-  _assetGuid: 6c978f2e71d154e4c9b5552ede4b305d

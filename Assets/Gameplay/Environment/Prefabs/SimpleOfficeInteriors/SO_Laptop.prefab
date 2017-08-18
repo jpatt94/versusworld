@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 463238}
   - component: {fileID: 3301138}
   - component: {fileID: 2383640}
-  - component: {fileID: 114213312711793098}
-  - component: {fileID: 114275676014019880}
   m_Layer: 0
   m_Name: SO_Laptop
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 111386}
   m_IsPrefabParent: 1
---- !u!114 &114213312711793098
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 111386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 111386}
-  _assetGuid: 0b9c8290611031e459c2596b4ee0f3bc
---- !u!114 &114275676014019880
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 111386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 00032faf-ada1-4dcc-946b-06f8747e6a80

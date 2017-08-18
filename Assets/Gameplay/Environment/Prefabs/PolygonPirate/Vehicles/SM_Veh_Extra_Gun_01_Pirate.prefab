@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 490534}
   - component: {fileID: 3374076}
   - component: {fileID: 2334696}
-  - component: {fileID: 114473907751053666}
-  - component: {fileID: 114914758125349038}
   m_Layer: 0
   m_Name: SM_Veh_Extra_Gun_01_Pirate
   m_TagString: Untagged
@@ -224,25 +222,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172174}
   m_IsPrefabParent: 1
---- !u!114 &114473907751053666
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 172174}
-    - {fileID: 150126}
-    - {fileID: 191350}
-  _assetGuid: 8366d4254621ee142804ee460119165f
 --- !u!114 &114544838318656302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,15 +246,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 8fb79714-6f70-4808-ac9f-f4afa01e3a81
---- !u!114 &114914758125349038
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 04c7fd3e-c8a0-440d-b7c7-4a29edc04d4f

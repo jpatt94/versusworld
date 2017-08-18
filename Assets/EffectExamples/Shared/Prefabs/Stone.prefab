@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 33378797855344914}
   - component: {fileID: 65345297140355790}
   - component: {fileID: 23224562812054334}
-  - component: {fileID: 114552747350767626}
-  - component: {fileID: 114905631268728198}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -167,24 +165,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114552747350767626
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1884375188966482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1884375188966482}
-    - {fileID: 1904307472932916}
-  _assetGuid: 6b4eed762f985a04bbc740b9da12e38d
 --- !u!114 &114882411197058936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,18 +177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 343f5f7b-8697-4359-970c-bb613fb924e7
---- !u!114 &114905631268728198
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1884375188966482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d17e2745-ae82-4b68-84b8-27bfc1248832
 --- !u!135 &135264544304903392
 SphereCollider:
   m_ObjectHideFlags: 1

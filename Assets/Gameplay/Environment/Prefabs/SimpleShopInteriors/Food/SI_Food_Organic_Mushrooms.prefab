@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 486518}
   - component: {fileID: 3307182}
   - component: {fileID: 2369744}
-  - component: {fileID: 114853050117687822}
-  - component: {fileID: 114654815623052928}
   m_Layer: 0
   m_Name: SI_Food_Organic_Mushrooms
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 148402}
   m_IsPrefabParent: 1
---- !u!114 &114654815623052928
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 6df3652d-78f4-4823-a1c5-6f1cf664c566
---- !u!114 &114853050117687822
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 148402}
-  _assetGuid: 5aec628307074854783e81afe5193096

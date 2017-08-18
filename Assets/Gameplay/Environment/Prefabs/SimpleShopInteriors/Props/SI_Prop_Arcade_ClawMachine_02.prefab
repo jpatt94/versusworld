@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 449934}
   - component: {fileID: 3328292}
   - component: {fileID: 2304006}
-  - component: {fileID: 114539854064694842}
-  - component: {fileID: 114871482714109050}
   m_Layer: 0
   m_Name: SI_Prop_Arcade_ClawMachine_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 187336}
   m_IsPrefabParent: 1
---- !u!114 &114539854064694842
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 187336}
-  _assetGuid: 138e53b22807a77499c486154a7f6c45
---- !u!114 &114871482714109050
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b3f1b7d5-72fa-477e-b997-8236842861d5

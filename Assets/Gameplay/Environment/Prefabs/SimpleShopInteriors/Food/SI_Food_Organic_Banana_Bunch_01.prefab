@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 460092}
   - component: {fileID: 3376424}
   - component: {fileID: 2318776}
-  - component: {fileID: 114451719790279604}
-  - component: {fileID: 114154599227078822}
   m_Layer: 0
   m_Name: SI_Food_Organic_Banana_Bunch_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 110328}
   m_IsPrefabParent: 1
---- !u!114 &114154599227078822
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 15b0b82a-4c74-45a4-92da-b279336ba4a5
---- !u!114 &114451719790279604
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 110328}
-  _assetGuid: 39bfc4fe7d156e346974f35502fba0a6

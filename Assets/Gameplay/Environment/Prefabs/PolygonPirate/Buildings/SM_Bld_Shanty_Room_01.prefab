@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3303984}
   - component: {fileID: 2329796}
   - component: {fileID: 64236531421524486}
-  - component: {fileID: 114140252491697976}
-  - component: {fileID: 114400742353816986}
   m_Layer: 0
   m_Name: SM_Bld_Shanty_Room_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 2a3e42eaf7d5d7c448abcea92348e549, type: 3}
---- !u!114 &114140252491697976
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 148340}
-  _assetGuid: 4201997824bd90744b5393bad6f063d9
---- !u!114 &114400742353816986
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 641be91e-43b3-4a9e-91bd-8c7e51f0e980

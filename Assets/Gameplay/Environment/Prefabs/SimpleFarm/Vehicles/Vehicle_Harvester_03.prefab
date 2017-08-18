@@ -118,8 +118,6 @@ GameObject:
   - component: {fileID: 400012}
   - component: {fileID: 3300012}
   - component: {fileID: 2300012}
-  - component: {fileID: 114783769173831778}
-  - component: {fileID: 114728314580039756}
   m_Layer: 0
   m_Name: Vehicle_Harvester_03
   m_TagString: Untagged
@@ -556,18 +554,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: e8c07269-9a51-4198-ab32-74ef1514d949
---- !u!114 &114728314580039756
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9cfe0dc8-8dbe-4262-84f0-e7f24bbdeccf
 --- !u!114 &114772446267766016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -580,29 +566,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: f93f0ec2-bb42-47ce-8a25-b33ebb4e110d
---- !u!114 &114783769173831778
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100012}
-    - {fileID: 100010}
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: a2991a639a726ce41a1e181da7b8b772
 --- !u!114 &114882224525979024
 MonoBehaviour:
   m_ObjectHideFlags: 1

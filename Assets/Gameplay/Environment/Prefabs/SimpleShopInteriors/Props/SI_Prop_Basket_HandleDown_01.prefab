@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 474568}
   - component: {fileID: 3397108}
   - component: {fileID: 2365526}
-  - component: {fileID: 114608956331129568}
-  - component: {fileID: 114814136312252024}
   m_Layer: 0
   m_Name: SI_Prop_Basket_HandleDown_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 140238}
   m_IsPrefabParent: 1
---- !u!114 &114608956331129568
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 140238}
-  _assetGuid: 01d4ec10bc4739c4a90bcb42979b3ebf
---- !u!114 &114814136312252024
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8f622f96-3a10-4ee7-b31c-1a9c75e60d27

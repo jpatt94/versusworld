@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 436530}
   - component: {fileID: 3384818}
   - component: {fileID: 2373812}
-  - component: {fileID: 114286131018314332}
-  - component: {fileID: 114599800759073402}
   m_Layer: 0
   m_Name: SM_Flag_Spanish_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 166576}
   m_IsPrefabParent: 1
---- !u!114 &114286131018314332
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 166576}
-  _assetGuid: e6c2f5f4a1f88304493b7ddff97dcc0f
---- !u!114 &114599800759073402
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 1cc1ce90-7d99-48c0-957d-1072ad458a57

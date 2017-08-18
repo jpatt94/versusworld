@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 439242}
   - component: {fileID: 3351140}
   - component: {fileID: 2361138}
-  - component: {fileID: 114817327830981990}
-  - component: {fileID: 114206570189795106}
   m_Layer: 0
   m_Name: SM_Wep_Dagger_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 182920}
   m_IsPrefabParent: 1
---- !u!114 &114206570189795106
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 82152e13-cce7-4a50-a3f1-83797cf8fe3d
---- !u!114 &114817327830981990
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 182920}
-  _assetGuid: 35eb5f7f35ca8e54889c663db5ee4520

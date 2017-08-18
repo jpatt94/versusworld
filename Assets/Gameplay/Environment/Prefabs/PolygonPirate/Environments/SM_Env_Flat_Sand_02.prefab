@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 438176}
   - component: {fileID: 3383752}
   - component: {fileID: 2303224}
-  - component: {fileID: 114004350364391132}
-  - component: {fileID: 114570545010730516}
   m_Layer: 0
   m_Name: SM_Env_Flat_Sand_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 113194}
   m_IsPrefabParent: 1
---- !u!114 &114004350364391132
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 113194}
-  _assetGuid: c14b2a441bcbe1a4f94f3ec4db969ba7
---- !u!114 &114570545010730516
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 936bec82-32cc-42b1-8976-a35c1a74a62d

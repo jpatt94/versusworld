@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 414218}
   - component: {fileID: 3362636}
   - component: {fileID: 2382922}
-  - component: {fileID: 114736415665246094}
-  - component: {fileID: 114456020765235856}
   m_Layer: 0
   m_Name: SM_Wep_Boarding_Spear_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 177368}
   m_IsPrefabParent: 1
---- !u!114 &114456020765235856
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7dcc5e0e-bba7-4a34-a53f-8f83ea88c11b
---- !u!114 &114736415665246094
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 177368}
-  _assetGuid: 32789634d30e42c47bfb5eb47db85a88

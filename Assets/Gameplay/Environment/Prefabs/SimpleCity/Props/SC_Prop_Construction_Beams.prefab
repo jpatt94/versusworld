@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3367596}
   - component: {fileID: 2359118}
   - component: {fileID: 64910463821620134}
-  - component: {fileID: 114367097955743440}
-  - component: {fileID: 114711765751409208}
   m_Layer: 0
   m_Name: SC_Prop_Construction_Beams
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b68d40e0d8badfd4f8233f5f78fb9f9d, type: 3}
---- !u!114 &114367097955743440
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 118786}
-  _assetGuid: 8e9097c8d00ee764398f36bdeec4ab8f
---- !u!114 &114711765751409208
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f14be3a1-a606-46ad-9d71-d5a82331e4f4

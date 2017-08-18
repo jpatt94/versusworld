@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 468114}
   - component: {fileID: 3379246}
   - component: {fileID: 2356254}
-  - component: {fileID: 114897874112927986}
-  - component: {fileID: 114614289497993780}
   m_Layer: 0
   m_Name: SM_Env_Tree_Vines_05
   m_TagString: Untagged
@@ -83,32 +81,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 122462}
   m_IsPrefabParent: 1
---- !u!114 &114614289497993780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 122462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a5df11a3-a5f6-4704-a56e-34a9ec5b926b
---- !u!114 &114897874112927986
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 122462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 122462}
-  _assetGuid: 7a0f2da323bd14e478d9c20dfb5dad6a

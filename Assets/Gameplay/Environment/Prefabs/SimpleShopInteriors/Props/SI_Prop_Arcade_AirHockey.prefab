@@ -64,8 +64,6 @@ GameObject:
   - component: {fileID: 483216}
   - component: {fileID: 3386078}
   - component: {fileID: 2376752}
-  - component: {fileID: 114443181170308274}
-  - component: {fileID: 114697339610547624}
   m_Layer: 0
   m_Name: SI_Prop_Arcade_AirHockey
   m_TagString: Untagged
@@ -331,35 +329,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: a28f01d3-5a4a-4fa0-b565-6369dfc612b0
---- !u!114 &114443181170308274
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 186592}
-    - {fileID: 114076}
-    - {fileID: 114136}
-    - {fileID: 120922}
-  _assetGuid: 80b9714f2e72d0f44b4863724e3092c5
---- !u!114 &114697339610547624
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8f6fbc67-296f-4c32-9b93-973df4b358f6

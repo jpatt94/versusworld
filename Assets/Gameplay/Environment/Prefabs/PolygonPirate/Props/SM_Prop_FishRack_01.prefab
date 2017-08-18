@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3327824}
   - component: {fileID: 2378370}
   - component: {fileID: 64319224339219814}
-  - component: {fileID: 114617808833971756}
-  - component: {fileID: 114275439681562228}
   m_Layer: 0
   m_Name: SM_Prop_FishRack_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: deff3ec744c57ef43b246b33513b70a5, type: 3}
---- !u!114 &114275439681562228
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 320f61d1-f815-4697-9479-7a45fea93dc0
---- !u!114 &114617808833971756
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 154292}
-  _assetGuid: 18bb53c99f17db444ad9ee4ad3180653

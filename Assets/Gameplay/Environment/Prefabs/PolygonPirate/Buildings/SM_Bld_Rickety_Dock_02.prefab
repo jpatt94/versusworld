@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3319728}
   - component: {fileID: 2368258}
   - component: {fileID: 64629171415962032}
-  - component: {fileID: 114360713538401370}
-  - component: {fileID: 114914173609812412}
   m_Layer: 0
   m_Name: SM_Bld_Rickety_Dock_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7d67876375ed30f48884fe0f6df0bdab, type: 3}
---- !u!114 &114360713538401370
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 171432}
-  _assetGuid: 9e382901883a3a7489d7004431ebdffe
---- !u!114 &114914173609812412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a0095a26-f228-4212-9006-3ae43e11a4b3

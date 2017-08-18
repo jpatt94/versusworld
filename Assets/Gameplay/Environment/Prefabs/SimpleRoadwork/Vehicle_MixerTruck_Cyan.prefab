@@ -26,8 +26,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 445802}
-  - component: {fileID: 114054974978289012}
-  - component: {fileID: 114531585007195366}
   m_Layer: 0
   m_Name: Vehicle_MixerTruck_Cyan
   m_TagString: Untagged
@@ -112,24 +110,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145802}
   m_IsPrefabParent: 1
---- !u!114 &114054974978289012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 145802}
-    - {fileID: 145800}
-  _assetGuid: fc9671f9b599d644a97160211c7724e3
 --- !u!114 &114207541303188042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -142,15 +122,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 63db8b1d-d276-4267-9d73-1f7466e110ed
---- !u!114 &114531585007195366
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a1b1e7c9-e8b2-4eaf-a4a2-a137780d89c8

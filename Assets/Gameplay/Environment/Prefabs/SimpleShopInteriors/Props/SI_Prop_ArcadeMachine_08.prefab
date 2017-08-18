@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 486854}
   - component: {fileID: 3305262}
   - component: {fileID: 2373688}
-  - component: {fileID: 114611554598333620}
-  - component: {fileID: 114025909098413786}
   m_Layer: 0
   m_Name: SI_Prop_ArcadeMachine_08
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145496}
   m_IsPrefabParent: 1
---- !u!114 &114025909098413786
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ca7eecf7-6a4e-4424-8e99-a1435e1eb332
---- !u!114 &114611554598333620
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 145496}
-  _assetGuid: d3f2583f730df704eab4c3952ca2afb1

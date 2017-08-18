@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3346536}
   - component: {fileID: 2317782}
   - component: {fileID: 64456440412662842}
-  - component: {fileID: 114493189066903266}
-  - component: {fileID: 114073945996037206}
   m_Layer: 0
   m_Name: SC_Prop_Garden_Chair
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 833caa290ec910c4f86ef04492047e0d, type: 3}
---- !u!114 &114073945996037206
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 178720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ed3d7c69-d0b9-48e3-8150-df0928897ffc
---- !u!114 &114493189066903266
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 178720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 178720}
-  _assetGuid: 528a3ee371962a946ba9663edbbc13fd

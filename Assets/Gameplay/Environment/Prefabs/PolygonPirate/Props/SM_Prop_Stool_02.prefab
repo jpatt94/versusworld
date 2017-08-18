@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3337408}
   - component: {fileID: 2311194}
   - component: {fileID: 64703965071143578}
-  - component: {fileID: 114764577411535250}
-  - component: {fileID: 114834252320427926}
   m_Layer: 0
   m_Name: SM_Prop_Stool_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 8a28de30f50e45340a422ffe2d0db93e, type: 3}
---- !u!114 &114764577411535250
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 148462}
-  _assetGuid: 309761f1c4cc5a842bbc21c45cb9a941
---- !u!114 &114834252320427926
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: be815c9a-fa70-47d0-89ed-cd41d66f97ef

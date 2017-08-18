@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3397426}
   - component: {fileID: 2302084}
   - component: {fileID: 64750629626221510}
-  - component: {fileID: 114971181491502220}
-  - component: {fileID: 114330413575008876}
   m_Layer: 0
   m_Name: SM_Prop_Shipwreck_01
   m_TagString: Untagged
@@ -180,33 +178,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 2c2b91bb-e116-4837-b76b-8a2a842d68d4
---- !u!114 &114330413575008876
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 591bc607-25ae-4236-9579-f2b1b804b62e
---- !u!114 &114971181491502220
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 105074}
-    - {fileID: 183540}
-  _assetGuid: 28789d35adf833348ae8a4ba476c34b7

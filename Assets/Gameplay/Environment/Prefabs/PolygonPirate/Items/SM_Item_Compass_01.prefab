@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3388038}
   - component: {fileID: 2390946}
   - component: {fileID: 64945462144676002}
-  - component: {fileID: 114328556129694554}
-  - component: {fileID: 114653763459361234}
   m_Layer: 0
   m_Name: SM_Item_Compass_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7af3b54f5e3ac8342ab23fbc7f44bd40, type: 3}
---- !u!114 &114328556129694554
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 187964}
-  _assetGuid: 6d6269edd55ce0e48ba037de57852c02
---- !u!114 &114653763459361234
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 27876008-7e78-47a4-a538-2c1569a4a2dd

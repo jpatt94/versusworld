@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 407724}
   - component: {fileID: 3391534}
   - component: {fileID: 2325968}
-  - component: {fileID: 114305266763457610}
-  - component: {fileID: 114302192313170344}
   m_Layer: 0
   m_Name: SO_SellotapeDispenser_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145496}
   m_IsPrefabParent: 1
---- !u!114 &114302192313170344
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5863da91-7a5a-43e2-bdd8-1ac8849c0f98
---- !u!114 &114305266763457610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 145496}
-  _assetGuid: 277c5f3188dcb964389c2028661dfe26

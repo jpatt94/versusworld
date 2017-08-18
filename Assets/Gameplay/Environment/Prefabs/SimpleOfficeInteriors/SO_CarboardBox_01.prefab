@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 422866}
   - component: {fileID: 3345332}
   - component: {fileID: 2316514}
-  - component: {fileID: 114819792002435082}
-  - component: {fileID: 114551682161215774}
   m_Layer: 0
   m_Name: SO_CarboardBox_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 136886}
   m_IsPrefabParent: 1
---- !u!114 &114551682161215774
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e739a663-950c-4c26-9379-28058fd8b9eb
---- !u!114 &114819792002435082
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 136886}
-  _assetGuid: 15a724708f1f6004bb2d0d2cf7102b14

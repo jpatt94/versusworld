@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 406856}
   - component: {fileID: 3305842}
   - component: {fileID: 2363306}
-  - component: {fileID: 114899090767539386}
-  - component: {fileID: 114435671047701574}
   m_Layer: 0
   m_Name: SM_Veh_Extra_Cargo_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 110652}
   m_IsPrefabParent: 1
---- !u!114 &114435671047701574
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d8f61622-47a6-4b96-8a0a-a9a2eb9b79be
---- !u!114 &114899090767539386
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 110652}
-  _assetGuid: c7224b25068734a4ea03c6c557fe0d87

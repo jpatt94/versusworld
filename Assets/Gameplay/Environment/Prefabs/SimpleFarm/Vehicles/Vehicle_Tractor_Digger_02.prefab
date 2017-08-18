@@ -136,8 +136,6 @@ GameObject:
   - component: {fileID: 400014}
   - component: {fileID: 3300014}
   - component: {fileID: 2300014}
-  - component: {fileID: 114201084203891700}
-  - component: {fileID: 114395701215489816}
   m_Layer: 0
   m_Name: Vehicle_Tractor_Digger_02
   m_TagString: Untagged
@@ -591,30 +589,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: cf9352f4-8238-4da8-bd71-2e17ba69efa8
---- !u!114 &114201084203891700
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100014}
-    - {fileID: 100012}
-    - {fileID: 100002}
-    - {fileID: 100000}
-    - {fileID: 100010}
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-  _assetGuid: 145659460b73e89459132f1374b783f4
 --- !u!114 &114244354095544346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -627,18 +601,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 8c1ba9a2-4784-4afd-a0e8-5bda5e9695dc
---- !u!114 &114395701215489816
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e3f8ad6d-ca1e-4f59-aede-cf41c154e0e5
 --- !u!114 &114476953138873472
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 497894}
   - component: {fileID: 3341920}
   - component: {fileID: 2385086}
-  - component: {fileID: 114656842175484278}
-  - component: {fileID: 114375750802306648}
   m_Layer: 0
   m_Name: SO_Book_03
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 184562}
   m_IsPrefabParent: 1
---- !u!114 &114375750802306648
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 669ee7a1-3915-44b7-9ebf-aa95dec953e2
---- !u!114 &114656842175484278
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 184562}
-  _assetGuid: 838c8aac0dbaa7a44b4bef0e366bc1f9

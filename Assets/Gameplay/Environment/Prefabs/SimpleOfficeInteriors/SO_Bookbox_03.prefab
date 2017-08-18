@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 414502}
   - component: {fileID: 3301326}
   - component: {fileID: 2330798}
-  - component: {fileID: 114510423332675836}
-  - component: {fileID: 114331210165035196}
   m_Layer: 0
   m_Name: SO_Bookbox_03
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151470}
   m_IsPrefabParent: 1
---- !u!114 &114331210165035196
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d55ebb17-8162-474a-b15b-7ffcfa1a86aa
---- !u!114 &114510423332675836
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 151470}
-  _assetGuid: d1e00474f5ff9964b9c479e3c58ad95e

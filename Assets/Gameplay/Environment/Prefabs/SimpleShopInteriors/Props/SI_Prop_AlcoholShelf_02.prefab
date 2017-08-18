@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 455148}
   - component: {fileID: 3316384}
   - component: {fileID: 2361182}
-  - component: {fileID: 114677690645062274}
-  - component: {fileID: 114774237493754882}
   m_Layer: 0
   m_Name: SI_Prop_AlcoholShelf_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 181060}
   m_IsPrefabParent: 1
---- !u!114 &114677690645062274
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 181060}
-  _assetGuid: 1e931d3eaa885c947958c6ff96faf37f
---- !u!114 &114774237493754882
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 77f3051c-f499-4312-b4d4-2ad581781c2b

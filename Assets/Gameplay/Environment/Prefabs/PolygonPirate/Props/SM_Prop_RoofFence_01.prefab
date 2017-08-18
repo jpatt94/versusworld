@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3398846}
   - component: {fileID: 2394948}
   - component: {fileID: 64054157332147686}
-  - component: {fileID: 114207582247163180}
-  - component: {fileID: 114302371289901400}
   m_Layer: 0
   m_Name: SM_Prop_RoofFence_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 568f3f97f482f604b9f49021691ce196, type: 3}
---- !u!114 &114207582247163180
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 105184}
-  _assetGuid: a26e427e53e3c1941919ea68425bafd2
---- !u!114 &114302371289901400
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a1ce9b7e-55f3-4451-bff3-82cd3e4ec621

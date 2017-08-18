@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 450530}
   - component: {fileID: 3318010}
   - component: {fileID: 2346406}
-  - component: {fileID: 114941114053514042}
-  - component: {fileID: 114935892013764652}
   m_Layer: 0
   m_Name: SI_Food_Drink
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 195632}
   m_IsPrefabParent: 1
---- !u!114 &114935892013764652
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 23a9ab94-b723-448a-a984-b100f40f39e9
---- !u!114 &114941114053514042
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 195632}
-  _assetGuid: f5dae46d58bbe2c42b95113ad170ac2c

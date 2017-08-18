@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3346058}
   - component: {fileID: 2384636}
   - component: {fileID: 64785140619945294}
-  - component: {fileID: 114440091510817448}
-  - component: {fileID: 114926272970955754}
   m_Layer: 0
   m_Name: SM_Prop_Crane_Shark_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: a4b794bac686bfd45a0e6ceb28b9506d, type: 3}
---- !u!114 &114440091510817448
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 138754}
-  _assetGuid: 365e4a2b68585bb48838ef11aafd9024
---- !u!114 &114926272970955754
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f133a987-ac57-4d5c-bb58-a08bbed8b4ce

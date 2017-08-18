@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 467722}
   - component: {fileID: 3341150}
   - component: {fileID: 2340458}
-  - component: {fileID: 114232549689011394}
-  - component: {fileID: 114343054066446742}
   m_Layer: 0
   m_Name: SI_Food_TakeawayBag
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 192920}
   m_IsPrefabParent: 1
---- !u!114 &114232549689011394
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 192920}
-  _assetGuid: 0e479b8f8974d68488910369cb32e38d
---- !u!114 &114343054066446742
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 16ad8946-6be3-43db-af4b-ec6c88ef35e7

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3394392}
   - component: {fileID: 2311614}
   - component: {fileID: 64824122786357862}
-  - component: {fileID: 114132640147919838}
-  - component: {fileID: 114453380147353074}
   m_Layer: 0
   m_Name: SM_Prop_Stall_Cloth_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 1f71cab543bdc6044a35e8d02f197656, type: 3}
---- !u!114 &114132640147919838
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 142616}
-  _assetGuid: 3af3d92c107fcb044bc3f380270af33c
---- !u!114 &114453380147353074
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d14e2e99-45a2-4390-b413-461b2500f49a

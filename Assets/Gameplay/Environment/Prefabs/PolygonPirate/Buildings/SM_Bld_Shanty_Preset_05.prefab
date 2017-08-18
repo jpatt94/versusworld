@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3321880}
   - component: {fileID: 2310876}
   - component: {fileID: 64151424862877920}
-  - component: {fileID: 114702856890779918}
-  - component: {fileID: 114427423483419966}
   m_Layer: 0
   m_Name: SM_Bld_Shanty_Preset_05
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: d2c07928a3ac8cd48a2be3e6579eb617, type: 3}
---- !u!114 &114427423483419966
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 639e749d-fe94-41cc-9ca7-5cf4ecfa0b94
---- !u!114 &114702856890779918
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 162998}
-  _assetGuid: 0318fb409a8e3c44a88b5f08f00a1fcb

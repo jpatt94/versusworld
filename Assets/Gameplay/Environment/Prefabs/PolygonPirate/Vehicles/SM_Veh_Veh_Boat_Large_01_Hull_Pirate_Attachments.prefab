@@ -656,8 +656,6 @@ GameObject:
   - component: {fileID: 484418}
   - component: {fileID: 3397892}
   - component: {fileID: 2389650}
-  - component: {fileID: 114582475439288672}
-  - component: {fileID: 114739319715646598}
   m_Layer: 0
   m_Name: SM_Veh_Veh_Boat_Large_01_Hull_Pirate_Attachments
   m_TagString: Untagged
@@ -3121,63 +3119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 849ebf72-9ee6-47b3-82bb-ac1aa6045662
---- !u!114 &114582475439288672
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 175688}
-    - {fileID: 154066}
-    - {fileID: 134526}
-    - {fileID: 169102}
-    - {fileID: 162800}
-    - {fileID: 145000}
-    - {fileID: 138848}
-    - {fileID: 108624}
-    - {fileID: 123682}
-    - {fileID: 199760}
-    - {fileID: 138720}
-    - {fileID: 112194}
-    - {fileID: 153606}
-    - {fileID: 144514}
-    - {fileID: 144644}
-    - {fileID: 179762}
-    - {fileID: 137534}
-    - {fileID: 108180}
-    - {fileID: 138598}
-    - {fileID: 172374}
-    - {fileID: 164256}
-    - {fileID: 127054}
-    - {fileID: 139824}
-    - {fileID: 130504}
-    - {fileID: 147910}
-    - {fileID: 184542}
-    - {fileID: 103284}
-    - {fileID: 165848}
-    - {fileID: 130962}
-    - {fileID: 172842}
-    - {fileID: 169450}
-    - {fileID: 134336}
-    - {fileID: 167868}
-    - {fileID: 181432}
-    - {fileID: 126006}
-    - {fileID: 155238}
-    - {fileID: 103194}
-    - {fileID: 153870}
-    - {fileID: 125058}
-    - {fileID: 122684}
-    - {fileID: 137418}
-  _assetGuid: e7ce8fa5a49d9f9429ad31f4144cb19e
 --- !u!114 &114599879040259460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3250,18 +3191,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: bfa49b2e-928d-47c0-a763-1568028eb461
---- !u!114 &114739319715646598
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 94cc3f1d-3a46-48e0-ba75-93158c5604c6
 --- !u!114 &114749689403511686
 MonoBehaviour:
   m_ObjectHideFlags: 1

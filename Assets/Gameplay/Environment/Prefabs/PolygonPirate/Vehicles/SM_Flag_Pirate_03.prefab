@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 403960}
   - component: {fileID: 3382564}
   - component: {fileID: 2359910}
-  - component: {fileID: 114023458536137582}
-  - component: {fileID: 114634785222570186}
   m_Layer: 0
   m_Name: SM_Flag_Pirate_03
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 161044}
   m_IsPrefabParent: 1
---- !u!114 &114023458536137582
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 161044}
-  _assetGuid: 18684b1d1c03a6f43bf9bd10257fc7f8
---- !u!114 &114634785222570186
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9ead7a16-7c6c-4cab-9faa-5661ce15c646

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3376794}
   - component: {fileID: 2333866}
   - component: {fileID: 64048084273810846}
-  - component: {fileID: 114378044337551588}
-  - component: {fileID: 114775282957386182}
   m_Layer: 0
   m_Name: SC_Bld_WashingtonMonument
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 064268d19ebbb47439b42302fed7ab08, type: 3}
---- !u!114 &114378044337551588
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 132904}
-  _assetGuid: 31865bbae395cb64f84b269e7acec5b6
---- !u!114 &114775282957386182
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 95c4d68c-0d88-4012-9667-807d2b9b1ed4

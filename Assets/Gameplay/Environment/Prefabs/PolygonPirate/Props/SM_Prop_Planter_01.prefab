@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3367526}
   - component: {fileID: 2312256}
   - component: {fileID: 64873487975093058}
-  - component: {fileID: 114929902899074712}
-  - component: {fileID: 114889343568386852}
   m_Layer: 0
   m_Name: SM_Prop_Planter_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 6a61b1614d815d34ab011d84dd2f778b, type: 3}
---- !u!114 &114889343568386852
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 93b8bd2d-1cf0-459a-838f-a7e46caeb8d0
---- !u!114 &114929902899074712
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 155300}
-  _assetGuid: 5aca5137f02c6a24384afa5606a76365

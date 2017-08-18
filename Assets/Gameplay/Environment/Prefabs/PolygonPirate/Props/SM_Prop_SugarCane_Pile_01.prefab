@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3365966}
   - component: {fileID: 2340786}
   - component: {fileID: 64655506682779312}
-  - component: {fileID: 114740745123067424}
-  - component: {fileID: 114376162887832948}
   m_Layer: 0
   m_Name: SM_Prop_SugarCane_Pile_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 0792381e74a668c4d8c4bda41136c9e8, type: 3}
---- !u!114 &114376162887832948
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: de840882-9d88-4599-ba1a-8abb77dcc1fd
---- !u!114 &114740745123067424
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 114124}
-  _assetGuid: b45b07749256b534482ae5a427703834

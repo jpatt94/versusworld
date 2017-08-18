@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 430514}
   - component: {fileID: 3382106}
   - component: {fileID: 2320086}
-  - component: {fileID: 114850758768850688}
-  - component: {fileID: 114903918661351318}
   m_Layer: 0
   m_Name: SM_Env_Bush_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 175622}
   m_IsPrefabParent: 1
---- !u!114 &114850758768850688
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 175622}
-  _assetGuid: 4db48eea64d7e7e45a3cb199ee70e23f
---- !u!114 &114903918661351318
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3fe34093-9373-4562-90c3-6469e8fb427d

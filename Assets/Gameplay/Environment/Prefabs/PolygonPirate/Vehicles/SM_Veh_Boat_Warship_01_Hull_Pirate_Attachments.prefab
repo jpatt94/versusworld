@@ -640,8 +640,6 @@ GameObject:
   - component: {fileID: 465714}
   - component: {fileID: 3341750}
   - component: {fileID: 2342698}
-  - component: {fileID: 114001843201684118}
-  - component: {fileID: 114281666962405780}
   m_Layer: 0
   m_Name: SM_Veh_Boat_Warship_01_Hull_Pirate_Attachments
   m_TagString: Untagged
@@ -3804,76 +3802,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165382}
   m_IsPrefabParent: 1
---- !u!114 &114001843201684118
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 165382}
-    - {fileID: 173890}
-    - {fileID: 151996}
-    - {fileID: 112056}
-    - {fileID: 149262}
-    - {fileID: 104636}
-    - {fileID: 148280}
-    - {fileID: 144334}
-    - {fileID: 114824}
-    - {fileID: 165032}
-    - {fileID: 158626}
-    - {fileID: 119528}
-    - {fileID: 131438}
-    - {fileID: 150880}
-    - {fileID: 168330}
-    - {fileID: 149480}
-    - {fileID: 105886}
-    - {fileID: 117166}
-    - {fileID: 148778}
-    - {fileID: 149722}
-    - {fileID: 100536}
-    - {fileID: 123758}
-    - {fileID: 177024}
-    - {fileID: 172888}
-    - {fileID: 106676}
-    - {fileID: 120206}
-    - {fileID: 124254}
-    - {fileID: 148914}
-    - {fileID: 128948}
-    - {fileID: 138096}
-    - {fileID: 185724}
-    - {fileID: 154402}
-    - {fileID: 164182}
-    - {fileID: 138086}
-    - {fileID: 181196}
-    - {fileID: 131686}
-    - {fileID: 171490}
-    - {fileID: 157932}
-    - {fileID: 126520}
-    - {fileID: 141236}
-    - {fileID: 129156}
-    - {fileID: 172540}
-    - {fileID: 196162}
-    - {fileID: 194380}
-    - {fileID: 105022}
-    - {fileID: 184632}
-    - {fileID: 171100}
-    - {fileID: 100336}
-    - {fileID: 180842}
-    - {fileID: 195572}
-    - {fileID: 174250}
-    - {fileID: 174702}
-    - {fileID: 187338}
-    - {fileID: 192738}
-  _assetGuid: 546543ec887821441bb4deff0e363c1e
 --- !u!114 &114010412588861500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4042,18 +3970,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 18841d92-982e-4fa1-961e-9219cb517d40
---- !u!114 &114281666962405780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9fddadf3-efc9-4500-99c1-e5f2cc203078
 --- !u!114 &114285204540830672
 MonoBehaviour:
   m_ObjectHideFlags: 1

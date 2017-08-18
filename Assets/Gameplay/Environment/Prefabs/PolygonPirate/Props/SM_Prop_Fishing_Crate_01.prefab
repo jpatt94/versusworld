@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3328940}
   - component: {fileID: 2334224}
   - component: {fileID: 64533289930041796}
-  - component: {fileID: 114143517462920412}
-  - component: {fileID: 114525133713394000}
   m_Layer: 0
   m_Name: SM_Prop_Fishing_Crate_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: e991ad4aec6345e47a154971042a97dc, type: 3}
---- !u!114 &114143517462920412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 127616}
-  _assetGuid: ce0772d589abf964f968097bb53fb222
---- !u!114 &114525133713394000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: fbba8267-5921-4404-a4db-35d359e98e55

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 416114}
   - component: {fileID: 3376334}
   - component: {fileID: 2380422}
-  - component: {fileID: 114850174948431640}
-  - component: {fileID: 114632705469410946}
   m_Layer: 0
   m_Name: SI_Env_Wall_Door_Small_03
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 137320}
   m_IsPrefabParent: 1
---- !u!114 &114632705469410946
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 0554f8b2-bbc4-4a70-96ef-23617810f5a0
---- !u!114 &114850174948431640
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 137320}
-  _assetGuid: f20f7d56468f14545bd1d0ffd9c2aeb0

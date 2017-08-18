@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 463266}
   - component: {fileID: 3341738}
   - component: {fileID: 2364634}
-  - component: {fileID: 114559168697867128}
-  - component: {fileID: 114997404485643114}
   m_Layer: 0
   m_Name: SI_Prop_Cabinet_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 143292}
   m_IsPrefabParent: 1
---- !u!114 &114559168697867128
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 143292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 143292}
-  _assetGuid: d3d9f7c8acddf2f4daca01819599c4b7
---- !u!114 &114997404485643114
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 143292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ddf21891-975d-438c-a52c-a246b24a8713

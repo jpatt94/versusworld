@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 481632}
   - component: {fileID: 3398574}
   - component: {fileID: 2333872}
-  - component: {fileID: 114537530692296864}
-  - component: {fileID: 114641325296389296}
   m_Layer: 0
   m_Name: SI_Env_Wall_Door_Large_03
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 132298}
   m_IsPrefabParent: 1
---- !u!114 &114537530692296864
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 132298}
-  _assetGuid: f4b1745b032cdaf488732702523380da
---- !u!114 &114641325296389296
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 1ad26982-948f-4294-a2d2-ecbabf5f9769

@@ -154,8 +154,6 @@ GameObject:
   - component: {fileID: 453966}
   - component: {fileID: 3369098}
   - component: {fileID: 2334272}
-  - component: {fileID: 114831910607730826}
-  - component: {fileID: 114129880907312850}
   m_Layer: 0
   m_Name: SM_Veh_Veh_Boat_Large_01_Hull_Attachments
   m_TagString: Untagged
@@ -2515,18 +2513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: be90f2e2-b00b-4ea1-88c0-430ef0f5d9a0
---- !u!114 &114129880907312850
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b75a48a2-608a-4990-a6a4-08c9f285882b
 --- !u!114 &114150535836902608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2827,57 +2813,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: d633b9bc-3cca-4bde-808d-43a9453f4b8f
---- !u!114 &114831910607730826
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 134070}
-    - {fileID: 187882}
-    - {fileID: 160468}
-    - {fileID: 189216}
-    - {fileID: 162822}
-    - {fileID: 171676}
-    - {fileID: 102534}
-    - {fileID: 186978}
-    - {fileID: 100838}
-    - {fileID: 161296}
-    - {fileID: 198314}
-    - {fileID: 128110}
-    - {fileID: 171366}
-    - {fileID: 147336}
-    - {fileID: 150410}
-    - {fileID: 180614}
-    - {fileID: 191924}
-    - {fileID: 163148}
-    - {fileID: 136198}
-    - {fileID: 195752}
-    - {fileID: 163920}
-    - {fileID: 125956}
-    - {fileID: 103686}
-    - {fileID: 130748}
-    - {fileID: 141178}
-    - {fileID: 198622}
-    - {fileID: 175258}
-    - {fileID: 143516}
-    - {fileID: 143618}
-    - {fileID: 191074}
-    - {fileID: 123770}
-    - {fileID: 102998}
-    - {fileID: 159296}
-    - {fileID: 142094}
-    - {fileID: 188432}
-  _assetGuid: 0d71d30c9fed80c44b9d25ec8f50c8f8
 --- !u!114 &114846256833987496
 MonoBehaviour:
   m_ObjectHideFlags: 1

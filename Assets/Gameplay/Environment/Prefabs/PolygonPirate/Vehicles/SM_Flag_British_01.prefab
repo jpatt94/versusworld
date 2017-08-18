@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 419222}
   - component: {fileID: 3331430}
   - component: {fileID: 2357672}
-  - component: {fileID: 114697966931508238}
-  - component: {fileID: 114269960568814262}
   m_Layer: 0
   m_Name: SM_Flag_British_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 146306}
   m_IsPrefabParent: 1
---- !u!114 &114269960568814262
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 77e9d8b0-d024-4982-bf17-8a55859cf148
---- !u!114 &114697966931508238
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 146306}
-  _assetGuid: 9976885bd41aa534192c9d2fe06beea9

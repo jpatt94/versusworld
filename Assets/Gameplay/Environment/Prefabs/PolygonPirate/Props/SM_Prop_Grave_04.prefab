@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3373164}
   - component: {fileID: 2358976}
   - component: {fileID: 64232737800317078}
-  - component: {fileID: 114357605185066374}
-  - component: {fileID: 114779285335500828}
   m_Layer: 0
   m_Name: SM_Prop_Grave_04
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: dd7b6bb6ea58dbb439ddaac7febc6695, type: 3}
---- !u!114 &114357605185066374
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 191564}
-  _assetGuid: 2428a1003c32a0b42aba6e97e339abbc
---- !u!114 &114779285335500828
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b896fca0-12d5-4608-b837-a00dcc877d65

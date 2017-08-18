@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 404056}
   - component: {fileID: 3317572}
   - component: {fileID: 2386390}
-  - component: {fileID: 114659667012808202}
-  - component: {fileID: 114020666450744422}
   m_Layer: 0
   m_Name: SI_Food_Egg
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 105454}
   m_IsPrefabParent: 1
---- !u!114 &114020666450744422
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7ecadbaf-6c14-4340-acc0-526a62c18975
---- !u!114 &114659667012808202
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 105454}
-  _assetGuid: d9e8ff80eab7c8e4d9899d646bbe8a26

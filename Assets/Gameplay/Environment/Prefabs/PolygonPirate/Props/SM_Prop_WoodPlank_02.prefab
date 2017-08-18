@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3366960}
   - component: {fileID: 2339798}
   - component: {fileID: 64736781408664718}
-  - component: {fileID: 114247886298946948}
-  - component: {fileID: 114626074008717666}
   m_Layer: 0
   m_Name: SM_Prop_WoodPlank_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 896a15ed0d9f9f746806b3e11d17442a, type: 3}
---- !u!114 &114247886298946948
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 130756}
-  _assetGuid: d6a762afd50d1e74ea907997e23f76ea
---- !u!114 &114626074008717666
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 697ab19c-6f0b-46e8-ac6e-7eb084a54f95

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 463532}
   - component: {fileID: 3332742}
   - component: {fileID: 2327902}
-  - component: {fileID: 114828505555040638}
-  - component: {fileID: 114520254307716120}
   m_Layer: 0
   m_Name: SO_Pinboard_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130330}
   m_IsPrefabParent: 1
---- !u!114 &114520254307716120
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c921a2c7-fe49-49f8-a605-bf4b4356209e
---- !u!114 &114828505555040638
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 130330}
-  _assetGuid: 00de52beca5840740a41cccca61f4176

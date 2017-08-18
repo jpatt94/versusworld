@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3351058}
   - component: {fileID: 2391018}
   - component: {fileID: 64593764311291028}
-  - component: {fileID: 114376770152328158}
-  - component: {fileID: 114436957524920244}
   m_Layer: 0
   m_Name: SM_Prop_Skeleton_Ground_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 1b62b1d5aab57a74b95fa63cf50d29d9, type: 3}
---- !u!114 &114376770152328158
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 161936}
-  _assetGuid: 26ddceb6ba38c2243855d26e0bc49a06
---- !u!114 &114436957524920244
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 76953eac-2ef4-4a6b-ba47-dd5f5b75f0a9

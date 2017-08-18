@@ -8,8 +8,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 472190}
-  - component: {fileID: 114810626980746258}
-  - component: {fileID: 114025241140252904}
   m_Layer: 0
   m_Name: Vehicle_DumpTruck_Yellow
   m_TagString: Untagged
@@ -112,18 +110,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172190}
   m_IsPrefabParent: 1
---- !u!114 &114025241140252904
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3d3ae2d2-af41-4003-959e-ad42f4ed8a5a
 --- !u!114 &114351399987225888
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,21 +122,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 295f559a-1751-40fb-bfd9-4f574395775a
---- !u!114 &114810626980746258
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 172190}
-    - {fileID: 172192}
-  _assetGuid: e7fa55971848d214cbc8e28bda726f89

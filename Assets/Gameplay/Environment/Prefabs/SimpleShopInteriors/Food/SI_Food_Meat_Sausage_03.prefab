@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 452408}
   - component: {fileID: 3332234}
   - component: {fileID: 2319494}
-  - component: {fileID: 114829255173532680}
-  - component: {fileID: 114273941698226012}
   m_Layer: 0
   m_Name: SI_Food_Meat_Sausage_03
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100806}
   m_IsPrefabParent: 1
---- !u!114 &114273941698226012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: cb6039f1-40b1-43a5-9381-a0bc7614dc75
---- !u!114 &114829255173532680
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100806}
-  _assetGuid: 05e4e657cb0915445a53c946358a291c

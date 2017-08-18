@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3392198}
   - component: {fileID: 2390028}
   - component: {fileID: 64198002624405842}
-  - component: {fileID: 114239261552292582}
-  - component: {fileID: 114115924668545580}
   m_Layer: 0
   m_Name: SM_Bld_Mansion_End_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: f6a87e3e9aa8258428dc646238713ddb, type: 3}
---- !u!114 &114115924668545580
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 46bcc2ef-5054-4245-8f0c-3f1b7662a0ac
---- !u!114 &114239261552292582
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 154194}
-  _assetGuid: 3a8cea3fa07d95e4abe6404b1e17497d

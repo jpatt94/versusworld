@@ -154,8 +154,6 @@ GameObject:
   - component: {fileID: 478598}
   - component: {fileID: 3379324}
   - component: {fileID: 2316752}
-  - component: {fileID: 114565221080474230}
-  - component: {fileID: 114233614041004764}
   m_Layer: 0
   m_Name: SM_Veh_Boat_Warship_01_Hull
   m_TagString: Untagged
@@ -1041,18 +1039,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 018986ce-f3fa-4e19-aa17-50273d39e5c1
---- !u!114 &114233614041004764
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5954e0bc-dbe2-4466-8198-92a5d0000903
 --- !u!114 &114517333411518312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1065,36 +1051,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 28fced19-58c1-43bc-bb69-e02d371d9f6e
---- !u!114 &114565221080474230
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 176094}
-    - {fileID: 169288}
-    - {fileID: 194568}
-    - {fileID: 194672}
-    - {fileID: 154606}
-    - {fileID: 198810}
-    - {fileID: 136884}
-    - {fileID: 187010}
-    - {fileID: 146180}
-    - {fileID: 135000}
-    - {fileID: 135402}
-    - {fileID: 167162}
-    - {fileID: 183970}
-    - {fileID: 148154}
-  _assetGuid: f997b4da461b427448692385e302007f
 --- !u!114 &114675722757273498
 MonoBehaviour:
   m_ObjectHideFlags: 1

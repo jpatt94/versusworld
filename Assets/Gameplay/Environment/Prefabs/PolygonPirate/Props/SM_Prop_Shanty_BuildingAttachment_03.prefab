@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3356638}
   - component: {fileID: 2350174}
   - component: {fileID: 64183836705004468}
-  - component: {fileID: 114545797044664472}
-  - component: {fileID: 114114686722746030}
   m_Layer: 0
   m_Name: SM_Prop_Shanty_BuildingAttachment_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 12f8c71686252cc4f8a93a2b7f948625, type: 3}
---- !u!114 &114114686722746030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7e3835b9-4add-4fc4-89e8-d979a88a911b
---- !u!114 &114545797044664472
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 101946}
-  _assetGuid: 48cfcbd6ecc7dbf43aaeefd0691d4d58

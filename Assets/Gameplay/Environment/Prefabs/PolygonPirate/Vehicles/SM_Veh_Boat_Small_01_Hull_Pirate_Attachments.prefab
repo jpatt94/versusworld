@@ -62,8 +62,6 @@ GameObject:
   - component: {fileID: 455788}
   - component: {fileID: 3333114}
   - component: {fileID: 2353968}
-  - component: {fileID: 114989268751689286}
-  - component: {fileID: 114494656003647386}
   m_Layer: 0
   m_Name: SM_Veh_Boat_Small_01_Hull_Pirate_Attachments
   m_TagString: Untagged
@@ -396,18 +394,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151734}
   m_IsPrefabParent: 1
---- !u!114 &114494656003647386
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 90fe7965-4801-417d-972f-28c03924ee56
 --- !u!114 &114637797217422326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -468,25 +454,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 9fec210a-d998-4a77-b632-d50e8f9827f1
---- !u!114 &114989268751689286
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 151734}
-    - {fileID: 117468}
-    - {fileID: 178604}
-    - {fileID: 181336}
-    - {fileID: 117932}
-    - {fileID: 108120}
-  _assetGuid: e8f7a726f3bf5914887ea1bc9bcb701e

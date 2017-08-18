@@ -208,8 +208,6 @@ GameObject:
   - component: {fileID: 480178}
   - component: {fileID: 3340948}
   - component: {fileID: 2399008}
-  - component: {fileID: 114965715523214068}
-  - component: {fileID: 114057892774418708}
   m_Layer: 0
   m_Name: SM_Veh_Boat_Medium_01_Hull_Pirate_Attachments
   m_TagString: Untagged
@@ -331,7 +329,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173414}
-  m_LocalRotation: {x: 0.18181537, y: -0.6044111, z: -0.67914, w: 0.3746991}
+  m_LocalRotation: {x: 0.18181536, y: -0.60441107, z: -0.6791399, w: 0.37469906}
   m_LocalPosition: {x: -2.44, y: 2.42, z: 3.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1118,18 +1116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 788d4131-3439-4f5e-ae0c-1ac8d003ff54
---- !u!114 &114057892774418708
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 152568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 4e956582-3621-4b1b-8531-62353a2ec40c
 --- !u!114 &114170922634920202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1298,35 +1284,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 38763933-a647-479e-a010-374d00777505
---- !u!114 &114965715523214068
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 152568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 152568}
-    - {fileID: 118564}
-    - {fileID: 104038}
-    - {fileID: 194198}
-    - {fileID: 164738}
-    - {fileID: 105260}
-    - {fileID: 146764}
-    - {fileID: 173414}
-    - {fileID: 101028}
-    - {fileID: 144900}
-    - {fileID: 172130}
-    - {fileID: 118874}
-    - {fileID: 102710}
-    - {fileID: 144696}
-    - {fileID: 140122}
-    - {fileID: 125032}
-  _assetGuid: 08fa080060d162343b94ac13ffbe8f1e

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 481990}
   - component: {fileID: 3381386}
   - component: {fileID: 2346424}
-  - component: {fileID: 114094886867320392}
-  - component: {fileID: 114862166677221580}
   m_Layer: 0
   m_Name: SM_Env_Cloud_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 112458}
   m_IsPrefabParent: 1
---- !u!114 &114094886867320392
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 112458}
-  _assetGuid: b8b36e4f2ff31af4183050ce0e686696
---- !u!114 &114862166677221580
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 145e128e-667f-4b5b-abb9-fde122be45e2

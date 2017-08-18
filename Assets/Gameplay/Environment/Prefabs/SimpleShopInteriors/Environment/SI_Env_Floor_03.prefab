@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 452484}
   - component: {fileID: 3323722}
   - component: {fileID: 2375322}
-  - component: {fileID: 114266192021622278}
-  - component: {fileID: 114382293979779492}
   m_Layer: 0
   m_Name: SI_Env_Floor_03
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 118942}
   m_IsPrefabParent: 1
---- !u!114 &114266192021622278
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 118942}
-  _assetGuid: 4c66aa239a3aea24aad7866d03c0528f
---- !u!114 &114382293979779492
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d5be0016-078e-435e-82ad-583797fc2d75

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3368016}
   - component: {fileID: 2398746}
   - component: {fileID: 64604304892986662}
-  - component: {fileID: 114621969242321046}
-  - component: {fileID: 114018340731610928}
   m_Layer: 0
   m_Name: SM_Bld_Mansion_Door_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: e659a6fad706a104caee18b79a4c0af2, type: 3}
---- !u!114 &114018340731610928
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 539b4f7e-0eb3-485d-9cef-a23e5c883b52
---- !u!114 &114621969242321046
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 146060}
-  _assetGuid: 3eae05d8510a64944a2d334150e04325

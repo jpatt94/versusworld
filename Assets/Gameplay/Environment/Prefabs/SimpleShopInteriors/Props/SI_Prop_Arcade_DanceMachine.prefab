@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 434654}
   - component: {fileID: 3395862}
   - component: {fileID: 2391560}
-  - component: {fileID: 114293067393431632}
-  - component: {fileID: 114883663754999910}
   m_Layer: 0
   m_Name: SI_Prop_Arcade_DanceMachine
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138282}
   m_IsPrefabParent: 1
---- !u!114 &114293067393431632
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 138282}
-  _assetGuid: 278ea7b7cbc3c6e47834c2aadc2cd7d7
---- !u!114 &114883663754999910
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 6c9f0750-6f44-4daa-8540-f64ce4bc5b63

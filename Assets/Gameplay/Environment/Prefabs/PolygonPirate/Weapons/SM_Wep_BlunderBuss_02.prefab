@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 486980}
   - component: {fileID: 3328238}
   - component: {fileID: 2374756}
-  - component: {fileID: 114594039100790958}
-  - component: {fileID: 114484295813854264}
   m_Layer: 0
   m_Name: SM_Wep_BlunderBuss_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153308}
   m_IsPrefabParent: 1
---- !u!114 &114484295813854264
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bb747a03-f73f-451f-ba1b-5f457512e840
---- !u!114 &114594039100790958
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 153308}
-  _assetGuid: f307c758f9f292242bdcae726ecbe722

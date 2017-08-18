@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3309362}
   - component: {fileID: 2391088}
   - component: {fileID: 64433776407396214}
-  - component: {fileID: 114241772472939174}
-  - component: {fileID: 114891429550886194}
   m_Layer: 0
   m_Name: SM_Env_Mangrove_Tree_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ff2654df76532b042947cd7ac86be04f, type: 3}
---- !u!114 &114241772472939174
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 132014}
-  _assetGuid: 16b19d5b7b2ae024bab41e01ee8a37c5
---- !u!114 &114891429550886194
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9cb48e27-39dd-47a4-9be4-3cbe734239f9

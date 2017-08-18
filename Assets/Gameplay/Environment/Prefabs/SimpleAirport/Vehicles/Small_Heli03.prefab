@@ -47,8 +47,6 @@ GameObject:
   - component: {fileID: 3300004}
   - component: {fileID: 2300004}
   - component: {fileID: 64526256456605426}
-  - component: {fileID: 114776075015401196}
-  - component: {fileID: 114215028646073668}
   m_Layer: 0
   m_Name: Small_Heli03
   m_TagString: Untagged
@@ -251,18 +249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: d9698860-4b84-401f-8d33-b7ad509bf9ee
---- !u!114 &114215028646073668
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d4f4511c-dffc-4198-a2c7-942cfff2d987
 --- !u!114 &114684865796351852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -275,22 +261,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 8d43697d-ddac-4f33-b4a8-c87a4d746350
---- !u!114 &114776075015401196
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: 36cf35b6341619641ab7aee7b1523beb

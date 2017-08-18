@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 420192}
   - component: {fileID: 3332302}
   - component: {fileID: 2334624}
-  - component: {fileID: 114668281547382860}
-  - component: {fileID: 114499218169093534}
   m_Layer: 0
   m_Name: SI_Prop_Bench_04
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 192048}
   m_IsPrefabParent: 1
---- !u!114 &114499218169093534
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ed7f0678-c458-4e96-a2d7-555345c4e3b1
---- !u!114 &114668281547382860
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 192048}
-  _assetGuid: 07a7f0199d939a24a8947f0b553578e8

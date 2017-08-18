@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 401660}
   - component: {fileID: 3336182}
   - component: {fileID: 2333554}
-  - component: {fileID: 114564693100622928}
-  - component: {fileID: 114290949673442672}
   m_Layer: 0
   m_Name: SO_DeskPreset_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 119520}
   m_IsPrefabParent: 1
---- !u!114 &114290949673442672
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bfe830ff-e1ef-4a94-9710-865d7ea3c0da
---- !u!114 &114564693100622928
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 119520}
-  _assetGuid: 7ba3b3b34e654a1459d92c5de6d4e8a0

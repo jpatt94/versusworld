@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3317694}
   - component: {fileID: 2311796}
   - component: {fileID: 64240716936627460}
-  - component: {fileID: 114207970264645536}
-  - component: {fileID: 114032862636127896}
   m_Layer: 0
   m_Name: SC_Prop_Roof_AirVent_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 597d68488877e1140b84204d382b5cd6, type: 3}
---- !u!114 &114032862636127896
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a3b92dee-eba3-4969-bbc1-38d72dd96b36
---- !u!114 &114207970264645536
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 164914}
-  _assetGuid: 687d8c04537771a4bb6e28a751090546

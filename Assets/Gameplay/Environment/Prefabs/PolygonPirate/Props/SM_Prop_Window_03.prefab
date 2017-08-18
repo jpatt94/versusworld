@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3312346}
   - component: {fileID: 2321684}
   - component: {fileID: 64026749136577268}
-  - component: {fileID: 114404021531837764}
-  - component: {fileID: 114213270663057160}
   m_Layer: 0
   m_Name: SM_Prop_Window_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3cf54cda375b5994e9cc5c2402fe3e3b, type: 3}
---- !u!114 &114213270663057160
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 02c0e757-24c1-48dc-85a8-c3b16974bdbc
---- !u!114 &114404021531837764
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 114506}
-  _assetGuid: 9195576c63ead3349b47d37f2b12546e

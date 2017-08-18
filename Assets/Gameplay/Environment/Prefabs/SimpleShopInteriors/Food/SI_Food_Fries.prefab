@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 417828}
   - component: {fileID: 3334330}
   - component: {fileID: 2373800}
-  - component: {fileID: 114985826282032126}
-  - component: {fileID: 114977659151307090}
   m_Layer: 0
   m_Name: SI_Food_Fries
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 191648}
   m_IsPrefabParent: 1
---- !u!114 &114977659151307090
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 80363fcf-3f45-4bb9-9bef-7467c6bbb89c
---- !u!114 &114985826282032126
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 191648}
-  _assetGuid: 347cbd6c4c794e84da446d818bfc540b

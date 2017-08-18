@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3303470}
   - component: {fileID: 2357038}
   - component: {fileID: 64665942142865418}
-  - component: {fileID: 114227386906355682}
-  - component: {fileID: 114824242259786012}
   m_Layer: 0
   m_Name: SC_Bld_20_Brown
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: dca9a251d033c474f98897543ef3408a, type: 3}
---- !u!114 &114227386906355682
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 169604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 169604}
-  _assetGuid: b244cfd025076f24fb00ef6c1631e293
---- !u!114 &114824242259786012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 169604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 0c5c8988-fc6e-4731-89e6-ff8472934ba0

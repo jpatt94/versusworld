@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 418166}
   - component: {fileID: 3349964}
   - component: {fileID: 2357174}
-  - component: {fileID: 114555932913719844}
-  - component: {fileID: 114021732874854362}
   m_Layer: 0
   m_Name: SM_Env_Background_Island_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 126066}
   m_IsPrefabParent: 1
---- !u!114 &114021732874854362
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 97519709-b669-48b3-b30f-aa33a442cc00
---- !u!114 &114555932913719844
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 126066}
-  _assetGuid: 729250c1f357933439e62d8726e89e7c

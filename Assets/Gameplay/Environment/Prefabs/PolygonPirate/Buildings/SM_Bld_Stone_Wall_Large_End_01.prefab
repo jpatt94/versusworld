@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3397366}
   - component: {fileID: 2340150}
   - component: {fileID: 64682473497855152}
-  - component: {fileID: 114386998641301000}
-  - component: {fileID: 114804150636405458}
   m_Layer: 0
   m_Name: SM_Bld_Stone_Wall_Large_End_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: da8d6ae15c3775946b5e8ebdc7cd84d5, type: 3}
---- !u!114 &114386998641301000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 146324}
-  _assetGuid: dcdcbd197d3e1de449ea973fe1066747
---- !u!114 &114804150636405458
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3e9cdd3d-f6fb-460a-933a-182c6b941224

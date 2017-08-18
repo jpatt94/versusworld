@@ -82,8 +82,6 @@ GameObject:
   - component: {fileID: 481052}
   - component: {fileID: 3300710}
   - component: {fileID: 2391610}
-  - component: {fileID: 114093264419168370}
-  - component: {fileID: 114294906297835756}
   m_Layer: 0
   m_Name: SI_Prop_Arcade_ClawMachine_01
   m_TagString: Untagged
@@ -733,32 +731,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 1490c6cd-b196-4fbf-9ea1-3272dc3c2075
---- !u!114 &114093264419168370
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 141194}
-    - {fileID: 116396}
-    - {fileID: 124342}
-    - {fileID: 170122}
-    - {fileID: 153540}
-    - {fileID: 126496}
-    - {fileID: 104534}
-    - {fileID: 147228}
-    - {fileID: 143520}
-    - {fileID: 180300}
-  _assetGuid: c1b921bb1340fba4289af9dcfacf6dc6
 --- !u!114 &114235714349857854
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -783,18 +755,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: c2cb295c-932c-4be3-82b3-07ef351b26f6
---- !u!114 &114294906297835756
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d33f3cf8-60f5-461d-899f-414b94b402fc
 --- !u!114 &114380457417699212
 MonoBehaviour:
   m_ObjectHideFlags: 1

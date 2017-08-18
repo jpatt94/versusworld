@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 464118}
   - component: {fileID: 3384228}
   - component: {fileID: 2386886}
-  - component: {fileID: 114720708077934416}
-  - component: {fileID: 114460097621673512}
   m_Layer: 0
   m_Name: SI_Prop_Arcade_Motorbike_02
   m_TagString: Untagged
@@ -165,33 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 5c0b8978-5a5e-4cf5-9cf0-4b07e19759d7
---- !u!114 &114460097621673512
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7da8f36c-1b7a-4b19-8209-2f4bc06901b2
---- !u!114 &114720708077934416
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 114612}
-    - {fileID: 145040}
-  _assetGuid: 938f02b0ee3752b4e9040da32e662215

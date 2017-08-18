@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3367342}
   - component: {fileID: 2320358}
   - component: {fileID: 64208737760848804}
-  - component: {fileID: 114651338637000482}
-  - component: {fileID: 114992570432142464}
   m_Layer: 0
   m_Name: SM_Prop_SugarCane_Holder_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ee559e41189d054489b6ca465dd45143, type: 3}
---- !u!114 &114651338637000482
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 143830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 143830}
-  _assetGuid: 7383f8b3181c55e4a98b3025f1908415
---- !u!114 &114992570432142464
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 143830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d5581ff0-2b4b-4388-ac3b-df90ca60c42a

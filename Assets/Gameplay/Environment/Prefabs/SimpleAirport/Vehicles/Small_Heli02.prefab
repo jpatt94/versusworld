@@ -47,8 +47,6 @@ GameObject:
   - component: {fileID: 3300004}
   - component: {fileID: 2300004}
   - component: {fileID: 64460747360593790}
-  - component: {fileID: 114781411809787960}
-  - component: {fileID: 114111342625488964}
   m_Layer: 0
   m_Name: Small_Heli02
   m_TagString: Untagged
@@ -239,18 +237,6 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 90887c6f06a452845ac185edbb7a12db, type: 3}
---- !u!114 &114111342625488964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: df98ec63-811f-48ff-95b5-9354d0a2d24a
 --- !u!114 &114254905609061336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -263,25 +249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 8eb34d6a-8768-4e89-9922-5804703e29a7
---- !u!114 &114781411809787960
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: a2bf3eafa79307c4eb23c169083cd7b9
 --- !u!114 &114801802619232622
 MonoBehaviour:
   m_ObjectHideFlags: 1

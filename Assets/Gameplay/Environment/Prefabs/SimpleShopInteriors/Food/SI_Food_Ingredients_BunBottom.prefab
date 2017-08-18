@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 456928}
   - component: {fileID: 3386926}
   - component: {fileID: 2371716}
-  - component: {fileID: 114656384083457258}
-  - component: {fileID: 114095401155032060}
   m_Layer: 0
   m_Name: SI_Food_Ingredients_BunBottom
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 123242}
   m_IsPrefabParent: 1
---- !u!114 &114095401155032060
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 83516c68-2958-41ab-9623-7b3b96124e0e
---- !u!114 &114656384083457258
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 123242}
-  _assetGuid: aa923da6b630dd447a78ffdde998541c

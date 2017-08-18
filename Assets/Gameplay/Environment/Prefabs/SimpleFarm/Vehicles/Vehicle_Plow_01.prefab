@@ -136,8 +136,6 @@ GameObject:
   - component: {fileID: 400014}
   - component: {fileID: 3300014}
   - component: {fileID: 2300014}
-  - component: {fileID: 114456801052451416}
-  - component: {fileID: 114238837931694596}
   m_Layer: 0
   m_Name: Vehicle_Plow_01
   m_TagString: Untagged
@@ -591,18 +589,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 078d8457-3441-4f16-902c-e3bb4de82400
---- !u!114 &114238837931694596
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: fc90983f-bd31-419a-b69c-19ac0bb9d1e4
 --- !u!114 &114241215442005382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -663,30 +649,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 99d09344-2e73-4c8a-93c2-9fc206ba6d67
---- !u!114 &114456801052451416
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100014}
-    - {fileID: 100012}
-    - {fileID: 100010}
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: 1fe1ffb06f5dea64da489b3690acf4d5
 --- !u!114 &114599686300006302
 MonoBehaviour:
   m_ObjectHideFlags: 1

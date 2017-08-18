@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 439914}
   - component: {fileID: 3354792}
   - component: {fileID: 2344822}
-  - component: {fileID: 114958747091114798}
-  - component: {fileID: 114682116637405448}
   m_Layer: 0
   m_Name: SI_Prop_ButcherCounter_04
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 124692}
   m_IsPrefabParent: 1
---- !u!114 &114682116637405448
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5318ed68-19a1-427d-946f-c12208b25bf5
---- !u!114 &114958747091114798
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 124692}
-  _assetGuid: 1bbd11daa6d509343b6a67fe84f3b87a

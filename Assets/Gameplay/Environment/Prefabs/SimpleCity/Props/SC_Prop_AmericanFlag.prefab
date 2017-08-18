@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3348214}
   - component: {fileID: 2392510}
   - component: {fileID: 64485095435728994}
-  - component: {fileID: 114665455371677918}
-  - component: {fileID: 114700966452165624}
   m_Layer: 0
   m_Name: SC_Prop_AmericanFlag
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: cd587534e24056949aef23f6e37f9d94, type: 3}
---- !u!114 &114665455371677918
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 144358}
-  _assetGuid: 4cd4df29df270d54ab29f9a05345298b
---- !u!114 &114700966452165624
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 4d390ea2-cad5-4593-bd18-398475df5fe9

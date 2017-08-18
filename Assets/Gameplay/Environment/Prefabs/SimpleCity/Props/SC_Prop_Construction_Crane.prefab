@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3318416}
   - component: {fileID: 2337744}
   - component: {fileID: 64080044880953224}
-  - component: {fileID: 114547674925800138}
-  - component: {fileID: 114678469366562508}
   m_Layer: 0
   m_Name: SC_Prop_Construction_Crane
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 28a20632618196245b7dfa4757d906dd, type: 3}
---- !u!114 &114547674925800138
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 148458}
-  _assetGuid: 5d0a34b8aa4561c419008550178ce4af
---- !u!114 &114678469366562508
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 776a17eb-f143-4dc2-bd84-ace9867388d5

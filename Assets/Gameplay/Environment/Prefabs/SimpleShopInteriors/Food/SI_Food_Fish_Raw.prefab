@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 459060}
   - component: {fileID: 3381872}
   - component: {fileID: 2386832}
-  - component: {fileID: 114291955439175322}
-  - component: {fileID: 114995323673347138}
   m_Layer: 0
   m_Name: SI_Food_Fish_Raw
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 114134}
   m_IsPrefabParent: 1
---- !u!114 &114291955439175322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 114134}
-  _assetGuid: 5ce2c139145ea9449b567e607afa128f
---- !u!114 &114995323673347138
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 200996dd-94a1-41c6-84b4-ea71f487e744

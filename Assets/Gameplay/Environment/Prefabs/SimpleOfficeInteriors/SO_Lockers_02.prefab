@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 441192}
   - component: {fileID: 3321776}
   - component: {fileID: 2324618}
-  - component: {fileID: 114617254801485526}
-  - component: {fileID: 114300754441714932}
   m_Layer: 0
   m_Name: SO_Lockers_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 109066}
   m_IsPrefabParent: 1
---- !u!114 &114300754441714932
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: fb9b3eca-8c74-491a-acf8-27d8fc858d61
---- !u!114 &114617254801485526
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 109066}
-  _assetGuid: 76e69018a1cf37c4bb01d116253f86ab

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 479898}
   - component: {fileID: 3399500}
   - component: {fileID: 2323548}
-  - component: {fileID: 114771308550048486}
-  - component: {fileID: 114999874663541432}
   m_Layer: 0
   m_Name: SM_Wep_Rifle_DoubleBarrel_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 135538}
   m_IsPrefabParent: 1
---- !u!114 &114771308550048486
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 135538}
-  _assetGuid: b65854583d108d44bbe0fe305a769cf1
---- !u!114 &114999874663541432
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5995a7ef-6f8a-4e11-bc0d-e45f79dc44c2

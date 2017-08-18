@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 414166}
   - component: {fileID: 3352042}
   - component: {fileID: 2353158}
-  - component: {fileID: 114174333273495094}
-  - component: {fileID: 114081111008712910}
   m_Layer: 0
   m_Name: SO_PowerOutletMulti
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 124176}
   m_IsPrefabParent: 1
---- !u!114 &114081111008712910
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b2ae872b-917d-4a80-8fd0-527dd6efb5c1
---- !u!114 &114174333273495094
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 124176}
-  _assetGuid: 37e787f59825dc149ad71ced16202a7a

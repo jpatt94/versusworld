@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 455942}
   - component: {fileID: 3390492}
   - component: {fileID: 2303110}
-  - component: {fileID: 114496941542445316}
-  - component: {fileID: 114351926285933318}
   m_Layer: 0
   m_Name: SI_Env_Door_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 128314}
   m_IsPrefabParent: 1
---- !u!114 &114351926285933318
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 22d0d63a-7f79-41a0-8d87-fa18edab280e
---- !u!114 &114496941542445316
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 128314}
-  _assetGuid: c372973e7146c9e4ca981fabfc43c741

@@ -118,8 +118,6 @@ GameObject:
   - component: {fileID: 400012}
   - component: {fileID: 3300012}
   - component: {fileID: 2300012}
-  - component: {fileID: 114826719275815556}
-  - component: {fileID: 114412527043859162}
   m_Layer: 0
   m_Name: Vehicle_Harvester_Hay_02
   m_TagString: Untagged
@@ -520,18 +518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: d82c221d-9f8d-427a-9271-f6ac12c977d5
---- !u!114 &114412527043859162
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8ddf2724-56a0-4bfa-8360-d73f1aded602
 --- !u!114 &114416808697520124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -580,29 +566,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 379c0b0c-c389-494e-b56a-f7b72061c549
---- !u!114 &114826719275815556
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100012}
-    - {fileID: 100010}
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: ec2d6f590a5b3e54cb1896bab0700b25
 --- !u!114 &114946950990553270
 MonoBehaviour:
   m_ObjectHideFlags: 1

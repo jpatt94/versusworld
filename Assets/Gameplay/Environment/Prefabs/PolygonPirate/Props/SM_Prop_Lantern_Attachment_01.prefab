@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3360964}
   - component: {fileID: 2352942}
   - component: {fileID: 64548332910605292}
-  - component: {fileID: 114758599736097010}
-  - component: {fileID: 114232202613174684}
   m_Layer: 0
   m_Name: SM_Prop_Lantern_Attachment_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ad444f89b3b3c1a47846aac9b6ae6b94, type: 3}
---- !u!114 &114232202613174684
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 19cc3119-8d4e-46cb-9155-4b5d84344f6e
---- !u!114 &114758599736097010
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 145908}
-  _assetGuid: bb677ec00087db84e9c3dcc9bb02a479

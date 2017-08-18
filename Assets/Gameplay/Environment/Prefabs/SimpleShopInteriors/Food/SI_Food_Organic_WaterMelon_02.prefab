@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 410070}
   - component: {fileID: 3330646}
   - component: {fileID: 2335252}
-  - component: {fileID: 114813912577974366}
-  - component: {fileID: 114999311657066206}
   m_Layer: 0
   m_Name: SI_Food_Organic_WaterMelon_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172566}
   m_IsPrefabParent: 1
---- !u!114 &114813912577974366
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 172566}
-  _assetGuid: 7eb492a60f79fa948b20773992f7a295
---- !u!114 &114999311657066206
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e7d6097a-6b79-4c95-8c35-48e9cf661e3d

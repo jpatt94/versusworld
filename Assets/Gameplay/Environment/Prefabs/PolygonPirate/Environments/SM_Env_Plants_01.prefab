@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 470434}
   - component: {fileID: 3356064}
   - component: {fileID: 2326826}
-  - component: {fileID: 114959601411729422}
-  - component: {fileID: 114933872045736960}
   m_Layer: 0
   m_Name: SM_Env_Plants_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 191340}
   m_IsPrefabParent: 1
---- !u!114 &114933872045736960
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bedcff66-b42f-4434-9b67-5a948225fdb0
---- !u!114 &114959601411729422
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 191340}
-  _assetGuid: b86675da3cb5f3c47baa515df44013b2

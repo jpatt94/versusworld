@@ -100,8 +100,6 @@ GameObject:
   - component: {fileID: 400010}
   - component: {fileID: 3300010}
   - component: {fileID: 2300010}
-  - component: {fileID: 114680269512100834}
-  - component: {fileID: 114776433488625110}
   m_Layer: 0
   m_Name: Vehicle_Haybaler_03
   m_TagString: Untagged
@@ -461,28 +459,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 7afb9ede-c1ed-452c-adc4-7d7518ec29d3
---- !u!114 &114680269512100834
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100010}
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: 64e022ad078664544923bce3bcdc58fb
 --- !u!114 &114713983719187744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -495,18 +471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: ffe4320b-3f50-48e0-9c8e-2f8c18e10803
---- !u!114 &114776433488625110
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 29df2c03-5907-4966-9ce3-1cbaf9e01841
 --- !u!114 &114868014991856174
 MonoBehaviour:
   m_ObjectHideFlags: 1

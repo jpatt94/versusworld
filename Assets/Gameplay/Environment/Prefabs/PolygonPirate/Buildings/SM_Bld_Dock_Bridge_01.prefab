@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3346482}
   - component: {fileID: 2367236}
   - component: {fileID: 64813957481656698}
-  - component: {fileID: 114461044099701084}
-  - component: {fileID: 114406091592139358}
   m_Layer: 0
   m_Name: SM_Bld_Dock_Bridge_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 21607e1fc27a9fa4db7abb59dbaf7374, type: 3}
---- !u!114 &114406091592139358
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a782dc49-d396-4a70-b2b6-8a7a36e617ef
---- !u!114 &114461044099701084
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 126662}
-  _assetGuid: e34c64e923271524bb4523c806498a47

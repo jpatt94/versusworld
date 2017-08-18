@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 496898}
   - component: {fileID: 3355872}
   - component: {fileID: 2373796}
-  - component: {fileID: 114555835481278412}
-  - component: {fileID: 114247618279590276}
   m_Layer: 0
   m_Name: SM_Wep_Shortsword_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100726}
   m_IsPrefabParent: 1
---- !u!114 &114247618279590276
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 0cb81731-ec83-44da-95e5-0685801d4c5b
---- !u!114 &114555835481278412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100726}
-  _assetGuid: 2257b8e9e5285ef4dbf2d3cecab0309f

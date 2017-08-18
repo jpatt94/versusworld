@@ -41,8 +41,6 @@ GameObject:
   - component: {fileID: 114000014141756880}
   - component: {fileID: 114000013956289534}
   - component: {fileID: 114000011344862972}
-  - component: {fileID: 114344013019821502}
-  - component: {fileID: 114476073433224132}
   m_Layer: 5
   m_Name: VisualDebugger
   m_TagString: Untagged
@@ -131,36 +129,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114344013019821502
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013568929810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000013568929810}
-    - {fileID: 1000012139109906}
-  _assetGuid: f4e61bdda91c4aa4abc9c23d425562e2
---- !u!114 &114476073433224132
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013568929810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 012438d4-c7cf-4978-8288-fab2c5303c29
 --- !u!114 &114487014788745602
 MonoBehaviour:
   m_ObjectHideFlags: 1

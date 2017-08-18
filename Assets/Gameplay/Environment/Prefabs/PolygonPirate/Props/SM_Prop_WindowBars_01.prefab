@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3393140}
   - component: {fileID: 2318902}
   - component: {fileID: 64322828135555574}
-  - component: {fileID: 114329992545319798}
-  - component: {fileID: 114710112650017564}
   m_Layer: 0
   m_Name: SM_Prop_WindowBars_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: dc995955f8be6be46a982a5b2b910852, type: 3}
---- !u!114 &114329992545319798
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 117704}
-  _assetGuid: 47154e107fb1da144a8206414a78d2fb
---- !u!114 &114710112650017564
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 4e00587f-2728-4ce3-8362-d33c5ebf9417

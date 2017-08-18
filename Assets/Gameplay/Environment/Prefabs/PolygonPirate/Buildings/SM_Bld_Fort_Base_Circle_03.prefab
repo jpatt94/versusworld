@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3342256}
   - component: {fileID: 2399466}
   - component: {fileID: 64576334011880826}
-  - component: {fileID: 114460189966511750}
-  - component: {fileID: 114220368313687572}
   m_Layer: 0
   m_Name: SM_Bld_Fort_Base_Circle_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: de48eeaff920e1248a7e85cde828b25e, type: 3}
---- !u!114 &114220368313687572
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 6c3cbc1d-ef1f-4281-814b-a2365b7f2248
---- !u!114 &114460189966511750
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 148470}
-  _assetGuid: 8c163dddda61b084c828f56e5ffed8b1

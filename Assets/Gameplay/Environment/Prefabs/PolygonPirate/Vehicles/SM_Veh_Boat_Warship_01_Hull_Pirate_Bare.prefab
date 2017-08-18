@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 487694}
   - component: {fileID: 3376792}
   - component: {fileID: 2338074}
-  - component: {fileID: 114378606508271990}
-  - component: {fileID: 114222703328440204}
   m_Layer: 0
   m_Name: SM_Veh_Boat_Warship_01_Hull_Pirate_Bare
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 174854}
   m_IsPrefabParent: 1
---- !u!114 &114222703328440204
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 174854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 67fbe264-9c6d-482d-918b-707e90c7ff75
---- !u!114 &114378606508271990
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 174854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 174854}
-  _assetGuid: 831807539d583624fbfff3c147b19906

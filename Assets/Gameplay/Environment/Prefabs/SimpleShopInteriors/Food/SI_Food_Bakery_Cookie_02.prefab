@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 438130}
   - component: {fileID: 3318482}
   - component: {fileID: 2388850}
-  - component: {fileID: 114303269189429110}
-  - component: {fileID: 114335200499610924}
   m_Layer: 0
   m_Name: SI_Food_Bakery_Cookie_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 137320}
   m_IsPrefabParent: 1
---- !u!114 &114303269189429110
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 137320}
-  _assetGuid: 9fbb32393a46f0843904101a2b08d328
---- !u!114 &114335200499610924
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3b858960-031c-4cd0-ada7-1afac8494c3c

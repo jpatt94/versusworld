@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 33271783894452272}
   - component: {fileID: 23694045092884176}
   - component: {fileID: 64895190797658046}
-  - component: {fileID: 114105925066929620}
-  - component: {fileID: 114572173457370350}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -98,32 +96,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: d0b282bb7af77994f87537a877585083, type: 3}
---- !u!114 &114105925066929620
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1063510550356216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1063510550356216}
-  _assetGuid: 3e16b477ba454d3409ae42024667453a
---- !u!114 &114572173457370350
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1063510550356216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 94e23848-2910-4a0e-a435-a1205c2a45c5

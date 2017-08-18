@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 470894}
   - component: {fileID: 3337174}
   - component: {fileID: 2365276}
-  - component: {fileID: 114928012932632072}
-  - component: {fileID: 114553405131440952}
   m_Layer: 0
   m_Name: SI_Env_Wall_CornerBlock_large
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 167512}
   m_IsPrefabParent: 1
---- !u!114 &114553405131440952
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 92a8a8cb-2969-45cf-9cd9-db293322360e
---- !u!114 &114928012932632072
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 167512}
-  _assetGuid: 4c31b85772506764b9dd42e9f097f2d5

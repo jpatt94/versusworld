@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3388466}
   - component: {fileID: 2331786}
   - component: {fileID: 64790053131387600}
-  - component: {fileID: 114013941570765628}
-  - component: {fileID: 114581232888743254}
   m_Layer: 0
   m_Name: SC_Bld_SkyTower
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 547f74e3f68956842a30f39c13d15686, type: 3}
---- !u!114 &114013941570765628
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 194786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 194786}
-  _assetGuid: 44609948e676ac741af1c74bacf633e8
---- !u!114 &114581232888743254
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 194786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8108d94d-0cf0-4dad-ba2e-e4a3bf5b25a5

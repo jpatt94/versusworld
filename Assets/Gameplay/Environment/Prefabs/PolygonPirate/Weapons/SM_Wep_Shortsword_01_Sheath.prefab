@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 439046}
   - component: {fileID: 3316860}
   - component: {fileID: 2345476}
-  - component: {fileID: 114797183612722922}
-  - component: {fileID: 114891126568631792}
   m_Layer: 0
   m_Name: SM_Wep_Shortsword_01_Sheath
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 122778}
   m_IsPrefabParent: 1
---- !u!114 &114797183612722922
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 122778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 122778}
-  _assetGuid: d2799179d41b5244ea961abe78659f4e
---- !u!114 &114891126568631792
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 122778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 34c4183d-6277-411c-a070-a906ff842149

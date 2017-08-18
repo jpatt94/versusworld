@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 492144}
   - component: {fileID: 3313154}
   - component: {fileID: 2348228}
-  - component: {fileID: 114859323194265916}
-  - component: {fileID: 114777097326511824}
   m_Layer: 0
   m_Name: SM_Env_Beach_Pile_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134124}
   m_IsPrefabParent: 1
---- !u!114 &114777097326511824
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c025579a-47ae-4d72-aca1-dc9cceb91005
---- !u!114 &114859323194265916
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 134124}
-  _assetGuid: 156fa344cb802a144a3d5888c6943a87

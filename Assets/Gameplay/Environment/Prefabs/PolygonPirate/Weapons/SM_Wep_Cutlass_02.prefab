@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 421022}
   - component: {fileID: 3315924}
   - component: {fileID: 2336668}
-  - component: {fileID: 114476185794802212}
-  - component: {fileID: 114787051810680204}
   m_Layer: 0
   m_Name: SM_Wep_Cutlass_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 137004}
   m_IsPrefabParent: 1
---- !u!114 &114476185794802212
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 137004}
-  _assetGuid: 253766d71815aa24d884ed3cf0e6eab1
---- !u!114 &114787051810680204
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 18bc9d69-f1d8-4609-a30b-c26101a93e0a

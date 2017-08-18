@@ -202,8 +202,6 @@ GameObject:
   m_Component:
   - component: {fileID: 425006}
   - component: {fileID: 9553444}
-  - component: {fileID: 114456544984801206}
-  - component: {fileID: 114940986365153796}
   m_Layer: 0
   m_Name: Shark
   m_TagString: Untagged
@@ -1022,48 +1020,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 60ad314c-f571-4c8f-ab7a-7bdd57f17955
---- !u!114 &114456544984801206
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 139176}
-    - {fileID: 199222}
-    - {fileID: 186184}
-    - {fileID: 137870}
-    - {fileID: 145350}
-    - {fileID: 186236}
-    - {fileID: 108546}
-    - {fileID: 146248}
-    - {fileID: 121742}
-    - {fileID: 147010}
-    - {fileID: 178222}
-    - {fileID: 137622}
-    - {fileID: 193420}
-    - {fileID: 125408}
-    - {fileID: 108896}
-    - {fileID: 173016}
-    - {fileID: 129448}
-    - {fileID: 116440}
-    - {fileID: 135528}
-    - {fileID: 168962}
-    - {fileID: 100338}
-    - {fileID: 152910}
-    - {fileID: 152880}
-    - {fileID: 156706}
-    - {fileID: 108010}
-    - {fileID: 125082}
-  _assetGuid: e8d31fb942e91c3478cedbdae2b384a0
 --- !u!114 &114469913625841060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1220,15 +1176,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 1b6fde7a-6e1e-4e7f-b7ce-11d10fedaa5b
---- !u!114 &114940986365153796
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 82443bad-7c73-4298-92b5-5d276b03a28d

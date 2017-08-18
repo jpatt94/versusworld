@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 456108}
   - component: {fileID: 3317710}
   - component: {fileID: 2351602}
-  - component: {fileID: 114310917757219908}
-  - component: {fileID: 114644283140894444}
   m_Layer: 0
   m_Name: SI_Food_Bakery_CinnamonRoll
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 152454}
   m_IsPrefabParent: 1
---- !u!114 &114310917757219908
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 152454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 152454}
-  _assetGuid: 5c98e45b2c4b72b44b1d4242fba1093b
---- !u!114 &114644283140894444
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 152454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 06004e3d-7d49-46d4-aaf9-c35476c7749f

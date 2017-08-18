@@ -82,8 +82,6 @@ GameObject:
   - component: {fileID: 400008}
   - component: {fileID: 3300008}
   - component: {fileID: 2300008}
-  - component: {fileID: 114455614829209110}
-  - component: {fileID: 114788411351032318}
   m_Layer: 0
   m_Name: Vehicle_Farm_Ute_01
   m_TagString: Untagged
@@ -378,27 +376,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: e7e6914a-6700-4973-aa9d-25a95b50d06f
---- !u!114 &114455614829209110
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 100008}
-    - {fileID: 100006}
-    - {fileID: 100004}
-    - {fileID: 100002}
-    - {fileID: 100000}
-  _assetGuid: ab0a260a86b580945afadcc76dba6d24
 --- !u!114 &114509721460855588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -423,18 +400,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: a519cdf3-a6b1-4aaa-8e1b-41e8bc73b6cb
---- !u!114 &114788411351032318
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5f9a1a3f-463c-4d8a-bc02-9a7a8b48b2ff
 --- !u!114 &114917077611673844
 MonoBehaviour:
   m_ObjectHideFlags: 1

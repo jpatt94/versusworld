@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 442298}
   - component: {fileID: 3351398}
   - component: {fileID: 2301722}
-  - component: {fileID: 114790016484344662}
-  - component: {fileID: 114277271111883496}
   m_Layer: 0
   m_Name: SO_Boxfile_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 141518}
   m_IsPrefabParent: 1
---- !u!114 &114277271111883496
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ed48a1ef-3a05-4cb3-b7e1-2f39c45c75d7
---- !u!114 &114790016484344662
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 141518}
-  _assetGuid: 2849153cb5c0ee2439e40bf4fb6bd0ec

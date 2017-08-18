@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 453810}
   - component: {fileID: 3348224}
   - component: {fileID: 2399508}
-  - component: {fileID: 114323549518662984}
-  - component: {fileID: 114728426900389596}
   m_Layer: 0
   m_Name: SI_Food_Bakery_CakeSlice
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127998}
   m_IsPrefabParent: 1
---- !u!114 &114323549518662984
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 127998}
-  _assetGuid: a44edd9b0a1505d4490080ca4f568ac7
---- !u!114 &114728426900389596
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bf0ab853-d4b4-473f-9f51-4eded29099fd

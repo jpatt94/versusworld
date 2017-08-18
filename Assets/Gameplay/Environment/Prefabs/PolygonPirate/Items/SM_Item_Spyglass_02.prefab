@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3383518}
   - component: {fileID: 2343352}
   - component: {fileID: 64351057634196080}
-  - component: {fileID: 114667717219291256}
-  - component: {fileID: 114309570142706984}
   m_Layer: 0
   m_Name: SM_Item_Spyglass_02
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: a0f8e98cdc07f3a44bbb945f204132a1, type: 3}
---- !u!114 &114309570142706984
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5ce787b8-27dd-446d-90c7-d6a76d70c2f0
---- !u!114 &114667717219291256
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 173770}
-  _assetGuid: c55650a6a5fdc224b92f63f1948ac19b

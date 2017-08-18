@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3303896}
   - component: {fileID: 2379452}
   - component: {fileID: 64425548898041504}
-  - component: {fileID: 114585135625389380}
-  - component: {fileID: 114349790341330340}
   m_Layer: 0
   m_Name: SM_Item_Map_03
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3a9a47c6348a83d4fb8068acbd2a156a, type: 3}
---- !u!114 &114349790341330340
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 169684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7c098fbf-840a-41c9-900d-951a93e56210
---- !u!114 &114585135625389380
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 169684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 169684}
-  _assetGuid: e169b392add7d31438bf603312df9b8f

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 403182}
   - component: {fileID: 3392904}
   - component: {fileID: 2345522}
-  - component: {fileID: 114800770833707618}
-  - component: {fileID: 114359638305740508}
   m_Layer: 0
   m_Name: SI_Food_Organic_Carrot
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 181360}
   m_IsPrefabParent: 1
---- !u!114 &114359638305740508
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c2f42760-44f4-421e-bd32-dddee6b43c16
---- !u!114 &114800770833707618
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 181360}
-  _assetGuid: bd519f706f8c5cf4dad9fed04ab5b64b

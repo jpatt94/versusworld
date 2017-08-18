@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 444798}
   - component: {fileID: 3372326}
   - component: {fileID: 2307362}
-  - component: {fileID: 114855034058731012}
-  - component: {fileID: 114483327833615052}
   m_Layer: 0
   m_Name: SI_Food_Sushi_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168514}
   m_IsPrefabParent: 1
---- !u!114 &114483327833615052
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 1ea0dc8d-4c1f-40f8-adf2-3a1584b206e3
---- !u!114 &114855034058731012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 168514}
-  _assetGuid: df124a26b5fa32d459a9f974c4381b2b

@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 468788}
   - component: {fileID: 3377598}
   - component: {fileID: 2335824}
-  - component: {fileID: 114184990948393518}
-  - component: {fileID: 114458082195583372}
   m_Layer: 0
   m_Name: SI_Food_Bakery_Croissant
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 158136}
   m_IsPrefabParent: 1
---- !u!114 &114184990948393518
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 158136}
-  _assetGuid: 36ff5bf416a398e42b1c8605bde31deb
---- !u!114 &114458082195583372
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e6889787-d8aa-4a07-a0bb-012bfa7c7f3b

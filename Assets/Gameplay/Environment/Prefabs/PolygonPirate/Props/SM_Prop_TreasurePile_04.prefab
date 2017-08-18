@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3371528}
   - component: {fileID: 2390182}
   - component: {fileID: 64966543809064954}
-  - component: {fileID: 114280608597656642}
-  - component: {fileID: 114015318953201724}
   m_Layer: 0
   m_Name: SM_Prop_TreasurePile_04
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 77bb763563c4e8648a8984774be68ede, type: 3}
---- !u!114 &114015318953201724
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 1cf502f3-7e3e-44b4-ae5e-e455f1633d39
---- !u!114 &114280608597656642
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 172748}
-  _assetGuid: 17ee50f50ef607a4c9a00e362a693cb7

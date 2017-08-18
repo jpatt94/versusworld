@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3378556}
   - component: {fileID: 2324450}
   - component: {fileID: 64854991743574696}
-  - component: {fileID: 114882600650244754}
-  - component: {fileID: 114629198052909484}
   m_Layer: 0
   m_Name: SM_Bld_Cuba_Room_04
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 33713272f2c78c04b8d53eda6ed270c3, type: 3}
---- !u!114 &114629198052909484
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: fab1a46f-f79f-4277-9d85-373dbf5cbe97
---- !u!114 &114882600650244754
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 157812}
-  _assetGuid: 7063364aec190ca4daa2df5b8933d371

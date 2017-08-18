@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 463872}
   - component: {fileID: 3313528}
   - component: {fileID: 2335462}
-  - component: {fileID: 114228202880734574}
-  - component: {fileID: 114043079330043600}
   m_Layer: 0
   m_Name: SM_Wep_Sabre_02_Sheath
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 115384}
   m_IsPrefabParent: 1
---- !u!114 &114043079330043600
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ee7c669b-3ccb-4f3b-bc5e-14bab5c830b0
---- !u!114 &114228202880734574
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 115384}
-  _assetGuid: 7c18ba5bc74bfce4e8fb37b884a42e22

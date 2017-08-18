@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 414746}
   - component: {fileID: 3304506}
   - component: {fileID: 2333652}
-  - component: {fileID: 114857732172947316}
-  - component: {fileID: 114165536850669448}
   m_Layer: 0
   m_Name: SI_Food_Organic_Apple_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 103134}
   m_IsPrefabParent: 1
---- !u!114 &114165536850669448
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 4ad2fe2e-0448-42c0-86eb-e0940c9e29bc
---- !u!114 &114857732172947316
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 103134}
-  _assetGuid: 3312cae938ad0aa4a8a249304ede4dba

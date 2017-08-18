@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3322806}
   - component: {fileID: 2310744}
   - component: {fileID: 64584670993188472}
-  - component: {fileID: 114230335377886186}
-  - component: {fileID: 114768695221489272}
   m_Layer: 0
   m_Name: SM_Item_Bottle_Candle_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3c0878af98a381047a04157ab3de9279, type: 3}
---- !u!114 &114230335377886186
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 108896}
-  _assetGuid: 20f2557ed4f8d9b4393e2dac74eead8a
---- !u!114 &114768695221489272
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 63cd1211-f865-40cc-818e-225d95bfc6f3

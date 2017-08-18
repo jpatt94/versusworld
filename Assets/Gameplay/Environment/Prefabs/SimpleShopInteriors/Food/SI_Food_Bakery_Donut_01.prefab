@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 443992}
   - component: {fileID: 3323158}
   - component: {fileID: 2349120}
-  - component: {fileID: 114589216466088730}
-  - component: {fileID: 114941052071962566}
   m_Layer: 0
   m_Name: SI_Food_Bakery_Donut_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 179404}
   m_IsPrefabParent: 1
---- !u!114 &114589216466088730
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 179404}
-  _assetGuid: 9bf4884fdc9f19048885b359049a4275
---- !u!114 &114941052071962566
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 37cb2b85-28f5-4fd5-b778-d2b97d6ef4a7

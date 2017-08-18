@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 469006}
   - component: {fileID: 3390724}
   - component: {fileID: 2335306}
-  - component: {fileID: 114414594496134508}
-  - component: {fileID: 114352918351429020}
   m_Layer: 0
   m_Name: SI_Food_Organic_KiwiFruit_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168122}
   m_IsPrefabParent: 1
---- !u!114 &114352918351429020
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c253d890-b4f3-42a6-b735-614bfa00f2c7
---- !u!114 &114414594496134508
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 168122}
-  _assetGuid: caa1511be6828264393e3291c36b111d

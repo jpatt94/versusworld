@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 496576}
   - component: {fileID: 3339306}
   - component: {fileID: 2353242}
-  - component: {fileID: 114618801363801458}
-  - component: {fileID: 114372603367191738}
   m_Layer: 0
   m_Name: SI_Prop_CardScanner_01
   m_TagString: Untagged
@@ -153,18 +151,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197746}
   m_IsPrefabParent: 1
---- !u!114 &114372603367191738
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 67225493-6e2d-4e6a-a54e-db123d040201
 --- !u!114 &114392282530739072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,21 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 59a50c28-f4ed-43c1-9123-edb91442b0eb
---- !u!114 &114618801363801458
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 197746}
-    - {fileID: 152268}
-  _assetGuid: 84abb24f59c902a4a8253c629a3a0f83

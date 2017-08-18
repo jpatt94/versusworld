@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 491356}
   - component: {fileID: 3318486}
   - component: {fileID: 2311342}
-  - component: {fileID: 114527867196635574}
-  - component: {fileID: 114636960063450150}
   m_Layer: 0
   m_Name: SI_Food_Ingredients_BunTop
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 174752}
   m_IsPrefabParent: 1
---- !u!114 &114527867196635574
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 174752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 174752}
-  _assetGuid: f371419023ff01a4c949a33f22c8a3b8
---- !u!114 &114636960063450150
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 174752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 90031739-3697-4d38-af6a-e8ca7c97a439

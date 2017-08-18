@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3362880}
   - component: {fileID: 2346584}
   - component: {fileID: 64853726670279240}
-  - component: {fileID: 114266377305164920}
-  - component: {fileID: 114323879686627116}
   m_Layer: 0
   m_Name: SM_Item_Bottle_Attachment_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b1fca0e45114c444886c00e1ba5a83ce, type: 3}
---- !u!114 &114266377305164920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 107296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 107296}
-  _assetGuid: 4318f89cf0c834647a6b517d0203fe4f
---- !u!114 &114323879686627116
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 107296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 1eb86b5a-dbb4-48d5-9704-8ffbf85b8c97

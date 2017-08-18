@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 441308}
   - component: {fileID: 3334840}
   - component: {fileID: 2311002}
-  - component: {fileID: 114463333681033962}
-  - component: {fileID: 114818507135001556}
   m_Layer: 0
   m_Name: SI_Food_Bakery_CreamSlice
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 126488}
   m_IsPrefabParent: 1
---- !u!114 &114463333681033962
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 126488}
-  _assetGuid: b0359b0bb2134f04bb86d4c570197ad1
---- !u!114 &114818507135001556
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 62f7a160-8d38-4cd8-bbb1-b58bdf7465eb

@@ -208,8 +208,6 @@ GameObject:
   - component: {fileID: 488092}
   - component: {fileID: 3313252}
   - component: {fileID: 2307604}
-  - component: {fileID: 114242146027117970}
-  - component: {fileID: 114676650672277472}
   m_Layer: 0
   m_Name: SM_Veh_Boat_Warship_01_Hull_Attachments
   m_TagString: Untagged
@@ -3049,63 +3047,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: f297808c-eb68-4012-8ec8-5d6db5bd4d17
---- !u!114 &114242146027117970
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 126510}
-    - {fileID: 146150}
-    - {fileID: 108254}
-    - {fileID: 116586}
-    - {fileID: 133874}
-    - {fileID: 165936}
-    - {fileID: 155132}
-    - {fileID: 142184}
-    - {fileID: 179824}
-    - {fileID: 190734}
-    - {fileID: 133514}
-    - {fileID: 184806}
-    - {fileID: 145614}
-    - {fileID: 105120}
-    - {fileID: 197632}
-    - {fileID: 161988}
-    - {fileID: 133056}
-    - {fileID: 108160}
-    - {fileID: 173834}
-    - {fileID: 112188}
-    - {fileID: 122598}
-    - {fileID: 119280}
-    - {fileID: 181036}
-    - {fileID: 199624}
-    - {fileID: 183840}
-    - {fileID: 121632}
-    - {fileID: 187000}
-    - {fileID: 171436}
-    - {fileID: 136748}
-    - {fileID: 155548}
-    - {fileID: 159288}
-    - {fileID: 136140}
-    - {fileID: 148096}
-    - {fileID: 190442}
-    - {fileID: 123064}
-    - {fileID: 144746}
-    - {fileID: 102194}
-    - {fileID: 137776}
-    - {fileID: 191154}
-    - {fileID: 198824}
-    - {fileID: 103294}
-  _assetGuid: 00527f6e18debd843a66aba9400c8c45
 --- !u!114 &114256177409648794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3262,18 +3203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: f33e2433-617e-4e8c-9f3a-24937619fc91
---- !u!114 &114676650672277472
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 83b9d8ff-0b03-4fad-ad4f-7d82a2b04b38
 --- !u!114 &114692848620322734
 MonoBehaviour:
   m_ObjectHideFlags: 1

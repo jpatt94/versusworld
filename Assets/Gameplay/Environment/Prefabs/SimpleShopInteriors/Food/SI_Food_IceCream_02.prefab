@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 440598}
   - component: {fileID: 3392892}
   - component: {fileID: 2324892}
-  - component: {fileID: 114883311325981878}
-  - component: {fileID: 114034625959541386}
   m_Layer: 0
   m_Name: SI_Food_IceCream_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 162298}
   m_IsPrefabParent: 1
---- !u!114 &114034625959541386
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 341b176f-de70-475d-9eab-1cfcee2bc54b
---- !u!114 &114883311325981878
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 162298}
-  _assetGuid: cd5b2368af7e4cf4cbd180e66a4e0337

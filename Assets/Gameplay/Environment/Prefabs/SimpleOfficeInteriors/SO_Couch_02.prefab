@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 471862}
   - component: {fileID: 3397112}
   - component: {fileID: 2389502}
-  - component: {fileID: 114320262540232632}
-  - component: {fileID: 114550910689999994}
   m_Layer: 0
   m_Name: SO_Couch_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193958}
   m_IsPrefabParent: 1
---- !u!114 &114320262540232632
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 193958}
-  _assetGuid: d75434053865bda459879b47a5c6ab77
---- !u!114 &114550910689999994
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 16fb29ac-80f4-4091-b9cf-9fa2b1b213d7

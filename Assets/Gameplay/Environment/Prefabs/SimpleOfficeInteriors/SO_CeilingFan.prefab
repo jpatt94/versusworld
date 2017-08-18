@@ -28,8 +28,6 @@ GameObject:
   - component: {fileID: 481250}
   - component: {fileID: 3384662}
   - component: {fileID: 2364338}
-  - component: {fileID: 114387630289308328}
-  - component: {fileID: 114562428764376304}
   m_Layer: 0
   m_Name: SO_CeilingFan
   m_TagString: Untagged
@@ -153,24 +151,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172294}
   m_IsPrefabParent: 1
---- !u!114 &114387630289308328
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 172294}
-    - {fileID: 131770}
-  _assetGuid: be85b129bf2763c4995e050d6187b221
 --- !u!114 &114533839315434800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,15 +163,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: fd4697d6-c462-4626-8ba3-762e682e021f
---- !u!114 &114562428764376304
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9d90ecde-ca1c-4ac3-a968-6132cd1632ac

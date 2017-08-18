@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 478174}
   - component: {fileID: 3372602}
   - component: {fileID: 2331314}
-  - component: {fileID: 114582791999227024}
-  - component: {fileID: 114679090638119072}
   m_Layer: 0
   m_Name: SM_Env_Grass_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 157068}
   m_IsPrefabParent: 1
---- !u!114 &114582791999227024
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 157068}
-  _assetGuid: 4e8a28d96f745674ea61218c6b1c2b0f
---- !u!114 &114679090638119072
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a3a9edbc-14e6-4112-8f46-e8ed6bc85762

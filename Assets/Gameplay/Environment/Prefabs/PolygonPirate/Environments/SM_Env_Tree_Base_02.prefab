@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 490796}
   - component: {fileID: 3314314}
   - component: {fileID: 2376434}
-  - component: {fileID: 114662111139443304}
-  - component: {fileID: 114366581049824038}
   m_Layer: 0
   m_Name: SM_Env_Tree_Base_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 126696}
   m_IsPrefabParent: 1
---- !u!114 &114366581049824038
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c457ad0f-63d7-422e-82fa-408a91ecc451
---- !u!114 &114662111139443304
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 126696}
-  _assetGuid: dea130fa14f34fe4d9c01cc7f1e7f142

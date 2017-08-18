@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 467522}
   - component: {fileID: 3319340}
   - component: {fileID: 2386060}
-  - component: {fileID: 114126433274503772}
-  - component: {fileID: 114458564232701560}
   m_Layer: 0
   m_Name: SM_Env_Tree_Canopy_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 149324}
   m_IsPrefabParent: 1
---- !u!114 &114126433274503772
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 149324}
-  _assetGuid: 8f32dea8429dc6b49aac2dca757a9965
---- !u!114 &114458564232701560
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ad92d8cb-f349-452b-955a-1064ff9152c4

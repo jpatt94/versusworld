@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 440550}
   - component: {fileID: 3359408}
   - component: {fileID: 2355348}
-  - component: {fileID: 114746771617408858}
-  - component: {fileID: 114846953414309152}
   m_Layer: 0
   m_Name: SM_Wep_MusketPistol_04
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 147302}
   m_IsPrefabParent: 1
---- !u!114 &114746771617408858
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 147302}
-  _assetGuid: 29b9f54949a9953499c792913fbfa1e1
---- !u!114 &114846953414309152
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: efe7ed13-eb38-41fe-9c16-23ea01c20669

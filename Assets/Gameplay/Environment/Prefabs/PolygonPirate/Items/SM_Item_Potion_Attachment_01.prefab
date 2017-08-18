@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3316508}
   - component: {fileID: 2300584}
   - component: {fileID: 64591295029702982}
-  - component: {fileID: 114470670323548884}
-  - component: {fileID: 114070949320363526}
   m_Layer: 0
   m_Name: SM_Item_Potion_Attachment_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 87ba9851222e9ff4fbe7dd25a2a15c61, type: 3}
---- !u!114 &114070949320363526
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2fdc9dd3-b519-47f9-913a-46ec3c85bcca
---- !u!114 &114470670323548884
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 112190}
-  _assetGuid: 5ae6393b507e87748b3c2b68d4316830

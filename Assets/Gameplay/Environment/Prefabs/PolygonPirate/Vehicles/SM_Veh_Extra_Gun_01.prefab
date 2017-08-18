@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 449030}
   - component: {fileID: 3354508}
   - component: {fileID: 2390986}
-  - component: {fileID: 114688636470250672}
-  - component: {fileID: 114976289029249722}
   m_Layer: 0
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
@@ -236,25 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 570edcb2-605d-4a0e-80cb-fe1c8a1a6e18
---- !u!114 &114688636470250672
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 123240}
-    - {fileID: 155062}
-    - {fileID: 179352}
-  _assetGuid: 60374011c4699ed439d515d67fe80bea
 --- !u!114 &114853556227372470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,15 +246,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 362c7ec9-4c7e-420e-aea6-ac5da2befc3e
---- !u!114 &114976289029249722
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 4b6a997f-66da-46e7-b3bc-dc555d521d63

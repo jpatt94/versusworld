@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3370044}
   - component: {fileID: 2353990}
   - component: {fileID: 64598337993529300}
-  - component: {fileID: 114631971457705706}
-  - component: {fileID: 114237024474973668}
   m_Layer: 0
   m_Name: SM_Bld_Cuba_Balcony_01
   m_TagString: Untagged
@@ -97,32 +95,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: fa556cf57022ac3489a507da9d8738ee, type: 3}
---- !u!114 &114237024474973668
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9a0323bd-78e1-41c3-be2b-73be028f0996
---- !u!114 &114631971457705706
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 135414}
-  _assetGuid: 8ab359974e5a5e34da4da3c9734e1e51

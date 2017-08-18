@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 429838}
   - component: {fileID: 3385724}
   - component: {fileID: 2309582}
-  - component: {fileID: 114784585577920822}
-  - component: {fileID: 114649508905972316}
   m_Layer: 0
   m_Name: SM_Veh_Boat_Rowing_01_Hull
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151974}
   m_IsPrefabParent: 1
---- !u!114 &114649508905972316
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 320adaaf-e717-46a6-848a-3a9c90d3b6dc
---- !u!114 &114784585577920822
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 151974}
-  _assetGuid: e87bf632e58223940b2a56c89b15c4cc

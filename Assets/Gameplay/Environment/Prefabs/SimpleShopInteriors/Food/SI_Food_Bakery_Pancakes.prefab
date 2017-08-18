@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 451706}
   - component: {fileID: 3341634}
   - component: {fileID: 2360450}
-  - component: {fileID: 114671243037696688}
-  - component: {fileID: 114891065162334990}
   m_Layer: 0
   m_Name: SI_Food_Bakery_Pancakes
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 170614}
   m_IsPrefabParent: 1
---- !u!114 &114671243037696688
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 170614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 170614}
-  _assetGuid: 0c8ab9a3b6a52954d94ae5dea3d7e38b
---- !u!114 &114891065162334990
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 170614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 78163320-3bd5-49e7-a0e2-5b8e446b5ff6

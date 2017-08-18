@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 455500}
   - component: {fileID: 3388730}
   - component: {fileID: 2374540}
-  - component: {fileID: 114779735756906082}
-  - component: {fileID: 114528186997041678}
   m_Layer: 0
   m_Name: SM_Env_GroundLeaves_02
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 160476}
   m_IsPrefabParent: 1
---- !u!114 &114528186997041678
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bc2d892c-948f-4ad2-b937-fd9ca784edc1
---- !u!114 &114779735756906082
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 160476}
-  _assetGuid: 4a65af0d985ec9a4eb06ab34c09e901a

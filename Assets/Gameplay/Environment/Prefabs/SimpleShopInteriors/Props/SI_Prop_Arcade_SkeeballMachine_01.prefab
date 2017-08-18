@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 421726}
   - component: {fileID: 3356586}
   - component: {fileID: 2390658}
-  - component: {fileID: 114494736064136542}
-  - component: {fileID: 114238924508327084}
   m_Layer: 0
   m_Name: SI_Prop_Arcade_SkeeballMachine_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145418}
   m_IsPrefabParent: 1
---- !u!114 &114238924508327084
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 10d30a61-c431-47e9-9256-8e745be8a819
---- !u!114 &114494736064136542
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 145418}
-  _assetGuid: 23e50ee513016b44fa69c515b0d6c212

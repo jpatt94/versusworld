@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 403696}
   - component: {fileID: 3377488}
   - component: {fileID: 2365938}
-  - component: {fileID: 114252216097232684}
-  - component: {fileID: 114217826793071140}
   m_Layer: 0
   m_Name: SM_Veh_Extra_Barrel_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 140632}
   m_IsPrefabParent: 1
---- !u!114 &114217826793071140
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2b42be06-be62-4ca2-a8da-5d85b908b10d
---- !u!114 &114252216097232684
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 140632}
-  _assetGuid: 7c961025c06bed9448a821af0df91678

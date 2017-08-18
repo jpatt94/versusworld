@@ -10,8 +10,6 @@ GameObject:
   - component: {fileID: 450446}
   - component: {fileID: 3312416}
   - component: {fileID: 2381884}
-  - component: {fileID: 114689681252581774}
-  - component: {fileID: 114152843557684596}
   m_Layer: 0
   m_Name: SI_Env_Wall_Window_01
   m_TagString: Untagged
@@ -82,32 +80,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 164592}
   m_IsPrefabParent: 1
---- !u!114 &114152843557684596
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7c1e1b11-a93a-45a2-a15e-afe80861d690
---- !u!114 &114689681252581774
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 164592}
-  _assetGuid: 0853b203f0d73694a87b1f5200c4a4f8
