@@ -37,8 +37,8 @@ public class PlayerInput : MonoBehaviour
 	{
 		Reset();
 
-		moveAxis.x = Input.GetAxisRaw("Horizontal");
-		moveAxis.y = Input.GetAxisRaw("Vertical");
+		moveAxis.x = (CheckButton(ControlSettings.MoveLeftKeybind, ButtonStatus.Down) ? -1 : 0) + (CheckButton(ControlSettings.MoveRightKeybind, ButtonStatus.Down) ? 1 : 0);
+		moveAxis.y = (CheckButton(ControlSettings.MoveBackKeybind, ButtonStatus.Down) ? -1 : 0) + (CheckButton(ControlSettings.MoveForwardKeybind, ButtonStatus.Down) ? 1 : 0);
 		if (moveAxis.sqrMagnitude > 1.0f)
 		{
 			moveAxis.Normalize();
@@ -47,7 +47,7 @@ public class PlayerInput : MonoBehaviour
 		mouseLookAxis.x = Input.GetAxisRaw("Mouse X");
 		mouseLookAxis.y = Input.GetAxisRaw("Mouse Y");
 
-		if (CheckButton("Swap", ButtonStatus.Down))
+		if (CheckButton(ControlSettings.SwapKeybind, ButtonStatus.Down))
 		{
 			swapHoldCurrentTime += Time.deltaTime;
 		}
@@ -58,7 +58,7 @@ public class PlayerInput : MonoBehaviour
 
 	public void LateUpdate()
 	{
-		if (!CheckButton("Swap", ButtonStatus.Down))
+		if (!CheckButton(ControlSettings.SwapKeybind, ButtonStatus.Down))
 		{
 			swapHoldCurrentTime = 0.0f;
 			needsSwapRelease = false;
@@ -103,6 +103,46 @@ public class PlayerInput : MonoBehaviour
 			case ButtonStatus.Down: return Input.GetKey(key);
 			case ButtonStatus.Pressed: return Input.GetKeyDown(key);
 			case ButtonStatus.Released: return Input.GetKeyUp(key);
+		}
+
+		return false;
+	}
+
+	private static bool CheckButton(Keybind keybind, ButtonStatus status)
+	{
+		if (!Enabled)
+		{
+			return false;
+		}
+
+		if (keybind.Key != KeyCode.None)
+		{
+			switch (status)
+			{
+				case ButtonStatus.Down: return Input.GetKey(keybind.Key);
+				case ButtonStatus.Pressed: return Input.GetKeyDown(keybind.Key);
+				case ButtonStatus.Released: return Input.GetKeyUp(keybind.Key);
+			}
+		}
+		else if (keybind.MouseButton > -1)
+		{
+			switch (status)
+			{
+				case ButtonStatus.Down: return Input.GetMouseButton(keybind.MouseButton);
+				case ButtonStatus.Pressed: return Input.GetMouseButtonDown(keybind.MouseButton);
+				case ButtonStatus.Released: return Input.GetMouseButtonUp(keybind.MouseButton);
+			}
+		}
+		else if (keybind.MouseWheel != 0)
+		{
+			if (keybind.MouseWheel < 0)
+			{
+				return Input.mouseScrollDelta.y > 0.0f;
+			}
+			else if (keybind.MouseWheel > 0)
+			{
+				return Input.mouseScrollDelta.y < 0.0f;
+			}
 		}
 
 		return false;
@@ -174,32 +214,32 @@ public class PlayerInput : MonoBehaviour
 
 	public static bool Jump(ButtonStatus status)
 	{
-		return CheckButton("Jump", status);
+		return CheckButton(ControlSettings.JumpKeybind, status);
 	}
 
 	public static bool Shoot(ButtonStatus status)
 	{
-		return CheckButton("Shoot", status);
+		return CheckButton(ControlSettings.ShootKeybind, status);
 	}
 
 	public static bool AimDownSights(ButtonStatus status)
 	{
-		return CheckButton("AimDownSights", status);
+		return CheckButton(ControlSettings.AimDownSightsKeybind, status);
 	}
 
 	public static bool Reload(ButtonStatus status)
 	{
-		return CheckButton("Reload", status);
+		return CheckButton(ControlSettings.ReloadKeybind, status);
 	}
 
 	public static bool Sprint(ButtonStatus status)
 	{
-		return CheckButton("Sprint", status);
+		return CheckButton(ControlSettings.SprintKeybind, status);
 	}
 
 	public static bool Swap()
 	{
-		return CheckButton("Swap", ButtonStatus.Released) && !needsSwapRelease;
+		return CheckButton(ControlSettings.SwapKeybind, ButtonStatus.Released) && !needsSwapRelease;
 	}
 
 	public static bool PickUp()
@@ -214,41 +254,41 @@ public class PlayerInput : MonoBehaviour
 
 	public static bool Interact()
 	{
-		return CheckButton("Swap", ButtonStatus.Pressed) && !needsSwapRelease;
+		return CheckButton(ControlSettings.SwapKeybind, ButtonStatus.Pressed) && !needsSwapRelease;
 	}
 
 	public static bool Throw(ButtonStatus status)
 	{
-		return CheckButton("Throw", status);
+		return CheckButton(ControlSettings.ThrowGrenadeKeybind, status);
 	}
 
 	public static bool NextGrenade()
 	{
-		return Input.mouseScrollDelta.y < 0.0f;
+		return CheckButton(ControlSettings.SelectGrenadeDownKeybind, ButtonStatus.Pressed);
 	}
 
 	public static bool PreviousGrenade()
 	{
-		return Input.mouseScrollDelta.y > 0.0f;
+		return CheckButton(ControlSettings.SelectGrenadeUpKeybind, ButtonStatus.Pressed);
 	}
 
 	public static bool Melee(ButtonStatus status)
 	{
-		return CheckButton("Melee", status);
+		return CheckButton(ControlSettings.MeleeKeybind, status);
 	}
 
 	public static bool Crouch(ButtonStatus status)
 	{
-		return CheckButton("Crouch", status);
+		return CheckButton(ControlSettings.CrouchKeybind, status);
 	}
 
 	public static bool UsePowerUp(ButtonStatus status)
 	{
-		return CheckButton(KeyCode.E, status);
+		return CheckButton(ControlSettings.UseItemKeybind, status);
 	}
 
 	public static bool ShowScoreboard(ButtonStatus status)
 	{
-		return CheckButton("Scoreboard", status);
+		return CheckButton(ControlSettings.ShowScoreboardKeybind, status);
 	}
 }

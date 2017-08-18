@@ -30,10 +30,10 @@ TagManager:
   - BodyPartCollider
   - PlayerController
   - Interactable
-  - 
-  - 
-  - 
-  - 
+  - FogVolumeShadowCaster
+  - FogVolume
+  - FogVolumeSurrogate
+  - FogVolumeUniform
   - 
   - 
   - 

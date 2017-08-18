@@ -29,7 +29,7 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 	private bool joinFirstMatch;
 
 	private PartyManager party;
-	private LegacyMainMenu menu;
+	private GameListMenu gameListMenu;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -50,6 +50,8 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 
 		PlayerPrefs.SetString("CloudNetworkingId", "1674651");
 		StartMatchMaker();
+
+		gameListMenu = FindObjectOfType<GameListMenu>();
 	}
 
 	public override void Start()
@@ -166,7 +168,10 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 
 	public void CreateMatch()
 	{
-		localPlayerCustomizationOptions = Menu.CustomizationOptions;
+		status = MultiplayerStatus.CreatingGame;
+
+		//localPlayerCustomizationOptions = Menu.CustomizationOptions;
+		localPlayerCustomizationOptions = new PlayerCustomizationOptions();
 
 		if (matchMaker == null)
 		{
@@ -188,7 +193,7 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 
 	public void JoinMatch(MatchInfoSnapshot match)
 	{
-		localPlayerCustomizationOptions = Menu.CustomizationOptions;
+		localPlayerCustomizationOptions = new PlayerCustomizationOptions();
 		Status = MultiplayerStatus.JoiningGame;
 
 		if (matchMaker == null)
@@ -292,7 +297,7 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 
 		if (success)
 		{
-			menu.GameListMenu.OnMatchList(matchList);
+			gameListMenu.OnMatchList(matchList);
 
 			if (joinFirstMatch)
 			{
@@ -475,18 +480,6 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 		get
 		{
 			return partyRejectionReason;
-		}
-	}
-
-	public LegacyMainMenu Menu
-	{
-		get
-		{
-			return menu;
-		}
-		set
-		{
-			menu = value;
 		}
 	}
 

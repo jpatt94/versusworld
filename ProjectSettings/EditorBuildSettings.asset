@@ -8,13 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 828311f1c42896d4faab403a11e2cdd8
-  - enabled: 1
-    path: Assets/Scenes/MultiplayerLobby.unity
-    guid: db5edf9cbbf9ec541bf329215fd2e12b
   - enabled: 0
     path: Assets/Scenes/Erdentempel.unity
     guid: 16b8f31c149b57a4bace05e9a2147467
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WolfTown.unity
     guid: 5d5ee6b540f5d964b84a1986ec1424bc
   - enabled: 1
@@ -23,9 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WebIsland.unity
     guid: 0a308b03886f3e74082404c90cfec54a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SkylineJungle.unity
     guid: c80b396ae96965b48bf50e614e62f05e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SandVault.unity
     guid: 7c3d457a90a1fa245993156b30d3a7a7

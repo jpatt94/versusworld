@@ -43,6 +43,7 @@ public class PartyManager : NetworkBehaviour
 
 	private StatsManager stats;
 	private MultiplayerManager mgr;
+	private MenuManager menus;
 	private LobbyMenu lobbyMenu;
 	private static PartyManager instance;
 	private static GameSettings gameSettings;
@@ -83,6 +84,7 @@ public class PartyManager : NetworkBehaviour
 		mgr = GameObject.Find("MultiplayerManager").GetComponent<MultiplayerManager>();
 		mgr.Party = this;
 		stats = GetComponent<StatsManager>();
+		menus = FindObjectOfType<MenuManager>();
 
 		instance = this;
 
@@ -198,10 +200,9 @@ public class PartyManager : NetworkBehaviour
 
 	public void EnterLobby()
 	{
+		menus.GoToMenu(MenuType.Lobby);
 		LobbyMenu.OnChangeGameMode(gameSettings.MetaData.Name);
 		LobbyMenu.OnChangeMap(mapIndex);
-
-		JP.Event.Trigger("OnEnterLobby");
 	}
 
 	public void OnGameSettingsMessage(GameSettingsMessage msg)
@@ -390,9 +391,10 @@ public class PartyManager : NetworkBehaviour
 
 		if (status == PartyStatus.ReturningToLobby && LobbyMenu)
 		{
+			menus.GoToMenu(MenuType.Lobby);
 			LobbyMenu.OnChangeGameMode(gameSettings.MetaData.Name);
 			LobbyMenu.OnChangeMap(mapIndex);
-			LobbyMenu.OnEnterLobby();
+			//LobbyMenu.OnEnterLobby();
 		}
 	}
 

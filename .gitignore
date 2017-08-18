@@ -11,6 +11,9 @@ sysinfo.txt
 /Assets/AssetStoreTools*
 *.apk
 *.unitypackage
+*.exe
+/VersusWorld_Data/
+/VersusWorld_Dev_Data/
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #

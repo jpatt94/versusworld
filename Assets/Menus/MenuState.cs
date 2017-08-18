@@ -7,6 +7,7 @@ public class MenuState : MonoBehaviour
 	protected bool active;
 
 	protected MenuManager mgr;
+	protected MultiplayerManager multiplayer;
 	protected CanvasRenderer[] canvasRenderers;
 
 	/**********************************************************/
@@ -17,14 +18,13 @@ public class MenuState : MonoBehaviour
 		active = false;
 
 		mgr = GetComponentInParent<MenuManager>();
+		multiplayer = FindObjectOfType<MultiplayerManager>();
 		canvasRenderers = GetComponentsInChildren<CanvasRenderer>();
-
-		Visible = false;
 	}
 
 	public virtual void Start()
 	{
-
+		Visible = false;
 	}
 
 	public virtual void Update()
@@ -61,7 +61,7 @@ public class MenuState : MonoBehaviour
 	}
 
 	/**********************************************************/
-	// Interface
+	// Accessors/Mutators
 
 	public bool Visible
 	{

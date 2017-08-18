@@ -89,6 +89,42 @@ public class Utility : MonoBehaviour
 
 	public static string GetSettingsDirectory()
 	{
-		return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/ZeroMinusRed";
+		return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/VersusWorld";
+	}
+
+	public static string GetRandomName()
+	{
+		string[] cons =
+		{
+			"qu", "w", "r", "t", "y", "p", "s", "d", "f", "g", "h", "j", "k", "l", "z", "c", "v", "b", "n", "m",
+			"tr", "th", "pr", "sh", "st", "gh", "fr", "dr", "kl", "zh", "cr", "ch", "br",
+		};
+
+		string[] vowels =
+		{
+			"a", "e", "i", "o", "u", "ou", "oo", "ue", "ee", "ea", "io", "ie", "ei",
+		};
+
+		string name = "";
+
+		bool vowel = UnityEngine.Random.Range(0, 2) == 0;
+		int length = UnityEngine.Random.Range(3, 6);
+		for (int i = 0; i < length; i++)
+		{
+			if (vowel)
+			{
+				name += vowels[UnityEngine.Random.Range(0, vowels.Length)];
+			}
+			else
+			{
+				name += cons[UnityEngine.Random.Range(0, cons.Length)];
+			}
+
+			vowel = !vowel;
+		}
+
+		name = name.ToCharArray()[0].ToString().ToUpper() + name.Substring(1);
+
+		return name;
 	}
 }

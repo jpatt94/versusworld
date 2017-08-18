@@ -28,7 +28,7 @@ public class LobbySettingsMenu : MenuState
 
 	private void OnCreateGameButtonClick()
 	{
-
+		multiplayer.CreateMatch();
 	}
 
 	private void OnLobbySettingsBackButtonClick()

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2309518}
   - component: {fileID: 114245382101716082}
   - component: {fileID: 114421711528655244}
+  - component: {fileID: 64055547725101174}
   m_Layer: 0
   m_Name: SM_Env_Background_Hills_01
   m_TagString: Untagged
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 189118}
   m_IsPrefabParent: 1
+--- !u!64 &64055547725101174
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189118}
+  m_Material: {fileID: 13400000, guid: 0c68d59cff68700469eccf5431ad90fa, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 7c4afc34898e5d8449829ec99d374858, type: 3}
 --- !u!114 &114245382101716082
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class LobbyMenu : MonoBehaviour
+public class LobbyMenu : MenuState
 {
 	[SerializeField]
 	private float partyMemberSeparationY;
@@ -18,7 +18,6 @@ public class LobbyMenu : MonoBehaviour
 	private bool isHost;
 	private List<PartyMemberEntry> partyMemberEntries;
 
-	private MultiplayerManager mgr;
 	private RectTransform partyMemberList;
 	private Text waitingForHostText;
 	private Button startGameButton;
@@ -29,14 +28,12 @@ public class LobbyMenu : MonoBehaviour
 	private Text mapText;
 	private Image mapThumbnail;
 
-	private bool test;
-
 	/**********************************************************/
 	// MonoBehaviour Interface
 
-	public void Awake()
+	public override void Awake()
 	{
-		mgr = GameObject.Find("MultiplayerManager").GetComponent<MultiplayerManager>();
+		multiplayer = GameObject.Find("MultiplayerManager").GetComponent<MultiplayerManager>();
 		partyMemberList = GameObject.Find("PartyMemberList").GetComponent<RectTransform>();
 		waitingForHostText = GameObject.Find("WaitingForHostText").GetComponent<Text>();
 		startGameButton = GameObject.Find("StartGameButton").GetComponent<Button>();
@@ -47,23 +44,27 @@ public class LobbyMenu : MonoBehaviour
 		mapText = GameObject.Find("MapButton").GetComponentInChildren<Text>();
 		mapThumbnail = GameObject.Find("MapThumbnail").GetComponent<Image>();
 
+		base.Awake();
+
+		JP.Event.Register(this, "OnStartGameButtonClick");
+		JP.Event.Register(this, "OnGameButtonClick");
+		JP.Event.Register(this, "OnMapButtonClick");
+		JP.Event.Register(this, "OnPreviousGameStatsButtonClick");
+		JP.Event.Register(this, "OnLeaveButtonClick");
+
 		partyMemberEntries = new List<PartyMemberEntry>();
 
 		Cursor.lockState = CursorLockMode.None;
 		Cursor.visible = true;
-
-		JP.Event.Register(this, "OnEnterLobby");
 	}
 
-	public void Start()
+	public override void Update()
 	{
-	}
+		base.Update();
 
-	public void Update()
-	{
-		if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) && chatBoxInputField.text != "" && mgr.Party)
+		if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) && chatBoxInputField.text != "" && multiplayer.Party)
 		{
-			mgr.Party.SendChatMessage(chatBoxInputField.text);
+			multiplayer.Party.SendChatMessage(chatBoxInputField.text);
 			chatBoxInputField.text = "";
 		}
 
@@ -76,7 +77,7 @@ public class LobbyMenu : MonoBehaviour
 				{
 					if (Input.GetKeyDown(KeyCode.Alpha1 + i))
 					{
-						mgr.Party.ServerChangeMap(i);
+						multiplayer.Party.ServerChangeMap(i);
 						break;
 					}
 				}
@@ -112,13 +113,35 @@ public class LobbyMenu : MonoBehaviour
 		}
 	}
 
-	public void OnDestroy()
-	{
-		JP.Event.UnregisterAll(this);
-	}
-
 	/**********************************************************/
 	// Interface
+
+	public override MenuType GetMenuType()
+	{
+		return MenuType.Lobby;
+	}
+
+	public override void StateBegin()
+	{
+		base.StateBegin();
+
+		isHost = multiplayer.Party.isServer;
+
+		foreach (PlayerData p in multiplayer.Players)
+		{
+			OnRegisterPartyMember(p);
+		}
+
+		if (isHost)
+		{
+			EnableStartGameButton(true);
+		}
+		else
+		{
+			waitingForHostText.enabled = true;
+			waitingForHostText.text = "Waiting for host...";
+		}
+	}
 
 	public void OnRegisterPartyMember(PlayerData player)
 	{
@@ -165,64 +188,47 @@ public class LobbyMenu : MonoBehaviour
 		OnPartyMembersChanged();
 	}
 
-	public void OnEnterLobby()
-	{
-		isHost = mgr.Party.isServer;
-
-		foreach (PlayerData p in mgr.Players)
-		{
-			OnRegisterPartyMember(p);
-		}
-
-		if (isHost)
-		{
-			EnableStartGameButton(true);
-		}
-		else
-		{
-			waitingForHostText.enabled = true;
-			waitingForHostText.text = "Waiting for host...";
-		}
-	}
-
-	public void OnStartGameClick()
-	{
-		mgr.Party.ServerStartGame();
-	}
-
 	public void ShowChatMessage(string str)
 	{
 		chatBoxText.text += "\n" + str;
 	}
 
-	public void OnLeaveClick()
-	{
-		mgr.Party.ReturnToMainMenu();
-	}
-
-	public void OnPreviousGameStatsClick()
-	{
-
-	}
-
-	public void OnGameClick()
-	{
-		mgr.Party.ServerChangeGameType();
-	}
-
-	public void OnMapClick()
-	{
-	}
-
 	public void OnChangeGameMode(string name)
 	{
-		gameModeText.text = "Game: " + name;
+		gameModeText.text = "    Game: " + name;
 	}
 
 	public void OnChangeMap(int mapIndex)
 	{
-		mapText.text = "Map: " + mapNames[mapIndex];
+		mapText.text = "    Map: " + mapNames[mapIndex];
 		mapThumbnail.sprite = mapThumbnails[mapIndex];
+	}
+
+	/**********************************************************/
+	// Button Callbacks
+
+	public void OnStartGameButtonClick()
+	{
+		multiplayer.Party.ServerStartGame();
+	}
+
+	public void OnGameButtonClick()
+	{
+		multiplayer.Party.ServerChangeGameType();
+	}
+
+	public void OnMapButtonClick()
+	{
+	}
+
+	public void OnPreviousGameStatsButtonClick()
+	{
+
+	}
+
+	public void OnLeaveButtonClick()
+	{
+		multiplayer.Party.ReturnToMainMenu();
 	}
 
 	/**********************************************************/
@@ -231,8 +237,7 @@ public class LobbyMenu : MonoBehaviour
 	private void EnableStartGameButton(bool enable)
 	{
 		startGameButton.enabled = enable;
-		startGameButton.GetComponent<Image>().enabled = enable;
-		startGameButton.GetComponentInChildren<Text>().enabled = enable;
+		startGameButton.GetComponent<Text>().enabled = enable;
 	}
 
 	private void OnPartyMembersChanged()

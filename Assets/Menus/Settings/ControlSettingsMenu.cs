@@ -1,0 +1,108 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+public class ControlSettingsMenu : SettingsMenuState
+{
+	private SliderControl mouseSensitivityControl;
+	private ToggleControl invertAimControl;
+	private ToggleControl toggleCrouchControl;
+	private ToggleControl toggleSprintControl;
+	private KeybindControl moveForwardControl;
+	private KeybindControl moveBackControl;
+	private KeybindControl moveLeftControl;
+	private KeybindControl moveRightControl;
+	private KeybindControl jumpControl;
+	private KeybindControl shootControl;
+	private KeybindControl reloadControl;
+	private KeybindControl aimDownSightsControl;
+	private KeybindControl throwGrenadeControl;
+	private KeybindControl meleeControl;
+	private KeybindControl swapControl;
+	private KeybindControl useItemControl;
+	private KeybindControl sprintControl;
+	private KeybindControl crouchControl;
+	private KeybindControl selectGrenadeUpControl;
+	private KeybindControl selectGrenadeDownControl;
+	private KeybindControl showScoreboardControl;
+
+	/**********************************************************/
+	// MonoBehaviour Interface
+
+	public override void Awake()
+	{
+		base.Awake();
+
+		mouseSensitivityControl = transform.Find("MouseSensitivityControl").GetComponentInChildren<SliderControl>();
+		invertAimControl = transform.Find("InvertAimControl").GetComponentInChildren<ToggleControl>();
+		toggleCrouchControl = transform.Find("ToggleCrouchControl").GetComponentInChildren<ToggleControl>();
+		toggleSprintControl = transform.Find("ToggleSprintControl").GetComponentInChildren<ToggleControl>();
+		moveForwardControl = transform.Find("MoveForwardControl").GetComponentInChildren<KeybindControl>();
+		moveBackControl = transform.Find("MoveBackControl").GetComponentInChildren<KeybindControl>();
+		moveLeftControl = transform.Find("MoveLeftControl").GetComponentInChildren<KeybindControl>();
+		moveRightControl = transform.Find("MoveRightControl").GetComponentInChildren<KeybindControl>();
+		jumpControl = transform.Find("JumpControl").GetComponentInChildren<KeybindControl>();
+		shootControl = transform.Find("ShootControl").GetComponentInChildren<KeybindControl>();
+		reloadControl = transform.Find("ReloadControl").GetComponentInChildren<KeybindControl>();
+		aimDownSightsControl = transform.Find("AimDownSightsControl").GetComponentInChildren<KeybindControl>();
+		throwGrenadeControl = transform.Find("ThrowGrenadeControl").GetComponentInChildren<KeybindControl>();
+		meleeControl = transform.Find("MeleeControl").GetComponentInChildren<KeybindControl>();
+		swapControl = transform.Find("SwapControl").GetComponentInChildren<KeybindControl>();
+		useItemControl = transform.Find("UseItemControl").GetComponentInChildren<KeybindControl>();
+		sprintControl = transform.Find("SprintControl").GetComponentInChildren<KeybindControl>();
+		crouchControl = transform.Find("CrouchControl").GetComponentInChildren<KeybindControl>();
+		selectGrenadeUpControl = transform.Find("SelectGrenadeUpControl").GetComponentInChildren<KeybindControl>();
+		selectGrenadeDownControl = transform.Find("SelectGrenadeDownControl").GetComponentInChildren<KeybindControl>();
+		showScoreboardControl = transform.Find("ShowScoreboardControl").GetComponentInChildren<KeybindControl>();
+
+		JP.Event.Register(this, "OnControlSettingsLoad");
+	}
+
+	/**********************************************************/
+	// Interface
+
+	public override void StateBegin()
+	{
+		base.StateBegin();
+
+		UpdateControlValues();
+	}
+
+	public void Save()
+	{
+		ControlSettings.Save();
+	}
+
+	public void OnControlSettingsLoad()
+	{
+		UpdateControlValues();
+	}
+
+	/**********************************************************/
+	// Helper Functions
+
+	private void UpdateControlValues()
+	{
+		mouseSensitivityControl.Value = ControlSettings.MouseSensitivity;
+		invertAimControl.Checked = ControlSettings.InvertAim;
+		toggleSprintControl.Checked = ControlSettings.ToggleSprint;
+		toggleCrouchControl.Checked = ControlSettings.ToggleCrouch;
+		moveForwardControl.Label = ControlSettings.MoveForwardKeybind.ToString();
+		moveBackControl.Label = ControlSettings.MoveBackKeybind.ToString();
+		moveLeftControl.Label = ControlSettings.MoveLeftKeybind.ToString();
+		moveRightControl.Label = ControlSettings.MoveRightKeybind.ToString();
+		jumpControl.Label = ControlSettings.JumpKeybind.ToString();
+		shootControl.Label = ControlSettings.ShootKeybind.ToString();
+		reloadControl.Label = ControlSettings.ReloadKeybind.ToString();
+		aimDownSightsControl.Label = ControlSettings.AimDownSightsKeybind.ToString();
+		throwGrenadeControl.Label = ControlSettings.ThrowGrenadeKeybind.ToString();
+		meleeControl.Label = ControlSettings.MeleeKeybind.ToString();
+		swapControl.Label = ControlSettings.SwapKeybind.ToString();
+		useItemControl.Label = ControlSettings.UseItemKeybind.ToString();
+		sprintControl.Label = ControlSettings.SprintKeybind.ToString();
+		crouchControl.Label = ControlSettings.CrouchKeybind.ToString();
+		selectGrenadeUpControl.Label = ControlSettings.SelectGrenadeUpKeybind.ToString();
+		selectGrenadeDownControl.Label = ControlSettings.SelectGrenadeDownKeybind.ToString();
+		showScoreboardControl.Label = ControlSettings.ShowScoreboardKeybind.ToString();
+	}
+}

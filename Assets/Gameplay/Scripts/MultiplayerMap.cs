@@ -35,10 +35,6 @@ public class MultiplayerMap : NetworkBehaviour
 	{
 		PlayerInput.Enabled = true;
 		Cursor.lockState = CursorLockMode.Locked;
-
-		ControlSettings.Load();
-		VideoSettings.Load();
-		AudioSettings.Load();
 	}
 
 	public void Update()
