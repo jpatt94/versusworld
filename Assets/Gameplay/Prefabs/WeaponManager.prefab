@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4000012135989854}
   - component: {fileID: 114000011979370014}
   - component: {fileID: 114000010496238152}
-  - component: {fileID: 114864342312865696}
-  - component: {fileID: 114216780487746398}
   m_Layer: 0
   m_Name: WeaponManager
   m_TagString: Untagged
@@ -108,32 +106,3 @@ MonoBehaviour:
     i15: 7
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &114216780487746398
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011109254620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2dca9272-0bc5-41f0-966a-5ca4e697470c
---- !u!114 &114864342312865696
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011109254620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000011109254620}
-  _assetGuid: ad6be07101f2d7442a450eaabc2ca907

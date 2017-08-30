@@ -420,13 +420,12 @@ public class GameSettings : MonoBehaviour
 
 		n = doc.CreateElement("GrenadeCloud");
 		SaveValue(n, "Weight", powerUpSettings.PowerUpWeights[(int)PowerUpType.GrenadeCloud]);
-		SaveValue(n, "Height", powerUpSettings.GrenadeCloud.Height);
 		SaveValue(n, "Size", powerUpSettings.GrenadeCloud.Size);
 		SaveValue(n, "MinTimeBetweenSpawns", powerUpSettings.GrenadeCloud.MinimumSpawnTime);
 		SaveValue(n, "MaxTimeBetweenSpawns", powerUpSettings.GrenadeCloud.MaximumSpawnTime);
 		SaveValue(n, "GrenadeType", (int)powerUpSettings.GrenadeCloud.GrenadeType);
 		SaveValue(n, "IntroDuration", powerUpSettings.GrenadeCloud.IntroDuration);
-		SaveValue(n, "Duration", powerUpSettings.GrenadeCloud.Duration);
+		SaveValue(n, "Speed", powerUpSettings.GrenadeCloud.Speed);
 		SaveValue(n, "GrenadeFuseTime", powerUpSettings.GrenadeCloud.GrenadeFuseTime);
 		node.AppendChild(n);
 
@@ -827,13 +826,12 @@ public class GameSettings : MonoBehaviour
 		if (n != null)
 		{
 			LoadValue(n, "Weight", ref powerUpSettings.PowerUpWeights[(int)PowerUpType.GrenadeCloud]);
-			LoadValue(n, "Height", ref powerUpSettings.GrenadeCloud.Height);
 			LoadValue(n, "Size", ref powerUpSettings.GrenadeCloud.Size);
 			LoadValue(n, "MinTimeBetweenSpawns", ref powerUpSettings.GrenadeCloud.MinimumSpawnTime);
 			LoadValue(n, "MaxTimeBetweenSpawns", ref powerUpSettings.GrenadeCloud.MaximumSpawnTime);
 			LoadValue(n, "GrenadeType", ref powerUpSettings.GrenadeCloud.GrenadeType);
 			LoadValue(n, "IntroDuration", ref powerUpSettings.GrenadeCloud.IntroDuration);
-			LoadValue(n, "Duration", ref powerUpSettings.GrenadeCloud.Duration);
+			LoadValue(n, "Speed", ref powerUpSettings.GrenadeCloud.Speed);
 			LoadValue(n, "GrenadeFuseTime", ref powerUpSettings.GrenadeCloud.GrenadeFuseTime);
 		}
 
@@ -1805,36 +1803,33 @@ public class PowerUpSettings
 
 public class GrenadeCloudSettings
 {
-	public float Height;
 	public float Size;
 	public float MinimumSpawnTime;
 	public float MaximumSpawnTime;
 	public GrenadeType GrenadeType;
 	public float IntroDuration;
-	public float Duration;
+	public float Speed;
 	public float GrenadeFuseTime;
 
 	public void Serialize(NetworkWriter writer)
 	{
-		writer.Write(Height);
 		writer.Write(Size);
 		writer.Write(MinimumSpawnTime);
 		writer.Write(MaximumSpawnTime);
 		writer.Write((byte)GrenadeType);
 		writer.Write(IntroDuration);
-		writer.Write(Duration);
+		writer.Write(Speed);
 		writer.Write(GrenadeFuseTime);
 	}
 
 	public void Deserialize(NetworkReader reader)
 	{
-		Height = reader.ReadSingle();
 		Size = reader.ReadSingle();
 		MinimumSpawnTime = reader.ReadSingle();
 		MaximumSpawnTime = reader.ReadSingle();
 		GrenadeType = (GrenadeType)reader.ReadByte();
 		IntroDuration = reader.ReadSingle();
-		Duration = reader.ReadSingle();
+		Speed = reader.ReadSingle();
 		GrenadeFuseTime = reader.ReadSingle();
 	}
 }

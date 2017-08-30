@@ -202,14 +202,14 @@ public class FirstPersonHands : MonoBehaviour
 
 	public void Melee()
 	{
-		if (!ani.GetCurrentAnimatorStateInfo(OfflinePlayerModel.FirstPersonHandsLI).IsName("Melee"))
-		{
+		//if (!ani.GetCurrentAnimatorStateInfo(OfflinePlayerModel.FirstPersonHandsLI).IsName("Melee"))
+		//{
 			ani.Play("Melee");
-		}
-		else
-		{
-			ani.SetTrigger("Melee");
-		}
+		//}
+		//else
+		//{
+		//	ani.SetTrigger("Melee");
+		//}
 		aud.PlayOneShot(mgr.MeleeSound);
 	}
 

@@ -179,14 +179,13 @@
       <Weight Value="85" />
     </SpikeGrenade>
     <GrenadeCloud>
-      <Weight Value="18" />
-      <Height Value="30.00" />
+      <Weight Value="180000" />
       <Size Value="40.00" />
       <MinTimeBetweenSpawns Value="0.10" />
       <MaxTimeBetweenSpawns Value="0.40" />
       <GrenadeType Value="0" />
       <IntroDuration Value="3.00" />
-      <Duration Value="20.00" />
+      <Speed Value="3.00" />
       <GrenadeFuseTime Value="3.50" />
     </GrenadeCloud>
     <BigHeads>

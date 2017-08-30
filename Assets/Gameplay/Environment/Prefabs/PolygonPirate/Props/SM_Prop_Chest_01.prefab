@@ -28,7 +28,6 @@ GameObject:
   - component: {fileID: 430606}
   - component: {fileID: 3393916}
   - component: {fileID: 2362578}
-  - component: {fileID: 114720174030726618}
   m_Layer: 0
   m_Name: SM_Prop_Chest_Treasure_01
   m_TagString: Untagged
@@ -46,7 +45,6 @@ GameObject:
   - component: {fileID: 469456}
   - component: {fileID: 3376014}
   - component: {fileID: 2375906}
-  - component: {fileID: 114194667119153516}
   m_Layer: 0
   m_Name: SM_Prop_Chest_Lid_01
   m_TagString: Untagged
@@ -86,15 +84,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153962}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.5620561, z: -0, w: 0.82709914}
+  m_LocalPosition: {x: -7.94899, y: 30.289, z: 93.108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 469456}
   - {fileID: 430606}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -68.396, z: 0}
 --- !u!23 &2301818
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -237,27 +235,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ec416d438706a944882a71eba667a948, type: 3}
---- !u!114 &114194667119153516
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e149c2d5-ba82-4c5f-a857-01aa299ce9de
---- !u!114 &114720174030726618
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 8eba2bad-4526-4c72-a68e-7c9799151d5e

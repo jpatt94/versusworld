@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 114000011633449652}
   - component: {fileID: 114000010542647804}
   - component: {fileID: 114415058407631038}
-  - component: {fileID: 114159710235909806}
-  - component: {fileID: 114906979508016010}
   m_Layer: 0
   m_Name: MultiplayerManager
   m_TagString: Untagged
@@ -181,23 +179,6 @@ MonoBehaviour:
     type: 2}
   inGamePlayerPrefab: {fileID: 1000011990801818, guid: 253da245ef304424989e2e616883433b,
     type: 2}
---- !u!114 &114159710235909806
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010705104674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000010705104674}
-  _assetGuid: 2ba43d245e8ef7a459763cc80fc0d563
 --- !u!114 &114415058407631038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,15 +196,3 @@ MonoBehaviour:
   portForwardingEnabled: 1
   portForwardingTimeOut: 10
   punchthroughTimeout: 30
---- !u!114 &114906979508016010
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010705104674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b54507ff-44fd-475a-9593-b73f4e9d7d98

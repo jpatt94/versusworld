@@ -20,8 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4421307149765612}
   - component: {fileID: 114407060484197234}
-  - component: {fileID: 114022468271719342}
-  - component: {fileID: 114568104277649760}
   m_Layer: 0
   m_Name: BingoSettings
   m_TagString: Untagged
@@ -42,23 +40,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114022468271719342
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1734892065148158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1734892065148158}
-  _assetGuid: 2366f747422b6254788b2d98cdf37953
 --- !u!114 &114407060484197234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -71,15 +52,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TaskName: 
---- !u!114 &114568104277649760
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1734892065148158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e087318c-3352-4252-bb7d-962186b81f54

@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 136933171619055004}
   - component: {fileID: 114009667846741828}
   - component: {fileID: 114811305967782344}
-  - component: {fileID: 114757690343789910}
-  - component: {fileID: 114765536341767468}
   m_Layer: 0
   m_Name: ExplosiveBarrel
   m_TagString: Untagged
@@ -41,7 +39,6 @@ GameObject:
   - component: {fileID: 4393380377591488}
   - component: {fileID: 33289914459668558}
   - component: {fileID: 23692674729866084}
-  - component: {fileID: 114066041235649576}
   m_Layer: 0
   m_Name: Barrel_Sealed_01 1
   m_TagString: Untagged
@@ -69,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1014267628168430}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -88.37549, y: 0, z: 66.15862}
+  m_LocalPosition: {x: 964.61884, y: 700.05457, z: -1353.1569}
   m_LocalScale: {x: 0.36878678, y: 0.36878678, z: 0.36878678}
   m_Children:
   - {fileID: 4393380377591488}
@@ -149,48 +146,6 @@ MonoBehaviour:
     i15: 245
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &114066041235649576
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1532045359015064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: dc3febe3-f74f-47e8-a0d6-56be9d0e60a2
---- !u!114 &114757690343789910
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1014267628168430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1014267628168430}
-    - {fileID: 1532045359015064}
-  _assetGuid: 298c8bd83288bc44483fc923763fc2f5
---- !u!114 &114765536341767468
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1014267628168430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 5afc5def-b8f6-44b0-90d7-9f27dc54c3e7
 --- !u!114 &114811305967782344
 MonoBehaviour:
   m_ObjectHideFlags: 1

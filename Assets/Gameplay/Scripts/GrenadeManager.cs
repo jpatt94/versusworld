@@ -79,6 +79,7 @@ public class GrenadeManager : NetworkBehaviour
 				grenade.ID = kv.Value.id;
 				grenade.Manager = this;
 				grenade.Data = kv.Value;
+				grenade.FriendlyFire = true;
 				kv.Value.grenade = grenade;
 				kv.Value.throwerID = kv.Value.ownerID;
 				kv.Value.ownerID = -1;
@@ -95,7 +96,7 @@ public class GrenadeManager : NetworkBehaviour
 		}
 	}
 
-	public Grenade CreateLiveGrenade(GrenadeType type, Vector3 position, Vector3 forward, float speed, int throwerID = -1)
+	public Grenade CreateLiveGrenade(GrenadeType type, Vector3 position, Vector3 forward, float speed, int throwerID = -1, bool friendlyFire = true)
 	{
 		int i = CreateGrenades(type, 1, throwerID);
 		GrenadeData data = grenades[i];
@@ -105,6 +106,7 @@ public class GrenadeManager : NetworkBehaviour
 		grenade.ID = data.id;
 		grenade.Manager = this;
 		grenade.Data = data;
+		grenade.FriendlyFire = friendlyFire;
 		data.grenade = grenade;
 		data.throwerID = data.ownerID;
 		data.ownerID = -1;
@@ -210,9 +212,9 @@ public class GrenadeManager : NetworkBehaviour
 		}
 	}
 
-	public void DealExplosiveDamage(int thrower, GameObject obj, float damage, float radius, DamageType type)
+	public void DealExplosiveDamage(int thrower, GameObject obj, float damage, float radius, DamageType type, bool friendlyFire = true)
 	{
-		WeaponManager.DealExplosiveDamage(thrower, obj, damage, radius, type);
+		WeaponManager.DealExplosiveDamage(thrower, obj, damage, radius, type, friendlyFire);
 	}
 
 	/**********************************************************/

@@ -14,6 +14,12 @@ public class MenuManager : MonoBehaviour
 
 	public void Awake()
 	{
+		PartyManager party = FindObjectOfType<PartyManager>();
+		if (party)
+		{
+			party.Menus = this;
+		}
+
 		menus = new MenuState[(int)MenuType.NumTypes];
 		foreach (MenuState state in GetComponentsInChildren<MenuState>())
 		{
@@ -30,7 +36,14 @@ public class MenuManager : MonoBehaviour
 
 	public void Start()
 	{
-		GoToMenu(MenuType.Main);
+		if (PartyManager.Get && (PartyManager.Get.Status == PartyStatus.ReturningToLobby || PartyManager.Get.Status == PartyStatus.InLobby))
+		{
+			GoToMenu(MenuType.Lobby);
+		}
+		else
+		{
+			GoToMenu(MenuType.Main);
+		}
 	}
 
 	public void Update()
@@ -40,6 +53,15 @@ public class MenuManager : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.M))
 		{
 			randomMessageText.text = GetRandomMessage();
+		}
+	}
+
+	public void OnDestroy()
+	{
+		PartyManager party = FindObjectOfType<PartyManager>();
+		if (party)
+		{
+			party.Menus = null;
 		}
 	}
 

@@ -23,8 +23,6 @@ GameObject:
   - component: {fileID: 114698585664350756}
   - component: {fileID: 23184081171049984}
   - component: {fileID: 114398723480837200}
-  - component: {fileID: 114532237662143964}
-  - component: {fileID: 114318554525177442}
   m_Layer: 10
   m_Name: SniperClipSegment
   m_TagString: Untagged
@@ -40,7 +38,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4276601620634492}
-  - component: {fileID: 114644476657527412}
   m_Layer: 10
   m_Name: BulletPlaceholder
   m_TagString: Untagged
@@ -114,18 +111,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1142435745845936}
   m_Mesh: {fileID: 0}
---- !u!114 &114318554525177442
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1142435745845936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 80364fc8-c3db-4f10-a0a7-d46b1c5f5b33
 --- !u!114 &114398723480837200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9720,36 +9705,6 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
---- !u!114 &114532237662143964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1142435745845936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1142435745845936}
-    - {fileID: 1492383743177304}
-  _assetGuid: 7929d20e65bfa91468e1022d7166741b
---- !u!114 &114644476657527412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1492383743177304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 21fd170c-510c-42ea-876b-4e765e13c8ea
 --- !u!114 &114698585664350756
 MonoBehaviour:
   m_ObjectHideFlags: 1

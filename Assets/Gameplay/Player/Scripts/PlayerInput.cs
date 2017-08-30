@@ -46,6 +46,10 @@ public class PlayerInput : MonoBehaviour
 
 		mouseLookAxis.x = Input.GetAxisRaw("Mouse X");
 		mouseLookAxis.y = Input.GetAxisRaw("Mouse Y");
+		if (ControlSettings.InvertAim)
+		{
+			mouseLookAxis.y *= -1;
+		}
 
 		if (CheckButton(ControlSettings.SwapKeybind, ButtonStatus.Down))
 		{

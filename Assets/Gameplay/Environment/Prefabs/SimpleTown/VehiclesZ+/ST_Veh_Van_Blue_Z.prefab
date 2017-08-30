@@ -10,7 +10,6 @@ GameObject:
   - component: {fileID: 489032}
   - component: {fileID: 3366116}
   - component: {fileID: 2343820}
-  - component: {fileID: 114632291958629390}
   m_Layer: 0
   m_Name: Wheel_rl
   m_TagString: Untagged
@@ -28,7 +27,6 @@ GameObject:
   - component: {fileID: 474026}
   - component: {fileID: 3332934}
   - component: {fileID: 2338132}
-  - component: {fileID: 114396988728769818}
   m_Layer: 0
   m_Name: Wheel_rr
   m_TagString: Untagged
@@ -46,7 +44,6 @@ GameObject:
   - component: {fileID: 477680}
   - component: {fileID: 3342008}
   - component: {fileID: 2320060}
-  - component: {fileID: 114457453673861220}
   m_Layer: 0
   m_Name: Wheel_fr
   m_TagString: Untagged
@@ -65,8 +62,6 @@ GameObject:
   - component: {fileID: 3360728}
   - component: {fileID: 2398368}
   - component: {fileID: 64704007022750950}
-  - component: {fileID: 114445131600477026}
-  - component: {fileID: 114131898734940358}
   m_Layer: 0
   m_Name: ST_Veh_Van_Blue_Z
   m_TagString: Untagged
@@ -84,7 +79,6 @@ GameObject:
   - component: {fileID: 456318}
   - component: {fileID: 3333936}
   - component: {fileID: 2301068}
-  - component: {fileID: 114170431409219892}
   m_Layer: 0
   m_Name: Wheel_fl
   m_TagString: Untagged
@@ -381,84 +375,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 03ed6ed68ff01294bbbf9b70ff0653cd, type: 3}
---- !u!114 &114131898734940358
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a64923b2-a486-4dde-b141-3c83c7977b5c
---- !u!114 &114170431409219892
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: afc3c091-2d51-4559-81e8-b685f0eaf6e0
---- !u!114 &114396988728769818
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 6e45c919-1828-4d12-8300-b79349aead9b
---- !u!114 &114445131600477026
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 190526}
-    - {fileID: 191874}
-    - {fileID: 168596}
-    - {fileID: 142876}
-    - {fileID: 166262}
-  _assetGuid: 5373853e377ad9f4cbccfb9a9e5c6028
---- !u!114 &114457453673861220
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2e29cb30-78ce-4676-b9a1-557f4406305a
---- !u!114 &114632291958629390
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b5a59e4e-e862-4a54-95a8-c37c0de17915

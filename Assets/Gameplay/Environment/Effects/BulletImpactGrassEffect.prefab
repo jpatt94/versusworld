@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 4884673234753298}
   - component: {fileID: 198930020631464700}
   - component: {fileID: 199118554633863116}
-  - component: {fileID: 114333168906437324}
   m_Layer: 0
   m_Name: BulletImpactSand (1)
   m_TagString: Untagged
@@ -155,18 +154,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114333168906437324
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1944608716845656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e95c39af-9c4e-47e6-9b8f-e4ebbe0985a8
 --- !u!114 &114703389202891424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,7 +226,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1731659015
+  randomSeed: 215319705
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3387,7 +3374,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -317976924
+  randomSeed: -541552916
   InitialModule:
     serializedVersion: 3
     enabled: 1

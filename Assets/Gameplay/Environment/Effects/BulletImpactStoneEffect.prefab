@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 4000010341763616}
   - component: {fileID: 198000014282437374}
   - component: {fileID: 199000012977458086}
-  - component: {fileID: 114544811458312820}
   m_Layer: 0
   m_Name: ImpactDebris
   m_TagString: Untagged
@@ -58,7 +57,6 @@ GameObject:
   - component: {fileID: 4000012324387004}
   - component: {fileID: 33000010257296828}
   - component: {fileID: 23000011560080986}
-  - component: {fileID: 114147040010221784}
   m_Layer: 0
   m_Name: Decal
   m_TagString: Untagged
@@ -226,30 +224,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114147040010221784
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013291811288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7676b6ec-037b-4179-992d-1453108cafab
---- !u!114 &114544811458312820
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011512443876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 13353970-f056-45f6-9b36-9068c808ea08
 --- !u!114 &114927271124195574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -322,7 +296,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 199349359
+  randomSeed: -1860284944
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3470,7 +3444,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -414747165
+  randomSeed: 516339967
   InitialModule:
     serializedVersion: 3
     enabled: 1

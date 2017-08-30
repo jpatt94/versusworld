@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 224083674699040868}
   - component: {fileID: 222471043327697358}
   - component: {fileID: 114804961763330772}
-  - component: {fileID: 114330385770256642}
-  - component: {fileID: 114265175750793414}
   m_Layer: 5
   m_Name: FragGrenadeShotKillTypeIcon
   m_TagString: Untagged
@@ -30,35 +28,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114265175750793414
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1687410464840782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bf935a43-1712-4f01-97cb-e94cd52c2969
---- !u!114 &114330385770256642
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1687410464840782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1687410464840782}
-  _assetGuid: 84bf6cc805583d64ba051d13b5fbfc18
 --- !u!114 &114804961763330772
 MonoBehaviour:
   m_ObjectHideFlags: 1

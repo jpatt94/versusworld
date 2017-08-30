@@ -878,7 +878,7 @@ AnimatorState:
   m_SpeedParameterActive: 1
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 72e083f6b89b12c4aa0902f00edb37b8, type: 3}
+  m_Motion: {fileID: 7400000, guid: a6062420b0aaac44882b400d207ed04d, type: 3}
   m_Tag: 
   m_SpeedParameter: MeleeSpeed
   m_MirrorParameter: 

@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4000010016032360}
   - component: {fileID: 114000011333610242}
   - component: {fileID: 114000014251342816}
-  - component: {fileID: 114205438497397464}
-  - component: {fileID: 114029944744374794}
   m_Layer: 0
   m_Name: GrenadeManager
   m_TagString: Untagged
@@ -95,32 +93,3 @@ MonoBehaviour:
   - {fileID: 1000011497193606, guid: b26032d9758d85b42a153ea7bf690a59, type: 2}
   - {fileID: 1000010156467624, guid: 1ec73e7982e8fba4b8dfe5eabfa52731, type: 2}
   - {fileID: 1323454565457524, guid: 7fad19b71a09fbc4a9b8cf058c1580b2, type: 2}
---- !u!114 &114029944744374794
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012459107584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7780ab06-0617-406f-820b-090f70b6d99c
---- !u!114 &114205438497397464
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012459107584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000012459107584}
-  _assetGuid: d9e6634bb97660e42a8dc4178515e2be

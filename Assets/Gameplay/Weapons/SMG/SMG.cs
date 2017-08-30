@@ -33,7 +33,7 @@ public class SMG : Weapon
 	private float adsSpread;
 	private float slideTime;
 
-	private ParticleSystem muzzleFlash;
+	//private ParticleSystem muzzleFlash;
 	private LineRenderer trail;
 	private Transform magTransform;
 	private Vector3 magIdlePosition;
@@ -64,7 +64,7 @@ public class SMG : Weapon
 
 		slideTime = slideDuration;
 
-		muzzleFlash = barrel.Find("MuzzleFlash").GetComponent<ParticleSystem>();
+		//muzzleFlash = barrel.Find("MuzzleFlash").GetComponent<ParticleSystem>();
 		trail = barrel.GetComponent<LineRenderer>();
 		magTransform = transform.Find("SMGMesh/Magazine");
 		magIdlePosition = magTransform.localPosition;

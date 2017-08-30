@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class SliderControl : MonoBehaviour
 {
+	private string eventName;
+
 	private Slider slider;
 	private Text valueText;
 
@@ -14,15 +16,19 @@ public class SliderControl : MonoBehaviour
 	public void Awake()
 	{
 		slider = GetComponent<Slider>();
+		slider.onValueChanged.AddListener(OnSliderValueChanged);
 		valueText = GetComponentInChildren<Text>();
+
+		eventName = "On" + transform.parent.name + "ValueChanged";
 	}
 
 	/**********************************************************/
 	// Callbacks
 
-	public void OnSliderValueChanged()
+	public void OnSliderValueChanged(float value)
 	{
 		valueText.text = Mathf.FloorToInt(slider.value).ToString();
+		JP.Event.Trigger(eventName);
 	}
 
 	/**********************************************************/

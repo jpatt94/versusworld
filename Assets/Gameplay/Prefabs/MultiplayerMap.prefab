@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 114000012556681452}
   - component: {fileID: 114000012103300916}
   - component: {fileID: 114825350303908348}
-  - component: {fileID: 114529975471990898}
-  - component: {fileID: 114797964547733878}
   m_Layer: 0
   m_Name: MultiplayerMap
   m_TagString: Untagged
@@ -56,6 +54,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapOverview: {fileID: 0}
+  grenadeCloudY: 50
 --- !u!114 &114000012556681452
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -88,35 +87,6 @@ MonoBehaviour:
     i15: 50
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &114529975471990898
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012729939204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000012729939204}
-  _assetGuid: ac48a1994d5e85c46878bff9b9fc7532
---- !u!114 &114797964547733878
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012729939204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 89c32a97-74f6-4234-9437-7bb8a4e43f17
 --- !u!114 &114825350303908348
 MonoBehaviour:
   m_ObjectHideFlags: 1

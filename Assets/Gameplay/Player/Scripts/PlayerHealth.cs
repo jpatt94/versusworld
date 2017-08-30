@@ -11,8 +11,8 @@ public class PlayerHealth : Damageable
 
 	private float regenDelay;
 	private float regenRate;
-	private float damageResistance;
-	private float lifeSteal;
+	//private float damageResistance;
+	//private float lifeSteal;
 	private float regening;
 	private bool alive;
 	private Vector3 damageForce;
@@ -204,8 +204,8 @@ public class PlayerHealth : Damageable
 			maxHealth = 100.0f * settings.Modifier;
 			regenDelay = settings.RegenDelay;
 			regenRate = settings.RegenRate;
-			damageResistance = settings.DamageResistance;
-			lifeSteal = settings.LifeSteal;
+			//damageResistance = settings.DamageResistance;
+			//lifeSteal = settings.LifeSteal;
 		}
 	}
 }

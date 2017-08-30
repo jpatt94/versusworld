@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PartyMemberEntry : MonoBehaviour
 {
 	[SerializeField]
-	private List<Color> testBackgroundColors;
+	private Color defaultColor;
 	[SerializeField]
 	private List<Sprite> testPlayerIcons;
 
@@ -31,10 +31,10 @@ public class PartyMemberEntry : MonoBehaviour
 
 	public void Update()
 	{
-		Color newColor = Color.white;
+		Color newColor = defaultColor;
 		if (PartyManager.GameSettings.Generic.Teams)
 		{
-			newColor = testBackgroundColors[team % testBackgroundColors.Count];
+			newColor = PartyManager.GetTeamColor(team);
 		}
 		backgroundPanel.color = new Color(newColor.r, newColor.g, newColor.b, backgroundPanel.color.a);
 

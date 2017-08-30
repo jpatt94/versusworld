@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33000011535550038}
   - component: {fileID: 23000011077115544}
   - component: {fileID: 95000013211667010}
-  - component: {fileID: 114855713743115244}
   m_Layer: 2
   m_Name: Model
   m_TagString: Untagged
@@ -41,8 +40,6 @@ GameObject:
   - component: {fileID: 65000010488509116}
   - component: {fileID: 114000011444624172}
   - component: {fileID: 114000011571914598}
-  - component: {fileID: 114294335082986412}
-  - component: {fileID: 114598604097851470}
   m_Layer: 2
   m_Name: PowerUp
   m_TagString: PowerUp
@@ -190,45 +187,3 @@ MonoBehaviour:
     i15: 251
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &114294335082986412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012731860758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000012731860758}
-    - {fileID: 1000012668516294}
-  _assetGuid: ce4ebc94c5f397b46b3071f9f02073fb
---- !u!114 &114598604097851470
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012731860758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ffa2e0d6-6bd0-4f30-bd5b-2247fc280edf
---- !u!114 &114855713743115244
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012668516294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: cf61f2df-5be7-47ee-8716-8c4731cc0c69

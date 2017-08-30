@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 224030023391441488}
   - component: {fileID: 222860136306291808}
   - component: {fileID: 114428973233328918}
-  - component: {fileID: 114144191091660140}
-  - component: {fileID: 114082535297663796}
   m_Layer: 5
   m_Name: AssaultRifleHeadShotKillTypeIcon
   m_TagString: Untagged
@@ -30,35 +28,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114082535297663796
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1745780035320084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bc0b41e2-3ea8-459f-909a-58725e9b04f5
---- !u!114 &114144191091660140
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1745780035320084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1745780035320084}
-  _assetGuid: b10d22449e1b5ed43b370804c691b45c
 --- !u!114 &114428973233328918
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -18,10 +18,7 @@ public class LegacyMainMenu : MonoBehaviour
 	private PlayerCustomizer customizer;
 	private NotificationPanel notificationPanel;
 	private Text accountNameText;
-	private LogInMenu logInMenu;
-	private SettingsMenu settingsMenu;
 	private GameListMenu gameListMenu;
-	private Camera cam;
 	private Text randomMessageText;
 
 	/**********************************************************/
@@ -37,10 +34,7 @@ public class LegacyMainMenu : MonoBehaviour
 		customizer = GameObject.Find("PlayerCustomizer").GetComponent<PlayerCustomizer>();
 		notificationPanel = GameObject.Find("NotificationCanvas").GetComponent<NotificationPanel>();
 		accountNameText = Utility.FindChild(gameObject, "AccountNameText").GetComponent<Text>();
-		logInMenu = GameObject.Find("LogInMenu").GetComponent<LogInMenu>();
-		settingsMenu = GetComponentInChildren<SettingsMenu>();
 		gameListMenu = GetComponentInChildren<GameListMenu>();
-		cam = GameObject.Find("Camera").GetComponent<Camera>();
 
 		ipInputField.text = "localhost";
 
@@ -119,8 +113,6 @@ public class LegacyMainMenu : MonoBehaviour
 
 	public void TransitionToState(MenuType state)
 	{
-		MenuType prevState = this.state;
-
 		this.state = state;
 	}
 

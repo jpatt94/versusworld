@@ -15,6 +15,7 @@ public class PowerUpManager : NetworkBehaviour
 	private int weightSum;
 
 	private PowerUpSettings settings;
+	private MultiplayerMap map;
 
 	private static PowerUpManager instance;
 
@@ -71,6 +72,8 @@ public class PowerUpManager : NetworkBehaviour
 		}
 
 		awardedPowerUps = new List<PowerUpAward>();
+
+		map = FindObjectOfType<MultiplayerMap>();
 	}
 
 	public void PickUp(NetworkPlayer player, int powerUpID)
@@ -142,13 +145,43 @@ public class PowerUpManager : NetworkBehaviour
 		}
 	}
 
-	public void UseGrenadeCloud(NetworkPlayer player, Vector3 position)
+	public void UseGrenadeCloud(NetworkPlayer player)
 	{
 		GrenadeCloudSettings gcs = settings.GrenadeCloud;
 
 		GameObject obj = Instantiate(grenadeCloudPrefab);
-		obj.GetComponent<GrenadeCloud>().OwnerID = player.ID;
-		obj.transform.position = new Vector3(position.x, gcs.Height, position.z);
+		GrenadeCloud cloud = obj.GetComponent<GrenadeCloud>();
+		cloud.OwnerID = player.ID;
+
+		Vector3 startPos = Vector3.zero;
+		Vector3 endPos = Vector3.zero;
+		switch (Random.Range(0, 4))
+		{
+			case 0:
+				startPos = map.TopLeft;
+				endPos = map.BottomRight;
+				break;
+			case 1:
+				startPos = map.TopLeft + Vector3.right * map.Width;
+				endPos = map.BottomRight + Vector3.left * map.Width;
+				break;
+			case 2:
+				startPos = map.BottomRight;
+				endPos = map.TopLeft;
+				break;
+			case 3:
+				startPos = map.BottomRight + Vector3.left * map.Width;
+				endPos = map.TopLeft + Vector3.right * map.Width;
+				break;
+		}
+
+		cloud.Duration = (endPos - startPos).magnitude / gcs.Speed;
+
+		Vector3 direction = (endPos - startPos).normalized;
+		cloud.Velocity = direction * gcs.Speed;
+
+		startPos -= direction * gcs.Speed * gcs.IntroDuration;
+		obj.transform.position = new Vector3(startPos.x, map.GrenadeCloudY, startPos.z);
 
 		NetworkServer.Spawn(obj);
 	}

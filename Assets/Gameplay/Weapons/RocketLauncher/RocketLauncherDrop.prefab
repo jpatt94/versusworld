@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4139743629061412}
   - component: {fileID: 33654632312532198}
   - component: {fileID: 23585366904833420}
-  - component: {fileID: 114908870755606178}
   m_Layer: 0
   m_Name: RocketLauncherMesh
   m_TagString: Drop
@@ -39,7 +38,6 @@ GameObject:
   - component: {fileID: 4728217187858616}
   - component: {fileID: 33118703362828552}
   - component: {fileID: 23555727191395376}
-  - component: {fileID: 114858984131596696}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -56,7 +54,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4324406365667342}
   - component: {fileID: 135132046504487780}
-  - component: {fileID: 114529004741073804}
   m_Layer: 2
   m_Name: PickUpCollider
   m_TagString: Drop
@@ -77,8 +74,6 @@ GameObject:
   - component: {fileID: 114811693924347988}
   - component: {fileID: 54624293343070930}
   - component: {fileID: 65059442728657952}
-  - component: {fileID: 114344161289997098}
-  - component: {fileID: 114414341937422220}
   m_Layer: 9
   m_Name: RocketLauncherDrop
   m_TagString: Drop
@@ -267,50 +262,6 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
---- !u!114 &114344161289997098
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1983123619488026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1983123619488026}
-    - {fileID: 1809016124359180}
-    - {fileID: 1572408817775064}
-    - {fileID: 1770320472034930}
-  _assetGuid: 0825f0af4eb4c3f428258b79afa567c4
---- !u!114 &114414341937422220
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1983123619488026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: b85bed30-9f90-4695-a752-ab265bd0c95b
---- !u!114 &114529004741073804
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1809016124359180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 4a5e4275-3676-4158-b804-0213821cbfb0
 --- !u!114 &114602816089075608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -359,30 +310,6 @@ MonoBehaviour:
   despawnTime: 45
   waypointPrefab: {fileID: 1244251329672748, guid: 94d8650621f1bf84caeea9e67e0ab9d6,
     type: 2}
---- !u!114 &114858984131596696
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1770320472034930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 81060e56-835c-490d-8f00-a38d3cbb4d6f
---- !u!114 &114908870755606178
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1572408817775064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 0eb179a5-f1b0-4e7a-9cc7-8f966d73de32
 --- !u!135 &135132046504487780
 SphereCollider:
   m_ObjectHideFlags: 1

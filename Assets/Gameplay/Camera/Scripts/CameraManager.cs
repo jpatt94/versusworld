@@ -228,6 +228,13 @@ public class CameraManager : MonoBehaviour
 		viewShakeDuration = duration;
 	}
 
+	public void ViewShake(Vector3 amount, float duration)
+	{
+		viewShake = amount;
+		viewShakeTime = 0.0f;
+		viewShakeDuration = duration;
+	}
+
 	/**********************************************************/
 	// Helper Functions
 

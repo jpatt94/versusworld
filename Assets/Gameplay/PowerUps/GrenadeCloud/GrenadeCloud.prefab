@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4450031681448616}
   - component: {fileID: 114324071460314140}
   - component: {fileID: 114209743014320618}
-  - component: {fileID: 114688880623332618}
-  - component: {fileID: 114785183867160674}
   m_Layer: 0
   m_Name: GrenadeCloud
   m_TagString: Untagged
@@ -40,7 +38,6 @@ GameObject:
   - component: {fileID: 4019373937531716}
   - component: {fileID: 33443340490746716}
   - component: {fileID: 23241440421979536}
-  - component: {fileID: 114394672575952492}
   m_Layer: 0
   m_Name: Mesh
   m_TagString: Untagged
@@ -126,8 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outroDuration: 30
-  outroAccel: 0.2
-  outroMaxSpeed: 5
   outroScaleCurve:
     serializedVersion: 2
     m_Curve:
@@ -178,45 +173,3 @@ MonoBehaviour:
     i15: 91
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &114394672575952492
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1668766759719486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e4ca1a26-11db-4de5-942d-aa6123059fcf
---- !u!114 &114688880623332618
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1376679134953838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1376679134953838}
-    - {fileID: 1668766759719486}
-  _assetGuid: 7bacea890791ab34daf38af1de1af75b
---- !u!114 &114785183867160674
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1376679134953838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c76e5e00-5564-4df7-9fd7-1b31c6b9f2f2

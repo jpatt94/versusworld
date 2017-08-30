@@ -20,8 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000014182598196}
   - component: {fileID: 114000010201148352}
-  - component: {fileID: 114530795967782746}
-  - component: {fileID: 114002209542664580}
   m_Layer: 0
   m_Name: PlayerInput
   m_TagString: Untagged
@@ -72,32 +70,3 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   swapHoldTime: 0.18
---- !u!114 &114002209542664580
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013071261760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 33ef8d61-399c-4ec3-89cb-f3b611e14505
---- !u!114 &114530795967782746
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013071261760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000013071261760}
-  _assetGuid: 6cce50b3c1b02cb4989207a6611c6ea2

@@ -177,12 +177,12 @@ public class ControlSettings : MonoBehaviour
 		else if (keybind.MouseButton > -1)
 		{
 			typeAttr.Value = "MOUSE_BUTTON";
-			valueAttr.Value = ((int)keybind.MouseButton).ToString();
+			valueAttr.Value = keybind.MouseButton.ToString();
 		}
 		else if (keybind.MouseWheel != 0)
 		{
 			typeAttr.Value = "MOUSE_WHEEL";
-			valueAttr.Value = ((int)keybind.MouseWheel).ToString();
+			valueAttr.Value = keybind.MouseWheel.ToString();
 		}
 		else
 		{

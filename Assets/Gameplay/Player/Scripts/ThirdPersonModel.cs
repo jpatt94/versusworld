@@ -17,14 +17,22 @@ public class ThirdPersonModel : MonoBehaviour
 	private float thrustTrailDuration;
 	[SerializeField]
 	private AnimationCurve thrustCurve;
+	[SerializeField]
+	private AnimationCurve landingSoundVolumeCurve;
 
 	[SerializeField]
 	private AudioClip[] concreteFootstepSounds;
 	[SerializeField]
 	private AudioClip[] grassFootstepSounds;
+	[SerializeField]
+	private AudioClip[] woodFootstepSounds;
+	[SerializeField]
+	private AudioClip[] concreteLandSounds;
+	[SerializeField]
+	private AudioClip[] grassLandSounds;
+	[SerializeField]
+	private AudioClip[] woodLandSounds;
 
-	private int handsLayer;
-	private int legsLayer;
 	private float lookRotationAlpha;
 	private int previousFootstepSound;
 	private float canPlayFootstep;
@@ -38,7 +46,6 @@ public class ThirdPersonModel : MonoBehaviour
 	private Transform chestJoint;
 	private AudioSource aud;
 	private AudioSource footstepAudio;
-	private OfflineMelee melee;
 	private OfflineCharacterController controller;
 	private TrailRenderer thrustTrail;
 
@@ -53,12 +60,8 @@ public class ThirdPersonModel : MonoBehaviour
 		chestJoint = Utility.FindChild(gameObject, "Bro_Spine2").transform;
 		aud = GetComponent<AudioSource>();
 		footstepAudio = transform.Find("FootstepAudio").GetComponent<AudioSource>();
-		melee = GetComponentInParent<OfflineMelee>();
 		controller = GetComponentInParent<OfflineCharacterController>();
 		thrustTrail = GetComponentInChildren<TrailRenderer>();
-
-		handsLayer = ani.GetLayerIndex("ThirdPersonHands");
-		legsLayer = ani.GetLayerIndex("ThirdPersonLegs");
 	}
 
 	public void Start()
@@ -77,17 +80,17 @@ public class ThirdPersonModel : MonoBehaviour
 	{
 		chestJoint.localRotation = Quaternion.Euler(Mathf.Lerp(minLookRotation, maxLookRotation, lookRotationAlpha), 0.0f, 0.0f);
 
-		bool knifeVisible = false;
-		if (ani.GetCurrentAnimatorStateInfo(OfflinePlayerModel.ThirdPersonHandsLI).IsName("Melee") || ani.GetNextAnimatorStateInfo(OfflinePlayerModel.ThirdPersonHandsLI).IsName("Melee"))
-		{
-			knifeVisible = true;
-		}
-
-		if (knifeVisible != prevKnifeVisible)
-		{
-			melee.KnifeVisible = knifeVisible;
-			prevKnifeVisible = knifeVisible;
-		}
+		//bool knifeVisible = false;
+		//if (ani.GetCurrentAnimatorStateInfo(OfflinePlayerModel.ThirdPersonHandsLI).IsName("Melee") || ani.GetNextAnimatorStateInfo(OfflinePlayerModel.ThirdPersonHandsLI).IsName("Melee"))
+		//{
+		//	knifeVisible = true;
+		//}
+		//
+		//if (knifeVisible != prevKnifeVisible)
+		//{
+		//	melee.KnifeVisible = knifeVisible;
+		//	prevKnifeVisible = knifeVisible;
+		//}
 	}
 
 	/**********************************************************/
@@ -224,6 +227,7 @@ public class ThirdPersonModel : MonoBehaviour
 		switch (groundSurfaceType)
 		{
 			case SurfaceType.Grass: footstepSounds = grassFootstepSounds; break;
+			case SurfaceType.Wood: footstepSounds = woodFootstepSounds; break;
 		}
 
 		int i = Random.Range(0, footstepSounds.Length);
@@ -241,6 +245,20 @@ public class ThirdPersonModel : MonoBehaviour
 
 		previousFootstepSound = i;
 		canPlayFootstep = -0.08f;
+	}
+
+	public void OnLand(float landingVelocity)
+	{
+		AudioClip[] landSounds = concreteLandSounds;
+		SurfaceType groundSurfaceType = controller.GroundSurfaceType;
+		switch (groundSurfaceType)
+		{
+			case SurfaceType.Grass: landSounds = grassLandSounds; break;
+			case SurfaceType.Wood: landSounds = woodLandSounds; break;
+		}
+
+		footstepAudio.volume = landingSoundVolumeCurve.Evaluate(-landingVelocity);
+		footstepAudio.PlayOneShot(landSounds[Random.Range(0, landSounds.Length)]);
 	}
 
 	/**********************************************************/

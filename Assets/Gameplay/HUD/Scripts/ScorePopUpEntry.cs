@@ -13,7 +13,6 @@ public class ScorePopUpEntry : MonoBehaviour
 	public AnimationCurve chainAlphaCurve;
 
 	private float time;
-	private int fontSize;
 	private float chainPosition;
 	private float desiredChainPosition;
 
@@ -27,7 +26,6 @@ public class ScorePopUpEntry : MonoBehaviour
 	void Start()
 	{
 		time = 0.0f;
-		fontSize = text.fontSize;
 	}
 
 	void Update()

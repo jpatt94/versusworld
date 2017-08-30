@@ -13,7 +13,7 @@ public class Bingo : Game
 
 	private List<BingoTask> tasks;
 
-	private BingoSettings settings;
+	//private BingoSettings settings;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -22,7 +22,7 @@ public class Bingo : Game
 	{
 		base.Awake();
 
-		settings = PartyManager.GameSettings as BingoSettings;
+		//settings = PartyManager.GameSettings as BingoSettings;
 	}
 
 	public override void Start()

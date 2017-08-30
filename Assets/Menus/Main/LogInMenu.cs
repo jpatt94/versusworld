@@ -6,13 +6,10 @@ using UnityEngine.UI;
 
 public class LogInMenu : MonoBehaviour
 {
-	private UserManager userMgr;
-	private NotificationPanel notificationPanel;
 	private InputField userNameInputField;
 	private InputField passwordInputField;
 	private Button logInButton;
 	private LegacyMainMenu multiplayerMenu;
-	private CreateAccountMenu createAccountMenu;
 	private Text messageText;
 
 	/**********************************************************/
@@ -20,13 +17,10 @@ public class LogInMenu : MonoBehaviour
 
 	public void Awake()
 	{
-		userMgr = GetComponent<UserManager>();
-		notificationPanel = GameObject.Find("NotificationCanvas").GetComponent<NotificationPanel>();
 		userNameInputField = Utility.FindChild(gameObject, "UsernameInputField").GetComponent<InputField>();
 		passwordInputField = Utility.FindChild(gameObject, "PasswordInputField").GetComponent<InputField>();
 		logInButton = Utility.FindChild(gameObject, "LogInButton").GetComponent<Button>();
 		multiplayerMenu = GameObject.Find("Menus").GetComponent<LegacyMainMenu>();
-		createAccountMenu = GameObject.Find("CreateAccountPanel").GetComponent<CreateAccountMenu>();
 		messageText = transform.Find("MessageText").GetComponent<Text>();
 
 		if (GameObject.Find("MultiplayerManager").GetComponent<MultiplayerManager>().LocalUser != null)

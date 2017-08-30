@@ -20,8 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000012997550058}
   - component: {fileID: 114000012686820986}
-  - component: {fileID: 114791078660628220}
-  - component: {fileID: 114521190510172774}
   m_Layer: 0
   m_Name: TestLevel
   m_TagString: Untagged
@@ -58,32 +56,3 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   gameSettingsPrefab: {fileID: 1844129581333490, guid: bfc453203b18e6c45bd1a5f20103a1aa,
     type: 2}
---- !u!114 &114521190510172774
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010924045318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 801312b4-e33c-4a0f-84bb-ec6642a5f661
---- !u!114 &114791078660628220
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010924045318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000010924045318}
-  _assetGuid: c37145f9f1439cc408a727680ff2014e

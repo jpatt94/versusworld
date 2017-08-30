@@ -77,12 +77,12 @@ public class Scoreboard : MonoBehaviour
 	{
 		if (PlayerInput.ShowScoreboard(ButtonStatus.Down))
 		{
-			alpha = Mathf.Min(1.0f, alpha + Time.deltaTime * 5.0f);
+			alpha = Mathf.Min(1.0f, alpha + Time.deltaTime * 10.0f);
 			canvas.enabled = true;
 		}
 		else
 		{
-			alpha = Mathf.Max(0.0f, alpha - Time.deltaTime * 5.0f);
+			alpha = Mathf.Max(0.0f, alpha - Time.deltaTime * 10.0f);
 		}
 
 		if (alpha <= 0.0f)

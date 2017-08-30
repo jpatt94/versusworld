@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 222412438180036242}
   - component: {fileID: 114295826612391840}
   - component: {fileID: 114779994331168158}
-  - component: {fileID: 114041551485601374}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -41,8 +40,6 @@ GameObject:
   - component: {fileID: 222504291932984196}
   - component: {fileID: 114077774265716898}
   - component: {fileID: 114106803094328312}
-  - component: {fileID: 114403838287438514}
-  - component: {fileID: 114999185562821076}
   m_Layer: 5
   m_Name: GrenadeCloudPositioner
   m_TagString: Untagged
@@ -60,7 +57,6 @@ GameObject:
   - component: {fileID: 224647908741644324}
   - component: {fileID: 222041170355016734}
   - component: {fileID: 114471723482754344}
-  - component: {fileID: 114028440690652284}
   m_Layer: 5
   m_Name: CoverageCircle
   m_TagString: Untagged
@@ -68,30 +64,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114028440690652284
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1741277506465414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c89e1c8c-98d4-427c-83ad-c37f8013db60
---- !u!114 &114041551485601374
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1273979807281784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: dc55793d-1974-4c17-a4f9-010c61f00f99
 --- !u!114 &114077774265716898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,25 +135,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Click on the map to position grenade cloud
---- !u!114 &114403838287438514
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1315942641214180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1315942641214180}
-    - {fileID: 1273979807281784}
-    - {fileID: 1741277506465414}
-  _assetGuid: 2942fa46ddeabe046af970134b69101e
 --- !u!114 &114471723482754344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -223,18 +176,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &114999185562821076
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1315942641214180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c1b8da1f-7ae8-4228-83bd-0efb866770dd
 --- !u!222 &222041170355016734
 CanvasRenderer:
   m_ObjectHideFlags: 1

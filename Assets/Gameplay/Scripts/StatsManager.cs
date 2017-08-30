@@ -8,7 +8,6 @@ public class StatsManager : NetworkBehaviour
 	private Dictionary<int, PlayerStats> players;
 
 	private Scoreboard scoreboard;
-	private MultiplayerManager mgr;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -18,7 +17,6 @@ public class StatsManager : NetworkBehaviour
 		players = new Dictionary<int, PlayerStats>();
 
 		scoreboard = null;
-		mgr = GameObject.Find("MultiplayerManager").GetComponent<MultiplayerManager>();
 
 		DontDestroyOnLoad(gameObject);
 	}
@@ -51,10 +49,10 @@ public class StatsManager : NetworkBehaviour
 	{
 		if (players.ContainsKey(id))
 		{
-			players[id].kills++;
-			players[id].streak++;
+			players[id].Kills++;
+			players[id].Streak++;
 
-			RpcSetKills(id, players[id].kills);
+			RpcSetKills(id, players[id].Kills);
 		}
 	}
 
@@ -63,10 +61,10 @@ public class StatsManager : NetworkBehaviour
 	{
 		if (players.ContainsKey(id))
 		{
-			players[id].deaths++;
-			players[id].streak = 0;
+			players[id].Deaths++;
+			players[id].Streak = 0;
 
-			RpcSetDeaths(id, players[id].deaths);
+			RpcSetDeaths(id, players[id].Deaths);
 		}
 	}
 
@@ -75,9 +73,9 @@ public class StatsManager : NetworkBehaviour
 	{
 		if (players.ContainsKey(id))
 		{
-			players[id].assists++;
+			players[id].Assists++;
 
-			RpcSetAssists(id, players[id].assists);
+			RpcSetAssists(id, players[id].Assists);
 		}
 	}
 
@@ -89,7 +87,7 @@ public class StatsManager : NetworkBehaviour
 	{
 		if (players.ContainsKey(id))
 		{
-			players[id].kills = kills;
+			players[id].Kills = kills;
 			Scoreboard.SetKills(id, kills);
 			SetRatio(id);
 		}
@@ -100,7 +98,7 @@ public class StatsManager : NetworkBehaviour
 	{
 		if (players.ContainsKey(id))
 		{
-			players[id].deaths = deaths;
+			players[id].Deaths = deaths;
 			Scoreboard.SetDeaths(id, deaths);
 			SetRatio(id);
 		}
@@ -111,7 +109,7 @@ public class StatsManager : NetworkBehaviour
 	{
 		if (players.ContainsKey(id))
 		{
-			players[id].assists = assists;
+			players[id].Assists = assists;
 			Scoreboard.SetAssists(id, assists);
 		}
 	}
@@ -121,13 +119,13 @@ public class StatsManager : NetworkBehaviour
 
 	private void SetRatio(int id)
 	{
-		if (players[id].deaths == 0)
+		if (players[id].Deaths == 0)
 		{
-			Scoreboard.SetRatio(id, players[id].kills);
+			Scoreboard.SetRatio(id, players[id].Kills);
 		}
 		else
 		{
-			Scoreboard.SetRatio(id, (float)players[id].kills / players[id].deaths);
+			Scoreboard.SetRatio(id, (float)players[id].Kills / players[id].Deaths);
 		}
 	}
 
@@ -160,15 +158,16 @@ public class StatsManager : NetworkBehaviour
 
 public class PlayerStats
 {
-	public int kills;
-	public int deaths;
-	public int streak;
-	public int assists;
+	public int Kills;
+	public int Deaths;
+	public int Streak;
+	public int Assists;
 
 	public PlayerStats()
 	{
-		kills = 0;
-		deaths = 0;
-		streak = 0;
+		Kills = 0;
+		Deaths = 0;
+		Streak = 0;
+		Assists = 0;
 	}
 }

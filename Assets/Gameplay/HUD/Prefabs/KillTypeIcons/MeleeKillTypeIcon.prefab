@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 224156623816013514}
   - component: {fileID: 222449066283325748}
   - component: {fileID: 114046117055576444}
-  - component: {fileID: 114658202537853598}
-  - component: {fileID: 114279577409757232}
   m_Layer: 5
   m_Name: MeleeKillTypeIcon
   m_TagString: Untagged
@@ -57,35 +55,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114279577409757232
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1314609096978312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 84d046a6-f50e-425a-8782-7eb26b03ab82
---- !u!114 &114658202537853598
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1314609096978312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1314609096978312}
-  _assetGuid: 6ad74c6708a63ea4d8d604b61290096b
 --- !u!222 &222449066283325748
 CanvasRenderer:
   m_ObjectHideFlags: 1

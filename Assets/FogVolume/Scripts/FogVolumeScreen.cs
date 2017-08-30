@@ -231,7 +231,7 @@ public class FogVolumeScreen : MonoBehaviour
          RT_Format=(SceneCamera.allowHDR == true) ? RenderTextureFormat.DefaultHDR : RenderTextureFormat.Default;
         return RT_Format;
 #else
-        RT_Format = (SceneCamera.hdr == true) ? RenderTextureFormat.DefaultHDR : RenderTextureFormat.ARGBHalf;
+        RT_Format = (SceneCamera.allowHDR == true) ? RenderTextureFormat.DefaultHDR : RenderTextureFormat.ARGBHalf;
         return RT_Format;
 #endif
         //return RT_Format;
@@ -250,7 +250,7 @@ public class FogVolumeScreen : MonoBehaviour
 #if UNITY_5_6_OR_NEWER
         return (SceneCamera.allowHDR) ? RenderTextureReadWrite.Default : RenderTextureReadWrite.Linear;
 #else
-        return (SceneCamera.hdr) ? RenderTextureReadWrite.Default : RenderTextureReadWrite.Linear;
+        return (SceneCamera.allowHDR) ? RenderTextureReadWrite.Default : RenderTextureReadWrite.Linear;
 #endif
     }
     protected void GetRT(ref RenderTexture rt, int2 size, string name)

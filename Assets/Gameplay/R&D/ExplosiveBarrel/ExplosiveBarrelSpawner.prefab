@@ -20,8 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4138706304177426}
   - component: {fileID: 114009597388126954}
-  - component: {fileID: 114250848015932584}
-  - component: {fileID: 114746102000056782}
   m_Layer: 0
   m_Name: ExplosiveBarrelSpawner
   m_TagString: Untagged
@@ -57,32 +55,3 @@ MonoBehaviour:
   spawnObject: {fileID: 1014267628168430, guid: 298c8bd83288bc44483fc923763fc2f5,
     type: 2}
   spawnOnNetwork: 1
---- !u!114 &114250848015932584
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476759200155406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1476759200155406}
-  _assetGuid: f885c1d804dc39e4db07bd19613774d9
---- !u!114 &114746102000056782
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476759200155406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 09b3c247-b863-4504-9242-dc5929674da1

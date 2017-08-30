@@ -51,6 +51,9 @@ public class QuickScoreboard : MonoBehaviour
 		topArrow.enabled = localOnTop;
 		bottomArrow.enabled = !localOnTop;
 
+		topProgressBar.enabled = localOnTop ? (localScore > 0) : (otherScore > 0);
+		bottomProgressBar.enabled = localOnTop ? (otherScore > 0) : (localScore > 0);
+
 		topProgressBar.rectTransform.offsetMax = new Vector2(Mathf.Lerp(progressBarZero, 0.0f, (localOnTop ? localScore : otherScore) / (float)maxScore), topProgressBar.rectTransform.offsetMax.y);
 		bottomProgressBar.rectTransform.offsetMax = new Vector2(Mathf.Lerp(progressBarZero, 0.0f, (localOnTop ? otherScore : localScore) / (float)maxScore), bottomProgressBar.rectTransform.offsetMax.y);
 

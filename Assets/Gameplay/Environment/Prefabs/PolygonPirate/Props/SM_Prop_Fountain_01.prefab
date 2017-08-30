@@ -28,7 +28,6 @@ GameObject:
   - component: {fileID: 432694}
   - component: {fileID: 3391614}
   - component: {fileID: 2397274}
-  - component: {fileID: 114537875023688688}
   m_Layer: 0
   m_Name: SM_Prop_Fountain_Water_01
   m_TagString: Untagged
@@ -166,15 +165,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 1dcddb3cd5465bf41a33fd333c504fa1, type: 3}
---- !u!114 &114537875023688688
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ea6bd713-6a07-4617-a676-ed4ce2c459a7

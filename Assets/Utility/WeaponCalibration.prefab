@@ -40,8 +40,6 @@ GameObject:
   - component: {fileID: 223000013086304314}
   - component: {fileID: 114000012386574892}
   - component: {fileID: 114000012599707860}
-  - component: {fileID: 114902742681468400}
-  - component: {fileID: 114958598705594706}
   m_Layer: 5
   m_Name: WeaponCalibration
   m_TagString: Untagged
@@ -125,36 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 104727f4-b690-4265-841c-46f6db1428c8
---- !u!114 &114902742681468400
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012520828630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000012520828630}
-    - {fileID: 1000012249518758}
-  _assetGuid: f48297a3b61f89546a9cb727ad87722a
---- !u!114 &114958598705594706
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012520828630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 13bf69ed-d3e4-4f66-a06e-01540c95be25
 --- !u!222 &222000013357790106
 CanvasRenderer:
   m_ObjectHideFlags: 1

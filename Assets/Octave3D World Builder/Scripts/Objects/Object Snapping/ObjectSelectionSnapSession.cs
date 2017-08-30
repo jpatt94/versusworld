@@ -97,7 +97,6 @@ namespace O3DWB
                 if (cursorHit.WasACellHit)
                 {
                     Camera camera = SceneViewCamera.Camera;
-                    Vector2 mousePos = Event.current.InvMousePos(camera);
                     GridCellRayHit cellRayHit = cursorHit.GridCellRayHit;
                     Vector3 snapDestination = Vector3Extensions.GetClosestPointToPoint(cellRayHit.HitCell.Quad.GetCenterAndCornerPoints(), cellRayHit.HitPoint);
 

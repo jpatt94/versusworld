@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4000013138402288}
   - component: {fileID: 198000012148200148}
   - component: {fileID: 199000011072130232}
-  - component: {fileID: 114672602009620108}
   m_Layer: 0
   m_Name: ShockWave
   m_TagString: Untagged
@@ -39,7 +38,6 @@ GameObject:
   - component: {fileID: 4000012949919454}
   - component: {fileID: 198000012704292194}
   - component: {fileID: 199000011148726650}
-  - component: {fileID: 114423439611544404}
   m_Layer: 0
   m_Name: Smoke
   m_TagString: Untagged
@@ -75,7 +73,6 @@ GameObject:
   - component: {fileID: 4000012936488424}
   - component: {fileID: 198000012952508202}
   - component: {fileID: 199000011286803922}
-  - component: {fileID: 114239171941235184}
   m_Layer: 0
   m_Name: Lightning
   m_TagString: Untagged
@@ -93,7 +90,6 @@ GameObject:
   - component: {fileID: 4000013579063264}
   - component: {fileID: 198000012752662270}
   - component: {fileID: 199000010027337056}
-  - component: {fileID: 114823608755744268}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -250,54 +246,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114239171941235184
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011730688910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3a01a55d-1064-49cd-9887-1ab86258dfb7
---- !u!114 &114423439611544404
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011085071264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 0ab123d7-7926-4c31-8ae7-62d1a436f674
---- !u!114 &114672602009620108
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010059211136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 6bb42b7d-ec6e-4108-91d7-c0c1051a62a8
---- !u!114 &114823608755744268
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012812333644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 31d08a6b-cb8b-45d3-bd23-14659b1e1da8
 --- !u!198 &198000010585806678
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -357,7 +305,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1572801164
+  randomSeed: -298582582
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -9944,7 +9892,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -311804731
+  randomSeed: -369797504
   InitialModule:
     serializedVersion: 3
     enabled: 1

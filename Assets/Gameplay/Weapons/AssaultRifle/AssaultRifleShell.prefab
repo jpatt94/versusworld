@@ -25,8 +25,6 @@ GameObject:
   - component: {fileID: 114398917720337668}
   - component: {fileID: 54359008301220200}
   - component: {fileID: 65452700756185252}
-  - component: {fileID: 114136449634230764}
-  - component: {fileID: 114270448558705194}
   m_Layer: 9
   m_Name: AssaultRifleShell
   m_TagString: Untagged
@@ -125,35 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _entityType: 0
---- !u!114 &114136449634230764
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1170246964740996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1170246964740996}
-  _assetGuid: 070ba829f4687414da061a7e76490a83
---- !u!114 &114270448558705194
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1170246964740996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ebdc6ac6-1fcb-4fb0-8d5d-51670144e70b
 --- !u!114 &114398917720337668
 MonoBehaviour:
   m_ObjectHideFlags: 1

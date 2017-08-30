@@ -30,7 +30,6 @@ namespace O3DWB
         {
             //ObjectIntersectPrecision newPrecision;
 
-            var content = new GUIContent();
             RenderAllowIntersectionForDecorPaintSingleModeDragToggle();
             RenderAllowIntersectionForDecorPaintBrushModeDragToggle();
             /*if(!_settings.AllowIntersectionForDecorPaintBrushModeDrag)

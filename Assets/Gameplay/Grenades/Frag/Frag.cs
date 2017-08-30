@@ -47,7 +47,7 @@ public class Frag : Grenade
 		if (!detonated)
 		{
 			detonated = true;
-			mgr.DealExplosiveDamage(data.throwerID, gameObject, settings.Damage, settings.Range, shotDetonated ? DamageType.FragGrenadeShot : DamageType.FragGrenade);
+			mgr.DealExplosiveDamage(data.throwerID, gameObject, settings.Damage, settings.Range, shotDetonated ? DamageType.FragGrenadeShot : DamageType.FragGrenade, friendlyFire);
 
 			base.Detonate();
 		}

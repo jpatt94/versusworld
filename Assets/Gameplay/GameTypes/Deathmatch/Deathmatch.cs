@@ -8,7 +8,7 @@ public class Deathmatch : Game
 	public class DeathmatchPlayersList : SyncListStruct<DeathmatchPlayer> { }
 	private DeathmatchPlayersList players = new DeathmatchPlayersList();
 
-	private DeathmatchSettings settings;
+	//private DeathmatchSettings settings;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -17,7 +17,7 @@ public class Deathmatch : Game
 	{
 		base.Awake();
 
-		settings = PartyManager.GameSettings as DeathmatchSettings;
+		//settings = PartyManager.GameSettings as DeathmatchSettings;
 	}
 
 	public override void Start()

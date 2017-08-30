@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 2375486}
   - component: {fileID: 9570372}
   - component: {fileID: 64233327443385578}
-  - component: {fileID: 114506766009333338}
-  - component: {fileID: 114317374198042644}
   m_Layer: 0
   m_Name: road_crossing_center_mesh
   m_TagString: Untagged
@@ -115,32 +113,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b9a522a9585cd9a43921fbab44519284, type: 3}
---- !u!114 &114317374198042644
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f047a8db-00ae-486d-bdc5-cfe2231e779a
---- !u!114 &114506766009333338
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 175616}
-  _assetGuid: 7593cc0aaa63c2341a86d446ce466066

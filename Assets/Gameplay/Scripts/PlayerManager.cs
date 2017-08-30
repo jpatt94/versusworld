@@ -10,7 +10,6 @@ public class PlayerManager : NetworkBehaviour
 	private List<NetworkPlayer> playerList;
 	private int localPlayerID;
 
-	private HUD hud;
 	private MedalTracker medals;
 
 	/**********************************************************/
@@ -23,7 +22,6 @@ public class PlayerManager : NetworkBehaviour
 		playerList = new List<NetworkPlayer>();
 		localPlayerID = -1;
 
-		hud = GameObject.Find("HUD").GetComponent<HUD>();
 		medals = GetComponent<MedalTracker>();
 	}
 

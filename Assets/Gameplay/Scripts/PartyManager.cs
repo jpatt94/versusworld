@@ -201,14 +201,14 @@ public class PartyManager : NetworkBehaviour
 	public void EnterLobby()
 	{
 		menus.GoToMenu(MenuType.Lobby);
-		LobbyMenu.OnChangeGameMode(gameSettings.MetaData.Name);
+		LobbyMenu.OnChangeGameMode(gameSettings.MetaData.Name, gameSettings.MetaData.Description);
 		LobbyMenu.OnChangeMap(mapIndex);
 	}
 
 	public void OnGameSettingsMessage(GameSettingsMessage msg)
 	{
 		ChangeGameTypeFromBytes(msg.Type, msg.Settings);
-		LobbyMenu.OnChangeGameMode(gameSettings.MetaData.Name);
+		LobbyMenu.OnChangeGameMode(gameSettings.MetaData.Name, gameSettings.MetaData.Description);
 	}
 
 	[Server]
@@ -274,7 +274,7 @@ public class PartyManager : NetworkBehaviour
 			SceneManager.LoadScene("MainMenu");
 		}
 
-		FindObjectOfType<LegacyMainMenu>().TransitionToState(MenuType.Main);
+		FindObjectOfType<MenuManager>().GoToMenu(MenuType.Main);
 
 		Cursor.visible = true;
 		Cursor.lockState = CursorLockMode.None;
@@ -389,13 +389,13 @@ public class PartyManager : NetworkBehaviour
 			sentMapLoadCommand = true;
 		}
 
-		if (status == PartyStatus.ReturningToLobby && LobbyMenu)
-		{
-			menus.GoToMenu(MenuType.Lobby);
-			LobbyMenu.OnChangeGameMode(gameSettings.MetaData.Name);
-			LobbyMenu.OnChangeMap(mapIndex);
-			//LobbyMenu.OnEnterLobby();
-		}
+		//if (status == PartyStatus.ReturningToLobby && LobbyMenu)
+		//{
+		//	menus.GoToMenu(MenuType.Lobby);
+		//	LobbyMenu.OnChangeGameMode(gameSettings.MetaData.Name, gameSettings.MetaData.Description);
+		//	LobbyMenu.OnChangeMap(mapIndex);
+		//	//LobbyMenu.OnEnterLobby();
+		//}
 	}
 
 	private void UpdateServer()
@@ -525,6 +525,18 @@ public class PartyManager : NetworkBehaviour
 		}
 	}
 
+	public MenuManager Menus
+	{
+		get
+		{
+			return menus;
+		}
+		set
+		{
+			menus = value;
+		}
+	}
+
 	public LobbyMenu LobbyMenu
 	{
 		get
@@ -559,6 +571,14 @@ public class PartyManager : NetworkBehaviour
 		get
 		{
 			return mapName;
+		}
+	}
+
+	public int MapIndex
+	{
+		get
+		{
+			return mapIndex;
 		}
 	}
 

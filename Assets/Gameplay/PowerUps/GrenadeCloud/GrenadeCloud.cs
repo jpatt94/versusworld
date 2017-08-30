@@ -8,20 +8,18 @@ public class GrenadeCloud : NetworkBehaviour
 	[SerializeField]
 	private float outroDuration;
 	[SerializeField]
-	private float outroAccel;
-	[SerializeField]
-	private float outroMaxSpeed;
-	[SerializeField]
 	private AnimationCurve outroScaleCurve;
 
 	[SyncVar]
 	private int ownerID;
+	[SyncVar]
+	private Vector3 velocity;
+	[SyncVar]
+	private float duration;
 
 	private float time;
 	private GrenadeCloudState state;
 	private float nextSpawn;
-	private Vector3 direction;
-	private float outroSpeed;
 
 	private GrenadeManager mgr;
 	private GrenadeCloudSettings settings;
@@ -50,6 +48,7 @@ public class GrenadeCloud : NetworkBehaviour
 	public void Update()
 	{
 		time += Time.deltaTime;
+		transform.position += velocity * Time.deltaTime;
 
 		switch (state)
 		{
@@ -57,15 +56,6 @@ public class GrenadeCloud : NetworkBehaviour
 			case GrenadeCloudState.Raining: UpdateRaining(); break;
 			case GrenadeCloudState.Outro: UpdateOutro(); break;
 		}
-	}
-
-	/**********************************************************/
-	// Client RPCs
-
-	[ClientRpc]
-	private void RpcSetDirection(Vector3 direction)
-	{
-		this.direction = direction;
 	}
 
 	/**********************************************************/
@@ -94,18 +84,10 @@ public class GrenadeCloud : NetworkBehaviour
 			}
 		}
 
-		if (time >= settings.Duration)
+		if (time >= duration)
 		{
 			time = 0.0f;
 			state = GrenadeCloudState.Outro;
-
-			if (isServer)
-			{
-				direction = Random.insideUnitSphere;
-				direction.y = 0.0f;
-				direction.Normalize();
-				RpcSetDirection(direction);
-			}
 		}
 	}
 
@@ -113,10 +95,6 @@ public class GrenadeCloud : NetworkBehaviour
 	{
 		mat.color = new Color(0.0f, 0.0f, 0.0f, 1.0f - time / outroDuration);
 		transform.localScale = Vector3.one * settings.Size * outroScaleCurve.Evaluate((1.0f - time / outroDuration));
-
-		outroSpeed += outroAccel * Time.deltaTime;
-		outroSpeed = Mathf.Min(outroSpeed, outroMaxSpeed);
-		transform.position += direction * outroSpeed * Time.deltaTime;
 
 		if (isServer)
 		{
@@ -135,7 +113,7 @@ public class GrenadeCloud : NetworkBehaviour
 		position.x += rand.x * (settings.Size * 0.5f);
 		position.z += rand.y * (settings.Size * 0.5f);
 
-		Grenade g = mgr.CreateLiveGrenade(settings.GrenadeType, position, Vector3.down, 0.0f, ownerID);
+		Grenade g = mgr.CreateLiveGrenade(settings.GrenadeType, position, Vector3.down, 0.0f, ownerID, false);
 
 		g.FuseTime = settings.GrenadeFuseTime;
 	}
@@ -152,6 +130,30 @@ public class GrenadeCloud : NetworkBehaviour
 		set
 		{
 			ownerID = value;
+		}
+	}
+
+	public Vector3 Velocity
+	{
+		get
+		{
+			return velocity;
+		}
+		set
+		{
+			velocity = value;
+		}
+	}
+
+	public float Duration
+	{
+		get
+		{
+			return duration;
+		}
+		set
+		{
+			duration = value;
 		}
 	}
 }

@@ -41,7 +41,7 @@ public class NetworkPowerUpCarrier : OfflinePowerUpCarrier
 		{
 			switch (waitingForUse)
 			{
-				case PowerUpType.GrenadeCloud: EnableGrenadeCloudPositioner(); break;
+				case PowerUpType.GrenadeCloud: CmdUseGrenadeCloud(); break;
 				case PowerUpType.BigHeads: CmdUseBigHeads(); break;
 				case PowerUpType.DamageResist: CmdUseTraitsPowerUp(PowerUpType.DamageResist); break;
 				case PowerUpType.SpeedBoost: CmdUseTraitsPowerUp(PowerUpType.SpeedBoost); break;
@@ -98,14 +98,6 @@ public class NetworkPowerUpCarrier : OfflinePowerUpCarrier
 		}
 	}
 
-	public void OnGrenadeCloudPositionerClick(Vector3 position)
-	{
-		CmdUseGrenadeCloud(position);
-
-		Destroy(grenadeCloudPositioner.gameObject);
-		grenadeCloudPositioner = null;
-	}
-
 	public void OnDestroy()
 	{
 		JP.Event.Unregister(this, "OnPowerUpSpinnerDone");
@@ -145,9 +137,9 @@ public class NetworkPowerUpCarrier : OfflinePowerUpCarrier
 	}
 
 	[Command]
-	private void CmdUseGrenadeCloud(Vector3 position)
+	private void CmdUseGrenadeCloud()
 	{
-		mgr.UseGrenadeCloud(net, position);
+		mgr.UseGrenadeCloud(net);
 	}
 
 	[Command]
@@ -209,7 +201,7 @@ public class NetworkPowerUpCarrier : OfflinePowerUpCarrier
 		obj.transform.SetParent(hud.StaticCanvas.transform, false);
 
 		grenadeCloudPositioner = obj.GetComponent<GrenadeCloudPositioner>();
-		grenadeCloudPositioner.Carrier = this;
+		//grenadeCloudPositioner.Carrier = this;
 		grenadeCloudPositioner.CoverageDiameter = mgr.Settings.GrenadeCloud.Size;
 	}
 

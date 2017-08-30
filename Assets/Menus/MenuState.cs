@@ -65,6 +65,10 @@ public class MenuState : MonoBehaviour
 
 	public bool Visible
 	{
+		get
+		{
+			return canvasRenderers[0].gameObject.activeInHierarchy;
+		}
 		set
 		{
 			foreach (CanvasRenderer r in canvasRenderers)

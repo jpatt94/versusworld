@@ -90,7 +90,6 @@ public class TeslaShock : MonoBehaviour
 
 		for (int i = 0; i < points.Length; i++)
 		{
-			float alpha = (float)(i + 1) / (line.positionCount - 1);
 			line.SetPosition(i + 1, Vector3.Lerp(startPos[i], points[i].position, 1.0f - (nextLineChange / lineChangeInterval)));
 		}
 

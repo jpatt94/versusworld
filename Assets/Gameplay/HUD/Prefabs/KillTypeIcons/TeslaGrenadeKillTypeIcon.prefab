@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 224066764166010544}
   - component: {fileID: 222766274211244820}
   - component: {fileID: 114543186792828402}
-  - component: {fileID: 114204173623587364}
-  - component: {fileID: 114516750042576450}
   m_Layer: 5
   m_Name: TeslaGrenadeKillTypeIcon
   m_TagString: Untagged
@@ -30,35 +28,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114204173623587364
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1039787718429726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1039787718429726}
-  _assetGuid: 123c0acb29f807e41981407ce7bee6ee
---- !u!114 &114516750042576450
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1039787718429726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 4177af8a-a1c5-4f6d-8278-467c3e874873
 --- !u!114 &114543186792828402
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -59,6 +59,7 @@ public class AmmoDisplay : MonoBehaviour
 		}
 		set
 		{
+			background.enabled = value;
 			clipText.enabled = value && infiniteAmmoType < InfiniteAmmoType.BottomlessClip;
 			reservesText.enabled = value && infiniteAmmoType < InfiniteAmmoType.InfiniteAmmo;
 			primaryWeaponIcon.enabled = value;

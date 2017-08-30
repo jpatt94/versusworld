@@ -121,7 +121,7 @@ public class FogVolumeRenderer : MonoBehaviour
 #if UNITY_5_6_OR_NEWER
 		HDR= ThisCamera.allowHDR;
 #else
-			HDR = ThisCamera.hdr;
+			HDR = ThisCamera.allowHDR;
 #endif
 		}
 	}

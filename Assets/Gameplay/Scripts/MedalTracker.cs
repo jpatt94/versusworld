@@ -89,7 +89,7 @@ public class MedalTracker : MonoBehaviour
 
 			if (data.shooter != data.victim && !PartyManager.SameTeam(data.shooter, data.victim))
 			{
-				int streak = shooterStats.streak;
+				int streak = shooterStats.Streak;
 				if (streak > 0 && streak % 5 == 0 && streak <= 30)
 				{
 					awardedMedals.Add((int)(MedalType.KillingSpree5 + (streak / 5) - 1));
@@ -119,8 +119,8 @@ public class MedalTracker : MonoBehaviour
 				}
 			}
 
-			shooterData.previousStreak = shooterStats.streak;
-			victimData.previousStreak = victimStats.streak;
+			shooterData.previousStreak = shooterStats.Streak;
+			victimData.previousStreak = victimStats.Streak;
 		}
 
 		return awardedMedals.ToArray();

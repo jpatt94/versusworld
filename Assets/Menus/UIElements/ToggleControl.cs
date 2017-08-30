@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ToggleControl : MonoBehaviour
 {
+	private string eventName;
+
 	private Toggle toggle;
 
 	/**********************************************************/
@@ -13,6 +15,17 @@ public class ToggleControl : MonoBehaviour
 	public void Awake()
 	{
 		toggle = GetComponent<Toggle>();
+		toggle.onValueChanged.AddListener(OnValueChanged);
+
+		eventName = "On" + transform.parent.name + "ValueChanged";
+	}
+
+	/**********************************************************/
+	// Callbacks
+
+	public void OnValueChanged(bool value)
+	{
+		JP.Event.Trigger(eventName);
 	}
 
 	/**********************************************************/

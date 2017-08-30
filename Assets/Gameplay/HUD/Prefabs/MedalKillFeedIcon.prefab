@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 224931581609046680}
   - component: {fileID: 222017998506624598}
   - component: {fileID: 114512474636074472}
-  - component: {fileID: 114870193209545160}
-  - component: {fileID: 114384927612885040}
   m_Layer: 5
   m_Name: MedalKillFeedIcon
   m_TagString: Untagged
@@ -30,18 +28,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114384927612885040
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1789338033112580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 2a2b4122-392e-41cf-a68c-7352b3347f3d
 --- !u!114 &114512474636074472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -69,23 +55,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114870193209545160
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1789338033112580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1789338033112580}
-  _assetGuid: 0d1038eecffa0704286fa690b189be4c
 --- !u!222 &222017998506624598
 CanvasRenderer:
   m_ObjectHideFlags: 1

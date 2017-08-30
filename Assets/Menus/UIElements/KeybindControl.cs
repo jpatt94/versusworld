@@ -39,13 +39,21 @@ public class KeybindControl : MonoBehaviour
 		if (pressKeyTime > 0.0f && !bufferFrame)
 		{
 			bool pressedNewKey = false;
-			for (int i = 1; i < (int)KeyCode.Menu; i++)
+			if (Input.GetKeyDown(KeyCode.Escape))
 			{
-				if (Input.GetKeyDown((KeyCode)i))
+				pressedNewKey = true;
+			}
+
+			if (!pressedNewKey)
+			{
+				for (int i = 1; i < (int)KeyCode.Menu; i++)
 				{
-					keybind.Key = (KeyCode)i;
-					pressedNewKey = true;
-					break;
+					if (Input.GetKeyDown((KeyCode)i))
+					{
+						keybind.Key = (KeyCode)i;
+						pressedNewKey = true;
+						break;
+					}
 				}
 			}
 

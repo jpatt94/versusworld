@@ -24,8 +24,6 @@ GameObject:
   - component: {fileID: 54375319554690478}
   - component: {fileID: 135402913164645576}
   - component: {fileID: 114316686321330168}
-  - component: {fileID: 114970065255144050}
-  - component: {fileID: 114935076568111266}
   m_Layer: 9
   m_Name: SpikeGrenadeDrop
   m_TagString: GrenadeDrop
@@ -44,7 +42,6 @@ GameObject:
   - component: {fileID: 33406343460924156}
   - component: {fileID: 23527534818185114}
   - component: {fileID: 135697032732280574}
-  - component: {fileID: 114027319908508288}
   m_Layer: 2
   m_Name: Body
   m_TagString: GrenadeDrop
@@ -133,18 +130,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!114 &114027319908508288
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1537302896119278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 71f243d1-06ba-4b95-b82f-b91591e14942
 --- !u!114 &114316686321330168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -191,18 +176,6 @@ MonoBehaviour:
     i15: 178
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &114935076568111266
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1323454565457524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 619879d7-b83e-429f-aa28-a0be87951bdf
 --- !u!114 &114946962274617258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,24 +197,6 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
---- !u!114 &114970065255144050
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1323454565457524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1323454565457524}
-    - {fileID: 1537302896119278}
-  _assetGuid: 7fad19b71a09fbc4a9b8cf058c1580b2
 --- !u!135 &135402913164645576
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -115,8 +115,6 @@ public class SpawnManager : MonoBehaviour
 
 	private SpawnPoint GetBestSpawnPoint(int player)
 	{
-		NetworkPlayer spawningPlayer = PlayerManager.GetPlayer(player);
-
 		float furthest = float.MinValue;
 		int index = 0;
 		for (int i = 0; i < spawnPoints.Count; i++)

@@ -11,6 +11,8 @@ public class OfflineMelee : MonoBehaviour
 	protected float facingThreshold;
 	[SerializeField]
 	protected float checkHitDuration;
+	[SerializeField]
+	protected float knifeVisibleDuration;
 
 	protected float damage;
 	protected float rate;
@@ -18,6 +20,7 @@ public class OfflineMelee : MonoBehaviour
 	protected float activeTime;
 	protected bool canMelee;
 	protected bool bufferedInput;
+	protected float knifeVisibleTime;
 
 	protected OfflineWeaponCarrier weapon;
 	protected OfflineGrenadeCarrier grenades;
@@ -47,10 +50,6 @@ public class OfflineMelee : MonoBehaviour
 	public virtual void Update()
 	{
 		activeTime -= Time.deltaTime;
-		if (!Active)
-		{
-			KnifeVisible = false;
-		}
 
 		if (PlayerInput.Melee(ButtonStatus.Pressed))
 		{
@@ -61,6 +60,15 @@ public class OfflineMelee : MonoBehaviour
 		{
 			Melee();
 			bufferedInput = false;
+		}
+
+		if (KnifeVisible)
+		{
+			knifeVisibleTime -= Time.deltaTime;
+			if (knifeVisibleTime <= 0.0f)
+			{
+				KnifeVisible = false;
+			}
 		}
 	}
 
@@ -75,6 +83,7 @@ public class OfflineMelee : MonoBehaviour
 		model.OnMelee();
 
 		KnifeVisible = true;
+		knifeVisibleTime = knifeVisibleDuration / rate;
 	}
 
 	public virtual void OnMeleeReady()

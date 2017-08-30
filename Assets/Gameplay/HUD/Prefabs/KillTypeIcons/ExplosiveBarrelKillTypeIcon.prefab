@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 224304335490192316}
   - component: {fileID: 222584591570865480}
   - component: {fileID: 114754878203968434}
-  - component: {fileID: 114619393100485036}
-  - component: {fileID: 114261615891495832}
   m_Layer: 5
   m_Name: ExplosiveBarrelKillTypeIcon
   m_TagString: Untagged
@@ -30,35 +28,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114261615891495832
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1854650562543120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d402733a-8943-489f-9f8f-ab8dd9ef3656
---- !u!114 &114619393100485036
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1854650562543120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1854650562543120}
-  _assetGuid: af3664d1ecc5e8740a183e8cf8ffc456
 --- !u!114 &114754878203968434
 MonoBehaviour:
   m_ObjectHideFlags: 1

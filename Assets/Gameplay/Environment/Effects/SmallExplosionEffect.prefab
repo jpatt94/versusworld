@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4000013505110654}
   - component: {fileID: 198000010687303002}
   - component: {fileID: 199000011921653214}
-  - component: {fileID: 114168722515597846}
   m_Layer: 0
   m_Name: Embers
   m_TagString: Untagged
@@ -39,7 +38,6 @@ GameObject:
   - component: {fileID: 4000013521198930}
   - component: {fileID: 198000012569031976}
   - component: {fileID: 199000010351236460}
-  - component: {fileID: 114507875588120364}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -57,7 +55,6 @@ GameObject:
   - component: {fileID: 4000014291108156}
   - component: {fileID: 198000010217891986}
   - component: {fileID: 199000012837251388}
-  - component: {fileID: 114210596921112560}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -219,42 +216,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114168722515597846
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010972190198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: c3ecc51b-ad2e-4ce8-a377-62994739c453
---- !u!114 &114210596921112560
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011445404004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: a700eb68-1011-4980-8913-c7c11ec741d8
---- !u!114 &114507875588120364
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011277865272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 138153ad-4dc4-44e1-91ba-1ae2706b3e71
 --- !u!114 &114605214669052226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -326,7 +287,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 690838776
+  randomSeed: -869491641
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6776,7 +6737,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 307756239
+  randomSeed: -1180676281
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -9958,7 +9919,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 1112701312
+  randomSeed: 1894798294
   InitialModule:
     serializedVersion: 3
     enabled: 1

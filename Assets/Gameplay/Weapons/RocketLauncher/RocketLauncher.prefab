@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4315478568600256}
   - component: {fileID: 114818314993585558}
   - component: {fileID: 82972091418195332}
-  - component: {fileID: 114992012140476732}
-  - component: {fileID: 114149494418861054}
   m_Layer: 0
   m_Name: RocketLauncher
   m_TagString: Untagged
@@ -40,7 +38,6 @@ GameObject:
   - component: {fileID: 4458477571643756}
   - component: {fileID: 33688949824088842}
   - component: {fileID: 23559615948696266}
-  - component: {fileID: 114941742834773520}
   m_Layer: 0
   m_Name: RocketLauncherMesh
   m_TagString: Untagged
@@ -56,7 +53,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4443851837187058}
-  - component: {fileID: 114443922590647394}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
@@ -74,7 +70,6 @@ GameObject:
   - component: {fileID: 4596119433109038}
   - component: {fileID: 33393933336680000}
   - component: {fileID: 23470104215033396}
-  - component: {fileID: 114309536525855178}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -295,42 +290,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114149494418861054
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1345675202100404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 19421731-52c9-4301-a1d2-defaa981dd57
---- !u!114 &114309536525855178
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1898173592911898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 22f8d690-5493-4457-8843-9ff7fea88b5d
---- !u!114 &114443922590647394
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1755144862579948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9efa0092-e78c-4c39-9e60-8e61bdaa5d2d
 --- !u!114 &114818314993585558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -388,35 +347,3 @@ MonoBehaviour:
   slidePullSound: {fileID: 0}
   jerk: {x: -6, y: 1}
   jerkDuration: 0.3
---- !u!114 &114941742834773520
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1597972729785502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e6be3ffc-49d8-4dbe-84f8-98892343db2e
---- !u!114 &114992012140476732
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1345675202100404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1345675202100404}
-    - {fileID: 1755144862579948}
-    - {fileID: 1597972729785502}
-    - {fileID: 1898173592911898}
-  _assetGuid: 48bd642b879fb594c98487a816dde045

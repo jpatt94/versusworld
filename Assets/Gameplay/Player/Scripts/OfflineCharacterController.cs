@@ -49,6 +49,14 @@ public class OfflineCharacterController : NetworkBehaviour
 	protected float thrustViewShakeAmount;
 	[SerializeField]
 	protected float thrustViewShakeDuration;
+	[SerializeField]
+	protected Vector3 jumpViewShake;
+	[SerializeField]
+	protected Vector3 landViewShake;
+	[SerializeField]
+	protected float jumpViewShakeDuration;
+	[SerializeField]
+	protected float landViewShakeDuration;
 
 	protected Vector3 inputVelocity;
 	protected float jumpInput;
@@ -143,6 +151,7 @@ public class OfflineCharacterController : NetworkBehaviour
 				crouching = false;
 				playerModel.OnJump();
 				cam.ZShake(0.5f, 0.15f);
+				cam.ViewShake(jumpViewShake, jumpViewShakeDuration);
 				jumpInput = -1.0f;
 			}
 			else if (thrustEnabled && canThrust >= 0.0f && !(Physics.Raycast(transform.position, Vector3.down, 1.0f) && controller.velocity.y < 0.0f))
@@ -161,7 +170,7 @@ public class OfflineCharacterController : NetworkBehaviour
 
 		if (!previouslyGrounded && controller.isGrounded)
 		{
-			jumping = false;
+			OnLand();
 		}
 		previouslyGrounded = controller.isGrounded;
 
@@ -185,6 +194,13 @@ public class OfflineCharacterController : NetworkBehaviour
 
 	/**********************************************************/
 	// Helper Functions
+
+	protected virtual void OnLand()
+	{
+		jumping = false;
+		cam.ViewShake(landViewShake, landViewShakeDuration);
+		playerModel.ThirdPersonModel.OnLand(Velocity.y);
+	}
 
 	protected void UpdateSprint()
 	{

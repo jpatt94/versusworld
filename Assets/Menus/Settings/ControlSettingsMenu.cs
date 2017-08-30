@@ -56,6 +56,10 @@ public class ControlSettingsMenu : SettingsMenuState
 		showScoreboardControl = transform.Find("ShowScoreboardControl").GetComponentInChildren<KeybindControl>();
 
 		JP.Event.Register(this, "OnControlSettingsLoad");
+		JP.Event.Register(this, "OnMouseSensitivityControlValueChanged");
+		JP.Event.Register(this, "OnInvertAimControlValueChanged");
+		JP.Event.Register(this, "OnToggleCrouchControlValueChanged");
+		JP.Event.Register(this, "OnToggleSprintControlValueChanged");
 	}
 
 	/**********************************************************/
@@ -76,6 +80,29 @@ public class ControlSettingsMenu : SettingsMenuState
 	public void OnControlSettingsLoad()
 	{
 		UpdateControlValues();
+	}
+
+	/**********************************************************/
+	// Control Callbacks
+
+	public void OnMouseSensitivityControlValueChanged()
+	{
+		ControlSettings.MouseSensitivity = mouseSensitivityControl.Value;
+	}
+
+	public void OnInvertAimControlValueChanged()
+	{
+		ControlSettings.InvertAim = invertAimControl.Checked;
+	}
+
+	public void OnToggleCrouchControlValueChanged()
+	{
+		ControlSettings.ToggleCrouch = toggleCrouchControl.Checked;
+	}
+
+	public void OnToggleSprintControlValueChanged()
+	{
+		ControlSettings.ToggleSprint = toggleSprintControl.Checked;
 	}
 
 	/**********************************************************/

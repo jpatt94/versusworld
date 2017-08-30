@@ -36,7 +36,6 @@ public class NetworkPlayer : SafeNetworkBehaviour
 	private NetworkPowerUpCarrier powerUpCarrier;
 	private PlayerHealth health;
 	private Respawner respawn;
-	private PlayerNetworkTransform netTransform;
 	private PlayerHUDManager playerHUD;
 	private CapsuleCollider controller;
 	private NetworkCharacterController netController;
@@ -65,7 +64,6 @@ public class NetworkPlayer : SafeNetworkBehaviour
 		powerUpCarrier = GetComponent<NetworkPowerUpCarrier>();
 		health = GetComponent<PlayerHealth>();
 		respawn = GetComponent<Respawner>();
-		netTransform = GetComponent<PlayerNetworkTransform>();
 		playerHUD = GetComponent<PlayerHUDManager>();
 		controller = GetComponent<CapsuleCollider>();
 		netController = GetComponent<NetworkCharacterController>();

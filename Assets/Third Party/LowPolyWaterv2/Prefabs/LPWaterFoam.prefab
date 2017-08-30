@@ -20,8 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000013665620186}
   - component: {fileID: 114000012341209002}
-  - component: {fileID: 114522295891253294}
-  - component: {fileID: 114923169630542154}
   m_Layer: 4
   m_Name: LPWaterFoam
   m_TagString: Untagged
@@ -78,32 +76,3 @@ MonoBehaviour:
   waveScale: -1337
   gridTypeLite: 0
   displayProgress: 0
---- !u!114 &114522295891253294
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011664512690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000011664512690}
-  _assetGuid: d241da266d3f50543b0e08c26ccd7a6f
---- !u!114 &114923169630542154
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011664512690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 4e78970f-50c2-49a1-9d32-74921339b390

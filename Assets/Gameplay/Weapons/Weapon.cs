@@ -127,7 +127,7 @@ public class Weapon : MonoBehaviour
 		adsEnabled = false;
 		adsTime = 0.0f;
 
-		aud.spatialBlend = 0.0f;
+		//aud.spatialBlend = 0.0f;
 
 		foreach (Transform t in GetComponentsInChildren<Transform>())
 		{

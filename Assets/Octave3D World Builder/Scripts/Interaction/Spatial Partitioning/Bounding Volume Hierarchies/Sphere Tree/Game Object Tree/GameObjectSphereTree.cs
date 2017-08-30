@@ -178,7 +178,6 @@ namespace O3DWB
             List<SphereTreeNode<GameObject>> allOverlappedNodes = _sphereTree.OverlapBox(box);
             if (allOverlappedNodes.Count == 0) return false;
 
-            var overlappedObjects = new List<GameObject>();
             foreach (SphereTreeNode<GameObject> node in allOverlappedNodes)
             {
                 GameObject gameObject = node.Data;
@@ -209,7 +208,6 @@ namespace O3DWB
             List<SphereTreeNode<GameObject>> allOverlappedNodes = _sphereTree.OverlapBox(queryMeshOOBB);
             if (allOverlappedNodes.Count == 0) return false;
 
-            var overlappedObjects = new List<GameObject>();
             foreach (SphereTreeNode<GameObject> node in allOverlappedNodes)
             {
                 GameObject gameObject = node.Data;

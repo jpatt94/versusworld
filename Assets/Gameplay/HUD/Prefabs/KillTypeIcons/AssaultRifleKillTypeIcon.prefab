@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 224622743774308864}
   - component: {fileID: 222701460940962850}
   - component: {fileID: 114201922689685856}
-  - component: {fileID: 114415692926676924}
-  - component: {fileID: 114790097371998000}
   m_Layer: 5
   m_Name: AssaultRifleKillTypeIcon
   m_TagString: Untagged
@@ -57,35 +55,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114415692926676924
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1021549765516208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1021549765516208}
-  _assetGuid: ba2f420bebf9d9a478898b9289bf3129
---- !u!114 &114790097371998000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1021549765516208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 0b8355ec-fa3f-43c5-a489-af71a27c93c6
 --- !u!222 &222701460940962850
 CanvasRenderer:
   m_ObjectHideFlags: 1

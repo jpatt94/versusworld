@@ -6,11 +6,10 @@ using UnityEngine.UI;
 public class GrenadeCloudPositioner : MonoBehaviour
 {
 	private RectTransform rect;
-	private Button button;
 	private Image mapOverviewImage;
 	private Image coverageCircle;
 	private MultiplayerMap map;
-	private NetworkPowerUpCarrier carrier;
+	//private NetworkPowerUpCarrier carrier;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -18,7 +17,6 @@ public class GrenadeCloudPositioner : MonoBehaviour
 	public void Awake()
 	{
 		rect = GetComponent<RectTransform>();
-		button = GetComponent<Button>();
 		mapOverviewImage = GetComponent<Image>();
 		coverageCircle = transform.Find("CoverageCircle").GetComponent<Image>();
 		map = GameObject.Find("MultiplayerMap").GetComponent<MultiplayerMap>();
@@ -53,7 +51,7 @@ public class GrenadeCloudPositioner : MonoBehaviour
 				Cursor.visible = false;
 				Cursor.lockState = CursorLockMode.Locked;
 
-				carrier.OnGrenadeCloudPositionerClick(map.ConvertMapUVToPosition(Mathf.InverseLerp(-offsetX, offsetX, offset.x), 1.0f - Mathf.InverseLerp(-offsetY, offsetY, offset.y)));
+				//carrier.OnGrenadeCloudPositionerClick(map.ConvertMapUVToPosition(Mathf.InverseLerp(-offsetX, offsetX, offset.x), 1.0f - Mathf.InverseLerp(-offsetY, offsetY, offset.y)));
 			}
 		}
 		else
@@ -71,14 +69,6 @@ public class GrenadeCloudPositioner : MonoBehaviour
 
 	/**********************************************************/
 	// Accessors/Mutators
-
-	public NetworkPowerUpCarrier Carrier
-	{
-		set
-		{
-			carrier = value;
-		}
-	}
 
 	public float CoverageDiameter
 	{

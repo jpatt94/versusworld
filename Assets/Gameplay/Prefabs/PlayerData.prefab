@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4000012687082236}
   - component: {fileID: 114000013705451302}
   - component: {fileID: 114000013886780258}
-  - component: {fileID: 114536927031002806}
-  - component: {fileID: 114838858787418012}
   m_Layer: 0
   m_Name: PlayerData
   m_TagString: Untagged
@@ -87,32 +85,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pingQueryInterval: 0.5
---- !u!114 &114536927031002806
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013133058412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000013133058412}
-  _assetGuid: 6ee1c0737d6e42b4bbe885f805a68a61
---- !u!114 &114838858787418012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013133058412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 71436d4f-e07e-4ae0-a927-3889889a56f3

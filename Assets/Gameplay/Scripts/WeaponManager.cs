@@ -361,12 +361,12 @@ public class WeaponManager : NetworkBehaviour
 		Destroy(rocket.gameObject);
 	}
 
-	public void DealExplosiveDamage(int shooter, GameObject obj, float damage, float radius, DamageType type)
+	public void DealExplosiveDamage(int shooter, GameObject obj, float damage, float radius, DamageType type, bool friendlyFire = true)
 	{
-		DealExplosiveDamage(shooter, obj, damage, radius, type, obj.transform.position);
+		DealExplosiveDamage(shooter, obj, damage, radius, type, obj.transform.position, friendlyFire);
 	}
 
-	public void DealExplosiveDamage(int shooter, GameObject obj, float damage, float radius, DamageType type, Vector3 position)
+	public void DealExplosiveDamage(int shooter, GameObject obj, float damage, float radius, DamageType type, Vector3 position, bool friendlyFire = true)
 	{
 		Collider[] cols = Physics.OverlapSphere(position, radius);
 		bool hitOther = false;
@@ -382,40 +382,22 @@ public class WeaponManager : NetworkBehaviour
 				{
 					if (netPlayer)
 					{
-						//int hits = 0;
-						//hits += CheckExplosiveRaycast(position, netPlayer.Center, radius, netPlayer.ID) ? 1 : 0;
-						//hits += CheckExplosiveRaycast(position, netPlayer.Center + Vector3.up * 0.5f, radius, netPlayer.ID) ? 1 : 0;
-						//if (hits < 2)
-						//{
-						//	hits += CheckExplosiveRaycast(position, netPlayer.Center + Vector3.up * 0.9f, radius, netPlayer.ID) ? 1 : 0;
-						//	if (hits < 2)
-						//	{
-						//		hits += CheckExplosiveRaycast(position, netPlayer.Center + Vector3.down * 0.5f, radius, netPlayer.ID) ? 1 : 0;
-						//		if (hits < 2)
-						//		{
-						//			hits += CheckExplosiveRaycast(position, netPlayer.Center + Vector3.down * 0.9f, radius, netPlayer.ID) ? 1 : 0;
-						//		}
-						//	}
-						//}
-
-						//if (hits > 0)
-						//{
-						PlayerManager.GetPlayer(shooter).DealDamage(netPlayer, thisDamage /*(hits > 1 ? 1.0f : 0.67f)*/, position, BodyPart.None, type);
-
-						if (shooter != netPlayer.ID)
+						if (friendlyFire || !PartyManager.SameTeam(shooter, netPlayer.ID))
 						{
-							if (PartyManager.SameTeam(shooter, netPlayer.ID))
+							PlayerManager.GetPlayer(shooter).DealDamage(netPlayer, thisDamage, position, BodyPart.None, type);
+
+							if (shooter != netPlayer.ID)
 							{
-								hitFriendly = true;
-							}
-							else
-							{
-								hitOther = true;
+								if (PartyManager.SameTeam(shooter, netPlayer.ID))
+								{
+									hitFriendly = true;
+								}
+								else
+								{
+									hitOther = true;
+								}
 							}
 						}
-						//}
-
-						//print("Hit " + hits + " on " + netPlayer);
 					}
 					else
 					{

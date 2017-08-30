@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4000012324950290}
   - component: {fileID: 114000012453307678}
   - component: {fileID: 114000010407456550}
-  - component: {fileID: 114536211570462948}
-  - component: {fileID: 114271871512880704}
   m_Layer: 0
   m_Name: PowerUpManager
   m_TagString: Untagged
@@ -89,32 +87,3 @@ MonoBehaviour:
   distanceThreshold: 5
   grenadeCloudPrefab: {fileID: 1376679134953838, guid: 7bacea890791ab34daf38af1de1af75b,
     type: 2}
---- !u!114 &114271871512880704
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013942923978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 65a52eb0-3c3b-41c6-9f53-a9a2b4d24702
---- !u!114 &114536211570462948
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013942923978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000013942923978}
-  _assetGuid: 296733fd627106b4e8345dc6563a93c4

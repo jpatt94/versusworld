@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4000012107481526}
   - component: {fileID: 198000014073249140}
   - component: {fileID: 199000011943544224}
-  - component: {fileID: 114890905774029262}
   m_Layer: 0
   m_Name: BulletImpactWoodDust
   m_TagString: Untagged
@@ -58,7 +57,6 @@ GameObject:
   - component: {fileID: 4000012249044376}
   - component: {fileID: 33000010561699830}
   - component: {fileID: 23000012178326250}
-  - component: {fileID: 114106719102815998}
   m_Layer: 0
   m_Name: Decal
   m_TagString: Untagged
@@ -226,18 +224,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114106719102815998
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011856084462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: ed8389a7-a345-4883-ac67-0de4b4215e6d
 --- !u!114 &114289219594139830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -251,18 +237,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   duration: 8
---- !u!114 &114890905774029262
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010439590768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 05aa0e8c-c67b-4164-bda1-085d60eedf89
 --- !u!198 &198000011002288308
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -322,7 +296,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 89028383
+  randomSeed: 129692199
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3416,7 +3390,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1524758022
+  randomSeed: 747680623
   InitialModule:
     serializedVersion: 3
     enabled: 1

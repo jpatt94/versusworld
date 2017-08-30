@@ -233,7 +233,7 @@ public class FogVolumeCamera : MonoBehaviour
 #if UNITY_5_6_OR_NEWER
         return (SceneCamera.allowHDR) ? RenderTextureReadWrite.Default : RenderTextureReadWrite.Linear;
 #else
-        return (SceneCamera.hdr) ? RenderTextureReadWrite.Default : RenderTextureReadWrite.Linear;
+        return (SceneCamera.allowHDR) ? RenderTextureReadWrite.Default : RenderTextureReadWrite.Linear;
 #endif
     }
     public RenderTextureFormat GetRTFormat()
@@ -244,7 +244,7 @@ public class FogVolumeCamera : MonoBehaviour
 #if UNITY_5_6_OR_NEWER
         return (SceneCamera.allowHDR == true) ? RenderTextureFormat.DefaultHDR : RenderTextureFormat.Default;
 #else
-            return (SceneCamera.hdr == true) ? RenderTextureFormat.DefaultHDR : RenderTextureFormat.ARGBHalf;
+            return (SceneCamera.allowHDR == true) ? RenderTextureFormat.DefaultHDR : RenderTextureFormat.ARGBHalf;
 #endif
         }
         else
@@ -341,7 +341,7 @@ public class FogVolumeCamera : MonoBehaviour
             ThisCamera.allowHDR = SceneCamera.allowHDR;
             ThisCamera.projectionMatrix = SceneCamera.projectionMatrix;
 #else
-            ThisCamera.hdr = SceneCamera.hdr;
+            ThisCamera.allowHDR = SceneCamera.allowHDR;
             ThisCamera.fieldOfView = SceneCamera.fieldOfView;
 #endif
 

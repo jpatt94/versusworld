@@ -23,8 +23,10 @@ public class LobbyMenu : MenuState
 	private Button startGameButton;
 	private Text chatBoxText;
 	private InputField chatBoxInputField;
+	private ScrollRect chatBoxScroll;
 	private Text numPlayersText;
 	private Text gameModeText;
+	private Text gameDescriptionText;
 	private Text mapText;
 	private Image mapThumbnail;
 
@@ -39,9 +41,11 @@ public class LobbyMenu : MenuState
 		startGameButton = GameObject.Find("StartGameButton").GetComponent<Button>();
 		chatBoxText = GameObject.Find("ChatBoxText").GetComponent<Text>();
 		chatBoxInputField = GameObject.Find("ChatBoxInputField").GetComponent<InputField>();
+		chatBoxScroll = GameObject.Find("ChatBoxPanel").GetComponentInChildren<ScrollRect>();
 		numPlayersText = GameObject.Find("NumPlayersText").GetComponent<Text>();
-		gameModeText = GameObject.Find("GameButton").GetComponentInChildren<Text>();
-		mapText = GameObject.Find("MapButton").GetComponentInChildren<Text>();
+		gameModeText = GameObject.Find("GameText").GetComponent<Text>();
+		gameDescriptionText = GameObject.Find("GameDescriptionText").GetComponent<Text>();
+		mapText = GameObject.Find("MapText").GetComponent<Text>();
 		mapThumbnail = GameObject.Find("MapThumbnail").GetComponent<Image>();
 
 		base.Awake();
@@ -141,6 +145,9 @@ public class LobbyMenu : MenuState
 			waitingForHostText.enabled = true;
 			waitingForHostText.text = "Waiting for host...";
 		}
+
+		OnChangeGameMode(PartyManager.GameSettings.MetaData.Name, PartyManager.GameSettings.MetaData.Description);
+		OnChangeMap(PartyManager.Get.MapIndex);
 	}
 
 	public void OnRegisterPartyMember(PlayerData player)
@@ -190,18 +197,36 @@ public class LobbyMenu : MenuState
 
 	public void ShowChatMessage(string str)
 	{
-		chatBoxText.text += "\n" + str;
+		if (chatBoxText.text.Length > 0)
+		{
+			str = "\n" + str;
+		}
+
+		chatBoxText.text += str;
+		chatBoxScroll.verticalNormalizedPosition = 0.0f;
 	}
 
-	public void OnChangeGameMode(string name)
+	public void OnChangeGameMode(string name, string description)
 	{
-		gameModeText.text = "    Game: " + name;
+		gameModeText.text = name;
+		gameDescriptionText.text = description;
 	}
 
 	public void OnChangeMap(int mapIndex)
 	{
-		mapText.text = "    Map: " + mapNames[mapIndex];
+		mapText.text = mapNames[mapIndex];
 		mapThumbnail.sprite = mapThumbnails[mapIndex];
+	}
+
+	public override void StateEnd()
+	{
+		base.StateEnd();
+
+		foreach (PartyMemberEntry entry in partyMemberEntries)
+		{
+			Destroy(entry.gameObject);
+		}
+		partyMemberEntries.Clear();
 	}
 
 	/**********************************************************/

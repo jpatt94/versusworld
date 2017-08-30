@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33813519890762254}
   - component: {fileID: 23364996318117728}
   - component: {fileID: 64341116778397262}
-  - component: {fileID: 114693968468556920}
   m_Layer: 2
   m_Name: Mesh
   m_TagString: Untagged
@@ -44,8 +43,6 @@ GameObject:
   - component: {fileID: 54754467990846276}
   - component: {fileID: 114014360335538576}
   - component: {fileID: 114222333795134198}
-  - component: {fileID: 114475431399846984}
-  - component: {fileID: 114441179864177798}
   m_Layer: 2
   m_Name: Vehicle
   m_TagString: Untagged
@@ -253,48 +250,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 0f4a4a4748666ef45a016a969c20d6b5, type: 2}
   - {fileID: 2100000, guid: 2f1eaa18358c5a740b06ca4f0f63168f, type: 2}
   - {fileID: 2100000, guid: 414196fa64b211b4a904f16f96e4761e, type: 2}
---- !u!114 &114441179864177798
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476320954183294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 869c5171-9ac8-4441-b0ce-7a4bd5bf624e
---- !u!114 &114475431399846984
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476320954183294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1476320954183294}
-    - {fileID: 1280717532463402}
-  _assetGuid: 177a296cee360e546aaaf5f056998c4e
---- !u!114 &114693968468556920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1280717532463402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d86fec4c-744a-4052-a8ac-19ee160afee9
 --- !u!114 &114970870905500698
 MonoBehaviour:
   m_ObjectHideFlags: 1

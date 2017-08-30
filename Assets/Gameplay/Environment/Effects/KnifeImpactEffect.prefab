@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4458400415301636}
   - component: {fileID: 198046332014274564}
   - component: {fileID: 199768919803075230}
-  - component: {fileID: 114318135830509360}
   m_Layer: 0
   m_Name: BloodStreaks
   m_TagString: Untagged
@@ -39,7 +38,6 @@ GameObject:
   - component: {fileID: 4023389141709714}
   - component: {fileID: 198503908892775858}
   - component: {fileID: 199536535238604124}
-  - component: {fileID: 114760829002321160}
   m_Layer: 0
   m_Name: BloodMist
   m_TagString: Untagged
@@ -118,30 +116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 5
---- !u!114 &114318135830509360
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1281146671461080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: fd55d200-e4f0-4ca7-a7da-e12725582c77
---- !u!114 &114760829002321160
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1620571554203958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f1057970-41c5-4464-b68f-e5301ab3dfa6
 --- !u!198 &198046332014274564
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -201,7 +175,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 1300573722
+  randomSeed: -1364090479
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3289,7 +3263,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1849858082
+  randomSeed: -657681933
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6395,7 +6369,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1749919662
+  randomSeed: 307161378
   InitialModule:
     serializedVersion: 3
     enabled: 1

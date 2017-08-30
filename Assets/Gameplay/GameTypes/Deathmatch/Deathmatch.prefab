@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4415044283860254}
   - component: {fileID: 114455269679763240}
   - component: {fileID: 114293648518399048}
-  - component: {fileID: 114016553688548822}
-  - component: {fileID: 114603142151243390}
   m_Layer: 0
   m_Name: Deathmatch
   m_TagString: Untagged
@@ -43,23 +41,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114016553688548822
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1748005881162990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1748005881162990}
-  _assetGuid: e6028dcfc4d64c54da046016d75e877f
 --- !u!114 &114293648518399048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,15 +86,3 @@ MonoBehaviour:
     i15: 127
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &114603142151243390
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1748005881162990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f21b6f9c-e04a-4c64-97a8-79d90b84a3b6

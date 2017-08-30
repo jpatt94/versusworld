@@ -7,6 +7,8 @@ public class MultiplayerMap : NetworkBehaviour
 {
 	[SerializeField]
 	private Sprite mapOverview;
+	[SerializeField]
+	private float grenadeCloudY;
 
 	private float width;
 	private float length;
@@ -52,6 +54,22 @@ public class MultiplayerMap : NetworkBehaviour
 	/**********************************************************/
 	// Accessors/Mutators
 
+	public Vector3 TopLeft
+	{
+		get
+		{
+			return topLeftCorner.position;
+		}
+	}
+
+	public Vector3 BottomRight
+	{
+		get
+		{
+			return bottomRightCorner.position;
+		}
+	}
+
 	public float Width
 	{
 		get
@@ -89,6 +107,14 @@ public class MultiplayerMap : NetworkBehaviour
 		get
 		{
 			return mapOverview;
+		}
+	}
+
+	public float GrenadeCloudY
+	{
+		get
+		{
+			return grenadeCloudY;
 		}
 	}
 }

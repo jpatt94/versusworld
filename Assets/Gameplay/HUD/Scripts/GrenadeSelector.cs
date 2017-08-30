@@ -14,19 +14,25 @@ public class GrenadeSelector : MonoBehaviour
 	[SerializeField]
 	private GameObject iconPrefab;
 
+	private bool visible;
+	private GrenadeType selectedType;
+	private float backgroundStartHeight;
+
+	private Image backgroundImage;
 	private Image arrowImage;
 	private SortedDictionary<GrenadeType, GrenadeSelectorIcon> icons;
-	private GrenadeType selectedType;
-	private bool visible;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
 
 	public void Awake()
 	{
+		backgroundImage = transform.Find("Background").GetComponent<Image>();
 		arrowImage = transform.Find("Arrow").GetComponent<Image>();
 		icons = new SortedDictionary<GrenadeType, GrenadeSelectorIcon>();
+
 		visible = true;
+		backgroundStartHeight = backgroundImage.rectTransform.offsetMin.y;
 	}
 
 	public void Update()
@@ -67,6 +73,10 @@ public class GrenadeSelector : MonoBehaviour
 			kv.Value.transform.localPosition = Vector3.down * separationY * i;
 			i++;
 		}
+
+		Vector2 offset = backgroundImage.rectTransform.offsetMin;
+		offset.y = backgroundStartHeight - separationY * (i - 1);
+		backgroundImage.rectTransform.offsetMin = offset;
 	}
 
 	/**********************************************************/
@@ -85,6 +95,7 @@ public class GrenadeSelector : MonoBehaviour
 			{
 				kv.Value.Visible = value;
 			}
+			backgroundImage.enabled = value;
 			arrowImage.enabled = value;
 		}
 	}

@@ -23,8 +23,6 @@ GameObject:
   - component: {fileID: 23714470148132576}
   - component: {fileID: 65224067855628678}
   - component: {fileID: 114916053249115244}
-  - component: {fileID: 114770774396764342}
-  - component: {fileID: 114137747196213358}
   m_Layer: 2
   m_Name: GravityLift
   m_TagString: Untagged
@@ -96,35 +94,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 3.6538196, z: 1}
   m_Center: {x: 0, y: 1.3269098, z: 0}
---- !u!114 &114137747196213358
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1865684043181440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 72df3b76-ea47-4c06-abc8-f3171e5991be
---- !u!114 &114770774396764342
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1865684043181440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1865684043181440}
-  _assetGuid: af30173efaf14d64ebd4232619c97427
 --- !u!114 &114916053249115244
 MonoBehaviour:
   m_ObjectHideFlags: 1

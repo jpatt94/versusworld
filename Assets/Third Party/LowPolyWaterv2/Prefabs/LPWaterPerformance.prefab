@@ -20,8 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000013665620186}
   - component: {fileID: 114000012341209002}
-  - component: {fileID: 114301087859195876}
-  - component: {fileID: 114353219887517818}
   m_Layer: 4
   m_Name: LPWaterPerformance
   m_TagString: Untagged
@@ -78,32 +76,3 @@ MonoBehaviour:
   waveScale: -1337
   gridTypeLite: 0
   displayProgress: 0
---- !u!114 &114301087859195876
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011664512690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000011664512690}
-  _assetGuid: c1f03fd4e96302841adf5646cd8a98cd
---- !u!114 &114353219887517818
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011664512690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3355459a-2cf5-4df4-85c1-3050bd232162

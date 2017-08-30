@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4746072200818830}
   - component: {fileID: 114657953420141716}
   - component: {fileID: 114984273092394982}
-  - component: {fileID: 114924310929101844}
-  - component: {fileID: 114723569295951460}
   m_Layer: 0
   m_Name: Siege
   m_TagString: Untagged
@@ -75,35 +73,6 @@ MonoBehaviour:
     i15: 117
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &114723569295951460
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1811468164303528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 9212ac7f-9b6f-4084-a2fd-3a7f35f006e3
---- !u!114 &114924310929101844
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1811468164303528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1811468164303528}
-  _assetGuid: 9efba7405f66a7646a548136144a5f75
 --- !u!114 &114984273092394982
 MonoBehaviour:
   m_ObjectHideFlags: 1

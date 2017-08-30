@@ -73,7 +73,6 @@ namespace O3DWB
             {
                 Associate(tagName);
             }
-            int a = 5;
         }
 
         public void Associate(string tagName)

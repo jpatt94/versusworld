@@ -23,8 +23,6 @@ GameObject:
   - component: {fileID: 114000014101862318}
   - component: {fileID: 114000012418678326}
   - component: {fileID: 114000012054582104}
-  - component: {fileID: 114761411809056460}
-  - component: {fileID: 114272840776880092}
   m_Layer: 5
   m_Name: ScorePopUpEntry
   m_TagString: Untagged
@@ -200,35 +198,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: +1 Kill
---- !u!114 &114272840776880092
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012680129574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3c7e8228-711e-4c89-a478-0d7bb1728b3c
---- !u!114 &114761411809056460
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012680129574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000012680129574}
-  _assetGuid: 12739776914986b44b1155b54b74231c
 --- !u!222 &222000011588492438
 CanvasRenderer:
   m_ObjectHideFlags: 1

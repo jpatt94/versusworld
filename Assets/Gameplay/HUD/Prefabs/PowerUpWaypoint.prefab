@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 222450944479315384}
   - component: {fileID: 114225661583873616}
   - component: {fileID: 114046829412489848}
-  - component: {fileID: 114822772243978414}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -38,7 +37,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224801372922767542}
-  - component: {fileID: 114568265137848492}
   m_Layer: 5
   m_Name: Arrow
   m_TagString: Untagged
@@ -57,7 +55,6 @@ GameObject:
   - component: {fileID: 222269009273627072}
   - component: {fileID: 114418456978590814}
   - component: {fileID: 114792777129636638}
-  - component: {fileID: 114381331011732912}
   m_Layer: 5
   m_Name: DistanceText
   m_TagString: Untagged
@@ -76,7 +73,6 @@ GameObject:
   - component: {fileID: 222727663995904962}
   - component: {fileID: 114163327526452178}
   - component: {fileID: 114857031450204044}
-  - component: {fileID: 114833919306031988}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -93,8 +89,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224263270178426668}
   - component: {fileID: 114679821272265288}
-  - component: {fileID: 114561661219947756}
-  - component: {fileID: 114845591421469352}
   m_Layer: 5
   m_Name: PowerUpWaypoint
   m_TagString: Untagged
@@ -170,18 +164,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114381331011732912
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1587045344658716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3eb9105d-a927-488d-b502-4eae67692b73
 --- !u!114 &114418456978590814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,39 +197,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 100m
---- !u!114 &114561661219947756
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1662768712675028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1662768712675028}
-    - {fileID: 1029882860555358}
-    - {fileID: 1587045344658716}
-    - {fileID: 1044871766456306}
-    - {fileID: 1629723923927454}
-  _assetGuid: 91e208302fc72514cadf790e0d361d8f
---- !u!114 &114568265137848492
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1044871766456306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: caf96602-98eb-4b6e-b624-50e9d2eecff2
 --- !u!114 &114679821272265288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -273,42 +222,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &114822772243978414
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1029882860555358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 3cbff680-1fc5-4528-be10-2484c04b871b
---- !u!114 &114833919306031988
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1629723923927454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 1162d6cb-4c34-47fa-aeea-3b3663475344
---- !u!114 &114845591421469352
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1662768712675028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f0d2a28c-1087-4ac8-8f52-f606b56ec1cc
 --- !u!114 &114857031450204044
 MonoBehaviour:
   m_ObjectHideFlags: 1

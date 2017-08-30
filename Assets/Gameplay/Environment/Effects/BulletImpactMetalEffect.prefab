@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 4000013747836344}
   - component: {fileID: 33000010368334244}
   - component: {fileID: 23000010928589822}
-  - component: {fileID: 114167391018109174}
   m_Layer: 0
   m_Name: Decal
   m_TagString: Untagged
@@ -58,7 +57,6 @@ GameObject:
   - component: {fileID: 4000013729394942}
   - component: {fileID: 198000011252715808}
   - component: {fileID: 199000012379554556}
-  - component: {fileID: 114709258057533660}
   m_Layer: 0
   m_Name: BulletImpactMetalDust
   m_TagString: Untagged
@@ -226,18 +224,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114167391018109174
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011947693678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 53f711f4-310d-4ba9-80c1-afbd0bcf147a
 --- !u!114 &114554915602128720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -251,18 +237,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   duration: 8
---- !u!114 &114709258057533660
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013173155048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bda87d9d-e3cf-45fc-9fb8-2fa268ee813d
 --- !u!198 &198000011252715808
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -322,7 +296,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1633154154
+  randomSeed: 366170268
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3451,7 +3425,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1986544545
+  randomSeed: 235368542
   InitialModule:
     serializedVersion: 3
     enabled: 1

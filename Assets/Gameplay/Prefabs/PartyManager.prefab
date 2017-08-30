@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 114941266764137394}
   - component: {fileID: 114830093314480160}
   - component: {fileID: 114564997091606426}
-  - component: {fileID: 114994212503236140}
-  - component: {fileID: 114377932270154792}
   m_Layer: 0
   m_Name: PartyManager
   m_TagString: Untagged
@@ -44,18 +42,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114377932270154792
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013181346544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7511d3af-90fa-42d0-84b9-10a617f00714
 --- !u!114 &114564997091606426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -87,18 +73,15 @@ MonoBehaviour:
   - {fileID: 1185943464332668, guid: aeb32bb3154ca274b9266ca4d1775b99, type: 2}
   - {fileID: 1734892065148158, guid: 2366f747422b6254788b2d98cdf37953, type: 2}
   teamColors:
-  - {r: 0, g: 0.6689658, b: 1, a: 1}
-  - {r: 1, g: 0.30882353, b: 0.30882353, a: 1}
+  - {r: 0.3254902, g: 0.49411768, b: 0.87843144, a: 1}
+  - {r: 1, g: 0.6156863, b: 0.29803923, a: 1}
   loadingMapCanvas: {fileID: 1534822991945274, guid: 1ab98de8e04c17940a19548123afa210,
     type: 2}
   teamShirts: 0000000001000000
   teamHats: 0000000000000000
   internalMapNames:
   - RogiPark
-  - WolfTown
   - WebIsland
-  - SandVault
-  - SkylineJungle
 --- !u!114 &114941266764137394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,20 +114,3 @@ MonoBehaviour:
     i15: 6
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &114994212503236140
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013181346544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000013181346544}
-  _assetGuid: aa0e231ccc4204c4c96d2cbed7127406

@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4000010553517452}
   - component: {fileID: 198000013980960414}
   - component: {fileID: 199000011784288542}
-  - component: {fileID: 114080109455721066}
   m_Layer: 0
   m_Name: BloodGlobs
   m_TagString: Untagged
@@ -73,18 +72,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &114080109455721066
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010159161520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: bb3b755a-9548-4b52-b6d4-71aeac89c46b
 --- !u!198 &198000011254678926
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -144,7 +131,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 812394255
+  randomSeed: 1635336002
   InitialModule:
     serializedVersion: 3
     enabled: 1

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class CreateAccountMenu : MonoBehaviour
 {
-	private Canvas canvas;
 	private UserManager userMgr;
 	private NotificationPanel notificationPanel;
 	private InputField emailInputField;
@@ -20,7 +19,6 @@ public class CreateAccountMenu : MonoBehaviour
 
 	public void Awake()
 	{
-		canvas = GetComponent<Canvas>();
 		userMgr = GetComponent<UserManager>();
 		notificationPanel = GameObject.Find("NotificationCanvas").GetComponent<NotificationPanel>();
 		emailInputField = Utility.FindChild(gameObject, "EmailInputField").GetComponent<InputField>();

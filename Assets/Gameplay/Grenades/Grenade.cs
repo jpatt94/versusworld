@@ -7,6 +7,7 @@ public class Grenade : NetworkBehaviour
 	protected int id;
 	protected float fuseTime;
 	protected bool detonated;
+	protected bool friendlyFire;
 
 	protected GrenadeManager mgr;
 	protected GrenadeData data;
@@ -115,6 +116,18 @@ public class Grenade : NetworkBehaviour
 		set
 		{
 			data.throwerID = value;
+		}
+	}
+
+	public bool FriendlyFire
+	{
+		get
+		{
+			return friendlyFire;
+		}
+		set
+		{
+			friendlyFire = value;
 		}
 	}
 }

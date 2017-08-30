@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 222149666366450442}
   - component: {fileID: 114709500735226060}
   - component: {fileID: 114876820333185014}
-  - component: {fileID: 114046384452266208}
-  - component: {fileID: 114663550181843534}
   m_Layer: 5
   m_Name: KillFeedText
   m_TagString: Untagged
@@ -31,35 +29,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114046384452266208
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1067412920976086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1067412920976086}
-  _assetGuid: 4b9417109e532504baf2f4acc7ae5a4b
---- !u!114 &114663550181843534
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1067412920976086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: 7bf001b9-713e-410c-a46a-7fd653384f7e
 --- !u!114 &114709500735226060
 MonoBehaviour:
   m_ObjectHideFlags: 1

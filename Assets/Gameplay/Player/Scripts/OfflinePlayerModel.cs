@@ -253,7 +253,7 @@ public class OfflinePlayerModel : NetworkBehaviour
 	{
 		get
 		{
-			return 0.0f;
+			return 4.0f;
 		}
 	}
 

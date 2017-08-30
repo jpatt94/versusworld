@@ -130,7 +130,6 @@ public class Radar : MonoBehaviour
 class RadarPlayer
 {
 	public RawImage image;
-	public Vector3 previousPosition;
 	public float timeLeft;
 	public bool didShoot;
 }

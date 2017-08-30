@@ -11,7 +11,6 @@ public class PlayerNameTag : MonoBehaviour
 	private bool active;
 	private float startingHealthBarAlpha;
 	private float startingHealthBarBackgroundAlpha;
-	private float startingNameOutlineAlpha;
 	private float healthBarWidth;
 	private float flashTime;
 	private float prevHealth;
@@ -35,7 +34,6 @@ public class PlayerNameTag : MonoBehaviour
 
 		startingHealthBarAlpha = healthBar.color.a;
 		startingHealthBarBackgroundAlpha = healthBarBackground.color.a;
-		startingNameOutlineAlpha = nameOutline.effectColor.a;
 		healthBarWidth = healthBar.rectTransform.sizeDelta.x;
 	}
 

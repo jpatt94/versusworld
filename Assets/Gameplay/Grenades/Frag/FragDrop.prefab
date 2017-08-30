@@ -24,8 +24,6 @@ GameObject:
   - component: {fileID: 54000014239859124}
   - component: {fileID: 114000010064561870}
   - component: {fileID: 65959930522987620}
-  - component: {fileID: 114713973277891502}
-  - component: {fileID: 114985034973526628}
   m_Layer: 9
   m_Name: FragDrop
   m_TagString: GrenadeDrop
@@ -42,7 +40,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000013033267734}
   - component: {fileID: 135000012915357140}
-  - component: {fileID: 114375163573003966}
   m_Layer: 2
   m_Name: PickUpCollider
   m_TagString: GrenadeDrop
@@ -60,7 +57,6 @@ GameObject:
   - component: {fileID: 4097191814494118}
   - component: {fileID: 33928609859334690}
   - component: {fileID: 23943710041568194}
-  - component: {fileID: 114623403971311040}
   m_Layer: 0
   m_Name: Body
   m_TagString: GrenadeDrop
@@ -242,61 +238,6 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
---- !u!114 &114375163573003966
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013454509390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: d94a6c47-6e71-4c8d-a6aa-c1b57f11ca6d
---- !u!114 &114623403971311040
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1249409002635438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: e1a20a59-2cd8-49c3-ad75-af679cde0996
---- !u!114 &114713973277891502
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011497193606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isConnected: 1
-  _guid: 
-  _referenceCollection:
-    _collection:
-    - {fileID: 1000011497193606}
-    - {fileID: 1000013454509390}
-    - {fileID: 1249409002635438}
-  _assetGuid: b26032d9758d85b42a153ea7bf690a59
---- !u!114 &114985034973526628
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011497193606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _guid: f3029a03-3c8d-4f8b-bad8-574f5a6fd854
 --- !u!135 &135000012915357140
 SphereCollider:
   m_ObjectHideFlags: 1

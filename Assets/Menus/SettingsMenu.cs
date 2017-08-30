@@ -10,6 +10,7 @@ public class SettingsMenu : MenuState
 	private ControlSettingsMenu controlMenu;
 	private RectTransform settingsWindowContent;
 	private ScrollRect scrollRect;
+	private InGameMenu inGameMenu;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -21,6 +22,7 @@ public class SettingsMenu : MenuState
 		controlMenu = GetComponentInChildren<ControlSettingsMenu>();
 		settingsWindowContent = GameObject.Find("SettingsWindowContent").GetComponent<RectTransform>();
 		scrollRect = GetComponentInChildren<ScrollRect>();
+		inGameMenu = GetComponentInParent<InGameMenu>();
 
 		base.Awake();
 
@@ -105,6 +107,16 @@ public class SettingsMenu : MenuState
 
 	private void OnSettingsBackButtonClick()
 	{
-		mgr.GoToMenu(MenuType.Main);
+		if (mgr)
+		{
+			mgr.GoToMenu(MenuType.Main);
+		}
+		else
+		{
+			StateEnd();
+
+			inGameMenu.Visible = true;
+			Visible = false;
+		}
 	}
 }

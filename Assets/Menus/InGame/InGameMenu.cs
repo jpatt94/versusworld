@@ -4,7 +4,8 @@ using System.Collections;
 public class InGameMenu : MonoBehaviour
 {
 	private Canvas canvas;
-	private InGameSettingsMenu settingsMenu;
+	private SettingsMenu settingsMenu;
+	private CanvasRenderer[] canvasRenderers;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -12,20 +13,33 @@ public class InGameMenu : MonoBehaviour
 	public void Awake()
 	{
 		canvas = GetComponent<Canvas>();
-		settingsMenu = GameObject.Find("SettingsMenu").GetComponent<InGameSettingsMenu>();
+		settingsMenu = GetComponentInChildren<SettingsMenu>();
+
+		JP.Event.Register(this, "OnResumeButtonClick");
+		JP.Event.Register(this, "OnInGameSettingsButtonClick");
+		JP.Event.Register(this, "OnLeaveGameButtonClick");
+		JP.Event.Register(this, "OnExitToWindowsButtonClick");
+
+		canvasRenderers = transform.Find("Panel").GetComponentsInChildren<CanvasRenderer>();
 	}
 
 	public void Start()
 	{
 		Enable(false);
+		settingsMenu.Visible = false;
 	}
 
 	public void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Escape) && !settingsMenu.Visible)
 		{
 			Enable(!canvas.enabled);
 		}
+	}
+
+	public void OnDestroy()
+	{
+		JP.Event.UnregisterAll(this);
 	}
 
 	/**********************************************************/
@@ -39,18 +53,23 @@ public class InGameMenu : MonoBehaviour
 		Cursor.lockState = canvas.enabled ? CursorLockMode.None : CursorLockMode.Locked;
 	}
 
-	public void OnResumeClick()
+	/**********************************************************/
+	// Button Callbacks
+
+	public void OnResumeButtonClick()
 	{
 		Enable(false);
 	}
 
-	public void OnSettingsClick()
+	public void OnInGameSettingsButtonClick()
 	{
-		canvas.enabled = false;
-		settingsMenu.Enable(true);
+		Visible = false;
+
+		settingsMenu.Visible = true;
+		settingsMenu.StateBegin();
 	}
 
-	public void OnLeaveGameClick()
+	public void OnLeaveGameButtonClick()
 	{
 		Enable(false);
 
@@ -65,8 +84,22 @@ public class InGameMenu : MonoBehaviour
 		}
 	}
 
-	public void OnExitClick()
+	public void OnExitToWindowsButtonClick()
 	{
 		Application.Quit();
+	}
+
+	/**********************************************************/
+	// Accessors/Mutators
+
+	public bool Visible
+	{
+		set
+		{
+			foreach (CanvasRenderer r in canvasRenderers)
+			{
+				r.gameObject.SetActive(value);
+			}
+		}
 	}
 }
