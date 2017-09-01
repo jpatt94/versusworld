@@ -75,10 +75,13 @@ MonoBehaviour:
   teamColors:
   - {r: 0.3254902, g: 0.49411768, b: 0.87843144, a: 1}
   - {r: 1, g: 0.6156863, b: 0.29803923, a: 1}
-  loadingMapCanvas: {fileID: 1534822991945274, guid: 1ab98de8e04c17940a19548123afa210,
+  loadingMapCanvas: {fileID: 1000012093306196, guid: 4b48eb1c6f3fc914c9a106ae3229fc57,
     type: 2}
   teamShirts: 0000000001000000
   teamHats: 0000000000000000
+  mapNames:
+  - Rogi Park
+  - Web Island
   internalMapNames:
   - RogiPark
   - WebIsland

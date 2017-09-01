@@ -5,9 +5,16 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+	[SerializeField]
+	private GameObject notificationMenuPrefab;
+	[SerializeField]
+	private GameObject passiveNotificationMenuPrefab;
+
 	private MenuState[] menus;
 	private MenuState currentMenu;
 	private Text randomMessageText;
+	private MultiplayerManager multiplayerMgr;
+	private PassiveNotificationMenu passiveNotification;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -28,6 +35,11 @@ public class MenuManager : MonoBehaviour
 
 		randomMessageText = GameObject.Find("RandomMessageText").GetComponent<Text>();
 		randomMessageText.text = GetRandomMessage();
+
+		multiplayerMgr = FindObjectOfType<MultiplayerManager>();
+		multiplayerMgr.Menu = this;
+
+		passiveNotification = null;
 
 		VideoSettings.Load();
 		AudioSettings.Load();
@@ -54,6 +66,37 @@ public class MenuManager : MonoBehaviour
 		{
 			randomMessageText.text = GetRandomMessage();
 		}
+
+		if (multiplayerMgr.NeedsDisconnectNotification)
+		{
+			if (multiplayerMgr.StatusOnDisconnect == MultiplayerStatus.CreatingGame)
+			{
+				ShowNotification("Failed to create game");
+			}
+			else if (multiplayerMgr.StatusOnDisconnect == MultiplayerStatus.HostingLocalGame)
+			{
+				ShowNotification("Failed to host local game");
+			}
+			else if (multiplayerMgr.StatusOnDisconnect == MultiplayerStatus.JoiningGame)
+			{
+				ShowNotification("Failed to join game");
+			}
+			else if (multiplayerMgr.StatusOnDisconnect == MultiplayerStatus.JoiningLocalGame)
+			{
+				ShowNotification("Failed to join local game");
+			}
+			else if (multiplayerMgr.StatusOnDisconnect == MultiplayerStatus.Connected)
+			{
+				switch (multiplayerMgr.PartyRejectionReason)
+				{
+					case PartyRejectionReason.None: ShowNotification("Lost connection to server"); break;
+					case PartyRejectionReason.GameInProgress: ShowNotification("Can't join game in progress"); break;
+					case PartyRejectionReason.NoRoomInLobby: ShowNotification("Room is already full"); break;
+				}
+			}
+
+			multiplayerMgr.NeedsDisconnectNotification = false;
+		}
 	}
 
 	public void OnDestroy()
@@ -63,6 +106,8 @@ public class MenuManager : MonoBehaviour
 		{
 			party.Menus = null;
 		}
+
+		multiplayerMgr.Menu = null;
 	}
 
 	/**********************************************************/
@@ -78,6 +123,42 @@ public class MenuManager : MonoBehaviour
 			prevMenu.StateEnd();
 		}
 		currentMenu.StateBegin();
+	}
+
+	public void ShowNotification(string message)
+	{
+		CancelPassiveNotification();
+
+		GameObject obj = Instantiate(notificationMenuPrefab);
+		obj.transform.SetParent(transform);
+		obj.transform.localPosition = Vector3.zero;
+		obj.transform.localScale = Vector3.one;
+
+		NotificationMenu menu = obj.GetComponent<NotificationMenu>();
+		menu.Message = message;
+		menu.StateBegin();
+	}
+
+	public void ShowPassiveNotification(string message)
+	{
+		GameObject obj = Instantiate(passiveNotificationMenuPrefab);
+		obj.transform.SetParent(transform);
+		obj.transform.localPosition = Vector3.zero;
+		obj.transform.localScale = Vector3.one;
+
+		passiveNotification = obj.GetComponent<PassiveNotificationMenu>();
+		passiveNotification.Message = message;
+		passiveNotification.StateBegin();
+	}
+
+	public void CancelPassiveNotification()
+	{
+		if (passiveNotification)
+		{
+			passiveNotification.StateEnd();
+			Destroy(passiveNotification.gameObject);
+			passiveNotification = null;
+		}
 	}
 
 	/**********************************************************/

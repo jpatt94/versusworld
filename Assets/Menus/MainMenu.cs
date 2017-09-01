@@ -57,7 +57,8 @@ public class MainMenu : MenuState
 
 	private void OnCustomizeButtonClick()
 	{
-		mgr.GoToMenu(MenuType.Customize);
+		mgr.ShowNotification("Customization is currently not available.");
+		//mgr.GoToMenu(MenuType.Customize);
 	}
 
 	private void OnSettingsButtonClick()

@@ -1,0 +1,60 @@
+<GameVariant>
+  <MetaData>
+    <Name>Beefy Deathmatch</Name>
+    <Description>Team Deathmatch, but with more ground beef for your tacos.</Description>
+    <Type>0</Type>
+    <CreatorName>jpatt94</CreatorName>
+    <CompatibleVersion>1</CompatibleVersion>
+  </MetaData>
+  <Generic>
+    <ScoreToWin Value="50" />
+    <Teams Value="TRUE" />
+  </Generic>
+  <DefaultPlayerTraits>
+    <Health>
+      <RegenDelay Value="4.00" />
+      <RegenRate Value="25.00" />
+    </Health>
+    <Melee>
+      <Damage Value="25.00" />
+    </Melee>
+  </DefaultPlayerTraits>
+  <Weapons>
+    <AssaultRifle>
+      <Damage Value="9.00" />
+    </AssaultRifle>
+    <SMG>
+      <Damage Value="5.00" />
+    </SMG>
+    <Sniper>
+      <Damage Value="40" />
+      <HeadShotDamageMultiplier Value="3.00" />
+      <StartingAmmo Value="8" />
+      <MaxAmmo Value="20" />
+      <ClipSize Value="4" />
+      <ReloadTime Value="2.50" />
+    </Sniper>
+    <RocketLauncher>
+      <Damage Value="110.00" />
+    </RocketLauncher>
+    <Shotgun>
+      <Damage Value="25.00" />
+      <Range Value="11.00" />
+      <PelletsPerShot Value="6" />
+      <Spread Value="0.12" />
+    </Shotgun>
+    <Pistol>
+      <Damage Value="14.00" />
+    </Pistol>
+    <MachineGun>
+      <Damage Value="8.50" />
+    </MachineGun>
+  </Weapons>
+  <Grenades>
+    <Frag>
+      <Damage Value="110.00" />
+      <Range Value="6.00" />
+      <NoContactFuseTime Value="4.00" />
+    </Frag>
+  </Grenades>
+</GameVariant>

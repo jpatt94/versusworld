@@ -28,8 +28,9 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 	private bool initializedServer;
 	private bool joinFirstMatch;
 
-	private PartyManager party;
+	private MenuManager menu;
 	private GameListMenu gameListMenu;
+	private PartyManager party;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -80,6 +81,20 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 	/**********************************************************/
 	// NetworkManager Interface
 
+	public override void OnMatchCreate(bool success, string extendedInfo, MatchInfo matchInfo)
+	{
+		base.OnMatchCreate(success, extendedInfo, matchInfo);
+
+		if (success)
+		{
+			menu.CancelPassiveNotification();
+		}
+		else
+		{
+			menu.ShowNotification("Failed to create match");
+		}
+	}
+
 	public override void OnClientConnect(NetworkConnection conn)
 	{
 		base.OnClientConnect(conn);
@@ -125,6 +140,13 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 		print("Server error: " + errorCode);
 	}
 
+	public override void OnStopServer()
+	{
+		base.OnStopServer();
+
+		initializedServer = false;
+	}
+
 	/**********************************************************/
 	// Interface
 
@@ -134,8 +156,6 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 
 		localPlayerIndex = -1;
 		networkIDIndexMap = new Dictionary<int, int>();
-
-		initializedServer = false;
 	}
 
 	public void OnLogIn(string userName, int id)
@@ -178,6 +198,8 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 			matchMaker = gameObject.AddComponent<NetworkMatch>();
 		}
 		StartHostAll(localPlayerUserName + "'s Game", customConfig ? (uint)(maxConnections + 1) : matchSize);
+
+		menu.ShowPassiveNotification("Creating match...");
 	}
 
 	public void ListMatches()
@@ -238,22 +260,6 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 	{
 		print("Client Scene Loaded" + SceneManager.GetActiveScene().name);
 		base.OnClientSceneChanged(conn);
-	}
-
-	public void OnGameListResponse()
-	{
-		//if (MatchMaker.GameList.Count > 0)
-		//{
-		//	menu.NotificationPanel.Show("Found " + MatchMaker.GameList[0].title + ". Joining...", false);
-		//
-		//	Status = MultiplayerStatus.JoiningGame;
-		//	networkAddress = MatchMaker.GameList[0].ip;
-		//	StartClient(menu.Name, menu.CustomizationOptions);
-		//}
-		//else
-		//{
-		//	SetDisconnect();
-		//}
 	}
 
 	public void SetDisconnect()
@@ -319,7 +325,7 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 	}
 
 	/**********************************************************/
-	// Accessors
+	// Accessors/Mutators
 
 	public GameObject InGamePlayerPrefab
 	{
@@ -424,6 +430,18 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 		set
 		{
 			party = value;
+		}
+	}
+
+	public MenuManager Menu
+	{
+		get
+		{
+			return menu;
+		}
+		set
+		{
+			menu = value;
 		}
 	}
 

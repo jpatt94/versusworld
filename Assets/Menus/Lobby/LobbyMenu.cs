@@ -18,6 +18,7 @@ public class LobbyMenu : MenuState
 	private bool isHost;
 	private List<PartyMemberEntry> partyMemberEntries;
 
+	private PreviousGameStatsMenu previousGameStatsMenu;
 	private RectTransform partyMemberList;
 	private Text waitingForHostText;
 	private Button startGameButton;
@@ -35,6 +36,7 @@ public class LobbyMenu : MenuState
 
 	public override void Awake()
 	{
+		previousGameStatsMenu = GetComponentInChildren<PreviousGameStatsMenu>();
 		multiplayer = GameObject.Find("MultiplayerManager").GetComponent<MultiplayerManager>();
 		partyMemberList = GameObject.Find("PartyMemberList").GetComponent<RectTransform>();
 		waitingForHostText = GameObject.Find("WaitingForHostText").GetComponent<Text>();
@@ -248,7 +250,7 @@ public class LobbyMenu : MenuState
 
 	public void OnPreviousGameStatsButtonClick()
 	{
-
+		previousGameStatsMenu.StateBegin();
 	}
 
 	public void OnLeaveButtonClick()
@@ -273,5 +275,16 @@ public class LobbyMenu : MenuState
 		}
 
 		numPlayersText.text = partyMemberEntries.Count.ToString() + " Player" + (partyMemberEntries.Count > 1 ? "s" : "") + " (16 max)";
+	}
+
+	/**********************************************************/
+	// Accessors/Mutators
+
+	public string[] MapNames
+	{
+		get
+		{
+			return mapNames;
+		}
 	}
 }

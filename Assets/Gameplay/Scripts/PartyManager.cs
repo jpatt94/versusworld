@@ -19,6 +19,8 @@ public class PartyManager : NetworkBehaviour
 	[SerializeField]
 	private int[] teamHats;
 	[SerializeField]
+	private string[] mapNames;
+	[SerializeField]
 	private string[] internalMapNames;
 
 	[SyncVar]
@@ -254,9 +256,13 @@ public class PartyManager : NetworkBehaviour
 		loadOp.allowSceneActivation = false;
 		sentMapLoadCommand = false;
 
-		lobbyMenu = null;
+		GameObject obj = Instantiate(loadingMapCanvas);
+		LoadingMapCanvas load = obj.GetComponent<LoadingMapCanvas>();
+		load.MapName = mapNames[mapIndex];
+		load.MapIndex = mapIndex;
+		load.IncreaseProgress();
 
-		Instantiate(loadingMapCanvas);
+		lobbyMenu = null;
 
 		if (!isServer)
 		{

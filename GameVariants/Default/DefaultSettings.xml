@@ -179,7 +179,7 @@
       <Weight Value="85" />
     </SpikeGrenade>
     <GrenadeCloud>
-      <Weight Value="180000" />
+      <Weight Value="15" />
       <Size Value="40.00" />
       <MinTimeBetweenSpawns Value="0.10" />
       <MaxTimeBetweenSpawns Value="0.40" />

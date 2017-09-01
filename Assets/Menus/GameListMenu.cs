@@ -62,6 +62,7 @@ public class GameListMenu : MenuState
 			GameObject obj = Instantiate(entryPrefab);
 			obj.transform.SetParent(listTransform);
 			obj.transform.localPosition = Vector3.down * entrySeparation * entries.Count;
+			obj.transform.localScale = Vector3.one;
 
 			GameListEntry entry = obj.GetComponent<GameListEntry>();
 			entry.MatchInfo = match;

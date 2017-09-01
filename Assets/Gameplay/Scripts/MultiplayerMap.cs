@@ -23,6 +23,8 @@ public class MultiplayerMap : NetworkBehaviour
 
 	public void Awake()
 	{
+		FindObjectOfType<LoadingMapCanvas>().IncreaseProgress();
+
 		topLeftCorner = GameObject.Find("MapTopLeftCorner").GetComponent<Transform>();
 		bottomRightCorner = GameObject.Find("MapBottomRightCorner").GetComponent<Transform>();
 

@@ -178,6 +178,8 @@ public class NetworkPlayer : SafeNetworkBehaviour
 
 	protected override void DelayedOnStartAuthority()
 	{
+		FindObjectOfType<LoadingMapCanvas>().IncreaseProgress();
+
 		PlayerManager.LocalPlayerID = networkID;
 
 		controller.enabled = true;

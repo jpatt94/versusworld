@@ -8,7 +8,7 @@ public class MenuState : MonoBehaviour
 
 	protected MenuManager mgr;
 	protected MultiplayerManager multiplayer;
-	protected CanvasRenderer[] canvasRenderers;
+	protected List<CanvasRenderer> canvasRenderers;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -19,7 +19,15 @@ public class MenuState : MonoBehaviour
 
 		mgr = GetComponentInParent<MenuManager>();
 		multiplayer = FindObjectOfType<MultiplayerManager>();
-		canvasRenderers = GetComponentsInChildren<CanvasRenderer>();
+		canvasRenderers = new List<CanvasRenderer>(GetComponentsInChildren<CanvasRenderer>());
+		for (int i = 0; i < canvasRenderers.Count; i++)
+		{
+			if (canvasRenderers[i].GetComponentInParent<StackedMenuState>())
+			{
+				canvasRenderers.RemoveAt(i);
+				i--;
+			}
+		}
 	}
 
 	public virtual void Start()
