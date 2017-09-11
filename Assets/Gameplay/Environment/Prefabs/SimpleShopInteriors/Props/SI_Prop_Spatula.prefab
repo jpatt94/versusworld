@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2374806}
   - component: {fileID: 114085973051492062}
   - component: {fileID: 114291178196798188}
+  - component: {fileID: 64821405163358878}
   m_Layer: 0
   m_Name: SI_Prop_Spatula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &450082
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 198990}
   m_IsPrefabParent: 1
+--- !u!64 &64821405163358878
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198990}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 88890caf11c9d1d4ab70f54241bc976a, type: 3}
 --- !u!114 &114085973051492062
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -10,12 +10,13 @@ GameObject:
   - component: {fileID: 447308}
   - component: {fileID: 3320722}
   - component: {fileID: 2391774}
+  - component: {fileID: 64295185664019726}
   m_Layer: 0
   m_Name: SM_Prop_Couch_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &447308
 Transform:
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 189736}
   m_IsPrefabParent: 1
+--- !u!64 &64295185664019726
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189736}
+  m_Material: {fileID: 13400000, guid: 882c6f3cfae4ede44aa2bdf6419d6cbe, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 485e1e14e89b60e48a94387a2bf5782b, type: 3}

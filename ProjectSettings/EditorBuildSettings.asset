@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WebIsland.unity
     guid: 0a308b03886f3e74082404c90cfec54a
+  - enabled: 1
+    path: Assets/Scenes/TheCity.unity
+    guid: 2f97ec2c7be76e44b98460a1d1e860cd
   - enabled: 0
     path: Assets/Scenes/SkylineJungle.unity
     guid: c80b396ae96965b48bf50e614e62f05e

@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2381746}
   - component: {fileID: 114983232650073064}
   - component: {fileID: 114785586410179588}
+  - component: {fileID: 64238523849769476}
   m_Layer: 0
   m_Name: SI_Prop_ClothesRack_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &497292
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 113896}
   m_IsPrefabParent: 1
+--- !u!64 &64238523849769476
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113896}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: c49ffac0ca050a9478cf6223c7b821d6, type: 3}
 --- !u!114 &114785586410179588
 MonoBehaviour:
   m_ObjectHideFlags: 1

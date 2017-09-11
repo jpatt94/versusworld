@@ -10,12 +10,13 @@ GameObject:
   - component: {fileID: 439376}
   - component: {fileID: 3321314}
   - component: {fileID: 2333340}
+  - component: {fileID: 64928978180382150}
   m_Layer: 0
   m_Name: SM_Prop_TrafficLight_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &439376
 Transform:
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 195516}
   m_IsPrefabParent: 1
+--- !u!64 &64928978180382150
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195516}
+  m_Material: {fileID: 13400000, guid: bde3a7836d4234248bbfa01617b15719, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: f7ca1756f660d3c41ba4d18c22ed9a05, type: 3}

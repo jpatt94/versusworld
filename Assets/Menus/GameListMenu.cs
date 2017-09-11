@@ -73,6 +73,7 @@ public class GameListMenu : MenuState
 	public void OnEntryClick(GameListEntry entry)
 	{
 		multiplayer.JoinMatch(entry.MatchInfo);
+		mgr.ShowPassiveNotification("Joining " + entry.MatchName + "...");
 	}
 
 	/**********************************************************/

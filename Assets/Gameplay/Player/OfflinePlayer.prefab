@@ -6703,7 +6703,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1045531361847524}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!82 &82667212338135364
 AudioSource:
   m_ObjectHideFlags: 1
@@ -7308,6 +7308,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 672a245077080874db8ba945a94e445e, type: 3}
   - {fileID: 8300000, guid: 040c1ac077549d147bab38480042fb57, type: 3}
   - {fileID: 8300000, guid: 5a38aab88a42a6f43b9723998cc2bc7b, type: 3}
+  metalFootstepSounds:
+  - {fileID: 8300000, guid: 4f6ae29c50d53f4429b64476c4e42ff8, type: 3}
+  - {fileID: 8300000, guid: 3b91822f7014b5e4ead820ea28967886, type: 3}
+  - {fileID: 8300000, guid: 55790bf7904fb1a47ba3966e88a1efc4, type: 3}
+  - {fileID: 8300000, guid: bed7699e48cfa294e998d26fb2a7b2d4, type: 3}
   concreteLandSounds:
   - {fileID: 8300000, guid: 6bfb30d8afb7df54f998c4fd18246e8a, type: 3}
   - {fileID: 8300000, guid: a3e93bbd7ddab544ca416bcc02b75e69, type: 3}
@@ -7323,6 +7328,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 40d9c8a40b3923c419bcc0123e0550cd, type: 3}
   - {fileID: 8300000, guid: 70e61c41374684d4cb65cb375045e8e7, type: 3}
   - {fileID: 8300000, guid: ee8ac352b923e4043a86b3289074a4f1, type: 3}
+  metalLandSounds:
+  - {fileID: 8300000, guid: 5830356e90881f84b8acbb367a3b8435, type: 3}
+  - {fileID: 8300000, guid: c5510e7be9719ac48bc3ddef682b2a1a, type: 3}
+  - {fileID: 8300000, guid: d1624cd4926db834e9be2ad61dbcec08, type: 3}
+  - {fileID: 8300000, guid: 36cd7b186ae2ce34a8e2ab8834c470e2, type: 3}
 --- !u!114 &114101694121690344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7886,7 +7896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _groundMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 4194305
   _center: {x: 0, y: 1, z: 0}
   _radius: 0.45
   _distance: 1.1

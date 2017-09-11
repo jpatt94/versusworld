@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2332346}
   - component: {fileID: 114794352595565380}
   - component: {fileID: 114964406425507202}
+  - component: {fileID: 64982951145807774}
   m_Layer: 0
   m_Name: SI_Prop_WallDeco_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &482028
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130782}
   m_IsPrefabParent: 1
+--- !u!64 &64982951145807774
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130782}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 97a63d7aaa623bd44a5fa0ad6431e4a4, type: 3}
 --- !u!114 &114794352595565380
 MonoBehaviour:
   m_ObjectHideFlags: 1

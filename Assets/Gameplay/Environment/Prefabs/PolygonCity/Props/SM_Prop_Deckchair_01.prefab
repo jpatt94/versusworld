@@ -10,12 +10,13 @@ GameObject:
   - component: {fileID: 491684}
   - component: {fileID: 3343182}
   - component: {fileID: 2328796}
+  - component: {fileID: 64908979198968610}
   m_Layer: 0
   m_Name: SM_Prop_Deckchair_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &491684
 Transform:
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 105484}
   m_IsPrefabParent: 1
+--- !u!64 &64908979198968610
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105484}
+  m_Material: {fileID: 13400000, guid: 882c6f3cfae4ede44aa2bdf6419d6cbe, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 6a4427b535f508a4b838389f0927e007, type: 3}

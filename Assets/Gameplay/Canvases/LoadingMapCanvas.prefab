@@ -346,6 +346,7 @@ MonoBehaviour:
   mapBackgrounds:
   - {fileID: 21300000, guid: e32ffa5869850f44f832719ebb0a3852, type: 3}
   - {fileID: 21300000, guid: e7852928b745b4c438087aea18530dee, type: 3}
+  - {fileID: 21300000, guid: b25eb7abf9dcef345856af84b0d82bf4, type: 3}
   progressMessage:
   - Creating the world...
   - Giving birth to your player...

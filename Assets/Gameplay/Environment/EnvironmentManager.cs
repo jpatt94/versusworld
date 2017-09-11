@@ -16,6 +16,10 @@ public class EnvironmentManager : MonoBehaviour
 	private AudioClip[] stoneHitSounds;
 	[SerializeField]
 	private AudioClip[] metalHitSounds;
+	[SerializeField]
+	private AudioClip[] glassHitSounds;
+	[SerializeField]
+	private GameObject glassPrefab;
 
 	private static EnvironmentManager instance;
 
@@ -48,6 +52,7 @@ public class EnvironmentManager : MonoBehaviour
 			case "Wood": return SurfaceType.Wood;
 			case "Concrete": return SurfaceType.Concrete;
 			case "Metal": return SurfaceType.Metal;
+			case "Glass": return SurfaceType.Glass;
 		}
 
 		return SurfaceType.None;
@@ -61,9 +66,21 @@ public class EnvironmentManager : MonoBehaviour
 			case SurfaceType.Wood: return instance.woodHitSounds[Random.Range(0, instance.woodHitSounds.Length)];
 			case SurfaceType.Concrete: return instance.stoneHitSounds[Random.Range(0, instance.stoneHitSounds.Length)];
 			case SurfaceType.Metal: return instance.metalHitSounds[Random.Range(0, instance.metalHitSounds.Length)];
+			case SurfaceType.Glass: return instance.glassHitSounds[Random.Range(0, instance.glassHitSounds.Length)];
 		}
 
 		return instance.metalHitSounds[0];
+	}
+
+	/**********************************************************/
+	// Accessors
+
+	public static GameObject GlassPrefab
+	{
+		get
+		{
+			return instance.glassPrefab;
+		}
 	}
 }
 
@@ -73,6 +90,7 @@ public enum SurfaceType
 	Wood,
 	Concrete,
 	Metal,
+	Glass,
 	NumTypes,
 	None,
 }

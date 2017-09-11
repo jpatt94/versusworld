@@ -82,9 +82,11 @@ MonoBehaviour:
   mapNames:
   - Rogi Park
   - Web Island
+  - The City
   internalMapNames:
   - RogiPark
   - WebIsland
+  - TheCity
 --- !u!114 &114941266764137394
 MonoBehaviour:
   m_ObjectHideFlags: 1

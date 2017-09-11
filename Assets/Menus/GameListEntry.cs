@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GameListEntry : MonoBehaviour
 {
 	private MatchInfoSnapshot matchInfo;
+	private string matchName;
 
 	private GameListMenu menu;
 
@@ -38,7 +39,16 @@ public class GameListEntry : MonoBehaviour
 		set
 		{
 			matchInfo = value;
-			GetComponent<Text>().text = matchInfo.name.Split('|')[0];
+			matchName = matchInfo.name.Split('|')[0];
+			transform.Find("NameButton").GetComponent<Text>().text = matchName;
+		}
+	}
+
+	public string MatchName
+	{
+		get
+		{
+			return matchName;
 		}
 	}
 }

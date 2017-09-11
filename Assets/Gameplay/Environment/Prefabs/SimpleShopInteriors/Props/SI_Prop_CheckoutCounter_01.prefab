@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2356368}
   - component: {fileID: 114081648077914542}
   - component: {fileID: 114890726881422204}
+  - component: {fileID: 64953682179407308}
   m_Layer: 0
   m_Name: SI_Prop_CheckoutCounter_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &427238
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 160026}
   m_IsPrefabParent: 1
+--- !u!64 &64953682179407308
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160026}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 26a3784c283f8e343b74f190220ce3d5, type: 3}
 --- !u!114 &114081648077914542
 MonoBehaviour:
   m_ObjectHideFlags: 1

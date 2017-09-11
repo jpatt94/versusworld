@@ -7804,7 +7804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _groundMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 4194305
   _center: {x: 0, y: 1, z: 0}
   _radius: 0.45
   _distance: 1.1
@@ -8074,6 +8074,34 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 179ddac485da8b44188ce6169c5548e1, type: 3}
   - {fileID: 8300000, guid: d8474ec3a0ce8e84e96ca9c68198b684, type: 3}
   - {fileID: 8300000, guid: 2a2d17d4a613a51469ab586221190680, type: 3}
+  metalFootstepSounds:
+  - {fileID: 8300000, guid: 4f6ae29c50d53f4429b64476c4e42ff8, type: 3}
+  - {fileID: 8300000, guid: 3b91822f7014b5e4ead820ea28967886, type: 3}
+  - {fileID: 8300000, guid: 55790bf7904fb1a47ba3966e88a1efc4, type: 3}
+  - {fileID: 8300000, guid: bed7699e48cfa294e998d26fb2a7b2d4, type: 3}
+  - {fileID: 8300000, guid: f11bdf1b1e70b6c4081223a531965f55, type: 3}
+  - {fileID: 8300000, guid: d7c4eeb55989f834998607c54f1d2a84, type: 3}
+  - {fileID: 8300000, guid: b8a2f94c3c4860b4782e9ae1a827274d, type: 3}
+  - {fileID: 8300000, guid: ca17190b09c81744c98a9832ddbf8293, type: 3}
+  - {fileID: 8300000, guid: 1a7d82ab41ebcd347ad0432473a8e7a6, type: 3}
+  - {fileID: 8300000, guid: c8da71d85b74d8f489821e8116c59c16, type: 3}
+  - {fileID: 8300000, guid: 92365ae5c8056ad4c98120b4776e7bfa, type: 3}
+  - {fileID: 8300000, guid: ef979efd66016cb41bf11208c7834f90, type: 3}
+  - {fileID: 8300000, guid: d5471333bd635504fb09a5f32d11c43c, type: 3}
+  - {fileID: 8300000, guid: 18b88e7a14a0b6a4da897b89f06a7c64, type: 3}
+  - {fileID: 8300000, guid: 80acf0d80e4c0544ba458c09ef20df4b, type: 3}
+  - {fileID: 8300000, guid: 0683a0a05435a3a4e8be138cea9dd1ee, type: 3}
+  - {fileID: 8300000, guid: 27469d8cc7c599d4e9b89b17017dbe78, type: 3}
+  - {fileID: 8300000, guid: 0ef5a10adb41a6c4b8f81d17706e89d8, type: 3}
+  - {fileID: 8300000, guid: caa3e4fe863394b4183de80460c34743, type: 3}
+  - {fileID: 8300000, guid: fd4ca8338e0960242a62250a546ae32d, type: 3}
+  - {fileID: 8300000, guid: cb34313f06ddfb14f9f56218f1b09510, type: 3}
+  - {fileID: 8300000, guid: 319a74528ed9acb4a8cabb95457146da, type: 3}
+  - {fileID: 8300000, guid: ae5b6662188c86341b7ba5ed22333cf1, type: 3}
+  - {fileID: 8300000, guid: e2c7df9a2e6bdb447b3909ece8a4dbcc, type: 3}
+  - {fileID: 8300000, guid: 239937eeab2deab4da240903f3190088, type: 3}
+  - {fileID: 8300000, guid: 7ec6f33edf9ea584fa5eea84bd9782a7, type: 3}
+  - {fileID: 8300000, guid: 18e3a07de75e33742bed5801c8bd5738, type: 3}
   concreteLandSounds:
   - {fileID: 8300000, guid: 6bfb30d8afb7df54f998c4fd18246e8a, type: 3}
   - {fileID: 8300000, guid: a3e93bbd7ddab544ca416bcc02b75e69, type: 3}
@@ -8105,6 +8133,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d1b0708c4cf30584bac2a3465eef9562, type: 3}
   - {fileID: 8300000, guid: 497dafe43e54a71468c8da14192773a5, type: 3}
   - {fileID: 8300000, guid: 995dbeca6c0834b4795dab8b502a375e, type: 3}
+  metalLandSounds:
+  - {fileID: 8300000, guid: 5830356e90881f84b8acbb367a3b8435, type: 3}
+  - {fileID: 8300000, guid: c5510e7be9719ac48bc3ddef682b2a1a, type: 3}
+  - {fileID: 8300000, guid: d1624cd4926db834e9be2ad61dbcec08, type: 3}
+  - {fileID: 8300000, guid: 36cd7b186ae2ce34a8e2ab8834c470e2, type: 3}
+  - {fileID: 8300000, guid: 37960fdd220923041960df9429daa763, type: 3}
+  - {fileID: 8300000, guid: eba2ccb6329b4cc4a85d82ac86dd5b75, type: 3}
+  - {fileID: 8300000, guid: 952d4010663414643b4748f2283507db, type: 3}
+  - {fileID: 8300000, guid: f5617ef5241725a4f892ea3ebf51ae91, type: 3}
+  - {fileID: 8300000, guid: f85784a5bda84a94190c7dd4d2451175, type: 3}
+  - {fileID: 8300000, guid: 75601f6c6b3467f4cb9c80bf3d350d1d, type: 3}
 --- !u!114 &114270332013427952
 MonoBehaviour:
   m_ObjectHideFlags: 1

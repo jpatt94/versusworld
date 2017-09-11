@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2390526}
   - component: {fileID: 114770588264038818}
   - component: {fileID: 114867757858369788}
+  - component: {fileID: 64989854486121392}
   m_Layer: 0
   m_Name: SI_Prop_Instrument_Keyboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &442730
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 161980}
   m_IsPrefabParent: 1
+--- !u!64 &64989854486121392
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161980}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 7acd0c6fd03b06c4f9c3c18deb49ea2e, type: 3}
 --- !u!114 &114770588264038818
 MonoBehaviour:
   m_ObjectHideFlags: 1

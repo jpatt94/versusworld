@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2345464}
   - component: {fileID: 114768452153671562}
   - component: {fileID: 114313547264552762}
+  - component: {fileID: 64467048618787378}
   m_Layer: 0
   m_Name: SI_Prop_Toy_Turtle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &433188
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 118882}
   m_IsPrefabParent: 1
+--- !u!64 &64467048618787378
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118882}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 63d9cf02704774f449ed1e178c49b2c9, type: 3}
 --- !u!114 &114313547264552762
 MonoBehaviour:
   m_ObjectHideFlags: 1

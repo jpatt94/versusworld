@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2300016}
   - component: {fileID: 114966516895623944}
   - component: {fileID: 114141487120103320}
+  - component: {fileID: 64583819438651436}
   m_Layer: 0
   m_Name: SI_Prop_Sign_Clothing_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &496186
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 126306}
   m_IsPrefabParent: 1
+--- !u!64 &64583819438651436
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126306}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: bdea47b3a1735374cae5ee95ded99fe3, type: 3}
 --- !u!114 &114141487120103320
 MonoBehaviour:
   m_ObjectHideFlags: 1

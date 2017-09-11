@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2357988}
   - component: {fileID: 114870519023242272}
   - component: {fileID: 114088069489269898}
+  - component: {fileID: 64679256745136350}
   m_Layer: 0
   m_Name: SI_Prop_ShelfItem_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &459438
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 141034}
   m_IsPrefabParent: 1
+--- !u!64 &64679256745136350
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141034}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: bbe5eafc39e7fee448fde00e9ba07ab2, type: 3}
 --- !u!114 &114088069489269898
 MonoBehaviour:
   m_ObjectHideFlags: 1

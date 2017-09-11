@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2372106}
   - component: {fileID: 114334152954836126}
   - component: {fileID: 114522115309414630}
+  - component: {fileID: 64410274640672078}
   m_Layer: 0
   m_Name: SI_Prop_ShoppingTrolley_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &473866
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 109840}
   m_IsPrefabParent: 1
+--- !u!64 &64410274640672078
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109840}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 58678707259b8e644b5dd3df3084209d, type: 3}
 --- !u!114 &114334152954836126
 MonoBehaviour:
   m_ObjectHideFlags: 1

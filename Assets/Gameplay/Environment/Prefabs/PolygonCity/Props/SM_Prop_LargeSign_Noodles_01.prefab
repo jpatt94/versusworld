@@ -10,12 +10,13 @@ GameObject:
   - component: {fileID: 475608}
   - component: {fileID: 3391524}
   - component: {fileID: 2378120}
+  - component: {fileID: 64291464241655994}
   m_Layer: 0
   m_Name: SM_Prop_LargeSign_Noodles_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &475608
 Transform:
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127866}
   m_IsPrefabParent: 1
+--- !u!64 &64291464241655994
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127866}
+  m_Material: {fileID: 13400000, guid: bde3a7836d4234248bbfa01617b15719, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: fc5f8948a5a155549a03d2fced79a5e6, type: 3}

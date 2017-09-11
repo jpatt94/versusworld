@@ -141,14 +141,17 @@ public class MenuManager : MonoBehaviour
 
 	public void ShowPassiveNotification(string message)
 	{
-		GameObject obj = Instantiate(passiveNotificationMenuPrefab);
-		obj.transform.SetParent(transform);
-		obj.transform.localPosition = Vector3.zero;
-		obj.transform.localScale = Vector3.one;
+		if (passiveNotification == null)
+		{
+			GameObject obj = Instantiate(passiveNotificationMenuPrefab);
+			obj.transform.SetParent(transform);
+			obj.transform.localPosition = Vector3.zero;
+			obj.transform.localScale = Vector3.one;
 
-		passiveNotification = obj.GetComponent<PassiveNotificationMenu>();
+			passiveNotification = obj.GetComponent<PassiveNotificationMenu>();
+			passiveNotification.StateBegin();
+		}
 		passiveNotification.Message = message;
-		passiveNotification.StateBegin();
 	}
 
 	public void CancelPassiveNotification()

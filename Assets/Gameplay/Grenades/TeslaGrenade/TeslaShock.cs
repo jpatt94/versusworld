@@ -92,9 +92,6 @@ public class TeslaShock : MonoBehaviour
 		{
 			line.SetPosition(i + 1, Vector3.Lerp(startPos[i], points[i].position, 1.0f - (nextLineChange / lineChangeInterval)));
 		}
-
-		VisualDebugger.TrackVariable("start", startPos[2]);
-		VisualDebugger.TrackVariable("now", points[2].position);
 	}
 
 	/**********************************************************/

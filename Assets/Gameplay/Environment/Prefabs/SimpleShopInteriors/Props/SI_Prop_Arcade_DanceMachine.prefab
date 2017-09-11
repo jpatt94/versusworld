@@ -10,12 +10,13 @@ GameObject:
   - component: {fileID: 434654}
   - component: {fileID: 3395862}
   - component: {fileID: 2391560}
+  - component: {fileID: 64653630488921224}
   m_Layer: 0
   m_Name: SI_Prop_Arcade_DanceMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &434654
 Transform:
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138282}
   m_IsPrefabParent: 1
+--- !u!64 &64653630488921224
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138282}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 673c5e24b70d71942972847b0ecbb8e7, type: 3}

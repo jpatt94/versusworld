@@ -59,6 +59,7 @@ MonoBehaviour:
   - {fileID: 1000011190285628, guid: beb3acff7ab73944fb8f470f24d74ed3, type: 2}
   - {fileID: 1000010844420130, guid: 4edabb1c0dde62743b137378c7d22980, type: 2}
   - {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d, type: 2}
+  - {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d, type: 2}
   grassHitSounds:
   - {fileID: 8300000, guid: ccb3cb7594d5d444c8e9cfe72dccdf4e, type: 3}
   - {fileID: 8300000, guid: e7279b372f8b25c459c5ff5c64a7eb1f, type: 3}
@@ -95,3 +96,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7dd09bc51c256cc458a08d58f623b8b1, type: 3}
   - {fileID: 8300000, guid: 92f58638698a88c448adaa30c46d597c, type: 3}
   - {fileID: 8300000, guid: eeb36e552b62b174b9567ab376046797, type: 3}
+  glassHitSounds:
+  - {fileID: 8300000, guid: beca502130107084b919f5a7bb58e8e5, type: 3}
+  glassPrefab: {fileID: 1973615270664822, guid: 2e858fcfd402e0440b9b79f052f1a602,
+    type: 2}

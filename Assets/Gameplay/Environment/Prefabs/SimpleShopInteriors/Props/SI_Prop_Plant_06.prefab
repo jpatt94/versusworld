@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2316764}
   - component: {fileID: 114604545033283366}
   - component: {fileID: 114504924278427106}
+  - component: {fileID: 64341495267590916}
   m_Layer: 0
   m_Name: SI_Prop_Plant_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &461574
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 114106}
   m_IsPrefabParent: 1
+--- !u!64 &64341495267590916
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114106}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: c5fdd8d8ec5fbe94689cc2b3e5c678a0, type: 3}
 --- !u!114 &114504924278427106
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2382992}
   - component: {fileID: 114620103500706820}
   - component: {fileID: 114485464475267282}
+  - component: {fileID: 64528573310723204}
   m_Layer: 0
   m_Name: SI_Prop_MoneyStack_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &422314
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 169602}
   m_IsPrefabParent: 1
+--- !u!64 &64528573310723204
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169602}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: debfee6fca3363344a6a28ca1533c308, type: 3}
 --- !u!114 &114485464475267282
 MonoBehaviour:
   m_ObjectHideFlags: 1

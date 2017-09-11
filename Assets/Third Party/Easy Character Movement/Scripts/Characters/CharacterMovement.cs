@@ -356,13 +356,9 @@ namespace ECM.Characters
 				// GetPointVelocity will take the angularVelocity of the rigidbody into account when calculating the velocity,
 				// allowing for rotating platforms
 
-				VisualDebugger.TrackVariable("its", (otherRigidbody != null && otherRigidbody.isKinematic));
-
                 platformVelocity = (otherRigidbody != null && otherRigidbody.isKinematic)
                     ? otherRigidbody.GetPointVelocity(transform.position).onlyXZ()
                     : Vector3.zero;
-
-				VisualDebugger.TrackVariable("so", platformVelocity);
 
                 // If other is a non-kinematic rigidbody, reset groundNormal (point up)
                 

@@ -66,11 +66,6 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 	{
 		base.Update();
 
-		for (int i = 0; i < players.Count; i++)
-		{
-			VisualDebugger.TrackVariable("players[" + i + "]", players[i]);
-		}
-
 		if (!initializedServer && NetworkServer.active)
 		{
 			InitializeServer();
@@ -92,6 +87,20 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 		else
 		{
 			menu.ShowNotification("Failed to create match");
+		}
+	}
+
+	public override void OnMatchJoined(bool success, string extendedInfo, MatchInfo info)
+	{
+		base.OnMatchJoined(success, extendedInfo, info);
+
+		if (success)
+		{
+			menu.CancelPassiveNotification();
+		}
+		else
+		{
+			menu.ShowNotification("Failed to join match");
 		}
 	}
 

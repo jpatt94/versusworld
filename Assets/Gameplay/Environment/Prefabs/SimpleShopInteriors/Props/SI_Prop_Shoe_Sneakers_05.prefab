@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2372866}
   - component: {fileID: 114486371864542284}
   - component: {fileID: 114565157841906956}
+  - component: {fileID: 64988041219294566}
   m_Layer: 0
   m_Name: SI_Prop_Shoe_Sneakers_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &408506
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 188416}
   m_IsPrefabParent: 1
+--- !u!64 &64988041219294566
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188416}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: c441e5f54f5aee643821556f73c632c2, type: 3}
 --- !u!114 &114486371864542284
 MonoBehaviour:
   m_ObjectHideFlags: 1

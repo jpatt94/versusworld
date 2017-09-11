@@ -27,11 +27,15 @@ public class ThirdPersonModel : MonoBehaviour
 	[SerializeField]
 	private AudioClip[] woodFootstepSounds;
 	[SerializeField]
+	private AudioClip[] metalFootstepSounds;
+	[SerializeField]
 	private AudioClip[] concreteLandSounds;
 	[SerializeField]
 	private AudioClip[] grassLandSounds;
 	[SerializeField]
 	private AudioClip[] woodLandSounds;
+	[SerializeField]
+	private AudioClip[] metalLandSounds;
 
 	private float lookRotationAlpha;
 	private int previousFootstepSound;
@@ -228,6 +232,7 @@ public class ThirdPersonModel : MonoBehaviour
 		{
 			case SurfaceType.Grass: footstepSounds = grassFootstepSounds; break;
 			case SurfaceType.Wood: footstepSounds = woodFootstepSounds; break;
+			case SurfaceType.Metal: footstepSounds = metalFootstepSounds; break;
 		}
 
 		int i = Random.Range(0, footstepSounds.Length);
@@ -255,6 +260,7 @@ public class ThirdPersonModel : MonoBehaviour
 		{
 			case SurfaceType.Grass: landSounds = grassLandSounds; break;
 			case SurfaceType.Wood: landSounds = woodLandSounds; break;
+			case SurfaceType.Metal: landSounds = metalLandSounds; break;
 		}
 
 		footstepAudio.volume = landingSoundVolumeCurve.Evaluate(-landingVelocity);

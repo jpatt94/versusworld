@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2309798}
   - component: {fileID: 114066291600007932}
   - component: {fileID: 114618890427970286}
+  - component: {fileID: 64343652450269924}
   m_Layer: 0
   m_Name: SI_Prop_Sign_Alcohol_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &424936
 Transform:
@@ -82,6 +83,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 114186}
   m_IsPrefabParent: 1
+--- !u!64 &64343652450269924
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114186}
+  m_Material: {fileID: 13400000, guid: b110134282f6b02488adf4bd2a5aa494, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 491cbb5f30a001a469f994c0187dc5bb, type: 3}
 --- !u!114 &114066291600007932
 MonoBehaviour:
   m_ObjectHideFlags: 1
