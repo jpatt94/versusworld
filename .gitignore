@@ -35,4 +35,5 @@ sysinfo.txt
 
 VersusWorld_Data/
 VersusWorld_Dev_Data/
-*.exe
+VersusWorld.exe
+VersusWorld_Dev.exe
