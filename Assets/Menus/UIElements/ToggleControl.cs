@@ -26,6 +26,7 @@ public class ToggleControl : MonoBehaviour
 	public void OnValueChanged(bool value)
 	{
 		JP.Event.Trigger(eventName);
+		MenuSounds.PlayClickSound();
 	}
 
 	/**********************************************************/

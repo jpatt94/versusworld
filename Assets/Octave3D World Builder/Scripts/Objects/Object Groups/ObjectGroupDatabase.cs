@@ -69,6 +69,18 @@ namespace O3DWB
             return null;
         }
 
+        public void MakeNoLongerGroup(GameObject gameObject)
+        {
+            if (!ContainsObjectGroup(gameObject)) return;
+
+            UndoEx.RecordForToolAction(this);
+            var objectGroup = _objectGroups.GetEntityByPredicate(item => item.GroupObject == gameObject);
+            _objectGroups.RemoveEntity(objectGroup);
+
+            UndoEx.DestroyObjectImmediate(objectGroup);
+            PrefabManagementWindow.Get().Repaint();
+        }
+
         public bool ContainsObjectGroup(GameObject objectGroup)
         {
             return _objectGroups.ContainsEntityByPredicate(item => item.GroupObject == objectGroup);

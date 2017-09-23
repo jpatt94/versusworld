@@ -20,6 +20,8 @@ public class EnvironmentManager : MonoBehaviour
 	private AudioClip[] glassHitSounds;
 	[SerializeField]
 	private GameObject glassPrefab;
+	[SerializeField]
+	private AudioClip[] flickerSounds;
 
 	private static EnvironmentManager instance;
 
@@ -70,6 +72,11 @@ public class EnvironmentManager : MonoBehaviour
 		}
 
 		return instance.metalHitSounds[0];
+	}
+
+	public static AudioClip GetRandomFlickerSound()
+	{
+		return instance.flickerSounds[Random.Range(0, instance.flickerSounds.Length)];
 	}
 
 	/**********************************************************/

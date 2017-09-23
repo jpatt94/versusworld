@@ -267,6 +267,15 @@ public class ThirdPersonModel : MonoBehaviour
 		footstepAudio.PlayOneShot(landSounds[Random.Range(0, landSounds.Length)]);
 	}
 
+	public void RenderOnlyShadows()
+	{
+		mesh.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+		foreach (MeshRenderer m in GetComponentsInChildren<MeshRenderer>())
+		{
+			m.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+		}
+	}
+
 	/**********************************************************/
 	// Accessors/Mutators
 
@@ -303,6 +312,10 @@ public class ThirdPersonModel : MonoBehaviour
 		set
 		{
 			mesh.enabled = value;
+			foreach (MeshRenderer m in GetComponentsInChildren<MeshRenderer>())
+			{
+				m.enabled = value;
+			}
 		}
 	}
 
@@ -356,5 +369,15 @@ public class ThirdPersonModel : MonoBehaviour
 		{
 			return aud;
 		}
+	}
+
+	public static string GetBodyPartTransformPath(BodyPart bodyPart)
+	{
+		switch (bodyPart)
+		{
+			case BodyPart.Head: return "Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/Bro_Neck/Bro_Head";
+		}
+
+		return "N/A";
 	}
 }

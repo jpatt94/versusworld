@@ -8,10 +8,16 @@ using UnityEngine.Networking;
 public enum PlayerTraitsType
 {
 	Default,
+	NumTypes,
+}
+
+public enum PlayerTraitModifiersType
+{
 	DamageResist,
 	SpeedBoost,
 	DamageBoost,
 	NumTypes,
+	None,
 }
 
 public class GameSettings : MonoBehaviour
@@ -19,6 +25,7 @@ public class GameSettings : MonoBehaviour
 	protected GameVariantMetaData metaData;
 	protected GenericGameSettings genericGameSettings;
 	protected PlayerTraits[] playerTraits;
+	protected PlayerTraits[] playerTraitModifiers;
 	protected WeaponSettings weaponSettings;
 	protected GrenadeSettings grenadeSettings;
 	protected PowerUpSettings powerUpSettings;
@@ -36,6 +43,12 @@ public class GameSettings : MonoBehaviour
 		for (int i = 0; i < (int)PlayerTraitsType.NumTypes; i++)
 		{
 			playerTraits[i] = new PlayerTraits();
+		}
+		playerTraitModifiers = new PlayerTraits[(int)PlayerTraitModifiersType.NumTypes];
+		for (int i = 0; i < (int)PlayerTraitModifiersType.NumTypes; i++)
+		{
+			playerTraitModifiers[i] = new PlayerTraits();
+			playerTraitModifiers[i].SetModifierDefaults();
 		}
 		weaponSettings = new WeaponSettings();
 		grenadeSettings = new GrenadeSettings();
@@ -105,6 +118,10 @@ public class GameSettings : MonoBehaviour
 		{
 			playerTraits[i].Serialize(writer);
 		}
+		for (int i = 0; i < (int)PlayerTraitModifiersType.NumTypes; i++)
+		{
+			playerTraitModifiers[i].Serialize(writer);
+		}
 
 		weaponSettings.Serialize(writer);
 		grenadeSettings.Serialize(writer);
@@ -124,6 +141,10 @@ public class GameSettings : MonoBehaviour
 		for (int i = 0; i < (int)PlayerTraitsType.NumTypes; i++)
 		{
 			playerTraits[i].Deserialize(reader);
+		}
+		for (int i = 0; i < (int)PlayerTraitModifiersType.NumTypes; i++)
+		{
+			playerTraitModifiers[i].Deserialize(reader);
 		}
 
 		weaponSettings.Deserialize(reader);
@@ -784,6 +805,13 @@ public class GameSettings : MonoBehaviour
 			LoadValue(n, "FuseTime", ref grenadeSettings.Spike.FuseTime);
 			LoadValue(n, "StickDamage", ref grenadeSettings.Spike.StickDamage);
 		}
+
+		n = node.SelectSingleNode("RogiBall");
+		if (n != null)
+		{
+			LoadValue(n, "StartingAmount", ref grenadeSettings.Quantities[(int)GrenadeType.RogiBall].StartingAmount);
+			LoadValue(n, "MaxAmount", ref grenadeSettings.Quantities[(int)GrenadeType.RogiBall].MaxAmount);
+		}
 	}
 
 	protected void LoadPowerUpSettings(XmlNode parent)
@@ -848,7 +876,7 @@ public class GameSettings : MonoBehaviour
 		{
 			LoadValue(n, "Weight", ref powerUpSettings.PowerUpWeights[(int)PowerUpType.DamageResist]);
 			LoadValue(n, "Duration", ref powerUpSettings.DamageResistDuration);
-			LoadPlayerTraits(n, playerTraits[(int)PlayerTraitsType.DamageResist], "Traits");
+			LoadPlayerTraits(n, playerTraitModifiers[(int)PlayerTraitModifiersType.DamageResist], "TraitModifiers");
 		}
 
 		n = node.SelectSingleNode("SpeedBoost");
@@ -856,7 +884,7 @@ public class GameSettings : MonoBehaviour
 		{
 			LoadValue(n, "Weight", ref powerUpSettings.PowerUpWeights[(int)PowerUpType.SpeedBoost]);
 			LoadValue(n, "Duration", ref powerUpSettings.SpeedBoostDuration);
-			LoadPlayerTraits(n, playerTraits[(int)PlayerTraitsType.SpeedBoost], "Traits");
+			LoadPlayerTraits(n, playerTraitModifiers[(int)PlayerTraitModifiersType.SpeedBoost], "TraitModifiers");
 		}
 
 		n = node.SelectSingleNode("DamageBoost");
@@ -864,7 +892,20 @@ public class GameSettings : MonoBehaviour
 		{
 			LoadValue(n, "Weight", ref powerUpSettings.PowerUpWeights[(int)PowerUpType.DamageBoost]);
 			LoadValue(n, "Duration", ref powerUpSettings.DamageBoostDuration);
-			LoadPlayerTraits(n, playerTraits[(int)PlayerTraitsType.DamageBoost], "Traits");
+			LoadPlayerTraits(n, playerTraitModifiers[(int)PlayerTraitModifiersType.DamageBoost], "TraitModifiers");
+		}
+
+		n = node.SelectSingleNode("SixPack");
+		if (n != null)
+		{
+			LoadValue(n, "Weight", ref powerUpSettings.PowerUpWeights[(int)PowerUpType.SixPack]);
+			LoadValue(n, "Amount", ref powerUpSettings.SixPack.Amount);
+		}
+
+		n = node.SelectSingleNode("RogiBall");
+		if (n != null)
+		{
+			LoadValue(n, "Weight", ref powerUpSettings.PowerUpWeights[(int)PowerUpType.RogiBall]);
 		}
 	}
 
@@ -890,6 +931,11 @@ public class GameSettings : MonoBehaviour
 	public PlayerTraits GetPlayerTraits(PlayerTraitsType type)
 	{
 		return playerTraits[(int)type];
+	}
+
+	public PlayerTraits GetPlayerTraitModifiers(PlayerTraitModifiersType type)
+	{
+		return playerTraitModifiers[(int)type];
 	}
 
 	public WeaponSettings Weapons
@@ -1038,6 +1084,30 @@ public class PlayerTraits
 		EnemyNameTags.Clone(other.EnemyNameTags);
 		Radar.Clone(other.Radar);
 	}
+
+	public void SetModifierDefaults()
+	{
+		Health.SetModifierDefaults();
+		Respawn.SetModifierDefaults();
+		Movement.SetModifierDefaults();
+		Melee.SetModifierDefaults();
+		Weapons.SetModifierDefaults();
+		FriendlyNameTags.SetModifierDefaults();
+		EnemyNameTags.SetModifierDefaults();
+		Radar.SetModifierDefaults();
+	}
+
+	public void Multiply(PlayerTraits other)
+	{
+		Health.Multiply(other.Health);
+		Respawn.Multiply(other.Respawn);
+		Movement.Multiply(other.Movement);
+		Melee.Multiply(other.Melee);
+		Weapons.Multiply(other.Weapons);
+		FriendlyNameTags.Multiply(other.FriendlyNameTags);
+		EnemyNameTags.Multiply(other.EnemyNameTags);
+		Radar.Multiply(other.Radar);
+	}
 }
 
 public class HealthSettings
@@ -1074,6 +1144,24 @@ public class HealthSettings
 		DamageResistance = other.DamageResistance;
 		LifeSteal = other.LifeSteal;
 	}
+
+	public void SetModifierDefaults()
+	{
+		Modifier = 1.0f;
+		RegenDelay = 1.0f;
+		RegenRate = 1.0f;
+		DamageResistance = 1.0f;
+		LifeSteal = 1.0f;
+	}
+
+	public void Multiply(HealthSettings other)
+	{
+		Modifier *= other.Modifier;
+		RegenDelay *= other.RegenDelay;
+		RegenRate *= other.RegenRate;
+		DamageResistance *= other.DamageResistance;
+		LifeSteal *= other.LifeSteal;
+	}
 }
 
 public class RespawnSettings
@@ -1093,6 +1181,16 @@ public class RespawnSettings
 	public void Clone(RespawnSettings other)
 	{
 		Time = other.Time;
+	}
+
+	public void SetModifierDefaults()
+	{
+		Time = 1.0f;
+	}
+
+	public void Multiply(RespawnSettings other)
+	{
+		Time *= other.Time;
 	}
 }
 
@@ -1154,6 +1252,36 @@ public class MovementSettings
 		ThrustVerticalForce = other.ThrustVerticalForce;
 		ThrustDelay = other.ThrustDelay;
 	}
+
+	public void SetModifierDefaults()
+	{
+		Speed = 1.0f;
+		Acceleration = 1.0f;
+		JumpHeight = 1.0f;
+		AirControl = 1.0f;
+		SprintSpeedMultiplier = 1.0f;
+		CrouchSpeedMultiplier = 1.0f;
+		GravityMultiplier = 1.0f;
+		ThrustEnabled = true;
+		ThrustHorizontalForce = 1.0f;
+		ThrustVerticalForce = 1.0f;
+		ThrustDelay = 1.0f;
+	}
+
+	public void Multiply(MovementSettings other)
+	{
+		Speed *= other.Speed;
+		Acceleration *= other.Acceleration;
+		JumpHeight *= other.JumpHeight;
+		AirControl *= other.AirControl;
+		SprintSpeedMultiplier *= other.SprintSpeedMultiplier;
+		CrouchSpeedMultiplier *= other.CrouchSpeedMultiplier;
+		GravityMultiplier *= other.GravityMultiplier;
+		ThrustEnabled = ThrustEnabled && other.ThrustEnabled;
+		ThrustHorizontalForce *= other.ThrustHorizontalForce;
+		ThrustVerticalForce *= other.ThrustVerticalForce;
+		ThrustDelay *= other.ThrustDelay;
+	}
 }
 
 public class MeleeSettings
@@ -1177,6 +1305,18 @@ public class MeleeSettings
 	{
 		Damage = other.Damage;
 		Rate = other.Rate;
+	}
+
+	public void SetModifierDefaults()
+	{
+		Damage = 1.0f;
+		Rate = 1.0f;
+	}
+
+	public void Multiply(MeleeSettings other)
+	{
+		Damage *= other.Damage;
+		Rate *= other.Rate;
 	}
 }
 
@@ -1210,6 +1350,18 @@ public class PlayerWeaponSettings
 		InfiniteAmmo = other.InfiniteAmmo;
 		DamageMultiplier = other.DamageMultiplier;
 	}
+
+	public void SetModifierDefaults()
+	{
+		DamageMultiplier = 1.0f;
+		InfiniteAmmo = InfiniteAmmoType.None;
+	}
+
+	public void Multiply(PlayerWeaponSettings other)
+	{
+		DamageMultiplier *= other.DamageMultiplier;
+		InfiniteAmmo = (InfiniteAmmoType)Mathf.Max((int)InfiniteAmmo, (int)other.InfiniteAmmo);
+	}
 }
 
 public class NameTagSettings
@@ -1242,6 +1394,21 @@ public class NameTagSettings
 		Range = other.Range;
 		ShowHealthBar = other.ShowHealthBar;
 	}
+
+	public void SetModifierDefaults()
+	{
+		Enabled = true;
+		HideBehindGeometry = true;
+		Range = 1.0f;
+		ShowHealthBar = true;
+	}
+
+	public void Multiply(NameTagSettings other)
+	{
+		Enabled = Enabled && other.Enabled;
+		HideBehindGeometry = HideBehindGeometry && other.HideBehindGeometry;
+		Range *= other.Range;
+	}
 }
 
 public class RadarSettings
@@ -1261,6 +1428,16 @@ public class RadarSettings
 	public void Clone(RadarSettings other)
 	{
 		Range = other.Range;
+	}
+
+	public void SetModifierDefaults()
+	{
+		Range = 1.0f;
+	}
+
+	public void Multiply(RadarSettings other)
+	{
+		Range *= other.Range;
 	}
 }
 
@@ -1756,12 +1933,14 @@ public class PowerUpSettings
 	public int DamageResistDuration;
 	public int SpeedBoostDuration;
 	public int DamageBoostDuration;
+	public SixPackSettings SixPack;
 
 	public PowerUpSettings()
 	{
 		PowerUpWeights = new int[(int)PowerUpType.NumTypes];
 		GrenadeCloud = new GrenadeCloudSettings();
 		BigHeads = new BigHeadsSettings();
+		SixPack = new SixPackSettings();
 	}
 
 	public void Serialize(NetworkWriter writer)
@@ -1780,6 +1959,7 @@ public class PowerUpSettings
 		writer.Write((short)DamageResistDuration);
 		writer.Write((short)SpeedBoostDuration);
 		writer.Write((short)DamageBoostDuration);
+		SixPack.Serialize(writer);
 	}
 
 	public void Deserialize(NetworkReader reader)
@@ -1798,6 +1978,7 @@ public class PowerUpSettings
 		DamageResistDuration = reader.ReadInt16();
 		SpeedBoostDuration = reader.ReadInt16();
 		DamageBoostDuration = reader.ReadInt16();
+		SixPack.Deserialize(reader);
 	}
 }
 
@@ -1849,6 +2030,21 @@ public class BigHeadsSettings
 	{
 		Scale = reader.ReadSingle();
 		Duration = reader.ReadInt16();
+	}
+}
+
+public class SixPackSettings
+{
+	public int Amount;
+
+	public void Serialize(NetworkWriter writer)
+	{
+		writer.Write((short)Amount);
+	}
+
+	public void Deserialize(NetworkReader reader)
+	{
+		Amount = reader.ReadInt16();
 	}
 }
 

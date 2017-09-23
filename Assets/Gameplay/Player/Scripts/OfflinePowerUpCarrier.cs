@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class OfflinePowerUpCarrier : NetworkBehaviour
+public class OfflinePowerUpCarrier : SafeNetworkBehaviour
 {
 	protected NetworkPlayer net;
 	protected HUD hud;
@@ -10,8 +10,10 @@ public class OfflinePowerUpCarrier : NetworkBehaviour
 	/**********************************************************/
 	// MonoBehaviour Interface
 
-	public void Awake()
+	public override void Awake()
 	{
+		base.Awake();
+
 		net = GetComponent<NetworkPlayer>();
 		hud = GameObject.Find("HUD").GetComponent<HUD>();
 	}

@@ -11,7 +11,6 @@ public class PlayerHealth : Damageable
 
 	private float regenDelay;
 	private float regenRate;
-	//private float damageResistance;
 	//private float lifeSteal;
 	private float regening;
 	private bool alive;
@@ -28,28 +27,49 @@ public class PlayerHealth : Damageable
 	/**********************************************************/
 	// MonoBehaviour Interface
 
-	public void Start()
+	protected override bool Ready()
 	{
+		return net.Initialized;
+	}
+
+	public override void Awake()
+	{
+		base.Awake();
+
 		hud = GameObject.Find("HUD").GetComponent<HUD>();
 		net = GetComponent<NetworkPlayer>();
 		cam = GetComponentInChildren<CameraManager>();
 		weaponCarrier = GetComponent<OfflineWeaponCarrier>();
 
-		if (isServer)
-		{
-			damageHistory = new Dictionary<int, float>();
-		}
-
-		Traits = PlayerTraitsType.Default;
-		health = maxHealth;
 		regening = 0.0f;
 		lastShooter = -1;
 		lastEnemyShooter = -1;
 		alive = true;
 	}
 
+	protected override void DelayedStart()
+	{
+		base.DelayedStart();
+
+		health = maxHealth;
+	}
+
+	protected override void DelayedOnStartServer()
+	{
+		base.DelayedOnStartServer();
+
+		damageHistory = new Dictionary<int, float>();
+	}
+
 	public override void Update()
 	{
+		base.Update();
+
+		if (!initialized)
+		{
+			return;
+		}
+
 		regening += Time.deltaTime;
 		if (regening >= 0.0f && health < maxHealth)
 		{
@@ -195,16 +215,13 @@ public class PlayerHealth : Damageable
 		}
 	}
 
-	public PlayerTraitsType Traits
+	public HealthSettings Traits
 	{
 		set
 		{
-			HealthSettings settings = PartyManager.GameSettings.GetPlayerTraits(value).Health;
-
-			maxHealth = 100.0f * settings.Modifier;
-			regenDelay = settings.RegenDelay;
-			regenRate = settings.RegenRate;
-			//damageResistance = settings.DamageResistance;
+			maxHealth = 100.0f * value.Modifier;
+			regenDelay = value.RegenDelay;
+			regenRate = value.RegenRate;
 			//lifeSteal = settings.LifeSteal;
 		}
 	}

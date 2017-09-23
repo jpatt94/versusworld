@@ -249,7 +249,7 @@ public class PlayerData : SafeNetworkBehaviour
 			team = value;
 
 			PlayerCustomizationOptions c = customizationOptions;
-			c.shirt = PartyManager.Get.TeamShirts[team];
+			c.Shirt = PartyManager.Get.TeamShirts[team];
 			customizationOptions = c;
 		}
 	}

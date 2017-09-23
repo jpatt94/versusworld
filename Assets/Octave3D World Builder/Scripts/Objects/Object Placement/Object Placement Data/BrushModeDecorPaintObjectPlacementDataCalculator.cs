@@ -320,6 +320,15 @@ namespace O3DWB
                     ObjectSurfaceData objectSurfaceData = CalculateObjectSurfaceData(randomPositionInsideCircle);
                     MatrixObjectBoxPair matrixObjectBoxPair = CalculateMatrixObjectBoxPair(brushElementIndex, objectSurfaceData);
 
+                    TransformMatrix objectMatrix = matrixObjectBoxPair.ObjectMatrix;
+                    objectMatrix.Rotation = matrixObjectBoxPair.ObjectBox.Rotation;
+                    Vector3 boxCenter = matrixObjectBoxPair.ObjectBox.Center + objectSurfaceData.SurfaceNormal * brushElement.OffsetFromSurface;
+                    objectMatrix.Translation = ObjectPositionCalculator.CalculateObjectHierarchyPosition(brushElement.Prefab, boxCenter, objectMatrix.Scale, matrixObjectBoxPair.ObjectBox.Rotation);
+
+                    // We have been modifying the matrix and box data independently so we will ensure that the box uses the latest data
+                    OrientedBox finalBox = new OrientedBox(matrixObjectBoxPair.ObjectBox);
+                    finalBox.SetTransformMatrix(objectMatrix);
+
                     // We need to know if the normal of the surface on which the object resides lies within the desired slope range
                     bool passesSlopeTest = DoesObjectSurfacePassSlopeTest(objectSurfaceData, brushElement);
 
@@ -330,7 +339,8 @@ namespace O3DWB
                     //       is not satisifed. We want to spread objects as much as possible so even though this object will not be
                     //       placed in the scene, we will still add it to the node network.
                     _objectNodeNetwork.AddNodeToEnd(matrixObjectBoxPair.ObjectBox, objectSurfaceData);
-                    if (passesSlopeTest && DoesBoxPassObjectIntersectionTest(matrixObjectBoxPair.ObjectBox, brushElement.Prefab.UnityPrefab, matrixObjectBoxPair.ObjectMatrix)) objectPlacementDataInstances.Add(new ObjectPlacementData(matrixObjectBoxPair.ObjectMatrix, brushElement.Prefab, brushElement.MustEmbedInSurface));
+                    if (passesSlopeTest && DoesBoxPassObjectIntersectionTest(finalBox, brushElement.Prefab.UnityPrefab, objectMatrix))
+                        objectPlacementDataInstances.Add(new ObjectPlacementData(objectMatrix, brushElement.Prefab));
                 }
                 else
                 {
@@ -387,20 +397,23 @@ namespace O3DWB
                         // Now we need to adjust the orientation and center of the box. If the calculated center
                         // lies outside the brush circle, we will ignore this node.
                         AdjustObjectBoxRotationOnSurface(objectBox, objectSurfaceData, brushElement);
-                        AdjustObjectBoxCenterToSitOnSurface(objectBox, objectSurfaceData, brushElement);
+                        AdjustObjectBoxCenterOnSurface(objectBox, objectSurfaceData, brushElement);
                         if (!_workingBrushCircle.ContainsPoint(_workingBrushCircle.Plane.ProjectPoint(objectBox.Center))) continue;
 
                         // Recalculate the object matrix using the new box data
                         TransformMatrix objectMatrix = matrixObjectBoxPair.ObjectMatrix;
                         objectMatrix.Rotation = objectBox.Rotation;
-                        objectMatrix.Translation = ObjectPositionCalculator.CalculateObjectHierarchyPosition(brushElement.Prefab, objectBox.Center, objectMatrix.Scale, objectBox.Rotation);
+                        Vector3 boxCenter = objectBox.Center + objectSurfaceData.SurfaceNormal * brushElement.OffsetFromSurface;
+                        objectMatrix.Translation = ObjectPositionCalculator.CalculateObjectHierarchyPosition(brushElement.Prefab, boxCenter, objectMatrix.Scale, objectBox.Rotation);
                            
                         // We have been modifying the matrix and box data independently so we will ensure that the box uses the latest data
                         OrientedBox finalBox = new OrientedBox(objectBox);
                         finalBox.SetTransformMatrix(objectMatrix);
 
                         // If the slope test passed, we will calculate an object placement data instance. Otherwise, we will just insert a new node.
-                        if (passesSlopeTest && DoesBoxPassObjectIntersectionTest(finalBox, brushElement.Prefab.UnityPrefab, objectMatrix)) objectPlacementDataInstances.Add(new ObjectPlacementData(objectMatrix, brushElement.Prefab, brushElement.MustEmbedInSurface));
+                        if (passesSlopeTest && DoesBoxPassObjectIntersectionTest(finalBox, brushElement.Prefab.UnityPrefab, objectMatrix))
+                            objectPlacementDataInstances.Add(new ObjectPlacementData(objectMatrix, brushElement.Prefab));
+
                         _objectNodeNetwork.InsertAfterNode(objectBox, objectSurfaceData, randomNodeIndex);
                     }
                     else
@@ -458,20 +471,21 @@ namespace O3DWB
                         // Now we need to adjust the orientation and center of the box. If the calculated center
                         // lies outside the brush circle, we will ignore this node.
                         AdjustObjectBoxRotationOnSurface(objectBox, objectSurfaceData, brushElement);
-                        AdjustObjectBoxCenterToSitOnSurface(objectBox, objectSurfaceData, brushElement);
+                        AdjustObjectBoxCenterOnSurface(objectBox, objectSurfaceData, brushElement);
                         if (!_workingBrushCircle.ContainsPoint(_workingBrushCircle.Plane.ProjectPoint(objectBox.Center))) continue;
 
                         // Recalculate the object matrix using the new box data
                         TransformMatrix objectMatrix = matrixObjectBoxPair.ObjectMatrix;
                         objectMatrix.Rotation = objectBox.Rotation;
-                        objectMatrix.Translation = ObjectPositionCalculator.CalculateObjectHierarchyPosition(brushElement.Prefab, objectBox.Center, objectMatrix.Scale, objectBox.Rotation);
+                        Vector3 boxCenter = objectBox.Center + objectSurfaceData.SurfaceNormal * brushElement.OffsetFromSurface;
+                        objectMatrix.Translation = ObjectPositionCalculator.CalculateObjectHierarchyPosition(brushElement.Prefab, boxCenter, objectMatrix.Scale, objectBox.Rotation);
 
                         // We have been modifying the matrix and box data independently so we will ensure that the box uses the latest data
                         OrientedBox finalBox = new OrientedBox(objectBox);
                         finalBox.SetTransformMatrix(objectMatrix);
 
                         // If the slope test passed, we will calculate an object placement data instance. Otherwise, we will just insert a new node.
-                        if (passesSlopeTest && DoesBoxPassObjectIntersectionTest(finalBox, brushElement.Prefab.UnityPrefab, objectMatrix)) objectPlacementDataInstances.Add(new ObjectPlacementData(objectMatrix, brushElement.Prefab, brushElement.MustEmbedInSurface));
+                        if (passesSlopeTest && DoesBoxPassObjectIntersectionTest(finalBox, brushElement.Prefab.UnityPrefab, objectMatrix)) objectPlacementDataInstances.Add(new ObjectPlacementData(objectMatrix, brushElement.Prefab));
                         _objectNodeNetwork.InsertAfterNode(objectBox, objectSurfaceData, 0);
                     }
                 }
@@ -645,7 +659,7 @@ namespace O3DWB
             }
            
             // Place the object on the surface
-            AdjustObjectBoxCenterToSitOnSurface(objectBox, objectSurfaceData, brushElement);
+            AdjustObjectBoxCenterOnSurface(objectBox, objectSurfaceData, brushElement);
 
             // Construct the object matrix and return the object/marix pair
             TransformMatrix objectMatrix = new TransformMatrix(ObjectPositionCalculator.CalculateObjectHierarchyPosition(brushElement.Prefab,
@@ -658,7 +672,7 @@ namespace O3DWB
             if (brushElement.AlignToSurface) objectBox.Rotation = AxisAlignment.CalculateRotationQuaternionForAxisAlignment(objectBox.Rotation, brushElement.AlignmentAxis, objectSurfaceData.SurfaceNormal);
         }
 
-        private void AdjustObjectBoxCenterToSitOnSurface(OrientedBox objectBox, ObjectSurfaceData objectSurfaceData, DecorPaintObjectPlacementBrushElement brushElement)
+        private void AdjustObjectBoxCenterOnSurface(OrientedBox objectBox, ObjectSurfaceData objectSurfaceData, DecorPaintObjectPlacementBrushElement brushElement)
         {
             if (brushElement.AlignToSurface) objectBox.Center = objectSurfaceData.BasePosition + objectSurfaceData.SurfaceNormal * 0.5f * objectBox.GetSizeAlongDirection(objectSurfaceData.SurfaceNormal);
             else

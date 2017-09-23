@@ -275,7 +275,6 @@ namespace O3DWB
             GizmosColor.Pop();
         }
 
-        #if UNITY_5_0 || UNITY_5_1 || UNITY_5_2 || UNITY_5_3 || UNITY_5_3_3 || UNITY_5_3_OR_NEWER
         public static void RenderMesh(Mesh mesh, Matrix4x4 transformMatrix, Color color)
         {
             GizmosMatrix.Push(transformMatrix);
@@ -286,7 +285,6 @@ namespace O3DWB
             GizmosColor.Pop();
             GizmosMatrix.Pop();
         }
-        #endif
 
         public static void RenderLinesBetweenPoints(List<Vector3> points, Color color)
         {

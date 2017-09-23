@@ -1,8 +1,5 @@
 ﻿#if UNITY_EDITOR
 using UnityEngine;
-#if UNITY_5_3_OR_NEWER
-using UnityEngine.SceneManagement;
-#endif
 using UnityEditor;
 using System;
 using System.Collections.Generic;
@@ -26,6 +23,7 @@ namespace O3DWB
         private SceneRenderer _sceneRenderer = new SceneRenderer();
         private ToolSupervisor _toolSupervisor = new ToolSupervisor();
         private ToolResources _toolResources = new ToolResources();
+        private PrefabPreviewGenerator _prefabPreviewGenerator = new PrefabPreviewGenerator();
 
         private Octave3DConfigSaveLoadSettings _configSaveSettings;
         private Octave3DConfigSaveLoadSettings _configLoadSettings;
@@ -93,6 +91,7 @@ namespace O3DWB
         #endregion
 
         #region Public Properties
+        public PrefabPreviewGenerator PrefabPreviewGenerator { get { return _prefabPreviewGenerator; } }
         public ShaderPool ShaderPool { get { return _shaderPool; } }
         public MaterialPool MaterialPool { get { return _materialPool; } }
 
@@ -455,7 +454,7 @@ namespace O3DWB
         }
 
         [MenuItem("GameObject/Octave3D/Make group", false, 0)]
-        private static void HierarchyGroupContext()
+        private static void MakeGroup()
         {
             Octave3DWorldBuilder octave3D = Octave3DWorldBuilder.ActiveInstance;
             if (octave3D == null)
@@ -466,13 +465,25 @@ namespace O3DWB
 
             octave3D.PlacementObjectGroupDatabase.CreateObjectGroup(Selection.activeGameObject);
         }
+
+        [MenuItem("GameObject/Octave3D/Is not group", false, 0)]
+        private static void SetNoLoLongerGroup()
+        {
+            Octave3DWorldBuilder octave3D = Octave3DWorldBuilder.ActiveInstance;
+            if (octave3D == null)
+            {
+                Debug.LogWarning("There is no Octave3D object in the scene. Please create an empty game object and attach the Octave3D World Builder script to it.");
+                return;
+            }
+
+            octave3D.PlacementObjectGroupDatabase.MakeNoLongerGroup(Selection.activeGameObject);
+        }
         #endregion
 
         #region Private methods
         private void Awake()
         {
             _transform = transform;
-            _octave3DScene.Refresh(true);
         }
 
         private void Start()
@@ -487,20 +498,19 @@ namespace O3DWB
             #else
             UnityEngine.Random.seed = System.DateTime.Now.Millisecond;
             #endif
-            ToolWasEnabledMessage.SendToInterestedListeners();
 
             EditorApplication.update -= EditorUpdate;
             EditorApplication.update += EditorUpdate;
 
+            _prefabPreviewGenerator.DestroyData();
             EditorWindowPool.RepaintAll();
         }
 
         private void Reset()
         {
             _transform = transform;
-            _octave3DScene.Refresh(true);
-
             DestroyPools();
+            _prefabPreviewGenerator.DestroyData();
         }
 
         private void OnDestroy()
@@ -513,6 +523,7 @@ namespace O3DWB
             }
 
             if (numInstances != 0) DestroyPools();
+            _prefabPreviewGenerator.DestroyData();
         }
 
         private void DestroyPools()

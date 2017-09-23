@@ -78,15 +78,6 @@ namespace O3DWB
             {
                 var placementDataInstances = _objectPlacementDataCalculator.Calculate(RotationToApplyForStrokeAlignment);
                 List<GameObject> placedHierarchyRoots = Octave3DScene.Get().InstantiateObjectHirarchiesFromPlacementDataCollection(placementDataInstances);
-                for(int rootIndex = 0; rootIndex < placedHierarchyRoots.Count; ++rootIndex)
-                {
-                    GameObject root = placedHierarchyRoots[rootIndex];
-                    if(placementDataInstances[rootIndex].MustEmbedInSurface)
-                    {
-                        if (_strokeSurface.Type == DecorPaintStrokeSurfaceType.Terrain) root.EmbedInSurfaceByVertex(-Vector3.up, _strokeSurface.SurfaceObject);
-                        else if (_strokeSurface.Type == DecorPaintStrokeSurfaceType.Mesh) root.EmbedInSurfaceByVertex(-_strokeSurface.Plane.normal, _strokeSurface.SurfaceObject);
-                    }
-                }
 
                 List<GameObject> allPlacedObjects = GameObjectExtensions.GetAllObjectsInHierarchyCollection(placedHierarchyRoots);
                 _objectsPlacedWhileDragging.AddRange(allPlacedObjects);

@@ -289,6 +289,7 @@ public enum GrenadeType
 	Frag,
 	Tesla,
 	Spike,
+	RogiBall,
 	NumTypes,
 	None,
 }

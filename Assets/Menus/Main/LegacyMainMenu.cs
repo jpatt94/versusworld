@@ -121,7 +121,7 @@ public class LegacyMainMenu : MonoBehaviour
 		notificationPanel.Show("Hosting local game...", false);
 
 		mgr.Status = MultiplayerStatus.HostingLocalGame;
-		mgr.StartLocalHost(mgr.LocalUser != null ? mgr.LocalUser.userName : nameInputField.text, customizer.Options);
+		mgr.StartLocalHost(mgr.LocalUser != null ? mgr.LocalUser.userName : nameInputField.text, PlayerCustomizer.Options);
 	}
 
 	public void OnJoinClick()
@@ -130,7 +130,7 @@ public class LegacyMainMenu : MonoBehaviour
 
 		mgr.Status = MultiplayerStatus.JoiningLocalGame;
 		mgr.networkAddress = ipInputField.text;
-		mgr.StartLocalClient(nameInputField.text, customizer.Options);
+		mgr.StartLocalClient(nameInputField.text, PlayerCustomizer.Options);
 	}
 
 	public void OnEnterLobby()
@@ -221,14 +221,6 @@ public class LegacyMainMenu : MonoBehaviour
 		get
 		{
 			return ipInputField.text;
-		}
-	}
-
-	public PlayerCustomizationOptions CustomizationOptions
-	{
-		get
-		{
-			return customizer.Options;
 		}
 	}
 

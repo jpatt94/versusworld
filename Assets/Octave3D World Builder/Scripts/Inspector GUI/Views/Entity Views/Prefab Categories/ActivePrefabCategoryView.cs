@@ -18,7 +18,7 @@ namespace O3DWB
         private ActivePrefabCategoryViewData _viewData;
 
         [SerializeField]
-        private PrefabCategoryPrefabScrollView _activePrefabCategoryPrefabScrollView = new PrefabCategoryPrefabScrollView();
+        private PrefabCategoryPrefabScrollView _prefabScrollView = new PrefabCategoryPrefabScrollView();
         #endregion
 
         #region Private Properties
@@ -32,6 +32,8 @@ namespace O3DWB
         }
         #endregion
 
+        public PrefabCategoryPrefabScrollView PrefabScrollView { get { return _prefabScrollView; } }
+
         #region Constructors
         public ActivePrefabCategoryView()
         {
@@ -44,7 +46,7 @@ namespace O3DWB
         #region Protected Methods
         protected override void RenderContent()
         {
-            _activePrefabCategoryPrefabScrollView.PrefabCategory = PrefabCategoryDatabase.Get().ActivePrefabCategory;
+            _prefabScrollView.PrefabCategory = PrefabCategoryDatabase.Get().ActivePrefabCategory;
             RenderShowPrefabCategoryFolderNamesToggle();
             if (ViewData.ShowPrefabCategoryFolderNames) RenderMaxNumberOfCategoryFolderNamesToggle();
             RenderActiveCategorySelectionPopup();
@@ -71,11 +73,11 @@ namespace O3DWB
             content.tooltip = "Opens up a new window which allows you to control the look and feel of the prefab view area.";
             if(GUILayout.Button(content, GUILayout.Width(100.0f)))
             {
-                _activePrefabCategoryPrefabScrollView.LookAndFeelWindow.ShowOctave3DWindow();
+                _prefabScrollView.LookAndFeelWindow.ShowOctave3DWindow();
             }
             EditorGUILayout.EndHorizontal();
 
-            _activePrefabCategoryPrefabScrollView.Render();
+            _prefabScrollView.Render();
             RenderActionsView();
         }
         #endregion

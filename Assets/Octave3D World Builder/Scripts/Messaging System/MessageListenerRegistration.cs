@@ -52,7 +52,6 @@ namespace O3DWB
                 listenerDatabase.UnregisterListener(inspector);
 
                 listenerDatabase.RegisterListenerForMessage(MessageType.ToolWasReset, inspector);
-                listenerDatabase.RegisterListenerForMessage(MessageType.ToolWasEnabled, inspector);
                 listenerDatabase.RegisterListenerForMessage(MessageType.ToolWasStarted, inspector);
             }
         }

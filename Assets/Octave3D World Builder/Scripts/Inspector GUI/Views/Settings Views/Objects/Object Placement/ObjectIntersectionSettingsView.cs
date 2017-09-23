@@ -28,22 +28,8 @@ namespace O3DWB
         #region Protected Methods
         protected override void RenderContent()
         {
-            //ObjectIntersectPrecision newPrecision;
-
             RenderAllowIntersectionForDecorPaintSingleModeDragToggle();
             RenderAllowIntersectionForDecorPaintBrushModeDragToggle();
-            /*if(!_settings.AllowIntersectionForDecorPaintBrushModeDrag)
-            {
-                content.text = "Precision";
-                content.tooltip = "Allows you to control the intersection precision for brush decor paint placement.";
-                newPrecision = (ObjectIntersectPrecision)EditorGUILayout.EnumPopup(content, _settings.BrushPaintIntersectPrecision);
-                if (newPrecision != _settings.BrushPaintIntersectPrecision)
-                {
-                    UndoEx.RecordForToolAction(_settings);
-                    _settings.BrushPaintIntersectPrecision = newPrecision;
-                }
-            }*/
-
             RenderAllowIntersectionForPathPlacementToggle();
             RenderAllowIntersectionForBlockPlacementToggle();
         }

@@ -34,18 +34,14 @@ namespace O3DWB
             EditorGUILayout.BeginVertical();
             RenderAlignToSurfaceToggle();
 
-            if(!_brushElement.AlignToSurface)
+            var content = new GUIContent();
+            content.text = "Offset from surface";
+            content.tooltip = "Allows you to control the element's offset from the surface on which it resides.";
+            float newFloat = EditorGUILayout.FloatField(content, _brushElement.OffsetFromSurface);
+            if (newFloat != _brushElement.OffsetFromSurface)
             {
-                var content = new GUIContent();
-                content.text = "Embed in surface (no align)";
-                content.tooltip = "This is only used if axis alignment is turned off and if it's checked it will ensure that the objects will not float above the surface by " +
-                                  "embedding them as much as needed.";
-                bool newBool = EditorGUILayout.ToggleLeft(content, _brushElement.EmbedInSurfaceWhenNoAlign);
-                if (newBool != _brushElement.EmbedInSurfaceWhenNoAlign)
-                {
-                    UndoEx.RecordForToolAction(_brushElement);
-                    _brushElement.EmbedInSurfaceWhenNoAlign = newBool;
-                }
+                UndoEx.RecordForToolAction(_brushElement);
+                _brushElement.OffsetFromSurface = newFloat;
             }
 
             if (_brushElement.AlignToSurface) RenderAlignmentAxisSelectionPopup();

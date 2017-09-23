@@ -78,8 +78,8 @@ namespace O3DWB
             EditorGUILayout.EndHorizontal();
 
             EditorGUILayout.BeginHorizontal();
-            RenderRemoveActiveGroupButton();
-            RenderRemoveAllGroupsButton();
+            RenderDestroyActiveGroupButton();
+            RenderDestroyAllGroupsButton();
             EditorGUILayout.EndHorizontal();
 
             if(_database.ActiveGroup != null)
@@ -119,38 +119,38 @@ namespace O3DWB
             }
         }
 
-        private void RenderRemoveActiveGroupButton()
+        private void RenderDestroyActiveGroupButton()
         {
-            if(GUILayout.Button(GetContentForRemoveActiveGroupButton(), GUILayout.Width(EditorGUILayoutEx.PreferedActionButtonWidth)))
+            if(GUILayout.Button(GetContentForDestroyActiveGroupButton(), GUILayout.Width(EditorGUILayoutEx.PreferedActionButtonWidth)))
             {
                 UndoEx.RecordForToolAction(_database);
                 _database.RemoveAndDestroyObjectGroup(_database.ActiveGroup);
             }
         }
 
-        private GUIContent GetContentForRemoveActiveGroupButton()
+        private GUIContent GetContentForDestroyActiveGroupButton()
         {
             var content = new GUIContent();
-            content.text = "Remove active group";
-            content.tooltip = "Removes the active group.";
+            content.text = "Destroy active group";
+            content.tooltip = "Destroys the active group. Note: This will delete the group object from the scene.";
 
             return content;
         }
 
-        private void RenderRemoveAllGroupsButton()
+        private void RenderDestroyAllGroupsButton()
         {
-            if(GUILayout.Button(GetContentForRemoveAllGroupsButton()))
+            if(GUILayout.Button(GetContentForDestroyAllGroupsButton()))
             {
                 UndoEx.RecordForToolAction(_database);
                 _database.RemoveAndDestroyAllObjectGroups();
             }
         }
 
-        private GUIContent GetContentForRemoveAllGroupsButton()
+        private GUIContent GetContentForDestroyAllGroupsButton()
         {
             var content = new GUIContent();
-            content.text = "Remove all groups";
-            content.tooltip = "Removes all object groups.";
+            content.text = "Destroy all groups";
+            content.tooltip = "Destroys all object groups. Note: This will delete the all group objects from the scene.";
 
             return content;
         }

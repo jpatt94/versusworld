@@ -16,13 +16,23 @@ public class NetworkWeaponCarrier : OfflineWeaponCarrier
 	{
 		base.Awake();
 
-		primaryWeapon = null;
-		secondaryWeapon = null;
-
 		net = GetComponent<NetworkPlayer>();
 	}
 
-	public override void Start()
+	protected override bool Ready()
+	{
+		return net.Initialized;
+	}
+
+	protected override void DelayedAwake()
+	{
+		base.DelayedAwake();
+
+		primaryWeapon = null;
+		secondaryWeapon = null;
+	}
+
+	protected override void DelayedStart()
 	{
 		InitializeStartingWeapons();
 
@@ -35,11 +45,13 @@ public class NetworkWeaponCarrier : OfflineWeaponCarrier
 
 	public override void Update()
 	{
-		if (net.Initialized && primaryWeapon)
+		SafeInitUpdate();
+
+		if (initialized && primaryWeapon)
 		{
 			if (net.hasAuthority)
 			{
-				base.Update();
+				UpdateFirstPerson();
 				CheckEnemyInCrosshairs();
 			}
 			else

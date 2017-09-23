@@ -128,6 +128,8 @@ public class PowerUpManager : NetworkBehaviour
 			case PowerUpType.DamageResist: return true;
 			case PowerUpType.SpeedBoost: return true;
 			case PowerUpType.DamageBoost: return true;
+			case PowerUpType.SixPack: return false;
+			case PowerUpType.RogiBall: return false;
 		}
 
 		return false;
@@ -201,20 +203,21 @@ public class PowerUpManager : NetworkBehaviour
 
 	public void UseTraitsPowerUp(NetworkPlayer player, PowerUpType type)
 	{
+		float time = 0.0f;
 		switch (type)
 		{
 			case PowerUpType.DamageResist:
-				player.PowerUpCarrier.TraitsPowerUpTime = settings.DamageResistDuration;
+				time = settings.DamageResistDuration;
 				break;
 			case PowerUpType.SpeedBoost:
-				player.PowerUpCarrier.TraitsPowerUpTime = settings.SpeedBoostDuration;
+				time = settings.SpeedBoostDuration;
 				break;
 			case PowerUpType.DamageBoost:
-				player.PowerUpCarrier.TraitsPowerUpTime = settings.DamageBoostDuration;
+				time = settings.DamageBoostDuration;
 				break;
 		}
 
-		player.PowerUpCarrier.StartTraitsPowerUp(type);
+		player.PowerUpCarrier.StartTraitsPowerUp(type, time);
 	}
 
 	/**********************************************************/
@@ -242,6 +245,8 @@ public class PowerUpManager : NetworkBehaviour
 			case PowerUpType.DamageResist: ProcessDamageResist(player); break;
 			case PowerUpType.SpeedBoost: ProcessSpeedBoost(player); break;
 			case PowerUpType.DamageBoost: ProcessSpeedBoost(player); break;
+			case PowerUpType.SixPack: ProcessSixPack(player); break;
+			case PowerUpType.RogiBall: ProcessRogiBall(player); break;
 		}
 	}
 
@@ -285,6 +290,16 @@ public class PowerUpManager : NetworkBehaviour
 	{
 	}
 
+	private void ProcessSixPack(NetworkPlayer player)
+	{
+		player.CharacterController.RpcAddFreeThrusts(settings.SixPack.Amount);
+	}
+
+	private void ProcessRogiBall(NetworkPlayer player)
+	{
+		player.GrenadeManager.GiveGrenade(player, GrenadeType.RogiBall);
+	}
+
 	/**********************************************************/
 	// Accessors/Mutators
 
@@ -315,6 +330,8 @@ public enum PowerUpType
 	DamageResist,
 	SpeedBoost,
 	DamageBoost,
+	SixPack,
+	RogiBall,
 	NumTypes,
 	None,
 }

@@ -94,11 +94,7 @@ namespace O3DWB
         #region Private Methods
         private void AdjustTitle()
         {
-            #if !UNITY_5_1 && !UNITY_5_2 && !UNITY_5_3 && !UNITY_5_3_3 && !UNITY_5_3_OR_NEWER
-            title = GetTitleContent().text;
-            #else
             titleContent = GetTitleContent();
-            #endif
         }
 
         private void OnGUI()

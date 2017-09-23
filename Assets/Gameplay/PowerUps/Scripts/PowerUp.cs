@@ -6,10 +6,14 @@ public class PowerUp : NetworkBehaviour
 {
 	[SerializeField]
 	private GameObject waypointPrefab;
+	[SerializeField]
+	private AudioClip respawnSound;
+	[SerializeField]
+	private AudioClip pickUpSound;
 
 	[SyncVar]
 	private int id;
-	[SyncVar]
+	[SyncVar(hook = "OnAvailableChanged")]
 	private bool available;
 
 	private float respawnTime;
@@ -17,6 +21,7 @@ public class PowerUp : NetworkBehaviour
 
 	private MeshRenderer mesh;
 	private Waypoint waypoint;
+	private AudioSource aud;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -27,6 +32,7 @@ public class PowerUp : NetworkBehaviour
 		available = false;
 
 		mesh = GetComponentInChildren<MeshRenderer>();
+		aud = GetComponent<AudioSource>();
 	}
 
 	public void Update()
@@ -62,6 +68,37 @@ public class PowerUp : NetworkBehaviour
 			Destroy(waypoint.gameObject);
 			waypoint = null;
 		}
+	}
+
+	/**********************************************************/
+	// Callbacks
+
+	private void OnAvailableChanged(bool value)
+	{
+		bool prev = available;
+		available = value;
+
+		if (!prev && available)
+		{
+			OnRespawn();
+		}
+		else if (prev == !available)
+		{
+			OnPickUp();
+		}
+	}
+
+	/**********************************************************/
+	// Helper Functions
+
+	private void OnRespawn()
+	{
+		aud.PlayOneShot(respawnSound);
+	}
+
+	private void OnPickUp()
+	{
+		aud.PlayOneShot(pickUpSound);
 	}
 
 	/**********************************************************/

@@ -15,12 +15,17 @@ public class MenuManager : MonoBehaviour
 	private Text randomMessageText;
 	private MultiplayerManager multiplayerMgr;
 	private PassiveNotificationMenu passiveNotification;
+	private AudioSource aud;
+
+	private static MenuManager instance;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
 
 	public void Awake()
 	{
+		instance = this;
+
 		PartyManager party = FindObjectOfType<PartyManager>();
 		if (party)
 		{
@@ -169,9 +174,9 @@ public class MenuManager : MonoBehaviour
 
 	private string GetRandomMessage()
 	{
-		switch (Random.Range(-1, 72))
+		switch (Random.Range(-1, 73))
 		{
-			case -1: return "Collect all 72!";
+			case -1: return "Collect all 73!";
 			case 0: return "Lost? Call 481-516-2342";
 			case 1: return "Don't attack a straw man";
 			case 2: return "Flying is easier with wings";
@@ -244,6 +249,7 @@ public class MenuManager : MonoBehaviour
 			case 69: return "The sphinx cat has returned";
 			case 70: return "Good morning, Worm your honor";
 			case 71: return "Is there anybody out there?";
+			case 72: return "Scarcity of abundance";
 		}
 
 		return "";

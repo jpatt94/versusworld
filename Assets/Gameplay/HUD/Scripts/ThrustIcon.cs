@@ -3,42 +3,64 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ThrustIcon : MonoBehaviour
+public class ThrustIcon : AbilityIcon
 {
-	private Image image;
+	[SerializeField]
+	private float dimAlpha;
+
+	private Image iconImage;
+	private Text labelText;
+	private Image rechargeImage;
+	private Text freeThrustsText;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
 
 	public void Awake()
 	{
-		image = GetComponent<Image>();
+		iconImage = GetComponent<Image>();
+		labelText = transform.Find("Label").GetComponent<Text>();
+		rechargeImage = transform.Find("RechargeImage").GetComponent<Image>();
+		freeThrustsText = transform.Find("FreeThrustsText").GetComponent<Text>();
 	}
 
 	/**********************************************************/
 	// Accessors/Mutators
 
-	public bool Visible
+	public float RechargeAmount
 	{
 		get
 		{
-			return image.enabled;
+			return rechargeImage.fillAmount;
 		}
 		set
 		{
-			image.enabled = value;
+			if ((rechargeImage.fillAmount > 0.0f && value == 0.0f) || (rechargeImage.fillAmount == 0.0f && value > 0.0f))
+			{
+				Pop();
+			}
+
+			rechargeImage.fillAmount = value;
+
+			float alpha = value > 0.0f ? dimAlpha : 1.0f;
+			Utility.SetAlpha(iconImage, alpha);
+			Utility.SetAlpha(labelText, alpha);
 		}
 	}
 
-	public float FillAmount
+	public int FreeThrusts
 	{
-		get
-		{
-			return image.fillAmount;
-		}
 		set
 		{
-			image.fillAmount = value;
+			if (value > 0)
+			{
+				freeThrustsText.enabled = true;
+				freeThrustsText.text = value.ToString();
+			}
+			else
+			{
+				freeThrustsText.enabled = false;
+			}
 		}
 	}
 }

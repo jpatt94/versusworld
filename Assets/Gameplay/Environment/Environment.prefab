@@ -100,3 +100,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: beca502130107084b919f5a7bb58e8e5, type: 3}
   glassPrefab: {fileID: 1973615270664822, guid: 2e858fcfd402e0440b9b79f052f1a602,
     type: 2}
+  flickerSounds:
+  - {fileID: 8300000, guid: d9605984c8846ae4da77d31fa8b3c6b8, type: 3}
+  - {fileID: 8300000, guid: f9e74852baa6a764d8bc501546316d51, type: 3}
+  - {fileID: 8300000, guid: 48ffc4326172be045b9b631ced3aeda0, type: 3}
+  - {fileID: 8300000, guid: 184af0839bd77a04999450413f9cd8fd, type: 3}
+  - {fileID: 8300000, guid: 45774a26128f5ea4dbfb8fec6fe3cf2a, type: 3}
+  - {fileID: 8300000, guid: 40298402a939e864fb401d0e8af3d19d, type: 3}

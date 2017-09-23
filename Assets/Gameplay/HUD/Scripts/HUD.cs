@@ -34,7 +34,7 @@ public class HUD : MonoBehaviour
 	private GameOverPanel gameOverPanel;
 	private HealthBar healthBar;
 	private Scoreboard scoreboard;
-	private ThrustIcon thrustIcon;
+	private AbilityDisplay abilityDisplay;
 
 	private static HUD instance;
 
@@ -65,7 +65,7 @@ public class HUD : MonoBehaviour
 		gameOverPanel = GetComponentInChildren<GameOverPanel>();
 		healthBar = GetComponentInChildren<HealthBar>();
 		scoreboard = GameObject.Find("Scoreboard").GetComponent<Scoreboard>();
-		thrustIcon = GetComponentInChildren<ThrustIcon>();
+		abilityDisplay = GetComponentInChildren<AbilityDisplay>();
 
 		healthBar.Initialize();
 		SetHealth(1.0f);
@@ -418,11 +418,11 @@ public class HUD : MonoBehaviour
 		}
 	}
 
-	public ThrustIcon ThrustIcon
+	public AbilityDisplay AbilityDisplay
 	{
 		get
 		{
-			return thrustIcon;
+			return abilityDisplay;
 		}
 	}
 

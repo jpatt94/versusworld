@@ -15,7 +15,6 @@ public class Respawner : MonoBehaviour
 
 	public void Start()
 	{
-		Traits = PlayerTraitsType.Default;
 		time = 0.0f;
 
 		net = GetComponent<NetworkPlayer>();
@@ -54,13 +53,11 @@ public class Respawner : MonoBehaviour
 	/**********************************************************/
 	// Accessors/Mutators
 
-	public PlayerTraitsType Traits
+	public RespawnSettings Traits
 	{
 		set
 		{
-			RespawnSettings settings = PartyManager.GameSettings.GetPlayerTraits(value).Respawn;
-
-			respawnTime = settings.Time;
+			respawnTime = value.Time;
 		}
 	}
 

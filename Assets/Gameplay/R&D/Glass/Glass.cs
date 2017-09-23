@@ -11,8 +11,10 @@ public class Glass : Damageable
 	/**********************************************************/
 	// Interface
 
-	public void Start()
+	public override void Start()
 	{
+		base.Start();
+
 		transform.localScale = scale;
 	}
 

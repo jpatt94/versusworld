@@ -10,7 +10,6 @@ namespace O3DWB
         private Vector3 _worldScale;
         private Quaternion _worldRotation;
         private Prefab _prefab;
-        private bool _mustEmbedInSurface = false;
         #endregion
 
         #region Public Properties
@@ -18,7 +17,6 @@ namespace O3DWB
         public Vector3 WorldScale { get { return _worldScale; } set { _worldScale = value; } }
         public Quaternion WorldRotation { get { return _worldRotation; } set { _worldRotation = value; } }
         public Prefab Prefab { get { return _prefab; } set {_prefab = value; } }
-        public bool MustEmbedInSurface { get { return _mustEmbedInSurface; } set { _mustEmbedInSurface = value; } }
         #endregion
 
         #region Public Constructors
@@ -32,15 +30,6 @@ namespace O3DWB
             _worldRotation = transformMatrix.Rotation;
             _worldScale = transformMatrix.Scale;
             _prefab = prefab;
-        }
-
-        public ObjectPlacementData(TransformMatrix transformMatrix, Prefab prefab, bool mustEmbedInSurface)
-        {
-            _worldPosition = transformMatrix.Translation;
-            _worldRotation = transformMatrix.Rotation;
-            _worldScale = transformMatrix.Scale;
-            _prefab = prefab;
-            _mustEmbedInSurface = mustEmbedInSurface;
         }
         #endregion
     }

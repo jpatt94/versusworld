@@ -15,6 +15,8 @@ namespace O3DWB
         
         [SerializeField]
         private Octave3DMeshDatabase _octave3DMeshDatabase = new Octave3DMeshDatabase();
+
+        private HashSet<Light> _sceneLights = new HashSet<Light>();
         #endregion
 
         #region Public Static Properties
@@ -33,8 +35,8 @@ namespace O3DWB
             // Note: Needed when erasing objects and then Undo. If this step is not performed,
             //       then when the erase operation is undone, the restored objects will not
             //       be registered with the tree.
-            Undo.undoRedoPerformed -= RegsiterUnregisteredObjects;
-            Undo.undoRedoPerformed += RegsiterUnregisteredObjects;
+            Undo.undoRedoPerformed -= RegisterUnregisteredObjects;
+            Undo.undoRedoPerformed += RegisterUnregisteredObjects;
         }
         #endregion
 
@@ -46,6 +48,21 @@ namespace O3DWB
         #endregion
 
         #region Public Methods
+        public void RegisterSceneLight(Light light)
+        {
+            _sceneLights.Add(light);
+        }
+
+        public List<Light> GetSceneLights()
+        {
+            return new List<Light>(_sceneLights);
+        }
+
+        public Sphere GetEncapuslatingSphere()
+        {
+            return _gameObjectSphereTree.RootSphere;
+        }
+
         public void RenderGizmosDebug()
         {
             _gameObjectSphereTree.RenderGizmosDebug();
@@ -181,7 +198,7 @@ namespace O3DWB
             _gameObjectSphereTree.RegisterGameObjectCollection(gameObjects);
         }
 
-        public void RegsiterUnregisteredObjects()
+        public void RegisterUnregisteredObjects()
         {
             _gameObjectSphereTree.RegisterUnregisteredObjects();
         }

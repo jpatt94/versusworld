@@ -22,7 +22,7 @@ namespace O3DWB
         [SerializeField]
         private bool _enableObjectToObjectSnap = false;
         [SerializeField]
-        private ObjectToObjectSnapMode _objectToObjectSnapMode = ObjectToObjectSnapMode.Vertex;
+        private ObjectToObjectSnapMode _objectToObjectSnapMode = ObjectToObjectSnapMode.Box;
         [SerializeField]
         private float _objectToObjectSnapEpsilon = 0.5f;
 

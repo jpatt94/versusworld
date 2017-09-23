@@ -85,19 +85,41 @@ namespace O3DWB
 
         public void CombineChildren(List<GameObject> ignoreObjects)
         {
-            if (_combineSettings == null || _combineSettings.ChildrenCombineSourceParent == null) return;
+            if (_combineSettings == null) return;
+            if (_combineSettings.ChildrenCombineSourceParent == null)
+            {
+                EditorUtility.DisplayDialog("Missing Parent", "Please specify the parent of the objects which must be combined.", "Ok");
+                return;
+            }
 
             List<GameObject> allMeshObjects = _combineSettings.ChildrenCombineSourceParent.GetAllMeshObjectsInHierarchy();
             if(ignoreObjects != null && ignoreObjects.Count != 0) allMeshObjects.RemoveAll(item => ignoreObjects.Contains(item));
 
             List<MeshCombineMaterial> meshCombineMaterials = GetMeshCombineMaterials(allMeshObjects, _combineSettings.ChildrenCombineSourceParent);
-            if (meshCombineMaterials.Count == 0) return;
+            if (meshCombineMaterials.Count == 0)
+            {
+                EditorUtility.DisplayDialog("No Combinable Objects", "The specified parent does not contain any objects which can be combined. Please check the following: \n\r" +
+                                            "-the parent must contain mesh child objects; \n\r " + 
+                                            "-check the \'Combine static/dynamic meshes\' toggles to ensure that the objects can actually be combined; \n\r" + 
+                                            "-if the objects belong to a hierarchy, make sure to unhceck the \'Ignore objects in hierarchies\' toggle.", "Ok");
+                return;
+            }
+
             Combine(meshCombineMaterials, null);
+
+            if (_combineSettings.DisableSourceParent) _combineSettings.ChildrenCombineSourceParent.SetActive(false);
+
+            EditorUtility.DisplayDialog("Done!", "Mesh objects combined successfully!", "Ok");
         }
 
         public void CombineSelectedObjects(List<GameObject> selectedObjects, List<GameObject> ignoreObjects)
         {
-            if (_combineSettings == null || selectedObjects == null || selectedObjects.Count == 0) return;
+            if (_combineSettings == null || selectedObjects == null) return;
+            if(selectedObjects.Count == 0)
+            {
+                EditorUtility.DisplayDialog("No Selected Objects", "The mesh combine process can not start because there are no objects currently selected.", "Ok");
+                return;
+            }
 
             List<GameObject> allMeshObjects = new List<GameObject>(selectedObjects.Count);
             foreach(var selectedObject in selectedObjects)
@@ -107,7 +129,15 @@ namespace O3DWB
             if (ignoreObjects != null && ignoreObjects.Count != 0) allMeshObjects.RemoveAll(item => ignoreObjects.Contains(item));
          
             List<MeshCombineMaterial> meshCombineMaterials = GetMeshCombineMaterials(allMeshObjects, null);
-            if (meshCombineMaterials.Count == 0) return;
+            if (meshCombineMaterials.Count == 0)
+            {
+                EditorUtility.DisplayDialog("No Combinable Objects", "The current selection does not contain any objects which can be combined. Please check the following: \n\r" +
+                                            "-the selection must contain mesh objects; \n\r " +
+                                            "-check the \'Combine static/dynamic meshes\' toggles to ensure that the objects can actually be combined; \n\r" +
+                                            "-if the objects belong to a hierarchy, make sure to unhceck the \'Ignore objects in hierarchies\' toggle.", "Ok");
+                return;
+            }
+
             Combine(meshCombineMaterials, _combineSettings.SelectionCombineDestinationParent);
           
             if(_combineSettings.SelCombineMode == MeshCombineSettings.CombineMode.Replace)
@@ -118,6 +148,8 @@ namespace O3DWB
                     UndoEx.DestroyObjectImmediate(parent);
                 }
             }
+
+            EditorUtility.DisplayDialog("Done!", "Mesh objects combined successfully!", "Ok");
         }
 
         private List<MeshCombineMaterial> GetMeshCombineMaterials(List<GameObject> meshObjects, GameObject sourceParent)

@@ -1,5 +1,6 @@
 ﻿#if UNITY_EDITOR
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEditor;
 using System.Collections.Generic;
 
@@ -47,21 +48,48 @@ namespace O3DWB
             _prefabToPreviewTexture.Clear();
             _prefabToPreviewTexture = newPrefabToPreviewTexture;
         }
+
+        public void GeneratePreviewsForPrefabCollection(List<Prefab> prefabs, bool showProgress)
+        {
+            int numPrefabs = prefabs.Count;
+            if (numPrefabs == 0) return;
+
+            PrefabPreviewGenerator.Get().BeginPreviewGenSession();
+            if(!showProgress)
+            {
+                foreach (var prefab in prefabs)
+                {
+                    if (prefab == null || prefab.UnityPrefab == null || IsPreviewTextureAvailableForPrefab(prefab)) continue;
+                    Texture2D prefabPreview = PrefabPreviewGenerator.Get().GeneratePreview(prefab);
+                    if (prefabPreview != null) _prefabToPreviewTexture.Add(prefab, prefabPreview);
+                }
+            }
+            else
+            {
+                float invPrefabCount = 1.0f / numPrefabs;
+                for(int prefabIndex = 0; prefabIndex < numPrefabs; ++prefabIndex)
+                {
+                    Prefab prefab = prefabs[prefabIndex];
+                    if (prefab == null || prefab.UnityPrefab == null || IsPreviewTextureAvailableForPrefab(prefab)) continue;
+                    EditorUtility.DisplayProgressBar("Generating prefab previews...", "Prefab: " + prefab.UnityPrefab.name, (float)(prefabIndex + 1) * invPrefabCount);
+                }
+                EditorUtility.ClearProgressBar();
+            }
+            PrefabPreviewGenerator.Get().EndPreviewGenSession();
+        }
         #endregion
 
         #region Private Methods
         private Texture2D GeneratePrefabPreviewTextureAndStore(Prefab prefab)
         {
-            // Note: This is needed because in some situations, the 'AssetPreview.GetAssetPreview' function returns null
-            //       even when it shouldn't. This happens most often with prefabs that contain meshes created in thrid
-            //       party softare.
-            EditorUtility.SetDirty(prefab.UnityPrefab);
-
-            Texture2D prefabPreview = AssetPreview.GetAssetPreview(prefab.UnityPrefab);
-            return ClonePrefabPreviewAndStore(prefab, prefabPreview);
+            PrefabPreviewGenerator.Get().BeginPreviewGenSession();
+            Texture2D prefabPreview = PrefabPreviewGenerator.Get().GeneratePreview(prefab);
+            PrefabPreviewGenerator.Get().EndPreviewGenSession();
+            if (prefabPreview != null) _prefabToPreviewTexture.Add(prefab, prefabPreview);
+            return prefabPreview;
         }
 
-        private Texture2D ClonePrefabPreviewAndStore(Prefab prefab, Texture2D prefabPreview)
+       /* private Texture2D ClonePrefabPreviewAndStore(Prefab prefab, Texture2D prefabPreview)
         {
             if (prefabPreview != null)
             {
@@ -74,7 +102,7 @@ namespace O3DWB
             }
 
             return null;
-        }
+        }*/
 
         private Dictionary<Prefab, Texture2D> GenerateNewDictionaryExcludingPairsWithNullPrefabReferences()
         {

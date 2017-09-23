@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 public class SafeNetworkBehaviour : NetworkBehaviour
 {
 	protected bool initialized;
+	protected bool needsStart;
 	protected bool needsClientStart;
 	protected bool needsServerStart;
 	protected bool needsAuthorityStart;
@@ -20,31 +21,21 @@ public class SafeNetworkBehaviour : NetworkBehaviour
 	{
 	}
 
+	public virtual void Start()
+	{
+		if (initialized)
+		{
+			DelayedStart();
+		}
+		else
+		{
+			needsStart = true;
+		}
+	}
+
 	public virtual void Update()
 	{
-		if (!initialized && Ready())
-		{
-			DelayedAwake();
-
-			if (needsClientStart)
-			{
-				DelayedOnStartClient();
-			}
-			if (needsServerStart)
-			{
-				DelayedOnStartServer();
-			}
-			if (needsAuthorityStart)
-			{
-				DelayedOnStartAuthority();
-			}
-			if (needsLocalPlayerStart)
-			{
-				DelayedOnStartLocalPlayer();
-			}
-
-			initialized = true;
-		}
+		SafeInitUpdate();
 	}
 
 	public override void OnStartClient()
@@ -106,12 +97,47 @@ public class SafeNetworkBehaviour : NetworkBehaviour
 	/**********************************************************/
 	// Interface
 
+	protected void SafeInitUpdate()
+	{
+		if (!initialized && Ready())
+		{
+			DelayedAwake();
+
+			if (needsStart)
+			{
+				DelayedStart();
+			}
+			if (needsClientStart)
+			{
+				DelayedOnStartClient();
+			}
+			if (needsServerStart)
+			{
+				DelayedOnStartServer();
+			}
+			if (needsAuthorityStart)
+			{
+				DelayedOnStartAuthority();
+			}
+			if (needsLocalPlayerStart)
+			{
+				DelayedOnStartLocalPlayer();
+			}
+
+			initialized = true;
+		}
+	}
+
 	protected virtual bool Ready()
 	{
 		return true;
 	}
 
 	protected virtual void DelayedAwake()
+	{
+	}
+
+	protected virtual void DelayedStart()
 	{
 	}
 

@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class OfflineWeaponCarrier : NetworkBehaviour
+public class OfflineWeaponCarrier : SafeNetworkBehaviour
 {
 	[SerializeField]
 	protected WeaponType offlinePrimaryType;
@@ -45,8 +45,10 @@ public class OfflineWeaponCarrier : NetworkBehaviour
 	/**********************************************************/
 	// MonoBehaviour Interface
 
-	public virtual void Awake()
+	public override void Awake()
 	{
+		base.Awake();
+
 		hud = GameObject.Find("HUD").GetComponent<HUD>();
 		controller = GetComponent<OfflineCharacterController>();
 		firstPersonHands = GetComponentInChildren<FirstPersonHands>();
@@ -57,12 +59,19 @@ public class OfflineWeaponCarrier : NetworkBehaviour
 		interactor = GetComponent<PlayerInteractor>();
 
 		needsShootingReset = false;
-
-		Traits = PlayerTraitsType.Default;
 	}
 
-	public virtual void Start()
+	protected override void DelayedAwake()
 	{
+	}
+
+	protected override void DelayedStart()
+	{
+		if (settings == null) // Should only happen when offline
+		{
+			settings = PartyManager.GameSettings.GetPlayerTraits(PlayerTraitsType.Default).Weapons;
+		}
+
 		primaryWeapon = (Instantiate(weaponPrefabs[(int)offlinePrimaryType], Utility.FindChild(gameObject, "Bro_RightHand").transform)).GetComponent<Weapon>();
 		secondaryWeapon = (Instantiate(weaponPrefabs[(int)offlineSecondaryType], Utility.FindChild(gameObject, "Bro_RightHand").transform)).GetComponent<Weapon>(); ;
 		canPickUp = 0.0f;
@@ -87,60 +96,14 @@ public class OfflineWeaponCarrier : NetworkBehaviour
 		secondaryWeapon.OnStartLocalPlayer();
 	}
 
-	public virtual void Update()
+	public override void Update()
 	{
-		if (primaryWeapon == null)
-		{
-			return;
-		}
+		base.Update();
 
-		if (needsShootingReset)
+		if (initialized)
 		{
-			if (PlayerInput.Shoot(ButtonStatus.Released))
-			{
-				needsShootingReset = false;
-			}
+			UpdateFirstPerson();
 		}
-
-		if (PlayerInput.AimDownSights(ButtonStatus.Pressed))
-		{
-			primaryWeapon.AimDownSights(true);
-			if (secondaryWeapon)
-			{
-				secondaryWeapon.AimDownSights(true);
-			}
-			wasSprinting = controller.Sprinting;
-			aimingDownSights = true;
-			aud.PlayOneShot(AimDownSightsSound);
-		}
-		else if (PlayerInput.AimDownSights(ButtonStatus.Released))
-		{
-			controller.Sprinting = wasSprinting;
-			primaryWeapon.AimDownSights(false);
-			if (secondaryWeapon)
-			{
-				secondaryWeapon.AimDownSights(false);
-			}
-			aimingDownSights = false;
-			aud.PlayOneShot(AimDownSightsSound);
-		}
-
-		controller.Sprinting = controller.Sprinting && !aimingDownSights;
-		wasSprinting = wasSprinting && !controller.CheckCancelSprint();
-
-		if (PlayerInput.Swap() && secondaryWeapon && !interactor.InteractableAvailable)
-		{
-			StartSwap();
-		}
-		else if (primaryWeapon.CheckReloadInput() && primaryWeapon.CanReload())
-		{
-			Reload();
-		}
-
-		primaryWeapon.FirstPersonUpdate();
-		primaryWeapon.ThirdPersonUpdate();
-
-		CheckWeaponPickUp();
 	}
 
 	/**********************************************************/
@@ -237,6 +200,62 @@ public class OfflineWeaponCarrier : NetworkBehaviour
 	/**********************************************************/
 	// Child Interface
 
+	protected virtual void UpdateFirstPerson()
+	{
+		if (primaryWeapon == null)
+		{
+			return;
+		}
+
+		if (needsShootingReset)
+		{
+			if (PlayerInput.Shoot(ButtonStatus.Released))
+			{
+				needsShootingReset = false;
+			}
+		}
+
+		if (PlayerInput.AimDownSights(ButtonStatus.Pressed))
+		{
+			primaryWeapon.AimDownSights(true);
+			if (secondaryWeapon)
+			{
+				secondaryWeapon.AimDownSights(true);
+			}
+			wasSprinting = controller.Sprinting;
+			aimingDownSights = true;
+			aud.PlayOneShot(AimDownSightsSound);
+		}
+		else if (PlayerInput.AimDownSights(ButtonStatus.Released))
+		{
+			controller.Sprinting = wasSprinting;
+			primaryWeapon.AimDownSights(false);
+			if (secondaryWeapon)
+			{
+				secondaryWeapon.AimDownSights(false);
+			}
+			aimingDownSights = false;
+			aud.PlayOneShot(AimDownSightsSound);
+		}
+
+		controller.Sprinting = controller.Sprinting && !aimingDownSights;
+		wasSprinting = wasSprinting && !controller.CheckCancelSprint();
+
+		if (PlayerInput.Swap() && secondaryWeapon && !interactor.InteractableAvailable)
+		{
+			StartSwap();
+		}
+		else if (primaryWeapon.CheckReloadInput() && primaryWeapon.CanReload())
+		{
+			Reload();
+		}
+
+		primaryWeapon.FirstPersonUpdate();
+		primaryWeapon.ThirdPersonUpdate();
+
+		CheckWeaponPickUp();
+	}
+
 	protected virtual void InitializeWeapon(Weapon weapon)
 	{
 		weapon.OnStart();
@@ -329,11 +348,11 @@ public class OfflineWeaponCarrier : NetworkBehaviour
 	/**********************************************************/
 	// Accessors/Mutators
 
-	public PlayerTraitsType Traits
+	public PlayerWeaponSettings Traits
 	{
 		set
 		{
-			settings = PartyManager.GameSettings.GetPlayerTraits(value).Weapons;
+			settings = value;
 
 			hud.AmmoDisplay.InfiniteAmmoType = settings.InfiniteAmmo;
 		}

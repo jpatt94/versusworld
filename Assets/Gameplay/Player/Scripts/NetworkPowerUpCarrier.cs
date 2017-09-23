@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
+using System.Collections.Generic;
 
 public class NetworkPowerUpCarrier : OfflinePowerUpCarrier
 {
 	[SerializeField]
 	private GameObject grenadeCloudPositionerPrefab;
 
+	private List<TraitPowerUpEntry> traitPowerUps;
 	private PowerUpType waitingForUse;
 	private bool canUse;
-	private PowerUpType currentTraitsPowerUp;
-	private float traitsPowerUpTime;
 
 	private PowerUpManager mgr;
 	private GrenadeCloudPositioner grenadeCloudPositioner;
@@ -18,21 +18,52 @@ public class NetworkPowerUpCarrier : OfflinePowerUpCarrier
 	/**********************************************************/
 	// MonoBehaviour Interface
 
-	public void Update()
+	protected override bool Ready()
 	{
-		if (isServer)
+		return net.Initialized;
+	}
+
+	public override void Awake()
+	{
+		base.Awake();
+
+		traitPowerUps = new List<TraitPowerUpEntry>();
+		waitingForUse = PowerUpType.None;
+
+		JP.Event.Register(this, "OnPowerUpSpinnerDone");
+	}
+
+	protected override void DelayedAwake()
+	{
+		mgr = GameObject.Find("PowerUpManager").GetComponent<PowerUpManager>();
+	}
+
+	public override void Update()
+	{
+		base.Update();
+
+		if (!initialized)
 		{
-			if (currentTraitsPowerUp != PowerUpType.None)
+			return;
+		}
+
+		for (int i = 0; i < traitPowerUps.Count; i++)
+		{
+			traitPowerUps[i].Time -= Time.deltaTime;
+
+			if (hasAuthority)
 			{
-				traitsPowerUpTime -= Time.deltaTime;
-				if (traitsPowerUpTime <= 0.0f)
-				{
-					StopTraitsPowerUp(currentTraitsPowerUp);
-				}
+				traitPowerUps[i].Icon.TimerAmount = traitPowerUps[i].Time / traitPowerUps[i].Duration;
+			}
+
+			if (isServer && traitPowerUps[i].Time <= 0.0f)
+			{
+				StopTraitsPowerUp(traitPowerUps[i].Type);
+				i--;
 			}
 		}
 
-		if (!net.Initialized || !hasAuthority)
+		if (!hasAuthority)
 		{
 			return;
 		}
@@ -55,16 +86,6 @@ public class NetworkPowerUpCarrier : OfflinePowerUpCarrier
 
 	/**********************************************************/
 	// Interface
-
-	public void DelayedAwake()
-	{
-		waitingForUse = PowerUpType.None;
-		currentTraitsPowerUp = PowerUpType.None;
-
-		mgr = GameObject.Find("PowerUpManager").GetComponent<PowerUpManager>();
-
-		JP.Event.Register(this, "OnPowerUpSpinnerDone");
-	}
 
 	protected override void OnPowerUpCollide(PowerUp other)
 	{
@@ -94,7 +115,11 @@ public class NetworkPowerUpCarrier : OfflinePowerUpCarrier
 
 		if (isServer)
 		{
-			StopTraitsPowerUp(currentTraitsPowerUp);
+			for (int i = 0; i < traitPowerUps.Count; i++)
+			{
+				StopTraitsPowerUp(traitPowerUps[i].Type);
+				i--;
+			}
 		}
 	}
 
@@ -103,23 +128,52 @@ public class NetworkPowerUpCarrier : OfflinePowerUpCarrier
 		JP.Event.Unregister(this, "OnPowerUpSpinnerDone");
 	}
 
-	public void StartTraitsPowerUp(PowerUpType type)
+	public void StartTraitsPowerUp(PowerUpType type, float time)
 	{
-		currentTraitsPowerUp = type;
-		net.Traits = (PlayerTraitsType)((int)PlayerTraitsType.DamageResist + (type - PowerUpType.DamageResist));
-		net.Model.SetPowerUpMaterial(type);
-
-		if (isServer && currentTraitsPowerUp != PowerUpType.None)
+		for (int i = 0; i < traitPowerUps.Count; i++)
 		{
-			RpcStartTraitsPowerUp(type);
+			if (traitPowerUps[i].Type == type)
+			{
+				traitPowerUps.RemoveAt(i);
+				break;
+			}
+		}
+
+		TraitPowerUpEntry e = new TraitPowerUpEntry();
+		e.Type = type;
+		e.Time = time;
+		e.Duration = time;
+		if (hasAuthority)
+		{
+			e.Icon = hud.AbilityDisplay.AddAbilityIcon(AbilityType.DamageResist + (type - PowerUpType.DamageResist)) as PassiveAbilityIcon;
+			e.Icon.Pop();
+		}
+		traitPowerUps.Add(e);
+
+		net.AddTraitModifier((PlayerTraitModifiersType)((int)PlayerTraitModifiersType.DamageResist + (type - PowerUpType.DamageResist)));
+
+		if (isServer && type != PowerUpType.None)
+		{
+			RpcStartTraitsPowerUp(type, time);
 		}
 	}
 
 	public void StopTraitsPowerUp(PowerUpType type)
 	{
-		currentTraitsPowerUp = PowerUpType.None;
-		net.Traits = PlayerTraitsType.Default;
-		net.Model.SetPowerUpMaterial(PowerUpType.None);
+		for (int i = 0; i < traitPowerUps.Count; i++)
+		{
+			if (traitPowerUps[i].Type == type)
+			{
+				if (hasAuthority)
+				{
+					hud.AbilityDisplay.RemoveAbilityIcon(AbilityType.DamageResist + (type - PowerUpType.DamageResist));
+				}
+				traitPowerUps.RemoveAt(i);
+				break;
+			}
+		}
+
+		net.RemoveTraitModifier((PlayerTraitModifiersType)((int)PlayerTraitModifiersType.DamageResist + (type - PowerUpType.DamageResist)));
 
 		if (isServer)
 		{
@@ -175,11 +229,11 @@ public class NetworkPowerUpCarrier : OfflinePowerUpCarrier
 	}
 
 	[ClientRpc]
-	private void RpcStartTraitsPowerUp(PowerUpType type)
+	private void RpcStartTraitsPowerUp(PowerUpType type, float time)
 	{
 		if (!isServer)
 		{
-			StartTraitsPowerUp(type);
+			StartTraitsPowerUp(type, time);
 		}
 	}
 
@@ -204,19 +258,12 @@ public class NetworkPowerUpCarrier : OfflinePowerUpCarrier
 		//grenadeCloudPositioner.Carrier = this;
 		grenadeCloudPositioner.CoverageDiameter = mgr.Settings.GrenadeCloud.Size;
 	}
+}
 
-	/**********************************************************/
-	// Accessors/Mutators
-
-	public float TraitsPowerUpTime
-	{
-		get
-		{
-			return traitsPowerUpTime;
-		}
-		set
-		{
-			traitsPowerUpTime = value;
-		}
-	}
+public class TraitPowerUpEntry
+{
+	public PowerUpType Type;
+	public float Time;
+	public float Duration;
+	public PassiveAbilityIcon Icon;
 }

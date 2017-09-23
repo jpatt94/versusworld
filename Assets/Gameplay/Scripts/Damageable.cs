@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class Damageable : NetworkBehaviour
+public class Damageable : SafeNetworkBehaviour
 {
 	[SerializeField]
 	protected float maxHealth;
@@ -20,14 +20,21 @@ public class Damageable : NetworkBehaviour
 	/**********************************************************/
 	// Interface
 
-	public virtual void Awake()
+	public override void Awake()
 	{
-		health = maxHealth;
+		base.Awake();
+
 		rig = GetComponent<Rigidbody>();
 	}
 
-	public virtual void Update()
+	protected override void DelayedStart()
 	{
+		health = maxHealth;
+	}
+
+	public override void Update()
+	{
+		base.Update();
 	}
 
 	public virtual float TakeDamage(float damage, int shooter, Vector3 position, DamageType type)

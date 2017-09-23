@@ -469,7 +469,8 @@ namespace O3DWB
             Renderer renderer = hierarchyRoot.GetComponent<Renderer>();
             if (renderer != null)
             {
-                EditorUtility.SetSelectedRenderState(renderer, isWireframeHidden ? EditorSelectedRenderState.Hidden : EditorSelectedRenderState.Highlight);
+                //EditorUtility.SetSelectedRenderState(renderer, isWireframeHidden ? EditorSelectedRenderState.Hidden : EditorSelectedRenderState.Highlight);
+                EditorUtility.SetSelectedWireframeHidden(renderer, isWireframeHidden);
             }
 
             Transform gameObjectTransform = hierarchyRoot.transform;

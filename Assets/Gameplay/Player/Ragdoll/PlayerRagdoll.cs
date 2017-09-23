@@ -45,7 +45,7 @@ public class PlayerRagdoll : MonoBehaviour
 		}
 	}
 
-	public void SeparateHead(Vector3 force)
+	public Transform SeparateHead(Vector3 force)
 	{
 		mesh.sharedMesh = headlessMesh;
 
@@ -55,9 +55,12 @@ public class PlayerRagdoll : MonoBehaviour
 		head.transform.rotation = headTransform.rotation;
 		head.transform.localScale = headTransform.localScale;
 		head.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+		head.GetComponent<Rigidbody>().maxDepenetrationVelocity = force.magnitude;
 		head.GetComponentInChildren<MeshRenderer>().material = mesh.material;
 		Destroy(head, duration);
 
 		transform.Find("Bro_Reference/Bro_Hips/Bro_Spine/Bro_Spine1/Bro_Spine2/NeckBloodEffect").GetComponent<ParticleSystem>().Play();
+
+		return head.transform.Find("Pivot");
 	}
 }

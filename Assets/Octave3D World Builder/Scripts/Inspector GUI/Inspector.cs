@@ -248,11 +248,6 @@ namespace O3DWB
                     RespondToMessage(message as ToolWasResetMessage);
                     break;
 
-                case MessageType.ToolWasEnabled:
-
-                    RespondToMessage(message as ToolWasEnabledMessage);
-                    break;
-
                 case MessageType.ToolWasStarted:
 
                     RespondToMessage(message as ToolWasStartedMessage);
@@ -263,10 +258,6 @@ namespace O3DWB
         private void RespondToMessage(ToolWasResetMessage message)
         {
             Initialize();
-        }
-
-        private void RespondToMessage(ToolWasEnabledMessage message)
-        {
         }
 
         private void RespondToMessage(ToolWasStartedMessage message)

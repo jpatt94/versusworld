@@ -39,7 +39,7 @@
       <ThrustEnabled Value="TRUE" />
       <ThrustHorizontalForce Value="4.50" />
       <ThrustVerticalForce Value="5.00" />
-      <ThrustDelay Value="6.00" />
+      <ThrustDelay Value="5.00" />
     </Movement>
     <Melee>
       <Damage Value="50.00" />
@@ -136,7 +136,7 @@
     <DropWhenKilled Value="TRUE" />
     <Frag>
       <StartingAmount Value="2" />
-      <MaxAmount Value="4" />
+      <MaxAmount Value="99" />
       <Damage Value="120.00" />
       <Range Value="7.50" />
       <FuseTime Value="1.25" />
@@ -144,7 +144,7 @@
     </Frag>
     <Tesla>
       <StartingAmount Value="0" />
-      <MaxAmount Value="4" />
+      <MaxAmount Value="99" />
       <DamagePerSecond Value="30.00" />
       <Range Value="10.00" />
       <FuseTime Value="9999.00" />
@@ -155,12 +155,16 @@
     </Tesla>
     <Spike>
       <StartingAmount Value="0" />
-      <MaxAmount Value="4" />
+      <MaxAmount Value="99" />
       <Damage Value="150.00" />
       <Range Value="10.00" />
       <FuseTime Value="1.5" />
       <StickDamage Value="5.00" />
     </Spike>
+    <RogiBall>
+      <StartingAmount Value="0" />
+      <MaxAmount Value="99" />
+    </RogiBall>
   </Grenades>
   <Items>
     <RespawnTime Value="45.00" />
@@ -194,31 +198,38 @@
       <Duration Value="15" />
     </BigHeads>
     <DamageResist>
-      <Weight Value="0" />
+      <Weight Value="40" />
       <Duration Value="15" />
-      <Traits>
+      <TraitModifiers>
         <Health>
           <DamageResistance Value="2.00" />
         </Health>
-      </Traits>
+      </TraitModifiers>
     </DamageResist>
     <SpeedBoost>
-      <Weight Value="0" />
+      <Weight Value="50" />
       <Duration Value="15" />
-      <Traits>
+      <TraitModifiers>
         <Movement>
-          <Speed Value="8.00" />
+          <Speed Value="1.47" />
         </Movement>
-      </Traits>
+      </TraitModifiers>
     </SpeedBoost>
     <DamageBoost>
-      <Weight Value="0" />
+      <Weight Value="45" />
       <Duration Value="15" />
-      <Traits>
+      <TraitModifiers>
         <Weapons>
           <DamageMultiplier Value="1.50" />
         </Weapons>
-      </Traits>
+      </TraitModifiers>
     </DamageBoost>
+    <SixPack>
+      <Weight Value="35" />
+      <Amount Value="600" />
+    </SixPack>
+    <RogiBall>
+      <Weight Value="100000" />
+    </RogiBall>
   </Items>
 </DefaultSettings>

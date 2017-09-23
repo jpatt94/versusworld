@@ -46,7 +46,7 @@ namespace O3DWB
         /// <summary>
         /// We will need this list of serialized nodes to serialize/deserialize the tree accordingly.
         /// </summary>
-        [SerializeField]
+        [NonSerialized]
         private List<SerializableGameObjectSphereTreeNode> _serializedNodes = new List<SerializableGameObjectSphereTreeNode>();
         #endregion
 
@@ -55,6 +55,8 @@ namespace O3DWB
         /// Returns the number of game objects which were registered with the tree.
         /// </summary>
         public int NumberOfGameObjects { get { return _gameObjectToNode.Count; } }
+
+        public Sphere RootSphere { get { return _sphereTree.RootSphere; } }
         #endregion
 
         #region Constructors
@@ -81,7 +83,7 @@ namespace O3DWB
         {
             // Acquire the list of nodes which can be serialized. After the serialization process
             // is completed, this list will be serialized and it can then be used for deserialization.
-            _serializedNodes = _sphereTree.GetSerializableNodes<SerializableGameObjectSphereTreeNode>();
+            //_serializedNodes = _sphereTree.GetSerializableNodes<SerializableGameObjectSphereTreeNode>();
         }
 
         /// <summary>
@@ -92,8 +94,8 @@ namespace O3DWB
             // Use the list of serializable nodes to construct the sphere tree and then
             // instruct it to give us the dictionary which maps each game object to its
             // terminal node.
-            _sphereTree.CreateTreeFromSerializedNodes(_serializedNodes);
-            _gameObjectToNode = _sphereTree.GetDataToTerminalNodeDictionary();
+            //_sphereTree.CreateTreeFromSerializedNodes(_serializedNodes);
+            //_gameObjectToNode = _sphereTree.GetDataToTerminalNodeDictionary();
         }
 
         /// <summary>
@@ -281,7 +283,7 @@ namespace O3DWB
                 // Retrieve the object which resides in the node
                 GameObject gameObject = nodeHit.HitNode.Data;
                 if (gameObject == null) continue;
-                if (!gameObject.activeSelf) continue;
+                if (!gameObject.activeInHierarchy) continue;
          
                 // If the ray intersects the object's box, add the hit to the list
                 GameObjectRayHit gameObjectRayHit = null;
@@ -309,7 +311,7 @@ namespace O3DWB
             {
                 // Retrieve the object which resides in the node
                 GameObject gameObject = nodeHit.HitNode.Data;
-                if (gameObject == null) continue;
+                if (gameObject == null || !gameObject.activeInHierarchy) continue;
                 if (!gameObject.HasSpriteRendererWithSprite()) continue;
 
                 // If the ray intersects the object's sprite, add the hit to the list
@@ -340,8 +342,11 @@ namespace O3DWB
                 // Store the object for easy access
                 GameObject hitObject = boxHit.HitObject;
                 if (hitObject == null) continue;
-                if (!hitObject.activeSelf) continue;
-             
+                if (!hitObject.activeInHierarchy) continue;
+
+                Renderer renderer = hitObject.GetComponent<Renderer>();
+                if (!renderer.enabled) continue;
+
                 // Store the object's mesh. If the object doesn't have a mesh, we will ignore it
                 Mesh objectMesh = hitObject.GetMeshFromFilterOrSkinnedMeshRenderer();
                 if (objectMesh == null) continue;
@@ -362,6 +367,13 @@ namespace O3DWB
         /// </summary>
         public void OnSceneGUI()
         {
+            // If there are no objects registered, it means the scripts may have been recompiled
+            // or this is a new Editor session. So we need to register the scene objects.
+            if (_gameObjectToNode.Count == 0)
+            {
+                RegisterUnregisteredObjects();
+            }
+
             _sphereTree.PerformPendingUpdates();
         }
 
@@ -422,6 +434,9 @@ namespace O3DWB
         /// </summary>
         public void RegisterGameObject(GameObject gameObject)
         {
+            Light[] lights = gameObject.GetComponents<Light>();
+            foreach (var light in lights) Octave3DScene.Get().RegisterSceneLight(light);
+
             if (!CanGameObjectBeRegisteredWithTree(gameObject)) return;
             
             // Build the object's sphere
@@ -479,16 +494,19 @@ namespace O3DWB
             List<GameObject> allWorkingObjects = Octave3DWorldBuilder.ActiveInstance.GetAllWorkingObjects();
             if(showProgress)
             {
-                for (int objIndex = 0; objIndex < allWorkingObjects.Count; ++objIndex)
+                float invObjCount = 1.0f / (float)allWorkingObjects.Count;
+                int numObjects = allWorkingObjects.Count;
+                for (int objIndex = 0; objIndex < numObjects; ++objIndex)
                 {
-                    EditorUtility.DisplayProgressBar("Building tree", "Building game object tree. Please wait...", ((float)(objIndex + 1) / (float)allWorkingObjects.Count));
+                    EditorUtility.DisplayProgressBar("Building tree", "Building game object tree. Please wait...", ((float)(objIndex + 1) * invObjCount));
                     RegisterGameObject(allWorkingObjects[objIndex]);
                 }
                 EditorUtility.ClearProgressBar();
             }
             else
             {
-                for (int objIndex = 0; objIndex < allWorkingObjects.Count; ++objIndex)
+                int numObjects = allWorkingObjects.Count;
+                for (int objIndex = 0; objIndex < numObjects; ++objIndex)
                 {
                     RegisterGameObject(allWorkingObjects[objIndex]);
                 }
@@ -551,25 +569,16 @@ namespace O3DWB
             // call 'RemoveNullObjectNodes' to remove any null object nodes from the
             // sphere tree.
             RemoveNullObjectNodes();
-   
-            // Register any objects that might have been added as children of the tool
-            // object. Please see the comments for 'RegisterUnregisteredObjects' to see
-            // why we need to perform this step.
+            
             //RegisterUnregisteredObjects();
         }
 
         /// <summary>
-        /// This method loops through all game objects which are children of the tool object
-        /// and registers them with the tree if necessary. This is useful when the user decides
-        /// to create objects using the Unity Editor interface because in that case the tool has
-        /// no way of knowing that a new object was created.
+        /// This method loops through all game objects which exist in the scene and registers them 
+        /// with the tree if necessary. This is useful when the user decides to create objects using
+        /// the Unity Editor interface because in that case the tool has no way of knowing that a new
+        /// object was created.
         /// </summary>
-        /// <remarks>
-        /// We could use 'OnTransformChildrenChanged' of the Monobehaviour class to detect when
-        /// children are added to the tool object. However, this does not work in all cases like
-        /// attaching a child to another child of the tool object. Quite unfortunate, but this
-        /// solution still works and it doesn't seem to slow down things. 
-        /// </remarks>
         public void RegisterUnregisteredObjects()
         {
             // Note: It may be possible that the tool object was destroyed, so we have to check for null

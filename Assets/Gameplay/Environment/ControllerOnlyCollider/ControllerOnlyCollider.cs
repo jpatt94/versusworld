@@ -10,6 +10,9 @@ public class ControllerOnlyCollider : MonoBehaviour
 	public void Awake()
 	{
 		gameObject.layer = LayerMask.NameToLayer("ControllerOnly");
-		GetComponent<MeshRenderer>().enabled = false;
+		if (GetComponent<MeshRenderer>())
+		{
+			GetComponent<MeshRenderer>().enabled = false;
+		}
 	}
 }

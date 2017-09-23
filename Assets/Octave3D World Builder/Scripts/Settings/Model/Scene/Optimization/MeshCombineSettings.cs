@@ -97,6 +97,8 @@ namespace O3DWB
         private string _combinedMeshName = "cmbMesh";
 
         [SerializeField]
+        private bool _disableSourceParent = true;
+        [SerializeField]
         private GameObject _childrenCombineSourceParent;
 
         [SerializeField]
@@ -136,6 +138,7 @@ namespace O3DWB
         public string CombinedObjectName { get { return _combinedObjectName; } set { if (value != null) _combinedObjectName = value; } }
         public string CombinedMeshName { get { return _combinedMeshName; } set { if (value != null) _combinedMeshName = value; } }
 
+        public bool DisableSourceParent { get { return _disableSourceParent; } set { _disableSourceParent = value; } }
         public GameObject ChildrenCombineSourceParent { get { return _childrenCombineSourceParent; } set { _childrenCombineSourceParent = value; } }
 
         public CombineMode SelCombineMode { get { return _selectionCombineMode; } set { _selectionCombineMode = value; } }
@@ -380,6 +383,15 @@ namespace O3DWB
             }
 
             EditorGUILayout.Separator();
+            content.text = "Disable source parent";
+            content.tooltip = "If this is checked, the tool will disable the parent of the children which participate in the mesh combine process.";
+            newBool = EditorGUILayout.ToggleLeft(content, DisableSourceParent);
+            if (newBool != DisableSourceParent)
+            {
+                UndoEx.RecordForToolAction(this);
+                DisableSourceParent = newBool;
+            }
+
             EditorGUILayout.BeginHorizontal();
             content.text = "Combine children";
             content.tooltip = "Combines all the children of the specified object (the field to the right of the button).";

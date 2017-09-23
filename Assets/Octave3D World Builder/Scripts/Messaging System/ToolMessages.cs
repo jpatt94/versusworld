@@ -39,24 +39,6 @@ namespace O3DWB
         #endregion
     }
 
-    public class ToolWasEnabledMessage : Message
-    {
-        #region Constructors
-        public ToolWasEnabledMessage()
-            : base(MessageType.ToolWasEnabled)
-        {
-        }
-        #endregion
-
-        #region Public Static Functions
-        public static void SendToInterestedListeners()
-        {
-            var message = new ToolWasEnabledMessage();
-            MessageListenerDatabase.Instance.SendMessageToInterestedListeners(message);
-        }
-        #endregion
-    }
-
     public class ToolWasSelectedMessage : Message
     {
         #region Constructors

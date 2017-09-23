@@ -113,6 +113,10 @@ public class OfflinePlayerModel : NetworkBehaviour
 		thirdPersonModel.PickUp();
 	}
 
+	public virtual void OnDeath()
+	{
+	}
+
 	public virtual void SetForward(float forward)
 	{
 		firstPersonHands.Animator.SetFloat("Forward", forward);

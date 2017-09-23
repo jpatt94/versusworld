@@ -3,7 +3,7 @@ guid: e4e617dc35ce68747b36baddb5ce888e
 timeCreated: 1460259738
 licenseType: Store
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
     100002: SA_Props_Luggage_TravelbagEmptyLid
@@ -41,14 +41,18 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 100
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -64,6 +68,7 @@ ModelImporter:
     normalSmoothAngle: 10
     normalImportMode: 1
     tangentImportMode: 1
+    normalCalculationMode: 0
   importAnimation: 0
   copyAvatar: 0
   humanDescription:

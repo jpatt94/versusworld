@@ -34,6 +34,7 @@ public class NetworkPlayerModel : OfflinePlayerModel
 
 	private float bigHeadTime;
 	private bool needsHeadShrinkSound;
+	private PassiveAbilityIcon bigHeadIcon;
 
 	private Dictionary<BodyPart, Transform> bodyPartTransforms;
 
@@ -99,7 +100,7 @@ public class NetworkPlayerModel : OfflinePlayerModel
 		bodyPartTransforms[BodyPart.RightUpperArm] = handsSpine.Find("Bro_RightShoulder/Bro_RightArm");
 		bodyPartTransforms[BodyPart.RightForearm] = handsSpine.Find("Bro_RightShoulder/Bro_RightArm/Bro_RightForeArm");
 		bodyPartTransforms[BodyPart.LeftUpperArm] = handsSpine.Find("Bro_LeftShoulder/Bro_LeftArm");
-		bodyPartTransforms[BodyPart.LeftForearm] = handsSpine.Find("Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm"); 
+		bodyPartTransforms[BodyPart.LeftForearm] = handsSpine.Find("Bro_LeftShoulder/Bro_LeftArm/Bro_LeftForeArm");
 
 		Transform legs = FirstPersonLegs.transform.Find("Bro_Reference/Bro_Hips");
 		bodyPartTransforms[BodyPart.RightUpperLeg] = legs.Find("Bro_RightUpLeg");
@@ -162,6 +163,19 @@ public class NetworkPlayerModel : OfflinePlayerModel
 	{
 		firstPersonHands.PickUp();
 		CmdPickUp();
+	}
+
+	public override void OnDeath()
+	{
+		base.OnDeath();
+
+		bigHeadTime = 0.0f;
+		bodyPartTransforms[BodyPart.Head].parent.localScale = Vector3.one;
+		if (hasAuthority)
+		{
+			HUD.Instance.AbilityDisplay.RemoveAbilityIcon(AbilityType.BigHead);
+			bigHeadIcon = null;
+		}
 	}
 
 	public override void OnChangeWeapon(WeaponType type)
@@ -345,6 +359,8 @@ public class NetworkPlayerModel : OfflinePlayerModel
 		if (hasAuthority)
 		{
 			firstPersonHands.AudioSource.PlayOneShot(HeadGrowSound);
+			bigHeadIcon = HUD.Instance.AbilityDisplay.AddAbilityIcon(AbilityType.BigHead) as PassiveAbilityIcon;
+			bigHeadIcon.Pop();
 		}
 		else
 		{
@@ -402,6 +418,12 @@ public class NetworkPlayerModel : OfflinePlayerModel
 		if (bigHeadTime <= 0.0f)
 		{
 			bodyPartTransforms[BodyPart.Head].parent.localScale = Vector3.one;
+
+			if (hasAuthority)
+			{
+				HUD.Instance.AbilityDisplay.RemoveAbilityIcon(AbilityType.BigHead);
+				bigHeadIcon = null;
+			}
 		}
 		else
 		{
@@ -433,6 +455,11 @@ public class NetworkPlayerModel : OfflinePlayerModel
 
 			scale = Mathf.LerpUnclamped(1.0f, settings.Scale, scale);
 			bodyPartTransforms[BodyPart.Head].parent.localScale = Vector3.one * scale;
+
+			if (hasAuthority)
+			{
+				bigHeadIcon.TimerAmount = bigHeadTime / settings.Duration;
+			}
 		}
 	}
 

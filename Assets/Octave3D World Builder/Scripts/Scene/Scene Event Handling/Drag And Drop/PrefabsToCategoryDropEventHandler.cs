@@ -62,6 +62,8 @@ namespace O3DWB
             {
                 var prefabsDropOperation = new PrefabsToCategoryDropOperation(prefabsDropData);
                 prefabsDropOperation.Perform();
+
+                PrefabPreviewTextureCache.Get().GeneratePreviewsForPrefabCollection(prefabsDropData.ValidDroppedPrefabs, true);
             }
         }
 
@@ -70,10 +72,16 @@ namespace O3DWB
             var prefabFoldersDropData = new PrefabFoldersToCategoryDropData(prefabCategory, PrefabFoldersDropSettings.ProcessSubfolders);
             prefabFoldersDropData.FromLastDropOperation();
 
-            if(prefabFoldersDropData.PrefabFoldersDropDataCollection.Count != 0)
+            var dropDataCollection = prefabFoldersDropData.PrefabFoldersDropDataCollection;
+            if (dropDataCollection.Count != 0)
             {
                 var prefabFoldersDropOperation = new PrefabFoldersToCategoryDropOperation(prefabFoldersDropData);
                 prefabFoldersDropOperation.Perform();
+
+                foreach(var dropData in dropDataCollection)
+                {
+                    PrefabPreviewTextureCache.Get().GeneratePreviewsForPrefabCollection(dropData.ValidPrefabs, true);
+                }
             }
         }
         #endregion

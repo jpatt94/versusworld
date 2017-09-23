@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 65000010488509116}
   - component: {fileID: 114000011444624172}
   - component: {fileID: 114000011571914598}
+  - component: {fileID: 82234915450365548}
   m_Layer: 2
   m_Name: PowerUp
   m_TagString: PowerUp
@@ -125,6 +126,93 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2.4025629, z: 2}
   m_Center: {x: 0, y: -0.049990654, z: 0}
+--- !u!82 &82234915450365548
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012731860758}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 4caf8ee8b0f2d3f429edf2e95a64fed0,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 20
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: -4.3278255
+      outSlope: -4.3278255
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.35793185
+      value: 0.15791857
+      inSlope: -0.6402815
+      outSlope: -0.6402815
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95000013211667010
 Animator:
   serializedVersion: 3
@@ -155,6 +243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypointPrefab: {fileID: 1662768712675028, guid: 91e208302fc72514cadf790e0d361d8f,
     type: 2}
+  respawnSound: {fileID: 8300000, guid: 88b4a36d0a9105f45b89669484dc538e, type: 3}
+  pickUpSound: {fileID: 8300000, guid: 8fe67e011b837684487fe0115cc66558, type: 3}
 --- !u!114 &114000011571914598
 MonoBehaviour:
   m_ObjectHideFlags: 1

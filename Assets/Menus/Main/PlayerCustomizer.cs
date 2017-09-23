@@ -5,13 +5,17 @@ using UnityEngine;
 public class PlayerCustomizer : MonoBehaviour
 {
 	[SerializeField]
-	private GameObject playerTextureMakerPrefab;
+	private Transform headTransform;
 	[SerializeField]
-	private Material[] faceMaterials;
+	private GameObject playerTextureMakerPrefab;
 	[SerializeField]
 	private Material[] skinMaterials;
 	[SerializeField]
+	private Material[] faceMaterials;
+	[SerializeField]
 	private Material[] hairMaterials;
+	[SerializeField]
+	private GameObject[] maskPrefabs;
 	[SerializeField]
 	private Material[] shirtMaterials;
 	[SerializeField]
@@ -21,10 +25,13 @@ public class PlayerCustomizer : MonoBehaviour
 
 	private PlayerCustomizationOptions previewOptions;
 	private Texture2D previewTexture;
+	private GameObject mask;
 	private int needsRandomize;
 
 	private SkinnedMeshRenderer previewMesh;
 	private PlayerTextureMaker maker;
+
+	private static PlayerCustomizer instance;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
@@ -37,6 +44,8 @@ public class PlayerCustomizer : MonoBehaviour
 		}
 		else
 		{
+			instance = this;
+
 			previewOptions = new PlayerCustomizationOptions();
 
 			maker = Instantiate(playerTextureMakerPrefab).GetComponent<PlayerTextureMaker>();
@@ -44,6 +53,22 @@ public class PlayerCustomizer : MonoBehaviour
 			previewMesh = transform.Find("Mesh").GetComponentInChildren<SkinnedMeshRenderer>();
 			previewTexture = new Texture2D(1024, 1024);
 			previewMesh.material.mainTexture = previewTexture;
+
+			JP.Event.Register(this, "OnNextSkinButtonClick");
+			JP.Event.Register(this, "OnPrevSkinButtonClick");
+			JP.Event.Register(this, "OnNextFaceButtonClick");
+			JP.Event.Register(this, "OnPrevFaceButtonClick");
+			JP.Event.Register(this, "OnNextHairButtonClick");
+			JP.Event.Register(this, "OnPrevHairButtonClick");
+			JP.Event.Register(this, "OnNextMaskButtonClick");
+			JP.Event.Register(this, "OnPrevMaskButtonClick");
+			JP.Event.Register(this, "OnNextShirtButtonClick");
+			JP.Event.Register(this, "OnPrevShirtButtonClick");
+			JP.Event.Register(this, "OnNextPantsButtonClick");
+			JP.Event.Register(this, "OnPrevPantsButtonClick");
+			JP.Event.Register(this, "OnNextShoesButtonClick");
+			JP.Event.Register(this, "OnPrevShoesButtonClick");
+			JP.Event.Register(this, "OnRandomizeButtonClick");
 
 			DontDestroyOnLoad(gameObject);
 		}
@@ -53,154 +78,180 @@ public class PlayerCustomizer : MonoBehaviour
 	{
 		if (needsRandomize == 1)
 		{
-			Randomize();
+			OnRandomizeButtonClick();
 		}
 		needsRandomize++;
+	}
+
+	public void OnDestroy()
+	{
+		JP.Event.UnregisterAll(this);
 	}
 
 	/**********************************************************/
 	// Interface
 
-	public void Randomize()
+	public void OnRandomizeButtonClick()
 	{
-		previewOptions.face = Random.Range(0, faceMaterials.Length);
-		previewOptions.skin = Random.Range(0, skinMaterials.Length);
-		previewOptions.hair = Random.Range(0, hairMaterials.Length);
-		previewOptions.shirt = Random.Range(0, shirtMaterials.Length);
-		previewOptions.pants = Random.Range(0, pantsMaterials.Length);
-		previewOptions.shoes = Random.Range(0, shoesMaterials.Length);
+		previewOptions.Face = Random.Range(0, faceMaterials.Length);
+		previewOptions.Skin = Random.Range(0, skinMaterials.Length);
+		previewOptions.Hair = Random.Range(0, hairMaterials.Length);
+		previewOptions.Mask = Random.Range(-1, maskPrefabs.Length);
+		previewOptions.Shirt = Random.Range(0, shirtMaterials.Length);
+		previewOptions.Pants = Random.Range(0, pantsMaterials.Length);
+		previewOptions.Shoes = Random.Range(0, shoesMaterials.Length);
 
 		BuildPreview();
 	}
 
 	public void CreateTexture(Texture2D texture, PlayerCustomizationOptions options)
 	{
-		maker.FaceMaterial = faceMaterials[options.face];
-		maker.SkinMaterial = skinMaterials[options.skin];
-		maker.HairMaterial = skinMaterials[options.hair];
-		maker.ShirtMaterial = shirtMaterials[options.shirt];
-		maker.PantsMaterial = pantsMaterials[options.pants];
-		maker.ShoesMaterial = shoesMaterials[options.shoes];
+		maker.FaceMaterial = faceMaterials[options.Face];
+		maker.SkinMaterial = skinMaterials[options.Skin];
+		maker.HairMaterial = skinMaterials[options.Hair];
+		maker.ShirtMaterial = shirtMaterials[options.Shirt];
+		maker.PantsMaterial = pantsMaterials[options.Pants];
+		maker.ShoesMaterial = shoesMaterials[options.Shoes];
 
 		maker.Build(texture);
 	}
 
-	public void NextFace()
+	public void OnNextSkinButtonClick()
 	{
-		previewOptions.face++;
-		if (previewOptions.face >= faceMaterials.Length)
+		previewOptions.Skin++;
+		if (previewOptions.Skin >= skinMaterials.Length)
 		{
-			previewOptions.face = 0;
+			previewOptions.Skin = 0;
 		}
 		BuildPreview();
 	}
 
-	public void PrevFace()
+	public void OnPrevSkinButtonClick()
 	{
-		previewOptions.face--;
-		if (previewOptions.face < 0)
+		previewOptions.Skin--;
+		if (previewOptions.Skin < 0)
 		{
-			previewOptions.face = faceMaterials.Length - 1;
+			previewOptions.Skin = skinMaterials.Length - 1;
 		}
 		BuildPreview();
 	}
 
-	public void NextSkin()
+	public void OnNextFaceButtonClick()
 	{
-		previewOptions.skin++;
-		if (previewOptions.skin >= skinMaterials.Length)
+		previewOptions.Face++;
+		if (previewOptions.Face >= faceMaterials.Length)
 		{
-			previewOptions.skin = 0;
+			previewOptions.Face = 0;
 		}
 		BuildPreview();
 	}
 
-	public void PrevSkin()
+	public void OnPrevFaceButtonClick()
 	{
-		previewOptions.skin--;
-		if (previewOptions.skin < 0)
+		previewOptions.Face--;
+		if (previewOptions.Face < 0)
 		{
-			previewOptions.skin = skinMaterials.Length - 1;
+			previewOptions.Face = faceMaterials.Length - 1;
 		}
 		BuildPreview();
 	}
 
-	public void NextHair()
+	public void OnNextHairButtonClick()
 	{
-		previewOptions.hair++;
-		if (previewOptions.hair >= hairMaterials.Length)
+		previewOptions.Hair++;
+		if (previewOptions.Hair >= hairMaterials.Length)
 		{
-			previewOptions.hair = 0;
+			previewOptions.Hair = 0;
 		}
 		BuildPreview();
 	}
 
-	public void PrevHair()
+	public void OnPrevHairButtonClick()
 	{
-		previewOptions.hair--;
-		if (previewOptions.hair < 0)
+		previewOptions.Hair--;
+		if (previewOptions.Hair < 0)
 		{
-			previewOptions.hair = hairMaterials.Length - 1;
+			previewOptions.Hair = hairMaterials.Length - 1;
 		}
 		BuildPreview();
 	}
 
-	public void NextShirt()
+	public void OnNextMaskButtonClick()
 	{
-		previewOptions.shirt++;
-		if (previewOptions.shirt >= shirtMaterials.Length)
+		previewOptions.Mask++;
+		if (previewOptions.Mask >= maskPrefabs.Length)
 		{
-			previewOptions.shirt = 0;
+			previewOptions.Mask = -1;
 		}
 		BuildPreview();
 	}
 
-	public void PrevShirt()
+	public void OnPrevMaskButtonClick()
 	{
-		previewOptions.shirt--;
-		if (previewOptions.shirt < 0)
+		previewOptions.Mask--;
+		if (previewOptions.Mask < -1)
 		{
-			previewOptions.shirt = shirtMaterials.Length - 1;
+			previewOptions.Mask = maskPrefabs.Length - 1;
 		}
 		BuildPreview();
 	}
 
-	public void NextPants()
+	public void OnNextShirtButtonClick()
 	{
-		previewOptions.pants++;
-		if (previewOptions.pants >= pantsMaterials.Length)
+		previewOptions.Shirt++;
+		if (previewOptions.Shirt >= shirtMaterials.Length)
 		{
-			previewOptions.pants = 0;
+			previewOptions.Shirt = 0;
 		}
 		BuildPreview();
 	}
 
-	public void PrevPants()
+	public void OnPrevShirtButtonClick()
 	{
-		previewOptions.pants--;
-		if (previewOptions.pants < 0)
+		previewOptions.Shirt--;
+		if (previewOptions.Shirt < 0)
 		{
-			previewOptions.pants = pantsMaterials.Length - 1;
+			previewOptions.Shirt = shirtMaterials.Length - 1;
 		}
 		BuildPreview();
 	}
 
-	public void NextShoes()
+	public void OnNextPantsButtonClick()
 	{
-		previewOptions.shoes++;
-		if (previewOptions.shoes >= shoesMaterials.Length)
+		previewOptions.Pants++;
+		if (previewOptions.Pants >= pantsMaterials.Length)
 		{
-			previewOptions.shoes = 0;
+			previewOptions.Pants = 0;
 		}
 		BuildPreview();
 	}
 
-	public void PrevShoes()
+	public void OnPrevPantsButtonClick()
 	{
-		previewOptions.shoes--;
-		if (previewOptions.shoes < 0)
+		previewOptions.Pants--;
+		if (previewOptions.Pants < 0)
 		{
-			previewOptions.shoes = shoesMaterials.Length - 1;
+			previewOptions.Pants = pantsMaterials.Length - 1;
+		}
+		BuildPreview();
+	}
+
+	public void OnNextShoesButtonClick()
+	{
+		previewOptions.Shoes++;
+		if (previewOptions.Shoes >= shoesMaterials.Length)
+		{
+			previewOptions.Shoes = 0;
+		}
+		BuildPreview();
+	}
+
+	public void OnPrevShoesButtonClick()
+	{
+		previewOptions.Shoes--;
+		if (previewOptions.Shoes < 0)
+		{
+			previewOptions.Shoes = shoesMaterials.Length - 1;
 		}
 		BuildPreview();
 	}
@@ -211,26 +262,44 @@ public class PlayerCustomizer : MonoBehaviour
 	private void BuildPreview()
 	{
 		CreateTexture(previewTexture, previewOptions);
+
+		if (mask)
+		{
+			Destroy(mask);
+		}
+		if (previewOptions.Mask > -1)
+		{
+			mask = Instantiate(maskPrefabs[previewOptions.Mask], headTransform);
+		}
 	}
 
 	/**********************************************************/
 	// Accessors/Mutators
 
-	public PlayerCustomizationOptions Options
+	public static PlayerCustomizationOptions Options
 	{
 		get
 		{
-			return previewOptions;
+			return instance.previewOptions;
+		}
+	}
+
+	public static GameObject[] MaskPrefabs
+	{
+		get
+		{
+			return instance.maskPrefabs;
 		}
 	}
 }
 
 public struct PlayerCustomizationOptions
 {
-	public int face;
-	public int skin;
-	public int hair;
-	public int shirt;
-	public int pants;
-	public int shoes;
+	public int Skin;
+	public int Face;
+	public int Hair;
+	public int Mask;
+	public int Shirt;
+	public int Pants;
+	public int Shoes;
 }

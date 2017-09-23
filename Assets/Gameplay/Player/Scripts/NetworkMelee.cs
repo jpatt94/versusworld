@@ -29,7 +29,6 @@ public class NetworkMelee : OfflineMelee
 
 	public void DelayedAwake()
 	{
-		Traits = PlayerTraitsType.Default;
 	}
 
 	public void OnStartAuthority()
@@ -126,14 +125,12 @@ public class NetworkMelee : OfflineMelee
 	/**********************************************************/
 	// Accessors/Mutators
 
-	public PlayerTraitsType Traits
+	public MeleeSettings Traits
 	{
 		set
 		{
-			MeleeSettings settings = PartyManager.GameSettings.GetPlayerTraits(value).Melee;
-
-			damage = settings.Damage;
-			rate = settings.Rate;
+			damage = value.Damage;
+			rate = value.Rate;
 
 			net.Model.FirstPersonHands.Animator.SetFloat("MeleeSpeed", rate);
 			net.Model.ThirdPersonModel.Animator.SetFloat("MeleeSpeed", rate);

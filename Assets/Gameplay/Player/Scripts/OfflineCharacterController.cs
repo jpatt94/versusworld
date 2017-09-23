@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.Networking;
 using ECM.Characters;
 
-public class OfflineCharacterController : NetworkBehaviour
+public class OfflineCharacterController : SafeNetworkBehaviour
 {
 	[SerializeField]
 	protected float speed;
@@ -69,59 +69,22 @@ public class OfflineCharacterController : NetworkBehaviour
 	protected float jumpHandsLagTime;
 	protected bool crouching;
 	protected float canThrust;
+	protected int freeThrusts;
 
 	protected CharacterMovement controller;
 	protected CameraManager cam;
+	protected Rigidbody rig;
 	protected FirstPersonHands firstPersonHands;
 	protected OfflinePlayerModel playerModel;
+	protected ThrustIcon thrustIcon;
 
 	/**********************************************************/
 	// MonoBehaviour Interface
 
-	public void Start()
+	public override void Awake()
 	{
-		OnStart();
-	}
+		base.Awake();
 
-	public virtual void Update()
-	{
-		UpdateInputVelocity(PlayerInput.MoveAxis);
-		UpdateSprint();
-		UpdateCrouch();
-
-		if (thrustEnabled)
-		{
-			canThrust += Time.deltaTime;
-			HUD.Instance.ThrustIcon.FillAmount = Mathf.Clamp01(1.0f - (-canThrust / thrustDelay));
-		}
-
-		jumpInput -= Time.deltaTime;
-		if (PlayerInput.Jump(ButtonStatus.Pressed))
-		{
-			jumpInput = jumpInputBufferTime;
-		}
-
-		if (!controller.isGrounded)
-		{
-			jumpHandsLagTime -= Time.deltaTime;
-			if (jumpHandsLagTime >= 0.0f)
-			{
-				firstPersonHands.AddPositionLag(Vector3.down * jumpHandsLagAmount * Time.deltaTime);
-			}
-		}
-
-	}
-
-	public virtual void FixedUpdate()
-	{
-		Move();
-	}
-
-	/**********************************************************/
-	// Interface
-
-	public virtual void OnStart()
-	{
 		inputVelocity = Vector3.zero;
 		previouslyGrounded = false;
 		jumping = false;
@@ -131,9 +94,62 @@ public class OfflineCharacterController : NetworkBehaviour
 
 		controller = GetComponent<CharacterMovement>();
 		cam = GetComponentInChildren<CameraManager>();
+		rig = GetComponent<Rigidbody>();
 		firstPersonHands = GetComponentInChildren<FirstPersonHands>();
 		playerModel = GetComponent<OfflinePlayerModel>();
 	}
+
+	protected override void DelayedStart()
+	{
+		if (thrustEnabled)
+		{
+			thrustIcon = HUD.Instance.AbilityDisplay.AddAbilityIcon(AbilityType.Thrust) as ThrustIcon;
+		}
+	}
+
+	public override void Update()
+	{
+		base.Update();
+
+		if (initialized)
+		{
+			UpdateInputVelocity(PlayerInput.MoveAxis);
+			UpdateSprint();
+			UpdateCrouch();
+
+			if (thrustEnabled && thrustIcon)
+			{
+				canThrust += Time.deltaTime;
+				thrustIcon.RechargeAmount = Mathf.Clamp01(-canThrust / thrustDelay);
+			}
+
+			jumpInput -= Time.deltaTime;
+			if (PlayerInput.Jump(ButtonStatus.Pressed))
+			{
+				jumpInput = jumpInputBufferTime;
+			}
+
+			if (!controller.isGrounded)
+			{
+				jumpHandsLagTime -= Time.deltaTime;
+				if (jumpHandsLagTime >= 0.0f)
+				{
+					firstPersonHands.AddPositionLag(Vector3.down * jumpHandsLagAmount * Time.deltaTime);
+				}
+			}
+		}
+	}
+
+	public virtual void FixedUpdate()
+	{
+		if (initialized)
+		{
+			Move();
+		}
+	}
+
+	/**********************************************************/
+	// Interface
 
 	public void Move()
 	{
@@ -154,10 +170,21 @@ public class OfflineCharacterController : NetworkBehaviour
 				cam.ViewShake(jumpViewShake, jumpViewShakeDuration);
 				jumpInput = -1.0f;
 			}
-			else if (thrustEnabled && canThrust >= 0.0f && !(Physics.Raycast(transform.position, Vector3.down, 1.0f) && controller.velocity.y < 0.0f))
+			else if (((thrustEnabled && canThrust >= 0.0f) || freeThrusts > 0) && !(Physics.Raycast(transform.position, Vector3.down, 1.0f) && controller.velocity.y < 0.0f))
 			{
 				Thrust(inputVelocity);
-				canThrust = -thrustDelay;
+
+				if (freeThrusts > 0)
+				{
+					freeThrusts--;
+					thrustIcon.FreeThrusts = freeThrusts;
+					thrustIcon.Pop();
+				}
+				else
+				{
+					canThrust = -thrustDelay;
+				}
+
 				playerModel.OnThrust();
 				jumpInput = -1.0f;
 			}

@@ -23,7 +23,11 @@ public class MultiplayerMap : NetworkBehaviour
 
 	public void Awake()
 	{
-		FindObjectOfType<LoadingMapCanvas>().IncreaseProgress();
+		LoadingMapCanvas lmc = FindObjectOfType<LoadingMapCanvas>();
+		if (lmc) // Should only be null in offline mode
+		{
+			lmc.IncreaseProgress();
+		}
 
 		topLeftCorner = GameObject.Find("MapTopLeftCorner").GetComponent<Transform>();
 		bottomRightCorner = GameObject.Find("MapBottomRightCorner").GetComponent<Transform>();

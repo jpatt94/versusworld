@@ -57,6 +57,8 @@ namespace O3DWB
         protected Queue<SphereTreeNode<T>> _nodesPendingRecomputation = new Queue<SphereTreeNode<T>>();
         #endregion
 
+        public Sphere RootSphere { get { return _rootNode != null ? _rootNode.Sphere : new Sphere(Vector3.zero, 0.0f); } }
+
         #region Constructors
         /// <summary>
         /// Constructor.
@@ -604,9 +606,7 @@ namespace O3DWB
         /// </summary>
         private void GetDataToTerminalNodeDictionaryRecurse(SphereTreeNode<T> parentNode, Dictionary<T, SphereTreeNode<T>> dictionary)
         {
-            // Note: Is the ContainsKey call really needed? Seems to solve exception, but this
-            //       check shouldn't be here. Why does it create duplicates?
-            if (parentNode.IsTerminal && !dictionary.ContainsKey(parentNode.Data)) dictionary.Add(parentNode.Data, parentNode);
+            if (parentNode.IsTerminal) dictionary.Add(parentNode.Data, parentNode);
             else
             {
                 List<SphereTreeNode<T>> children = parentNode.Children;

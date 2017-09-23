@@ -17,14 +17,8 @@ namespace O3DWB
             Sprite sprite = spriteRenderer.sprite;
             if (sprite == null) return Box.GetInvalid();
 
-            #if !UNITY_5
-            Vector3 modelSpaceCenter = spriteRenderer.transform.InverseTransformPoint(spriteRenderer.bounds.center);
-            modelSpaceCenter.z = 0.0f;
-            return new Box(modelSpaceCenter, sprite.rect.size / sprite.pixelsPerUnit);
-            #else
             List<Vector2> spriteVerts = new List<Vector2>(sprite.vertices);
             return Vector2Extensions.GetBoxFromPointCloud(spriteVerts);
-            #endif
         }
 
         // Works only when the Read/Write enabled flag is set inside the sprite texture properties. 

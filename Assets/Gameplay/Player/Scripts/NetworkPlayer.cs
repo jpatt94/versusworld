@@ -18,10 +18,12 @@ public class NetworkPlayer : SafeNetworkBehaviour
 	[SyncVar]
 	private int team;
 
+	private bool awoken;
 	private bool receivedStartingWeapons;
 
 	private PlayerTraits traits;
 	private PlayerTraitsType traitsType;
+	private List<PlayerTraitModifiersType> traitModifierTypes;
 
 	private MultiplayerManager mgr;
 	private WeaponManager weapons;
@@ -147,12 +149,15 @@ public class NetworkPlayer : SafeNetworkBehaviour
 		hud = GameObject.Find("HUD").GetComponent<HUD>();
 		respawnCam = GameObject.Find("RespawnCamera").GetComponent<RespawnCamera>();
 
-		powerUpCarrier.DelayedAwake();
 		melee.DelayedAwake();
 
 		MultiplayerManager.Stats.RegisterPlayer(networkID);
 
+		traits = new PlayerTraits();
+		traitModifierTypes = new List<PlayerTraitModifiersType>();
 		Traits = PlayerTraitsType.Default;
+
+		awoken = true;
 	}
 
 	protected override void DelayedOnStartClient()
@@ -164,8 +169,14 @@ public class NetworkPlayer : SafeNetworkBehaviour
 		health.enabled = true;
 
 		Texture2D texture = new Texture2D(1024, 1024);
-		GameObject.Find("PlayerCustomizer").GetComponent<PlayerCustomizer>().CreateTexture(texture, mgr.GetPlayerData(ID).CustomizationOptions);
+		PlayerCustomizer customizer = FindObjectOfType<PlayerCustomizer>();
+		PlayerCustomizationOptions options = mgr.GetPlayerData(ID).CustomizationOptions;
+		customizer.CreateTexture(texture, options);
 		mod.Texture = texture;
+		if (options.Mask > -1)
+		{
+			Instantiate(PlayerCustomizer.MaskPrefabs[options.Mask], mod.ThirdPersonModel.transform.Find(ThirdPersonModel.GetBodyPartTransformPath(BodyPart.Head)));
+		}
 
 		mod.PopulateBodyTransformsThirdPerson();
 	}
@@ -187,9 +198,12 @@ public class NetworkPlayer : SafeNetworkBehaviour
 		weaponCarrier.Enable();
 		health.enabled = true;
 		grenadeCarrier.OnStartLocalPlayer();
+
 		mod.FirstPersonHands.Visible = true;
 		mod.FirstPersonLegs.Visible = true;
-		mod.ThirdPersonModel.Visible = false;
+		mod.ThirdPersonModel.RenderOnlyShadows();
+		mod.ThirdPersonModel.transform.localPosition = mod.FirstPersonLegs.transform.localPosition;
+
 		melee.OnStartAuthority();
 
 		CmdRequestStartingWeapons();
@@ -348,6 +362,24 @@ public class NetworkPlayer : SafeNetworkBehaviour
 	public void Melee(int victim, Vector3 position, Vector3 normal, BodyPart bodyPart)
 	{
 		CmdMelee(victim, position, normal, bodyPart, traitsType);
+	}
+
+	public void AddTraitModifier(PlayerTraitModifiersType type)
+	{
+		if (!traitModifierTypes.Contains(type))
+		{
+			traitModifierTypes.Add(type);
+			UpdateTraitModifiers();
+		}
+	}
+
+	public void RemoveTraitModifier(PlayerTraitModifiersType type)
+	{
+		if (traitModifierTypes.Contains(type))
+		{
+			traitModifierTypes.Remove(type);
+			UpdateTraitModifiers();
+		}
 	}
 
 	/**********************************************************/
@@ -536,7 +568,15 @@ public class NetworkPlayer : SafeNetworkBehaviour
 
 			grenadeCarrier.Reset();
 			powerUpCarrier.OnDeath();
+			netController.OnDeath();
+
+			for (int i = (int)AbilityType.BigHead; i < (int)AbilityType.NumTypes; i++)
+			{
+				hud.AbilityDisplay.RemoveAbilityIcon((AbilityType)i);
+			}
 		}
+
+		mod.OnDeath();
 	}
 
 	[ClientRpc]
@@ -620,6 +660,15 @@ public class NetworkPlayer : SafeNetworkBehaviour
 		}
 	}
 
+	[ClientRpc]
+	public void RpcRogiBallTeleport(Vector3 pos)
+	{
+		if (hasAuthority)
+		{
+			netController.RogiBallTeleport(pos);
+		}
+	}
+
 	/**********************************************************/
 	// Helper Functions
 
@@ -648,7 +697,7 @@ public class NetworkPlayer : SafeNetworkBehaviour
 			hud.Radar.SetVisible(alive);
 			hud.GrenadeSelector.Visible = alive;
 			hud.HealthBar.Visible = alive;
-			hud.ThrustIcon.Visible = alive && traits.Movement.ThrustEnabled;
+			hud.AbilityDisplay.Visible = alive;
 
 			if (alive)
 			{
@@ -708,11 +757,34 @@ public class NetworkPlayer : SafeNetworkBehaviour
 			}
 		}
 
+		PlayerCustomizationOptions options = mgr.GetPlayerData(ID).CustomizationOptions;
+		Transform headTransform = rag.transform.Find(ThirdPersonModel.GetBodyPartTransformPath(BodyPart.Head));
 		rag.ApplyForce(killData.force);
 		if (health.SeparatesHead(killData.damageType))
 		{
-			rag.SeparateHead(killData.force);
+			headTransform = rag.SeparateHead(killData.force);
 		}
+
+		if (options.Mask > -1)
+		{
+			Instantiate(PlayerCustomizer.MaskPrefabs[options.Mask], headTransform);
+		}
+	}
+
+	private void UpdateTraitModifiers()
+	{
+		traits.Clone(PartyManager.GameSettings.GetPlayerTraits(traitsType));
+
+		foreach (PlayerTraitModifiersType type in traitModifierTypes)
+		{
+			traits.Multiply(PartyManager.GameSettings.GetPlayerTraitModifiers(type));
+		}
+
+		netController.Traits = traits.Movement;
+		melee.Traits = traits.Melee;
+		weaponCarrier.Traits = traits.Weapons;
+		health.Traits = traits.Health;
+		respawn.Traits = traits.Respawn;
 	}
 
 	/**********************************************************/
@@ -722,7 +794,7 @@ public class NetworkPlayer : SafeNetworkBehaviour
 	{
 		get
 		{
-			return initialized;
+			return initialized && awoken;
 		}
 	}
 
@@ -771,12 +843,7 @@ public class NetworkPlayer : SafeNetworkBehaviour
 		set
 		{
 			traitsType = value;
-			traits = PartyManager.GameSettings.GetPlayerTraits(value);
-			netController.Traits = value;
-			weaponCarrier.Traits = value;
-			health.Traits = value;
-			melee.Traits = value;
-			respawn.Traits = value;
+			UpdateTraitModifiers();
 		}
 	}
 
@@ -925,6 +992,14 @@ public class NetworkPlayer : SafeNetworkBehaviour
 		get
 		{
 			return weaponCarrier;
+		}
+	}
+
+	public NetworkCharacterController CharacterController
+	{
+		get
+		{
+			return netController;
 		}
 	}
 }

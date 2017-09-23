@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.ImageEffects;
 
 public class CameraManager : MonoBehaviour
 {
@@ -74,6 +75,9 @@ public class CameraManager : MonoBehaviour
 	private Transform playerTransform;
 	private OfflinePlayerModel playerModel;
 
+	private Twirl twirl1;
+	private Twirl twirl2;
+
 	/**********************************************************/
 	// MonoBehaviour Interface
 
@@ -86,6 +90,9 @@ public class CameraManager : MonoBehaviour
 		playerModel = GetComponentInParent<OfflinePlayerModel>();
 
 		AudioListener.volume = 0.6f;
+
+		twirl1 = cam.GetComponent<Twirl>();
+		twirl2 = firstPersonCam.GetComponent<Twirl>();
 	}
 
 	public void Start()
@@ -383,6 +390,24 @@ public class CameraManager : MonoBehaviour
 		get
 		{
 			return cam;
+		}
+	}
+
+	public float TwirlDegrees
+	{
+		set
+		{
+			if (value <= 0.0f || value >= 360.0f)
+			{
+				twirl1.enabled = false;
+				twirl2.enabled = false;
+				return;
+			}
+
+			twirl1.enabled = true;
+			twirl1.angle = value;
+			twirl2.enabled = true;
+			twirl2.angle = value;
 		}
 	}
 }

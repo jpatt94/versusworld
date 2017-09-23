@@ -6,7 +6,6 @@ namespace O3DWB
         // Tool messages
         ToolWasReset = 0,
         ToolWasStarted,
-        ToolWasEnabled,
         ToolWasSelected,
 
         // GUI messages

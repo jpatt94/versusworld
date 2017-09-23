@@ -724,7 +724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4819919902580510}
   - component: {fileID: 137431815495119828}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3938,7 +3938,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1789304431586864}
   m_LocalRotation: {x: -0, y: -0.99955714, z: -0, w: -0.02975952}
-  m_LocalPosition: {x: -117.41814, y: 0.087207556, z: 22.373882}
+  m_LocalPosition: {x: -139.88094, y: 14.939762, z: 19.72483}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4900921489235714}
@@ -4617,7 +4617,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1460738144694424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4571119611905414}
@@ -7363,7 +7363,7 @@ MonoBehaviour:
   thrustEnabled: 1
   thrustHorizontalForce: 4.5
   thrustVerticalForce: 5
-  thrustDelay: 0.5
+  thrustDelay: 0.01
   thrustViewShakeAmount: 0.75
   thrustViewShakeDuration: 0.3
   jumpViewShake: {x: -1.5, y: -0.1, z: -1}
@@ -7939,7 +7939,7 @@ SkinnedMeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1385434421531452}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -8041,7 +8041,7 @@ SkinnedMeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1207907733604314}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -8142,8 +8142,8 @@ SkinnedMeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1658213557353212}
-  m_Enabled: 0
-  m_CastShadows: 1
+  m_Enabled: 1
+  m_CastShadows: 3
   m_ReceiveShadows: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1

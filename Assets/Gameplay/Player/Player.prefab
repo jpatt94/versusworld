@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 124000010143950240}
   - component: {fileID: 92000010895818786}
   - component: {fileID: 114396508279096404}
+  - component: {fileID: 114456364136642534}
   m_Layer: 8
   m_Name: FirstPersonCamera
   m_TagString: Untagged
@@ -79,6 +80,8 @@ GameObject:
   - component: {fileID: 92000011418593424}
   - component: {fileID: 114000010527436792}
   - component: {fileID: 114073223006938650}
+  - component: {fileID: 114091180203112776}
+  - component: {fileID: 114713113126994102}
   m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
@@ -2577,7 +2580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4814261026521538}
   - component: {fileID: 137963493194037532}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3392,7 +3395,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011990801818}
   m_LocalRotation: {x: -0, y: 0.9985023, z: -0, w: -0.054709874}
-  m_LocalPosition: {x: -119.647125, y: 0, z: 16.75943}
+  m_LocalPosition: {x: -424.3272, y: 0, z: 39.724495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4000011249381108}
@@ -7256,6 +7259,7 @@ MonoBehaviour:
   landViewShake: {x: 0.7, y: 0.06, z: 0.2}
   jumpViewShakeDuration: 0.35
   landViewShakeDuration: 0.18
+  rogiBallTeleportDuration: 0.37
 --- !u!114 &114000010527436792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7791,6 +7795,21 @@ MonoBehaviour:
   jitter: 0.05
   showVelocity: 0
   showVelocityScale: 1
+--- !u!114 &114091180203112776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012391852734}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdda781cad112c75d0008dfa8d76c639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 641b781cad112c75d0008dfa8d76c639, type: 3}
+  radius: {x: 1, y: 1}
+  angle: 0
+  center: {x: 0.5, y: 0.5}
 --- !u!114 &114163368900779374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8200,6 +8219,21 @@ MonoBehaviour:
   edgesOnly: 0
   edgesOnlyBgColor: {r: 1, g: 1, b: 1, a: 1}
   edgeDetectShader: {fileID: 4800000, guid: 0d1644bdf064147baa97f235fc5b4903, type: 3}
+--- !u!114 &114456364136642534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011033719170}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdda781cad112c75d0008dfa8d76c639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 641b781cad112c75d0008dfa8d76c639, type: 3}
+  radius: {x: 1, y: 1}
+  angle: 0
+  center: {x: 0.5, y: 0.5}
 --- !u!114 &114516014208378380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8269,6 +8303,32 @@ MonoBehaviour:
   facingThreshold: 0.7
   checkHitDuration: 0.45
   knifeVisibleDuration: 0.2925
+--- !u!114 &114713113126994102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012391852734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646b5bc27a658f447b1d929fd5ffbd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
+  showGeneratedNormals: 0
+  offsetScale: 0.2
+  blurRadius: 18
+  edgeThresholdMin: 0.05
+  edgeThreshold: 0.2
+  edgeSharpness: 4
+  dlaaSharp: 0
+  ssaaShader: {fileID: 4800000, guid: b3728d1488b02490cbd196c7941bf1f8, type: 3}
+  dlaaShader: {fileID: 4800000, guid: 017ca72b9e8a749058d13ebd527e98fa, type: 3}
+  nfaaShader: {fileID: 4800000, guid: ce0cb2621f6d84e21a87414e471a3cce, type: 3}
+  shaderFXAAPreset2: {fileID: 4800000, guid: 6f1418cffd12146f2a83be795f6fa5a7, type: 3}
+  shaderFXAAPreset3: {fileID: 4800000, guid: c182fa94a5a0a4c02870641efcd38cd5, type: 3}
+  shaderFXAAII: {fileID: 4800000, guid: cd5b323dcc592457790ff18b528f5e67, type: 3}
+  shaderFXAAIII: {fileID: 4800000, guid: c547503fff0e8482ea5793727057041c, type: 3}
 --- !u!114 &114735550468432700
 MonoBehaviour:
   m_ObjectHideFlags: 1

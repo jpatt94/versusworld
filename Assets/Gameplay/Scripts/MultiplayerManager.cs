@@ -199,8 +199,7 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 	{
 		status = MultiplayerStatus.CreatingGame;
 
-		//localPlayerCustomizationOptions = Menu.CustomizationOptions;
-		localPlayerCustomizationOptions = new PlayerCustomizationOptions();
+		localPlayerCustomizationOptions = PlayerCustomizer.Options;
 
 		if (matchMaker == null)
 		{
@@ -224,8 +223,9 @@ public class MultiplayerManager : NATTraversal.NetworkManager
 
 	public void JoinMatch(MatchInfoSnapshot match)
 	{
-		localPlayerCustomizationOptions = new PlayerCustomizationOptions();
 		Status = MultiplayerStatus.JoiningGame;
+
+		localPlayerCustomizationOptions = PlayerCustomizer.Options;
 
 		if (matchMaker == null)
 		{

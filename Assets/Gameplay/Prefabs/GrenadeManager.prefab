@@ -89,7 +89,9 @@ MonoBehaviour:
   - {fileID: 1000013555305956, guid: 9e70c23176e58b8489bf4b9f2048b5c5, type: 2}
   - {fileID: 1000012985217012, guid: c39c51699441cb847962953115de7b90, type: 2}
   - {fileID: 1818954224499248, guid: 9088a44d496e2d74093aaaf28d47e7c5, type: 2}
+  - {fileID: 1639179724688690, guid: 933b3b3bacf885644a48d711636ad63c, type: 2}
   grenadeDropPrefabs:
   - {fileID: 1000011497193606, guid: b26032d9758d85b42a153ea7bf690a59, type: 2}
   - {fileID: 1000010156467624, guid: 1ec73e7982e8fba4b8dfe5eabfa52731, type: 2}
   - {fileID: 1323454565457524, guid: 7fad19b71a09fbc4a9b8cf058c1580b2, type: 2}
+  - {fileID: 1204271150848622, guid: 33906e6f855b9c948a4f4acd9563b4e1, type: 2}

@@ -27,6 +27,8 @@ namespace O3DWB
         [SerializeField]
         private bool _alignToSurface = true;
         [SerializeField]
+        private float _offsetFromSurface = 0.0f;
+        [SerializeField]
         private CoordinateSystemAxis _alignmentAxis = CoordinateSystemAxis.PositiveUp;
         [SerializeField]
         private float _rotationOffsetInDegrees = 0.0f;
@@ -38,8 +40,6 @@ namespace O3DWB
         private BrushElementRotationRandomizationMode _rotationRandomizationMode = BrushElementRotationRandomizationMode.SurfaceNormal;
         [SerializeField]
         private float _scale = 1.0f;
-        [SerializeField]
-        private bool _embedInSurfaceWhenNoAlign = true;
         [SerializeField]
         private ObjectScaleRandomizationSettings _scaleRandomizationSettings;
         [SerializeField]
@@ -62,10 +62,10 @@ namespace O3DWB
 
         #region Public Properties
         public DecorPaintObjectPlacementBrush ParentBrush { get { return _parentBrush; } set { if (value != null) _parentBrush = value; } }
-        public bool EmbedInSurfaceWhenNoAlign { get { return _embedInSurfaceWhenNoAlign; } set { _embedInSurfaceWhenNoAlign = value; } }
         public bool IsEnabled { get { return _isEnabled; } set { _isEnabled = value; } }
         public Prefab Prefab { get { return _prefab; } set { _prefab = value; } }
         public bool AlignToSurface { get { return _alignToSurface; } set { _alignToSurface = value; } }
+        public float OffsetFromSurface { get { return _offsetFromSurface; } set { _offsetFromSurface = value; } }
         public CoordinateSystemAxis AlignmentAxis { get { return _alignmentAxis; } set { _alignmentAxis = value; } }
         public float RotationOffsetInDegrees { get { return _rotationOffsetInDegrees; } set { _rotationOffsetInDegrees = Mathf.Clamp(value, MinRotationOffsetInDegrees, MaxRotationOffsetInDegrees); } }
         public bool AlignToStroke { get { return _alignToStroke; } set { _alignToStroke = value; } }
@@ -95,7 +95,6 @@ namespace O3DWB
                 return _slopeSettings;
             }
         }
-        public bool MustEmbedInSurface { get { return !_alignToSurface && _embedInSurfaceWhenNoAlign; } }
         public DecorPaintObjectPlacementBrushElementView View { get { return _view; } }
         #endregion
 

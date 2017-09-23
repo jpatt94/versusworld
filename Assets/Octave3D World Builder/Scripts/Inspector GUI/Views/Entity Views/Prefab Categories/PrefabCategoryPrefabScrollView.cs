@@ -19,8 +19,7 @@ namespace O3DWB
         private PrefabCategoryPrefabScrollViewData _viewData;
         #endregion
 
-        #region Private Properties
-        private PrefabCategoryPrefabScrollViewData ViewData
+        public PrefabCategoryPrefabScrollViewData ViewData
         {
             get
             {
@@ -28,8 +27,6 @@ namespace O3DWB
                 return _viewData;
             }
         }
-        #endregion
-
         public PrefabCategoryScrollViewLookAndFeelWindow LookAndFeelWindow
         {
             get
@@ -89,7 +86,7 @@ namespace O3DWB
                 Prefab prefab = _filteredPrefabs[prefabIndex];
                 var previewButtonRenderData = new PrefabPreviewButtonRenderData();
                 previewButtonRenderData.ExtractFromPrefab(prefab, ViewData.PrefabPreviewScale);
-
+   
                 EditorGUILayout.BeginVertical(GUILayout.Width(previewButtonRenderData.ButtonWidth));
                 
                 // Render the prefab preview button

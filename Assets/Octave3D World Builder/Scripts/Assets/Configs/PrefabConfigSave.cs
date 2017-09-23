@@ -22,6 +22,7 @@ namespace O3DWB
 
                 WritePrefabTagsDatabase(xmlWriter);
                 WritePrefabCategoryDatabase(xmlWriter);
+                WritePrefabScrollViewLookAndFeel(xmlWriter);
 
                 xmlWriter.WriteNewLine(0);
                 xmlWriter.WriteEndElement();
@@ -60,6 +61,47 @@ namespace O3DWB
             xmlWriter.WriteNewLine(3);
             xmlWriter.WriteStartElement(PrefabConfigXMLInfo.PrefabTagActiveNode);
             xmlWriter.WriteString(prefabTag.IsActive.ToString());
+            xmlWriter.WriteEndElement();
+
+            xmlWriter.WriteNewLine(2);
+            xmlWriter.WriteEndElement();
+        }
+
+        private static void WritePrefabScrollViewLookAndFeel(XmlTextWriter xmlWriter)
+        {
+            xmlWriter.WriteNewLine(2);
+            xmlWriter.WriteStartElement(PrefabConfigXMLInfo.PrefabScrollViewLookAndFeelNode);
+
+            PrefabCategoryPrefabScrollViewData lookAndFeelData = Octave3DWorldBuilder.ActiveInstance.EditorWindowPool.ActivePrefabCategoryView.PrefabScrollView.ViewData;
+
+            xmlWriter.WriteNewLine(3);
+            xmlWriter.WriteStartElement(PrefabConfigXMLInfo.NumPrefabsPerRowNode);
+            xmlWriter.WriteString(lookAndFeelData.NumberOfPrefabsPerRow.ToString());
+            xmlWriter.WriteEndElement();
+
+            xmlWriter.WriteNewLine(3);
+            xmlWriter.WriteStartElement(PrefabConfigXMLInfo.PrefabPreviewScaleNode);
+            xmlWriter.WriteString(lookAndFeelData.PrefabPreviewScale.ToString());
+            xmlWriter.WriteEndElement();
+
+            xmlWriter.WriteNewLine(3);
+            xmlWriter.WriteStartElement(PrefabConfigXMLInfo.PrefabScrollViewHeightNode);
+            xmlWriter.WriteString(lookAndFeelData.PrefabScrollViewHeight.ToString());
+            xmlWriter.WriteEndElement();
+
+            xmlWriter.WriteNewLine(3);
+            xmlWriter.WriteStartElement(PrefabConfigXMLInfo.ActivePrefabTintNode);
+            xmlWriter.WriteColorString(lookAndFeelData.ActivePrefabTint);
+            xmlWriter.WriteEndElement();
+
+            xmlWriter.WriteNewLine(3);
+            xmlWriter.WriteStartElement(PrefabConfigXMLInfo.ShowPrefabNamesNode);
+            xmlWriter.WriteString(lookAndFeelData.ShowPrefabNames.ToString());
+            xmlWriter.WriteEndElement();
+
+            xmlWriter.WriteNewLine(3);
+            xmlWriter.WriteStartElement(PrefabConfigXMLInfo.PrefabNameLabelColorNode);
+            xmlWriter.WriteColorString(lookAndFeelData.PrefabNameLabelColor);
             xmlWriter.WriteEndElement();
 
             xmlWriter.WriteNewLine(2);

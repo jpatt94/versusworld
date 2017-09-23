@@ -30,10 +30,79 @@ namespace O3DWB
 
             PrefabCategory firstNonEmptyCategory = PrefabCategoryDatabase.Get().GetFirstNonEmptyCategory();
             if (firstNonEmptyCategory != null) PrefabCategoryDatabase.Get().SetActivePrefabCategory(firstNonEmptyCategory);
+
+            XmlNodeList prefabScrollViewLookAndFeelNodes = xmlDoc.SelectNodes("//" + PrefabConfigXMLInfo.PrefabScrollViewLookAndFeelNode);
+            if (prefabScrollViewLookAndFeelNodes.Count != 0) ReadPrefabScrollViewLookAndFeel(prefabScrollViewLookAndFeelNodes[0]);
         }
         #endregion
 
         #region Private Static Functions
+        private static void ReadPrefabScrollViewLookAndFeel(XmlNode prefabScrollViewLookAndFeelNode)
+        {
+            PrefabCategoryPrefabScrollViewData lookAndFeelData = Octave3DWorldBuilder.ActiveInstance.EditorWindowPool.ActivePrefabCategoryView.PrefabScrollView.ViewData;
+            UndoEx.RecordForToolAction(lookAndFeelData);
+
+            XmlNode node = prefabScrollViewLookAndFeelNode.SelectSingleNode(PrefabConfigXMLInfo.NumPrefabsPerRowNode);
+            if(node != null)
+            {
+                try
+                {
+                    lookAndFeelData.NumberOfPrefabsPerRow = Int32.Parse(node.InnerText);
+                }
+                catch (Exception) { }
+            }
+
+            node = prefabScrollViewLookAndFeelNode.SelectSingleNode(PrefabConfigXMLInfo.PrefabPreviewScaleNode);
+            if (node != null)
+            {
+                try
+                {
+                    lookAndFeelData.PrefabPreviewScale = float.Parse(node.InnerText);
+                }
+                catch (Exception) { }
+            }
+
+            node = prefabScrollViewLookAndFeelNode.SelectSingleNode(PrefabConfigXMLInfo.PrefabScrollViewHeightNode);
+            if (node != null)
+            {
+                try
+                {
+                    lookAndFeelData.PrefabScrollViewHeight = float.Parse(node.InnerText);
+                }
+                catch (Exception) { }
+            }
+
+            node = prefabScrollViewLookAndFeelNode.SelectSingleNode(PrefabConfigXMLInfo.ActivePrefabTintNode);
+            if (node != null)
+            {
+                try
+                {
+                    lookAndFeelData.ActivePrefabTint = ColorExtensions.FromString(node.InnerText);
+                }
+                catch (Exception) { }
+            }
+
+            node = prefabScrollViewLookAndFeelNode.SelectSingleNode(PrefabConfigXMLInfo.ShowPrefabNamesNode);
+            if (node != null)
+            {
+                try
+                {
+                    lookAndFeelData.ShowPrefabNames = bool.Parse(node.InnerText);
+                }
+                catch (Exception) { }
+            }
+
+            node = prefabScrollViewLookAndFeelNode.SelectSingleNode(PrefabConfigXMLInfo.PrefabNameLabelColorNode);
+            if (node != null)
+            {
+                try
+                {
+                    lookAndFeelData.PrefabNameLabelColor = ColorExtensions.FromString(node.InnerText);
+                }
+                catch (Exception) { }
+            }
+        }
+
         private static void ReadAllPrefabTags(XmlNode prefabTagsDatabaseNode)
         {
             XmlNodeList prefabTagNodes = prefabTagsDatabaseNode.ChildNodes;

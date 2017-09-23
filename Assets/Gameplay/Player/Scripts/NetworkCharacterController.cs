@@ -4,14 +4,28 @@ using UnityEngine.Networking;
 
 public class NetworkCharacterController : OfflineCharacterController
 {
+	[SerializeField]
+	private float rogiBallTeleportDuration;
+
+	private float rogiBallTeleportTime;
+	private Vector3 rogiBallTeleportPos;
+
 	/**********************************************************/
 	// MonoBehaviour Interface
 
-	public override void OnStart()
+	protected override bool Ready()
 	{
-		base.OnStart();
+		return GetComponent<NetworkPlayer>().Initialized;
+	}
 
-		Traits = PlayerTraitsType.Default;
+	protected override void DelayedStart()
+	{
+		base.DelayedStart();
+
+		if (thrustEnabled)
+		{
+			thrustIcon = HUD.Instance.AbilityDisplay.AddAbilityIcon(AbilityType.Thrust) as ThrustIcon;
+		}
 	}
 
 	public override void Update()
@@ -19,6 +33,25 @@ public class NetworkCharacterController : OfflineCharacterController
 		if (hasAuthority)
 		{
 			base.Update();
+
+			if (rogiBallTeleportTime > 0.0f)
+			{
+				rogiBallTeleportTime -= Time.deltaTime;
+
+				cam.TwirlDegrees = Mathf.Lerp(360.0f, 0.0f, rogiBallTeleportTime / rogiBallTeleportDuration);
+
+				if (rogiBallTeleportTime < rogiBallTeleportDuration * 0.5f)
+				{
+					transform.position = rogiBallTeleportPos;
+					rig.position = rogiBallTeleportPos;
+					GetComponent<InterpolatedTransform>().ForgetPreviousTransforms();
+				}
+
+				if (rogiBallTeleportTime < 0.0f)
+				{
+					cam.TwirlDegrees = 0.0f;
+				}
+			}
 		}
 	}
 
@@ -31,26 +64,52 @@ public class NetworkCharacterController : OfflineCharacterController
 	}
 
 	/**********************************************************/
+	// Interface
+
+	public void OnDeath()
+	{
+		freeThrusts = 0;
+		thrustIcon.FreeThrusts = 0;
+	}
+
+	public void RogiBallTeleport(Vector3 pos)
+	{
+		rogiBallTeleportPos = pos;
+		rogiBallTeleportTime = rogiBallTeleportDuration;
+	}
+
+	/**********************************************************/
+	// Client RPCs
+
+	[ClientRpc]
+	public void RpcAddFreeThrusts(int amount)
+	{
+		freeThrusts += amount;
+		thrustIcon.FreeThrusts = freeThrusts;
+		thrustIcon.Pop();
+
+		canThrust = 0.0f;
+	}
+
+	/**********************************************************/
 	// Accessors/Mutators
 
-	public PlayerTraitsType Traits
+	public MovementSettings Traits
 	{
 		set
 		{
-			MovementSettings settings = PartyManager.GameSettings.GetPlayerTraits(value).Movement;
-
-			speed = settings.Speed;
-			acceleration = settings.Acceleration;
-			jumpHeight = settings.JumpHeight;
-			airControl = settings.AirControl;
-			sprintSpeedMultiplier = settings.SprintSpeedMultiplier;
-			crouchSpeedMultiplier = settings.CrouchSpeedMultiplier;
-			controller.gravity = 25.0f * settings.GravityMultiplier;
+			speed = value.Speed;
+			acceleration = value.Acceleration;
+			jumpHeight = value.JumpHeight;
+			airControl = value.AirControl;
+			sprintSpeedMultiplier = value.SprintSpeedMultiplier;
+			crouchSpeedMultiplier = value.CrouchSpeedMultiplier;
+			controller.gravity = 25.0f * value.GravityMultiplier;
 			controller.maxMoveSpeed = speed * sprintSpeedMultiplier * 10.0f;
-			thrustEnabled = settings.ThrustEnabled;
-			thrustHorizontalForce = settings.ThrustHorizontalForce;
-			thrustVerticalForce = settings.ThrustVerticalForce;
-			thrustDelay = settings.ThrustDelay;
+			thrustEnabled = value.ThrustEnabled;
+			thrustHorizontalForce = value.ThrustHorizontalForce;
+			thrustVerticalForce = value.ThrustVerticalForce;
+			thrustDelay = value.ThrustDelay;
 		}
 	}
 }

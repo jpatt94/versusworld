@@ -340,6 +340,17 @@ namespace O3DWB
                                 categoryWhichContainsPrefab.SetActivePrefab(prefabToActivate);
                             }
                         }
+                        else
+                        {
+                            PrefabCategory activeCategory = PrefabCategoryDatabase.Get().ActivePrefabCategory;
+                            if (activeCategory != null)
+                            {
+                                UndoEx.RecordForToolAction(activeCategory);
+                                Prefab prefab = PrefabFactory.Create(sourcePrefab);
+                                activeCategory.AddPrefab(prefab);
+                                //activeCategory.SetActivePrefab(prefab);
+                            }
+                        }
                     }
                 }
 

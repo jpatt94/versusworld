@@ -23,6 +23,14 @@ namespace O3DWB
         public static string PrefabAssociatedTagNode { get { return "Tag"; } }
         public static string PrefabOffsetFromGridSurfaceNode { get { return "Offset_From_Grid_Surface"; } }
         public static string PrefabOffsetFromObjectSurfaceNode { get { return "Offset_From_Object_Surface"; } }
+
+        public static string PrefabScrollViewLookAndFeelNode { get { return "PrefabScrollViewLookAndFeel"; } }
+        public static string NumPrefabsPerRowNode { get { return "NumPrefabsPerRow"; } }
+        public static string PrefabPreviewScaleNode { get { return "PrefabPreviewScale"; } }
+        public static string PrefabScrollViewHeightNode { get { return "PrefabScrollViewHeight"; ; } }
+        public static string ActivePrefabTintNode { get { return "ActivePrefabTint"; } }
+        public static string ShowPrefabNamesNode { get { return "ShowPrefabNames"; } }
+        public static string PrefabNameLabelColorNode { get { return "PrefabNameLabelColor"; } }
         #endregion
     }
 }
